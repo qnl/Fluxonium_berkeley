@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Data_analysis/.idea/Data analysis.iml" filepath="$PROJECT_DIR$/../Data_analysis/.idea/Data analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Fluxonium/.idea/Fluxonium.iml" filepath="$PROJECT_DIR$/../Fluxonium/.idea/Fluxonium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" filepath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Quantum_optics/.idea/Quantum optics.iml" filepath="$PROJECT_DIR$/../Quantum_optics/.idea/Quantum optics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../berkeleyzp/.idea/berkeleyzp.iml" filepath="$PROJECT_DIR$/../berkeleyzp/.idea/berkeleyzp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../simulation-projects/.idea/simulation-projects.iml" filepath="$PROJECT_DIR$/../simulation-projects/.idea/simulation-projects.iml" />
+    </modules>
+  </component>
+</project>
