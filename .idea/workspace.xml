@@ -20,25 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
+      <change afterPath="$PROJECT_DIR$/Devices/Fluxonium_UMD.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data_analysis/Energy conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data_analysis/Energy conversion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Fluxonium/Coupled_fluxonium_scripts/Spectrum_half_flux.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fluxonium/Coupled_fluxonium_scripts/Spectrum_half_flux.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Fluxonium/Plotting/2_qubit_coupling.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fluxonium/Plotting/2_qubit_coupling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Fluxonium/Scripts/Spectrum_coupled_fluxoniums.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fluxonium/Scripts/Spectrum_coupled_fluxoniums.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/Charge qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Charge qubit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Data_analysis" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Fluxonium" />
   </component>
   <component name="ProjectId" id="1kXraD5gR6XomSyBMIVyYK0zLHJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -125,6 +134,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update notebooks" />
