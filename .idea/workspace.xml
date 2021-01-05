@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/Fluxonium_UMD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/UMD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Devices/UMD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/UMD.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/Junctions calculation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Junctions calculation.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,9 +120,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Fluxonium_berkeley" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Devices/UMD" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Devices/UMD/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Fluxonium_UMD" />
+        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.Energy conversion" />
         <item itemvalue="Python.2_qubit_coupling" />
       </list>
@@ -165,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609834692508</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update notebooks">
+      <created>1609877818818</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609877818818</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,32 +214,36 @@
     <option name="LAST_COMMIT_MESSAGE" value="update notebooks" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1515" height="779" key="GridCell.Tab.0.bottom" timestamp="1609834949124">
-      <screen x="-1536" y="385" width="1536" height="935" />
+    <state width="1059" height="178" key="GridCell.Tab.0.bottom" timestamp="1609884625277">
+      <screen x="2560" y="25" width="1080" height="1843" />
     </state>
     <state width="1515" height="779" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1609834949124" />
-    <state width="1059" height="843" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609834194982" />
+    <state width="1059" height="178" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609883729263" />
+    <state width="1059" height="178" key="GridCell.Tab.0.bottom/0.25.2560.1415/2560.25.1080.1843/-1536.385.1536.935@2560.25.1080.1843" timestamp="1609884625277" />
     <state width="1515" height="378" key="GridCell.Tab.0.bottom/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237312" />
     <state width="2539" height="378" key="GridCell.Tab.0.bottom/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976265" />
-    <state width="1515" height="779" key="GridCell.Tab.0.center" timestamp="1609834949122">
-      <screen x="-1536" y="385" width="1536" height="935" />
+    <state width="1059" height="178" key="GridCell.Tab.0.center" timestamp="1609884625276">
+      <screen x="2560" y="25" width="1080" height="1843" />
     </state>
     <state width="1515" height="779" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1609834949122" />
-    <state width="1059" height="843" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609834194981" />
+    <state width="1059" height="178" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609883729262" />
+    <state width="1059" height="178" key="GridCell.Tab.0.center/0.25.2560.1415/2560.25.1080.1843/-1536.385.1536.935@2560.25.1080.1843" timestamp="1609884625276" />
     <state width="1515" height="378" key="GridCell.Tab.0.center/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237312" />
     <state width="2539" height="378" key="GridCell.Tab.0.center/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976265" />
-    <state width="1515" height="779" key="GridCell.Tab.0.left" timestamp="1609834949121">
-      <screen x="-1536" y="385" width="1536" height="935" />
+    <state width="1059" height="178" key="GridCell.Tab.0.left" timestamp="1609884625275">
+      <screen x="2560" y="25" width="1080" height="1843" />
     </state>
     <state width="1515" height="779" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1609834949121" />
-    <state width="1059" height="843" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609834194980" />
+    <state width="1059" height="178" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609883729261" />
+    <state width="1059" height="178" key="GridCell.Tab.0.left/0.25.2560.1415/2560.25.1080.1843/-1536.385.1536.935@2560.25.1080.1843" timestamp="1609884625275" />
     <state width="1515" height="378" key="GridCell.Tab.0.left/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237311" />
     <state width="2539" height="378" key="GridCell.Tab.0.left/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976264" />
-    <state width="1515" height="779" key="GridCell.Tab.0.right" timestamp="1609834949123">
-      <screen x="-1536" y="385" width="1536" height="935" />
+    <state width="1059" height="178" key="GridCell.Tab.0.right" timestamp="1609884625276">
+      <screen x="2560" y="25" width="1080" height="1843" />
     </state>
     <state width="1515" height="779" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1609834949123" />
-    <state width="1059" height="843" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609834194982" />
+    <state width="1059" height="178" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609883729262" />
+    <state width="1059" height="178" key="GridCell.Tab.0.right/0.25.2560.1415/2560.25.1080.1843/-1536.385.1536.935@2560.25.1080.1843" timestamp="1609884625276" />
     <state width="1515" height="378" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237312" />
     <state width="2539" height="378" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976265" />
     <state x="2609" y="608" key="SettingsEditor" timestamp="1609832910149">
