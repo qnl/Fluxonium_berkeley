@@ -9,5 +9,6 @@
     <orderEntry type="module" module-name="Fluxonium" />
     <orderEntry type="module" module-name="simulation-projects" />
     <orderEntry type="module" module-name="Quantum optics" />
+    <orderEntry type="module" module-name="Layout" />
   </component>
 </module>

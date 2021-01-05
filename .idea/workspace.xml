@@ -20,14 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
-      <change afterPath="$PROJECT_DIR$/Devices/Fluxonium_UMD.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data_analysis/Energy conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data_analysis/Energy conversion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fluxonium/Coupled_fluxonium_scripts/Spectrum_half_flux.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fluxonium/Coupled_fluxonium_scripts/Spectrum_half_flux.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fluxonium/Plotting/2_qubit_coupling.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fluxonium/Plotting/2_qubit_coupling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fluxonium/Scripts/Spectrum_coupled_fluxoniums.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fluxonium/Scripts/Spectrum_coupled_fluxoniums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Charge qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Charge qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Devices/Fluxonium_UMD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Fluxonium_UMD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Junctions calculation-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Junctions calculation-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Junctions calculation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Junctions calculation.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Fluxonium" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kXraD5gR6XomSyBMIVyYK0zLHJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -54,8 +52,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Python.Energy conversion">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Devices" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Fluxonium_UMD">
     <configuration name="2_qubit_coupling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Fluxonium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,8 +102,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Fluxonium_UMD" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Fluxonium_berkeley" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Devices" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Devices/Fluxonium_UMD.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Fluxonium_UMD" />
         <item itemvalue="Python.Energy conversion" />
         <item itemvalue="Python.2_qubit_coupling" />
       </list>
@@ -121,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607491922951</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update notebooks">
+      <created>1608186817048</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608186817048</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,9 +194,14 @@
     </state>
     <state width="1515" height="378" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237312" />
     <state width="2539" height="378" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976265" />
-    <state x="880" y="427" key="Vcs.Push.Dialog.v2" timestamp="1607492725628">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state x="2609" y="608" key="SettingsEditor" timestamp="1609832910149">
+      <screen x="2560" y="25" width="1080" height="1895" />
     </state>
+    <state x="2609" y="608" key="SettingsEditor/0.25.2560.1415/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609832910149" />
+    <state x="-1008" y="342" key="Vcs.Push.Dialog.v2" timestamp="1608186836480">
+      <screen x="-1536" y="59" width="1536" height="935" />
+    </state>
+    <state x="-1008" y="342" key="Vcs.Push.Dialog.v2/0.25.2560.1330/2560.25.1920.1055/-1536.59.1536.935@-1536.59.1536.935" timestamp="1608186836480" />
     <state x="880" y="427" key="Vcs.Push.Dialog.v2/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1607492725628" />
   </component>
   <component name="XDebuggerManager">
