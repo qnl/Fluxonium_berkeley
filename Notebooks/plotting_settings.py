@@ -7,11 +7,11 @@ from cycler import cycler
 
 plt.figure(figsize=[10,7])
 
-# plt.style.use(['seaborn-deep'])
-custom_cycler = (cycler(color=['#003262', '#C4820F','#55A868',
-                               '#d62728', '#9467bd','#CCB974',
-                               '#8c564b', '#e377c2', '#7f7f7f',
-                               '#bcbd22', '#17becf','#1f77b4']))
+plt.style.use(['seaborn-deep'])
+# custom_cycler = (cycler(color=['#003262', '#C4820F','#55A868',
+#                                '#d62728', '#9467bd','#CCB974',
+#                                '#8c564b', '#e377c2', '#7f7f7f',
+#                                '#bcbd22', '#17becf','#1f77b4']))
 plt.rc('axes', prop_cycle=custom_cycler)
 
 plt.rc('lines',

@@ -455,8 +455,7 @@ class UMD_devices():
      'array_junc_area': 2 * 0.4
      }
 ]
-# samples = UMD_devices().list_of_devices
-# print (len(samples))
+
 
 
 
