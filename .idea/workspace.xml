@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/UMD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/UMD.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Junctions calculation-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Junctions calculation-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/Fluxonium properties.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Fluxonium properties.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Junctions calculation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Junctions calculation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/plotting_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/plotting_settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609885888050</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update notebooks">
+      <created>1609911506789</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609911506789</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

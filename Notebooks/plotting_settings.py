@@ -3,7 +3,7 @@ A module to customize Matplotlib parameters
 """
 
 from matplotlib import pyplot as plt
-from cycler import cycler
+# from cycler import cycler
 
 plt.figure(figsize=[10,7])
 
@@ -12,7 +12,7 @@ plt.style.use(['seaborn-deep'])
 #                                '#d62728', '#9467bd','#CCB974',
 #                                '#8c564b', '#e377c2', '#7f7f7f',
 #                                '#bcbd22', '#17becf','#1f77b4']))
-plt.rc('axes', prop_cycle=custom_cycler)
+# plt.rc('axes', prop_cycle=custom_cycler)
 
 plt.rc('lines',
        linewidth=3,
@@ -63,9 +63,9 @@ plt.rc('ytick.minor',
        visible=True)
 
 plt.rc('legend',
-       fontsize=20)
+       fontsize=16)
 
 plt.rc('figure',
-       titlesize=25)
+       titlesize=16)
 
-plt.tick_params(labelsize = 20)
+plt.tick_params(labelsize = 16)
