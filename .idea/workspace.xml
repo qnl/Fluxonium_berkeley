@@ -20,7 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
+      <change afterPath="$PROJECT_DIR$/Devices/jjarray.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Devices/parameters.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Devices/Fluxonium_3D.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Fluxonium_3D.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Devices/Layout_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Layout_tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Blochnium-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Charge qubit-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Fluxonium coupling-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Fluxonium microwave gate-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Fluxonium properties-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Two-level system tutorial-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Blochnium.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Charge qubit.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Fluxonium coupling.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Fluxonium microwave gate.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Fluxonium properties.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Two-level system tutorial.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +55,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Fluxonium" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kXraD5gR6XomSyBMIVyYK0zLHJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -55,27 +75,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.test">
-    <configuration name="2_qubit_coupling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Fluxonium" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Fluxonium/Plotting" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Fluxonium/Plotting/2_qubit_coupling.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Energy conversion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,6 +138,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="jjarray" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Layout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Layout/Layout/JJ_array" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Layout/Layout/JJ_array/jjarray.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Fluxonium_berkeley" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,10 +183,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.Fluxonium_UMD" />
+        <item itemvalue="Python.jjarray" />
         <item itemvalue="Python.__init__" />
         <item itemvalue="Python.Energy conversion" />
-        <item itemvalue="Python.2_qubit_coupling" />
       </list>
     </recent_temporary>
   </component>
@@ -269,43 +288,53 @@
     <option name="LAST_COMMIT_MESSAGE" value="update notebooks" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1059" height="178" key="GridCell.Tab.0.bottom" timestamp="1609885062396">
-      <screen x="2560" y="25" width="1080" height="1843" />
+    <state x="-1067" y="658" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610252264122">
+      <screen x="-1536" y="385" width="1536" height="935" />
     </state>
-    <state width="1515" height="779" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1609834949124" />
+    <state x="-1067" y="658" key="#com.intellij.fileTypes.FileTypeChooser/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610252264122" />
+    <state width="2539" height="178" key="GridCell.Tab.0.bottom" timestamp="1610973241738">
+      <screen x="0" y="25" width="2560" height="1330" />
+    </state>
+    <state width="1515" height="178" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314431" />
+    <state width="2539" height="178" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1610973241738" />
     <state width="1059" height="178" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609883729263" />
     <state width="1059" height="178" key="GridCell.Tab.0.bottom/0.25.2560.1415/2560.25.1080.1843/-1536.385.1536.935@2560.25.1080.1843" timestamp="1609885062396" />
     <state width="1515" height="378" key="GridCell.Tab.0.bottom/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237312" />
     <state width="2539" height="378" key="GridCell.Tab.0.bottom/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976265" />
-    <state width="1059" height="178" key="GridCell.Tab.0.center" timestamp="1609885062395">
-      <screen x="2560" y="25" width="1080" height="1843" />
+    <state width="2539" height="178" key="GridCell.Tab.0.center" timestamp="1610973241738">
+      <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state width="1515" height="779" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1609834949122" />
+    <state width="1515" height="178" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314430" />
+    <state width="2539" height="178" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1610973241738" />
     <state width="1059" height="178" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609883729262" />
     <state width="1059" height="178" key="GridCell.Tab.0.center/0.25.2560.1415/2560.25.1080.1843/-1536.385.1536.935@2560.25.1080.1843" timestamp="1609885062395" />
     <state width="1515" height="378" key="GridCell.Tab.0.center/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237312" />
     <state width="2539" height="378" key="GridCell.Tab.0.center/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976265" />
-    <state width="1059" height="178" key="GridCell.Tab.0.left" timestamp="1609885062394">
-      <screen x="2560" y="25" width="1080" height="1843" />
+    <state width="2539" height="178" key="GridCell.Tab.0.left" timestamp="1610973241738">
+      <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state width="1515" height="779" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1609834949121" />
+    <state width="1515" height="178" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314429" />
+    <state width="2539" height="178" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1610973241738" />
     <state width="1059" height="178" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609883729261" />
     <state width="1059" height="178" key="GridCell.Tab.0.left/0.25.2560.1415/2560.25.1080.1843/-1536.385.1536.935@2560.25.1080.1843" timestamp="1609885062394" />
     <state width="1515" height="378" key="GridCell.Tab.0.left/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237311" />
     <state width="2539" height="378" key="GridCell.Tab.0.left/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976264" />
-    <state width="1059" height="178" key="GridCell.Tab.0.right" timestamp="1609885062396">
-      <screen x="2560" y="25" width="1080" height="1843" />
+    <state width="2539" height="178" key="GridCell.Tab.0.right" timestamp="1610973241738">
+      <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state width="1515" height="779" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1609834949123" />
+    <state width="1515" height="178" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314431" />
+    <state width="2539" height="178" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1610973241738" />
     <state width="1059" height="178" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609883729262" />
     <state width="1059" height="178" key="GridCell.Tab.0.right/0.25.2560.1415/2560.25.1080.1843/-1536.385.1536.935@2560.25.1080.1843" timestamp="1609885062396" />
     <state width="1515" height="378" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237312" />
     <state width="2539" height="378" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976265" />
-    <state x="2609" y="592" key="SettingsEditor" timestamp="1609885017258">
-      <screen x="2560" y="25" width="1080" height="1843" />
+    <state x="117" y="319" key="SettingsEditor" timestamp="1611635963477">
+      <screen x="0" y="25" width="2560" height="1330" />
     </state>
+    <state x="-1466" y="592" key="SettingsEditor/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610251926103" />
     <state x="2609" y="592" key="SettingsEditor/0.25.2560.1415/2560.25.1080.1843/-1536.385.1536.935@2560.25.1080.1843" timestamp="1609885017258" />
     <state x="2609" y="608" key="SettingsEditor/0.25.2560.1415/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609832910149" />
+    <state x="117" y="319" key="SettingsEditor/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1611635963477" />
     <state x="2840" y="599" key="Vcs.Push.Dialog.v2" timestamp="1609885906875">
       <screen x="2560" y="25" width="1080" height="1895" />
     </state>

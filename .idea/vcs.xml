@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Fluxonium" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Fluxonium_v2" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Quantum_optics" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../berkeleyzp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../simulation-projects" vcs="Git" />
