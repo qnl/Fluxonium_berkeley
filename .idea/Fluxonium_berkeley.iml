@@ -11,5 +11,6 @@
     <orderEntry type="module" module-name="Quantum optics" />
     <orderEntry type="module" module-name="Layout" />
     <orderEntry type="module" module-name="Fluxonium_v2" />
+    <orderEntry type="module" module-name="Data analysis" />
   </component>
 </module>

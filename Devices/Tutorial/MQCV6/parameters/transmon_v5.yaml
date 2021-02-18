@@ -1,0 +1,11 @@
+qubits:
+  cutout:
+    x: 535
+    y: 745
+  pads:
+    x: 135
+    y: 545
+  spacing: 65
+qubit_x_location: 1700
+num_qubits: 8
+layer: 1

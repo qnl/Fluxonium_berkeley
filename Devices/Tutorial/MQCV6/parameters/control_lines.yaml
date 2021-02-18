@@ -1,0 +1,16 @@
+qubit_separation: 185
+cpw:
+  width: 8
+  gap: 5
+bondpad:
+  gap: 56.5
+  width: 125.0
+  length: 125.0
+  taper: 100.0
+intersection_start_x: 400
+intersection_end_x: 900
+num_ctrl_lines_per_side: 4
+ctrl_line_y_start: -3300
+ctrl_line_y_end: 3800
+ctrl_line_x_offset: 150
+layer: 7

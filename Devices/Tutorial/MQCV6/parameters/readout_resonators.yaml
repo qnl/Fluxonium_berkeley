@@ -1,0 +1,40 @@
+cpw:
+  width: 20
+  gap: 10
+layer: 2
+readout_res_length: 3800
+readout_res_freq: 6.6
+readout_res_freq_min: 6.14
+readout_res_freq_max: 6.60
+l_bus_coupler: 200
+l_meander: 540
+meander_gap: 90
+radius: 90
+sep_qubit_coupling_res: 5
+qubit_coupler_separation:
+  - 31
+  - 19.5
+  - 22
+  - 30
+  - 41
+  - 45
+  - 33.5
+  - 24
+sep_bus_couplers:
+  - 31
+  - 32
+  - 37
+  - 40
+  - 38.5
+  - 51
+  - 48
+  - 56
+reverse_bus_couplers:
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
