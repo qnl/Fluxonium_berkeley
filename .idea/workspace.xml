@@ -20,38 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1/.ipynb_checkpoints/make_sample-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1/make_sample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1/parameters/control_lines.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1/parameters/coupling_resonators.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1/parameters/junctions.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1/parameters/mqcv6.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1/parameters/multiplexed_readout.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1/parameters/readout_resonators.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1/parameters/transmon_v5.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1/sample_components.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/Fluxonium_3D.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Tutorial/MQCV6/make_sample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Tutorial/MQCV6/parameters/control_lines.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Tutorial/MQCV6/parameters/coupling_resonators.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Tutorial/MQCV6/parameters/junctions.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Tutorial/MQCV6/parameters/mqcv6.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Tutorial/MQCV6/parameters/multiplexed_readout.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Tutorial/MQCV6/parameters/readout_resonators.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Tutorial/MQCV6/parameters/transmon_v5.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Tutorial/MQCV6/sample_components.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data_analysis/Energy conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data_analysis/Energy conversion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/Fluxonium_3D.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/Layout_3D.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/Layout_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Tutorial/Layout_tutorial.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/UMD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Measured samples/UMD.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/jjarray.py" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/jjarray.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/parameters.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/parameters.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Junctions calculation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Measured samples/Junctions calculation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/1. Charge qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1. Charge qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/5. New qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/5. New qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/6. 0-pi qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/6. 0-pi qubit.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../berkeleyzp/berkeleyzp_example.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../berkeleyzp/berkeleyzp_example.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
