@@ -20,12 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/ThreeStepDoseTest/dose_test_antenna.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/ThreeStepDoseTest/parameters/multiplexed_readout.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/ThreeStepDoseTest/parameters/transmon_v5.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_coupobj.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_fluxonium.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_pshapes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_transmon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data_analysis/Energy conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data_analysis/Energy conversion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/Tutorial/MQCV6/pattern_files/mask6.gds" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Tutorial/MQCV6/pattern_files/mask6.gds" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/9. Fluxonium microwave gate-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/4. Blochnium.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/4. Blochnium.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/5. GKP qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/5. GKP qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/9. Fluxonium microwave gate.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Quantum_optics/Bloch_sphere.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Quantum_optics/Bloch_sphere.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../berkeleyzp/berkeleyzp_example.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../berkeleyzp/berkeleyzp_example.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,20 +79,20 @@
       <recent name="$PROJECT_DIR$/Devices/Measured samples" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dose_test_antenna">
-    <configuration name="Energy conversion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data analysis" />
+  <component name="RunManager" selected="Python.spectrum">
+    <configuration name="Bloch_sphere" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Quantum optics" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Data_analysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Quantum_optics" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Data_analysis/Energy conversion.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Quantum_optics/Bloch_sphere.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,19 +164,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sample_components" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Fluxonium_berkeley" />
+    <configuration name="spectrum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Fluxonium_v2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Fluxonium_v2/scripts_coupledQubits" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_2Dv1/sample_components.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Fluxonium_v2/scripts_coupledQubits/spectrum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.spectrum" />
+        <item itemvalue="Python.Bloch_sphere" />
         <item itemvalue="Python.dose_test_antenna" />
         <item itemvalue="Python.make_sample" />
         <item itemvalue="Python.make_sample (1)" />
-        <item itemvalue="Python.sample_components" />
-        <item itemvalue="Python.Energy conversion" />
       </list>
     </recent_temporary>
   </component>
@@ -297,8 +306,8 @@
     </state>
     <state x="-1067" y="658" key="#com.intellij.fileTypes.FileTypeChooser/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610252264122" />
     <state x="782" y="413" key="#com.intellij.fileTypes.FileTypeChooser/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1611970163028" />
-    <state width="2539" height="235" key="GridCell.Tab.0.bottom" timestamp="1616216370860">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="1899" height="235" key="GridCell.Tab.0.bottom" timestamp="1618292675381">
+      <screen x="2560" y="25" width="1920" height="979" />
     </state>
     <state width="1515" height="178" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314431" />
     <state width="2539" height="235" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370860" />
@@ -312,10 +321,9 @@
     <state width="1515" height="111" key="GridCell.Tab.0.bottom/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@-1536.385.1536.935" timestamp="1611969206852" />
     <state width="1515" height="115" key="GridCell.Tab.0.bottom/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1611970124225" />
     <state width="1059" height="115" key="GridCell.Tab.0.bottom/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@2560.25.1080.1895" timestamp="1611979758669" />
-    <state width="1515" height="378" key="GridCell.Tab.0.bottom/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237312" />
-    <state width="2539" height="378" key="GridCell.Tab.0.bottom/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976265" />
-    <state width="2539" height="235" key="GridCell.Tab.0.center" timestamp="1616216370859">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="1899" height="235" key="GridCell.Tab.0.bottom/2560.25.1920.979/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.979" timestamp="1618292675381" />
+    <state width="1899" height="235" key="GridCell.Tab.0.center" timestamp="1618292675380">
+      <screen x="2560" y="25" width="1920" height="979" />
     </state>
     <state width="1515" height="178" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314430" />
     <state width="2539" height="235" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370859" />
@@ -329,10 +337,9 @@
     <state width="1515" height="111" key="GridCell.Tab.0.center/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@-1536.385.1536.935" timestamp="1611969206852" />
     <state width="1515" height="115" key="GridCell.Tab.0.center/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1611970124224" />
     <state width="1059" height="115" key="GridCell.Tab.0.center/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@2560.25.1080.1895" timestamp="1611979758668" />
-    <state width="1515" height="378" key="GridCell.Tab.0.center/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237312" />
-    <state width="2539" height="378" key="GridCell.Tab.0.center/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976265" />
-    <state width="2539" height="235" key="GridCell.Tab.0.left" timestamp="1616216370859">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="1899" height="235" key="GridCell.Tab.0.center/2560.25.1920.979/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.979" timestamp="1618292675380" />
+    <state width="1899" height="235" key="GridCell.Tab.0.left" timestamp="1618292675380">
+      <screen x="2560" y="25" width="1920" height="979" />
     </state>
     <state width="1515" height="178" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314429" />
     <state width="2539" height="235" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370859" />
@@ -346,10 +353,9 @@
     <state width="1515" height="111" key="GridCell.Tab.0.left/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@-1536.385.1536.935" timestamp="1611969206851" />
     <state width="1515" height="115" key="GridCell.Tab.0.left/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1611970124224" />
     <state width="1059" height="115" key="GridCell.Tab.0.left/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@2560.25.1080.1895" timestamp="1611979758667" />
-    <state width="1515" height="378" key="GridCell.Tab.0.left/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237311" />
-    <state width="2539" height="378" key="GridCell.Tab.0.left/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976264" />
-    <state width="2539" height="235" key="GridCell.Tab.0.right" timestamp="1616216370859">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="1899" height="235" key="GridCell.Tab.0.left/2560.25.1920.979/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.979" timestamp="1618292675380" />
+    <state width="1899" height="235" key="GridCell.Tab.0.right" timestamp="1618292675381">
+      <screen x="2560" y="25" width="1920" height="979" />
     </state>
     <state width="1515" height="178" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314431" />
     <state width="2539" height="235" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370859" />
@@ -363,8 +369,7 @@
     <state width="1515" height="111" key="GridCell.Tab.0.right/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@-1536.385.1536.935" timestamp="1611969206852" />
     <state width="1515" height="115" key="GridCell.Tab.0.right/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1611970124225" />
     <state width="1059" height="115" key="GridCell.Tab.0.right/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@2560.25.1080.1895" timestamp="1611979758668" />
-    <state width="1515" height="378" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@-1536.59.1536.935" timestamp="1608081237312" />
-    <state width="2539" height="378" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.59.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1608052976265" />
+    <state width="1899" height="235" key="GridCell.Tab.0.right/2560.25.1920.979/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.979" timestamp="1618292675381" />
     <state width="2539" height="464" key="GridCell.Tab.1.bottom" timestamp="1616184763216">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
@@ -402,7 +407,6 @@
       <screen x="2560" y="25" width="1080" height="1895" />
     </state>
     <state x="2840" y="599" key="Vcs.Push.Dialog.v2/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@2560.25.1080.1895" timestamp="1609885906875" />
-    <state x="-1008" y="342" key="Vcs.Push.Dialog.v2/0.25.2560.1330/2560.25.1920.1055/-1536.59.1536.935@-1536.59.1536.935" timestamp="1608186836480" />
     <state x="830" y="423" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1616132805752">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
