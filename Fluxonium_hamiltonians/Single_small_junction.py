@@ -11,7 +11,7 @@ h = 6.626e-34    #Placnk's constant
 phi_o = h/(2*e) #Flux quantum
 
 def bare_hamiltonian(N, E_l, E_c, E_j, phi_ext):
-    a = tensor(destroy(N))
+    a = destroy(N)
     phi = (a+a.dag())*(8.0*E_c/E_l)**(0.25)/np.sqrt(2.0)
     na = 1.0j*(a.dag()-a)*(E_l/(8*E_c))**(0.25)/np.sqrt(2.0)
     ope = 1.0j*(phi - phi_ext)

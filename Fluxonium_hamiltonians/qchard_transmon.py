@@ -71,7 +71,7 @@ class TransmonSimple(object):
         return qt.destroy(self.nlev)
 
     def adag(self):
-        """Annihilation operator."""
+        """Creation operator."""
         return qt.create(self.nlev)
 
     def H(self):

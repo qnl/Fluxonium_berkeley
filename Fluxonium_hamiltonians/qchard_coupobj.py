@@ -179,12 +179,11 @@ class CoupledObjects(object):
                     # Qubit-resonator coupling in the RWA.
                     op1 = self.promote_op(obj1, obj1.a())
                     op2 = self.promote_op(obj2, obj2.a())
-                elif coupling_term[3] == 'transmon-transmon':
-                    # Transmon-transmon coupling g(a+adag)(b+bdag)
-                    op1 = obj1.a() + obj1.adag()
-                    op2 = obj2.a() + obj2.adag()
-                    op1 = self.promote_op(obj1, op1)
-                    op2 = self.promote_op(obj2, op2)
+                elif coupling_term[3] == 'transmon':
+                    # Qubit-resonator coupling in the RWA.
+                    op1 = self.promote_op(obj1, obj1.a()+obj1.a().dag())
+                    op2 = self.promote_op(obj2, obj2.a()+obj2.a().dag())
+
                 else:
                     raise Exception(
                         'This type of coupling is not implemented yet.')
@@ -194,7 +193,7 @@ class CoupledObjects(object):
                     V += E_int * op1 * op2
             else:
                 raise Exception(
-                    'This type of coupling is not implemented yet.')
+                    'Not a string')
         return V
 
     def H(self):
