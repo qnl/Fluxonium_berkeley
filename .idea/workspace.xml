@@ -20,19 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
-      <change afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_squid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_resonator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_tls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Devices/Measured samples/Junctions calculation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Measured samples/Junctions calculation.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/Single_small_junction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/Single_small_junction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_coupobj.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_coupobj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_squid.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_squid.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_transmon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_transmon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/10. Fluxonium CZ gate-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/2a. Fluxonium v2-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/9. Transmon coupling-checkpoint.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/1. Charge qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1. Charge qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/10. Fluxonium CZ gate.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/2a. Fluxonium v2.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/5. GKP qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/5. GKP qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/9. Transmon coupling.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618297228377</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update notebooks">
+      <created>1618524398342</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1618524398342</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,8 +326,8 @@
     </state>
     <state x="-1067" y="658" key="#com.intellij.fileTypes.FileTypeChooser/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610252264122" />
     <state x="782" y="413" key="#com.intellij.fileTypes.FileTypeChooser/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1611970163028" />
-    <state width="1899" height="235" key="GridCell.Tab.0.bottom" timestamp="1618297563339">
-      <screen x="2560" y="25" width="1920" height="981" />
+    <state width="2539" height="235" key="GridCell.Tab.0.bottom" timestamp="1618903305084">
+      <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state width="1515" height="178" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314431" />
     <state width="2539" height="235" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370860" />
@@ -326,10 +341,11 @@
     <state width="1515" height="111" key="GridCell.Tab.0.bottom/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@-1536.385.1536.935" timestamp="1611969206852" />
     <state width="1515" height="115" key="GridCell.Tab.0.bottom/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1611970124225" />
     <state width="1059" height="115" key="GridCell.Tab.0.bottom/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@2560.25.1080.1895" timestamp="1611979758669" />
+    <state width="2539" height="235" key="GridCell.Tab.0.bottom/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1618903305084" />
     <state width="1899" height="235" key="GridCell.Tab.0.bottom/2560.25.1920.979/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.979" timestamp="1618292675381" />
     <state width="1899" height="235" key="GridCell.Tab.0.bottom/2560.25.1920.981/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.981" timestamp="1618297563339" />
-    <state width="1899" height="235" key="GridCell.Tab.0.center" timestamp="1618297563338">
-      <screen x="2560" y="25" width="1920" height="981" />
+    <state width="2539" height="235" key="GridCell.Tab.0.center" timestamp="1618903305084">
+      <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state width="1515" height="178" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314430" />
     <state width="2539" height="235" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370859" />
@@ -343,10 +359,11 @@
     <state width="1515" height="111" key="GridCell.Tab.0.center/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@-1536.385.1536.935" timestamp="1611969206852" />
     <state width="1515" height="115" key="GridCell.Tab.0.center/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1611970124224" />
     <state width="1059" height="115" key="GridCell.Tab.0.center/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@2560.25.1080.1895" timestamp="1611979758668" />
+    <state width="2539" height="235" key="GridCell.Tab.0.center/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1618903305084" />
     <state width="1899" height="235" key="GridCell.Tab.0.center/2560.25.1920.979/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.979" timestamp="1618292675380" />
     <state width="1899" height="235" key="GridCell.Tab.0.center/2560.25.1920.981/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.981" timestamp="1618297563338" />
-    <state width="1899" height="235" key="GridCell.Tab.0.left" timestamp="1618297563337">
-      <screen x="2560" y="25" width="1920" height="981" />
+    <state width="2539" height="235" key="GridCell.Tab.0.left" timestamp="1618903305083">
+      <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state width="1515" height="178" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314429" />
     <state width="2539" height="235" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370859" />
@@ -360,10 +377,11 @@
     <state width="1515" height="111" key="GridCell.Tab.0.left/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@-1536.385.1536.935" timestamp="1611969206851" />
     <state width="1515" height="115" key="GridCell.Tab.0.left/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1611970124224" />
     <state width="1059" height="115" key="GridCell.Tab.0.left/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@2560.25.1080.1895" timestamp="1611979758667" />
+    <state width="2539" height="235" key="GridCell.Tab.0.left/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1618903305083" />
     <state width="1899" height="235" key="GridCell.Tab.0.left/2560.25.1920.979/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.979" timestamp="1618292675380" />
     <state width="1899" height="235" key="GridCell.Tab.0.left/2560.25.1920.981/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.981" timestamp="1618297563337" />
-    <state width="1899" height="235" key="GridCell.Tab.0.right" timestamp="1618297563338">
-      <screen x="2560" y="25" width="1920" height="981" />
+    <state width="2539" height="235" key="GridCell.Tab.0.right" timestamp="1618903305084">
+      <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state width="1515" height="178" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@-1536.385.1536.935" timestamp="1610331314431" />
     <state width="2539" height="235" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370859" />
@@ -377,6 +395,7 @@
     <state width="1515" height="111" key="GridCell.Tab.0.right/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@-1536.385.1536.935" timestamp="1611969206852" />
     <state width="1515" height="115" key="GridCell.Tab.0.right/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1611970124225" />
     <state width="1059" height="115" key="GridCell.Tab.0.right/2560.25.1080.1895/-1536.385.1536.935/0.25.2560.1330@2560.25.1080.1895" timestamp="1611979758668" />
+    <state width="2539" height="235" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1618903305084" />
     <state width="1899" height="235" key="GridCell.Tab.0.right/2560.25.1920.979/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.979" timestamp="1618292675381" />
     <state width="1899" height="235" key="GridCell.Tab.0.right/2560.25.1920.981/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.981" timestamp="1618297563338" />
     <state width="2539" height="464" key="GridCell.Tab.1.bottom" timestamp="1616184763216">

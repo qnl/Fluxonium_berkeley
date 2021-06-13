@@ -106,7 +106,7 @@ def charge_dispersive_shift(N, level_num, E_l, E_c, E_j, phi_ext, iState, fState
         element = na.matrix_element(eVectors[fState], eVectors[idx])
         shift_fState = shift_fState + abs(element) ** 2 * 2.0 * trans_energy / (trans_energy ** 2 - wr ** 2)
 
-    return g ** 2 * (shift_iState )
+    return g ** 2 * (shift_iState -shift_fState)
 
 def flux_dispersive_shift(N, level_num, E_l, E_c, E_j, phi_ext, iState, fState, wr, g):
     a = tensor(destroy(N))

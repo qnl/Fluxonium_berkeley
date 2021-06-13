@@ -183,7 +183,10 @@ class CoupledObjects(object):
                     # Qubit-resonator coupling in the RWA.
                     op1 = self.promote_op(obj1, obj1.a()+obj1.a().dag())
                     op2 = self.promote_op(obj2, obj2.a()+obj2.a().dag())
-
+                elif coupling_term[3] == 'coupler-charge':
+                    #Qubit coupled to a coupler
+                    op1 = self.promote_op(obj1, obj1.n())
+                    op2 = self.promote_op(obj2, obj2.n())
                 else:
                     raise Exception(
                         'This type of coupling is not implemented yet.')
@@ -453,6 +456,16 @@ class CoupledObjects(object):
     def n_ij_nonint(self, obj, level1, level2):
         """A shortcut for n_ij(interaction='off')."""
         return self.n_ij(obj, level1, level2, interaciton='off')
+
+    def a_ij(self, obj, level1, level2, interaction='on'):
+        """Matrix element of the HO annihilation operator."""
+        return self.matr_el(
+            obj, obj.a(), level1, level2, interaction=interaction)
+
+    def adag_ij(self, obj, level1, level2, interaction='on'):
+        """Matrix element of the HO creation operator."""
+        return self.matr_el(
+            obj, obj.adag(), level1, level2, interaction=interaction)
 
     def projection(self, level_label, interaction='on'):
         """Projection operator for a system level."""

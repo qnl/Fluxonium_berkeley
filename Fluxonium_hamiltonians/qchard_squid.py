@@ -1,6 +1,6 @@
 # Author: Long Nguyen, 4/2021
 ###########################################################################
-"""The SQUID class for representing superconducting fluxonium qubits.
+"""The SQUID class for representing a tunable qubit.
 """
 
 __all__ = ['squid']

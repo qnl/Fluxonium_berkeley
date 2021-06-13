@@ -163,3 +163,37 @@ class TransmonSimple(object):
             The identity operator.
         """
         return qt.qeye(self.nlev)
+
+    def a_ij(self, level1, level2):
+        """The annihilation operator matrix element between two eigenstates.
+        Parameters
+        ----------
+        level1, level2 : int
+            The cavity levels.
+        Returns
+        -------
+        complex
+            The matrix element of the annihilation operator.
+        """
+        if (level1 < 0 or level1 > self.nlev or
+                level2 < 0 or level2 > self.nlev):
+            raise Exception('Level index is out of bounds.')
+        return self.a().matrix_element(qt.basis(self.nlev, level1).dag(),
+                                       qt.basis(self.nlev, level2))
+
+    def adag_ij(self, level1, level2):
+        """The creation operator matrix element between two eigenstates.
+        Parameters
+        ----------
+        level1, level2 : int
+            The cavity levels.
+        Returns
+        -------
+        complex
+            The matrix element of the annihilation operator.
+        """
+        if (level1 < 0 or level1 > self.nlev or
+                level2 < 0 or level2 > self.nlev):
+            raise Exception('Level index is out of bounds.')
+        return self.adag().matrix_element(qt.basis(self.nlev, level1).dag(),
+                                          qt.basis(self.nlev, level2))
