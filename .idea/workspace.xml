@@ -20,28 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/.ipynb_checkpoints/make_sample-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/make_sample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/parameters/control_lines.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/parameters/coupling_resonators.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/parameters/junctions.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/parameters/mqcv6.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/parameters/multiplexed_readout.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/parameters/purcell_resonators.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/parameters/readout_resonators.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/parameters/transmon_v5.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/pattern_files/mask6.gds" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/sample_components.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_tls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_tls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/7. cos(2phi) qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/7. cos(2phi) qubit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fluxonium_v2/circuits/evolgates.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fluxonium_v2/circuits/evolgates.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +35,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kXraD5gR6XomSyBMIVyYK0zLHJ" />
@@ -309,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623551438122</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update notebooks">
+      <created>1624057144026</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1624057144026</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,33 +321,37 @@
     <option name="LAST_COMMIT_MESSAGE" value="update notebooks" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2539" height="235" key="GridCell.Tab.0.bottom" timestamp="1623780884915">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="1771" height="235" key="GridCell.Tab.0.bottom" timestamp="1624057563327">
+      <screen x="0" y="25" width="1792" height="1023" />
     </state>
+    <state width="1771" height="235" key="GridCell.Tab.0.bottom/0.25.1792.1023@0.25.1792.1023" timestamp="1624057563327" />
     <state width="2539" height="235" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370860" />
     <state width="2539" height="235" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1623780884915" />
     <state width="2539" height="235" key="GridCell.Tab.0.bottom/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1618903305084" />
     <state width="1899" height="235" key="GridCell.Tab.0.bottom/2560.25.1920.979/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.979" timestamp="1618292675381" />
     <state width="1899" height="235" key="GridCell.Tab.0.bottom/2560.25.1920.981/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.981" timestamp="1618297563339" />
-    <state width="2539" height="235" key="GridCell.Tab.0.center" timestamp="1623780884914">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="1771" height="235" key="GridCell.Tab.0.center" timestamp="1624057563326">
+      <screen x="0" y="25" width="1792" height="1023" />
     </state>
+    <state width="1771" height="235" key="GridCell.Tab.0.center/0.25.1792.1023@0.25.1792.1023" timestamp="1624057563326" />
     <state width="2539" height="235" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370859" />
     <state width="2539" height="235" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1623780884914" />
     <state width="2539" height="235" key="GridCell.Tab.0.center/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1618903305084" />
     <state width="1899" height="235" key="GridCell.Tab.0.center/2560.25.1920.979/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.979" timestamp="1618292675380" />
     <state width="1899" height="235" key="GridCell.Tab.0.center/2560.25.1920.981/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.981" timestamp="1618297563338" />
-    <state width="2539" height="235" key="GridCell.Tab.0.left" timestamp="1623780884914">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="1771" height="235" key="GridCell.Tab.0.left" timestamp="1624057563326">
+      <screen x="0" y="25" width="1792" height="1023" />
     </state>
+    <state width="1771" height="235" key="GridCell.Tab.0.left/0.25.1792.1023@0.25.1792.1023" timestamp="1624057563326" />
     <state width="2539" height="235" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370859" />
     <state width="2539" height="235" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1623780884914" />
     <state width="2539" height="235" key="GridCell.Tab.0.left/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1618903305083" />
     <state width="1899" height="235" key="GridCell.Tab.0.left/2560.25.1920.979/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.979" timestamp="1618292675380" />
     <state width="1899" height="235" key="GridCell.Tab.0.left/2560.25.1920.981/-1536.284.1536.935/0.25.2560.1415@2560.25.1920.981" timestamp="1618297563337" />
-    <state width="2539" height="235" key="GridCell.Tab.0.right" timestamp="1623780884915">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="1771" height="235" key="GridCell.Tab.0.right" timestamp="1624057563326">
+      <screen x="0" y="25" width="1792" height="1023" />
     </state>
+    <state width="1771" height="235" key="GridCell.Tab.0.right/0.25.1792.1023@0.25.1792.1023" timestamp="1624057563326" />
     <state width="2539" height="235" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616216370859" />
     <state width="2539" height="235" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1623780884915" />
     <state width="2539" height="235" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1618903305084" />
@@ -387,6 +383,10 @@
     <state x="117" y="319" key="SettingsEditor/0.25.2560.1330/2560.25.1080.1895/-1536.385.1536.935@0.25.2560.1330" timestamp="1616124728449" />
     <state x="117" y="319" key="SettingsEditor/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1623775041782" />
     <state x="2648" y="258" key="SettingsEditor/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@2560.25.1920.1055" timestamp="1618518430016" />
+    <state x="496" y="267" key="Vcs.Push.Dialog.v2" timestamp="1624057611636">
+      <screen x="0" y="25" width="1792" height="1023" />
+    </state>
+    <state x="496" y="267" key="Vcs.Push.Dialog.v2/0.25.1792.1023@0.25.1792.1023" timestamp="1624057611636" />
     <state x="830" y="423" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1616132805752">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
