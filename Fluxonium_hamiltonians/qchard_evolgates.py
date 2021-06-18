@@ -178,11 +178,46 @@ def evolution_psi_microwave(
         t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
 
     H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate]]
-    result = qt.sesolve(H, psi0, t_points, [], args=kwargs,
+    result = qt.mesolve(H, psi0, t_points, [], args=kwargs,
                         options=qt.Options(nsteps=25000))
 
     return result.states
 
+def evolution_psi_microwave_diss(
+        H_nodrive, H_drive, psi0, c_ops = [], t_points=None, **kwargs):
+    """
+    Calculates the unitary evolution of a specific starting state for
+    a gate activated by a microwave drive.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        The Hamiltonian without the drive term.
+    H_drive : :class:`qutip.Qobj`
+        The time-independent part of the driving term.
+        Example: f * (a + a.dag()) or f * qubit.n()
+        Normalization: see `H_drive_coeff_gate` function.
+    psi0 : :class:`qutip.Qobj`
+        Initial state of the system (ket or density matrix).
+    t_points : *array* of float (optional)
+        Times at which the evolution operator is returned.
+        If None, it is generated from `kwargs['T_gate']`.
+    **kwargs:
+        Contains gate parameters such as pulse shape and gate time.
+    Returns
+    -------
+    *array* of :class:`qutip.Qobj`
+        The evolving state at time(s) defined in `t_points`.
+    """
+    if t_points is None:
+        T_gate = kwargs['T_gate']
+        t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
+
+    H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate]]
+    result = qt.mesolve(H, psi0, t_points, c_ops, args=kwargs,
+                        options=qt.Options(nsteps=25000))
+
+    return result.states
 
 def evolution_operator_microwave(
         H_nodrive, H_drive, t_points=None, parallel=False, **kwargs):
@@ -524,3 +559,336 @@ def prob_subspace_average(U_t, subspace):
     for initial_state in subspace:
         P_t += prob_subspace(U_t, initial_state, subspace=subspace)
     return P_t / len(subspace)
+
+##########################################################
+### Some useful functions from evolgates_old     #########
+##########################################################
+
+def prob_transition(
+        system, U_t, initial_state, final_state, interaction='on'):
+    """The probability to find the system in a certain state.
+
+    Calculates the transition probability between certain initial and
+    final states of the system.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    U_t : :class:`qutip.Qobj` or *array* of such
+        The evolution operator.
+    initial_state, final_state : int, tuple, or str
+        The labels of the initial and final states according to the
+        rules of `coupobj.CoupledObjects` class.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+
+    Returns
+    -------
+    float or *array* of float
+        Transition probability.
+    """
+    psi_t0 = system.eigvec(initial_state, interaction=interaction)
+    psi_t = U_t * psi_t0
+    P_final = system.projection(final_state, interaction=interaction)
+    return qt.expect(P_final, psi_t)
+
+
+def prob_subspace(system, U_t, initial_state,
+                  subspace=['00', '01', '10', '11'], interaction='on'):
+    """The probability to find a system in a certain subspace.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    U_t : :class:`qutip.Qobj` or *array* of such
+        The evolution operator.
+    initial_state : int, tuple, or str
+        The label of the initial state according to the rules
+        of `coupobj.CoupledObjects` class.
+    subspace : *list* of int, tuple, or str
+        The labels of final states defining the subspace.
+        Example: ['000', '010', '001', '011'] for the computational subspace
+        of a two-qubit system + resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+
+    Returns
+    -------
+    float or *array* of float
+        The probability of finding the system in the subspace
+        given the definite starting initial state.
+    """
+    P_t = 0
+    for final_state in subspace:
+        P_t += prob_transition(system, U_t, initial_state,
+                               final_state, interaction=interaction)
+    return P_t
+
+
+def prob_subspace_average(
+        system, U_t, subspace=['00', '01', '10', '11'], interaction='on'):
+    """The average probability of staying in the same subspace.
+
+    Example: the probability of remaining in the computational subspace
+    averaged over all initial computational states.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    U_t : :class:`qutip.Qobj` or *array* of such
+        The evolution operator.
+    subspace : *list* of int, tuple, or str
+        The labels of states spanning the subspace.
+        Example: ['000', '010', '001', '011'] for the computational subspace
+        of a two-qubit system + resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+
+    Returns
+    -------
+    float or *array* of float
+        The probability of staying within the subspace
+        averaged over initial states.
+    """
+    P_t = 0
+    for initial_state in subspace:
+        P_t += prob_subspace(system, U_t, initial_state,
+                             subspace=subspace, interaction=interaction)
+    return P_t / len(subspace)
+
+
+def gate_ideal_cz(
+        system, comp_space=['00', '01', '10', '11'], interaction='on'):
+    """The operator of the ideal control-z gate for two qubits.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    comp_space : *list* of int, tuple, or str
+        Four labels of the computational subspace of the two qubits with
+        the last label being for the '11' state.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+
+    Returns
+    -------
+    :class:`qutip.Qobj`
+        The gate operator.
+    """
+    U_ideal = 0
+    for state in comp_space[:3]:
+        U_ideal += system.projection(state, interaction=interaction)
+    U_ideal -= system.projection(comp_space[3], interaction=interaction)
+    return U_ideal
+
+
+def projection_subspace(
+        system, subspace=['00', '01', '10', '11'], interaction='on'):
+    """Operator of projection into a subspace defined by several states.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    subspace : *list* of int, tuple, or str
+        The labels of states spanning the subspace.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+
+    Returns
+    -------
+    :class:`qutip.Qobj`
+        The projection operator.
+    """
+    P = 0
+    for state in subspace:
+        P += system.projection(state, interaction=interaction)
+    return P
+
+
+def change_operator_single_qub_z(
+        system, U, comp_space=['00', '01', '10', '11'], interaction='on'):
+    """Adjusts phases in the operator via single-qubit z-rotations.
+
+    Tunes phases of the first three diagonal matrix elements in the
+    computational space to make those elements real and positive.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    U : :class:`qutip.Qobj`
+        Operator to modify.
+    comp_space : *list* of int, tuple, or str
+        Four labels of computational subspace of the two qubits with
+        the last label being for the '11' state.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+
+    Returns
+    -------
+    :class:`qutip.Qobj`
+        Modified operator.
+    """
+    phases = []
+    single_qubit_gate = 0
+    for state in comp_space:
+        vec = system.eigvec(state, interaction=interaction)
+        phase = np.angle(U.matrix_element(vec.dag(), vec))
+        if state != comp_space[3]:
+            phases.append(phase)
+            single_qubit_gate += np.exp(-1j * phase) * vec * vec.dag()
+        else:
+            single_qubit_gate += (np.exp(1j * (phases[0] - phases[1]
+                                               - phases[2])) * vec * vec.dag())
+    return single_qubit_gate * U
+
+
+def change_operator_proj_subspace(
+        system, U, subspace=['00', '01', '10', '11'], interaction='on'):
+    """Projects an operator into a subspace.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    U : :class:`qutip.Qobj` or *array* of such
+        Operator to project.
+    subspace : *list* of int, tuple, or str
+        The labels of states spanning the subspace.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+
+    Returns
+    -------
+    :class:`qutip.Qobj` or *array* of such
+        Modified operator.
+    """
+    P = projection_subspace(
+        system, subspace=subspace, interaction=interaction)
+    return P * U * P
+
+
+def fidelity_general(U_ideal, U_real):
+    """A general expression for fidelity of a two-qubit gate.
+
+    Parameters
+    ----------
+    U_ideal, U_real : :class:`qutip.Qobj`
+        The ideal and real evolution operators projected into
+        the computational space.
+
+    Returns
+    -------
+    float
+        Fidelity.
+    """
+    op1 = U_real.dag() * U_real
+    op2 = U_real * U_ideal.dag()
+    return (op1.tr() + (abs(op2.tr())) ** 2) / 20.0
+
+
+def fidelity_cz_gate_point(
+        system, U, comp_space=['00', '01', '10', '11'],
+        interaction='on', single_gates='z'):
+    """Fidelity of the control-z gate for a specific operator.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    U : :class:`qutip.Qobj`
+        The 'real' evolution operator previously calculated in
+        `evolution_operator()`.
+    comp_space : *list* of int, tuple, or str
+        Four labels of computational subspace of the two qubits with
+        the last label being for the '11' state.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+    single_gates : str, optional
+        Determines single-qubit gates to adjust two-qubit evolution
+        operator to compare it with the ideal operator.
+
+    Returns
+    -------
+    float
+        Gate fidelity.
+    """
+    U_ideal = gate_ideal_cz(
+        system, comp_space=comp_space, interaction=interaction)
+    U_real = change_operator_proj_subspace(
+        system, U, subspace=comp_space, interaction=interaction)
+    if single_gates == 'z':
+        U_real = change_operator_single_qub_z(
+            system, U_real, comp_space=comp_space,
+            interaction=interaction)
+    elif single_gates == 'no':
+        pass
+    else:
+        raise Exception('Unrecognized option for `single_gates`.')
+    return fidelity_general(U_ideal, U_real)
+
+
+def fidelity_cz_gate(system, U_t, comp_space=['00', '01', '10', '11'],
+                     interaction='on', single_gates='z'):
+    """Fidelity of the control-z gate.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    U_t : :class:`qutip.Qobj` or *array* of such
+        The evolution operator previously calculated in
+        `evolution_operator()`.
+    comp_space : *list* of int, tuple, or str
+        Four labels of computational subspace of the two qubits with
+        the last label being for the '11' state.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+    single_gates : str, optional
+        Determines single-qubit gates to adjust two-qubit evolution
+        operator to compare it with the ideal operator.
+
+    Returns
+    -------
+    float or *array* of float
+        Gate fidelity.
+    """
+    if isinstance(U_t, np.ndarray):
+        fidelity = np.empty_like(U_t)
+        for indU, U in enumerate(U_t):
+            fidelity[indU] = fidelity_cz_gate_point(
+                system, U, comp_space=comp_space,
+                interaction=interaction,
+                single_gates=single_gates)
+    else:
+        fidelity = fidelity_cz_gate_point(
+            system, U_t, comp_space=comp_space, interaction=interaction,
+            single_gates=single_gates)
+    return fidelity
+
