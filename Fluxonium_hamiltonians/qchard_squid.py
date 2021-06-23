@@ -117,7 +117,7 @@ class Squid(object):
         cosphi = self._cosphi_charge()
         n = self._n_charge()
 
-        return 4 * E_C * n ** 2 + E_J * cosphi
+        return 4 * E_C * n ** 2 - E_J * cosphi
 
     def _eigenspectrum_charge(self, eigvecs_flag=False):
         """Eigenenergies and eigenstates in the charge basis."""
