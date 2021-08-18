@@ -19,34 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
-      <change afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_rotope.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/Measured samples/Junctions calculation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Measured samples/Junctions calculation.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates_double.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates_double.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_fluxonium.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_fluxonium.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/2a. Fluxonium direct coupling-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/2c. Fluxonium single qubit gate-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/2d. Biased-noise fluxonium single-qubit gate-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/2e. Multipath coupling-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/3a. Fluxonium coupled via coupler-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/3b. Fluxonium CZ gate-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/3c. Fluxonium CR gate-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/3d. Biased noise fluxonium CZ gate-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2a. Fluxonium direct coupling.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2c. Fluxonium single qubit gate.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2d. Biased-noise fluxonium single-qubit gate.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2e. Multipath coupling.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3a. Fluxonium coupled via coupler.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3b. Fluxonium CZ gate.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3c. Fluxonium CR gate.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3d. Biased noise fluxonium CZ gate.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -361,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624432707462</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update notebooks">
+      <created>1629316383680</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1629316383680</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,11 +414,11 @@
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state width="554" height="445" key="SwitcherDM/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1628640369119" />
-    <state x="709" y="340" key="Vcs.Push.Dialog.v2" timestamp="1624432717776">
+    <state x="709" y="340" key="Vcs.Push.Dialog.v2" timestamp="1629316392919">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state x="496" y="267" key="Vcs.Push.Dialog.v2/0.25.1792.1023@0.25.1792.1023" timestamp="1624058262671" />
-    <state x="709" y="340" key="Vcs.Push.Dialog.v2/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1624432717776" />
+    <state x="709" y="340" key="Vcs.Push.Dialog.v2/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1629316392919" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
