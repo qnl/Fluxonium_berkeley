@@ -64,8 +64,7 @@ def H_drive_coeff_gate(t, args):
         alpha = args['DRAG_coefficient']
 
     else:
-        alpha1 = 0
-        alpha2 = 0
+        alpha = 0
     if 'SYMM' in args and args['SYMM']:
         beta = args['SYMM_coefficient']
     else:
@@ -96,8 +95,6 @@ def H_drive_coeff_gate(t, args):
     if shape == 'square':
         xi_x_1 = 2 * np.pi / T_gate
         xi_y_1 = 0
-        xi_x_2 = eta*2 * np.pi / T_gate
-        xi_y_2 = 0
     elif shape == 'gaussflattop':
         T_rise = args['T_rise']
         sigma = sigma * T_rise
@@ -106,11 +103,11 @@ def H_drive_coeff_gate(t, args):
         # Without shift and normalization.
         if t < T_left:
             xi_x_1 = np.exp(- 0.5 * ((t - T_left) / sigma) ** 2)
-            xi_y_1 = (alpha1 * (- (t - T_left) / sigma ** 2)
+            xi_y_1 = (alpha * (- (t - T_left) / sigma ** 2)
                     * np.exp(- 0.5 * ((t - T_left) / sigma) ** 2))
         elif t > T_right:
             xi_x_1 = np.exp(- 0.5 * ((t - T_right) / sigma) ** 2)
-            xi_y_1 = (alpha1 * (- (t - T_right) / sigma ** 2)
+            xi_y_1 = (alpha * (- (t - T_right) / sigma ** 2)
                     * np.exp(- 0.5 * ((t - T_right) / sigma) ** 2))
         else:
             xi_x_1 = 1
@@ -135,7 +132,7 @@ def H_drive_coeff_gate(t, args):
     elif shape == 'cos':
         xi_x_1 = (2 * np.pi / T_gate) * (1 - np.cos(two_pi_t2 / T_gate))
         xi_x_1 += beta * (2 * np.pi / T_gate) ** 3 * np.cos(two_pi_t2 / T_gate)
-        xi_y_1 = 4 * alpha1 * np.pi ** 2 / T_gate ** 2 * np.sin(two_pi_t2 / T_gate)
+        xi_y_1 = 4 * alpha * np.pi ** 2 / T_gate ** 2 * np.sin(two_pi_t2 / T_gate)
 
     elif shape == 'gauss':
         sigma = sigma * T_gate
@@ -149,25 +146,17 @@ def H_drive_coeff_gate(t, args):
                         - np.exp(-0.5 * (0.5 * T_gate / sigma) ** 2))
         xi_x_1 += (beta * coeff * (-1 / sigma ** 2 + ((t - T_mid) / sigma ** 2) ** 2)
                  * np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2))
-        xi_y_1 = (alpha1 * coeff * (- (t - T_mid) / sigma ** 2)
+        xi_y_1 = (alpha * coeff * (- (t - T_mid) / sigma ** 2)
                 * np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2))
 
-        xi_x_2 = eta*coeff * (np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2)
-                          - np.exp(-0.5 * (0.5 * T_gate / sigma) ** 2))
-        xi_x_2 += eta*(beta * coeff * (-1 / sigma ** 2 + ((t - T_mid) / sigma ** 2) ** 2)
-                   * np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2))
-        xi_y_2 = eta*(alpha2 * coeff * (- (t - T_mid) / sigma ** 2)
-                  * np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2))
     elif shape == 'two_phot_sin':
         xi_x_1 = np.sqrt(2) * (2 * np.pi / T_gate) * np.sin(two_pi_t2 / T_gate)
         xi_y_1 = 0
-        xi_x_2 = eta*np.sqrt(2) * (2 * np.pi / T_gate) * np.sin(two_pi_t2 / T_gate)
-        xi_y_2 = 0
     else:
         raise Exception('Urecognized pulse shape.')
 
     H_drive_coeff = (xi_x_1 * np.cos(two_pi_t1 * nu_d_1 + phi) + xi_y_1 * np.sin(two_pi_t1 * nu_d_1 + phi)) * theta / (2 * np.pi) \
-                    + (xi_x_2 * np.cos(two_pi_t1 * nu_d_2 + phi) + xi_y_2 * np.sin(two_pi_t1 * nu_d_2 + phi)) * theta / (2 * np.pi)
+                    + (eta_amp*xi_x_1 * np.cos(two_pi_t1 * nu_d_2 + phi) + eta_drag*xi_y_1 * np.sin(two_pi_t1 * nu_d_2 + phi)) * theta / (2 * np.pi)
 
     return H_drive_coeff
 

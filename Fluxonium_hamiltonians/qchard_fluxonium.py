@@ -1,4 +1,4 @@
-# Author: Konstantin Nesterov, 2017 and later.
+# Author: Long Nguyen, Konstantin Nesterov
 ###########################################################################
 """The Fluxonium class for representing superconducting fluxonium qubits.
 """
@@ -126,7 +126,7 @@ class Fluxonium(object):
                 self._eigvals, self._eigvecs = H_lc.eigenstates()
             return self._eigvals, self._eigvecs
 
-    def levels(self, nlev=None):
+    def levels(self, nlev=None, eigvecs = False):
         """Eigenenergies of the qubit.
 
         Parameters
@@ -143,9 +143,13 @@ class Fluxonium(object):
             nlev = self.nlev
         if nlev < 1 or nlev > self.nlev_lc:
             raise Exception('`nlev` is out of bounds.')
-        return self._eigenspectrum_lc()[0:nlev]
+        if eigvecs:
+            return_tuple = self._eigenspectrum_lc(eigvecs_flag=True)
+            return return_tuple[0][:nlev], return_tuple[1][:nlev]
+        else:
+            return self._eigenspectrum_lc()[:nlev]
 
-    def level(self, level_ind):
+    def level(self, level_index, eigvecs=False):
         """Energy of a single level of the qubit.
 
         Parameters
@@ -158,9 +162,24 @@ class Fluxonium(object):
         float
             Energy of the level.
         """
-        if level_ind < 0 or level_ind >= self.nlev_lc:
+        if level_index < 0 or level_index >= self.nlev_lc:
             raise Exception('The level is out of bounds')
-        return self._eigenspectrum_lc()[level_ind]
+        if eigvecs:
+            return_tuple = self.levels(eigvecs = True)
+            return return_tuple[0][level_index], return_tuple[1][level_index]
+        else:
+            return self.levels()[level_index]
+
+    def eigvec(self, level_index):
+        """A shortcut to get an eigenvector via level(eigvec=True).
+
+        Returns
+        -------
+        :class:`qutip.Qobj`
+            Eigenvector.
+        """
+        _, evec = self.level(level_index=level_index, eigvecs=True)
+        return evec
 
     def freq(self, level1, level2):
         """Transition energy/frequency between two levels of the qubit.

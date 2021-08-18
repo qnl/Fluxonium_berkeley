@@ -687,6 +687,21 @@ def change_operator_single_qub_z(
                                                - phases[2])) * vec * vec.dag())
     return single_qubit_gate * U
 
+def operator_single_qub_z(
+        system, U, comp_space=['00', '01', '10', '11'], interaction='on'):
+    phases = []
+    single_qubit_gate = 0
+    for state in comp_space:
+        vec = system.eigvec(state, interaction=interaction)
+        phase = np.angle(U.matrix_element(vec.dag(), vec))
+        if state != comp_space[3]:
+            phases.append(phase)
+            single_qubit_gate += np.exp(-1j * phase) * vec * vec.dag()
+        else:
+            single_qubit_gate += (np.exp(1j * (phases[0] - phases[1]
+                                               - phases[2])) * vec * vec.dag())
+    return single_qubit_gate
+
 
 def change_operator_proj_subspace(
         system, U, subspace=['00', '01', '10', '11'], interaction='on'):
