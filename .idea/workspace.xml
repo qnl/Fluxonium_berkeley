@@ -19,7 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks" />
+    <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
+      <change afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates_twod.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fluxonium/GKP/zak_basis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/2b. Biased-noise fluxonium single-qubit gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2b. Biased-noise fluxonium single-qubit gate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3a. Fluxonium direct coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3a. Fluxonium direct coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3c. High coherence fluxonium CZ gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3c. High coherence fluxonium CZ gate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3e. Fluxonium ZZ gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3e. Fluxonium ZZ gate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3f. Biased noise fluxonium CZ gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3f. Biased noise fluxonium CZ gate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Untitled1.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +69,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Devices/Measured samples" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Fluxonium_hamiltonians" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -63,8 +81,8 @@
       <recent name="$PROJECT_DIR$/Devices/Tutorial" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Devices/Measured samples" />
       <recent name="$PROJECT_DIR$/Fluxonium_hamiltonians" />
+      <recent name="$PROJECT_DIR$/Devices/Measured samples" />
       <recent name="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/ThreeStepDoseTest/parameters" />
       <recent name="$PROJECT_DIR$/Devices/Tutorial/MQCV6/parameters" />
     </key>
@@ -341,7 +359,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629316383680</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update notebooks">
+      <created>1629317134652</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1629317134652</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update notebooks">
+      <created>1629317137575</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1629317137575</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -361,30 +393,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="update notebooks" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2539" height="327" key="GridCell.Tab.0.bottom" timestamp="1628369777769">
+    <state width="2539" height="327" key="GridCell.Tab.0.bottom" timestamp="1630050082476">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state width="1771" height="235" key="GridCell.Tab.0.bottom/0.25.1792.1023@0.25.1792.1023" timestamp="1624057563327" />
     <state width="2539" height="235" key="GridCell.Tab.0.bottom/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1623780884915" />
-    <state width="2539" height="327" key="GridCell.Tab.0.bottom/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1628369777769" />
-    <state width="2539" height="327" key="GridCell.Tab.0.center" timestamp="1628369777769">
+    <state width="2539" height="327" key="GridCell.Tab.0.bottom/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1630050082476" />
+    <state width="2539" height="327" key="GridCell.Tab.0.center" timestamp="1630050082476">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state width="1771" height="235" key="GridCell.Tab.0.center/0.25.1792.1023@0.25.1792.1023" timestamp="1624057563326" />
     <state width="2539" height="235" key="GridCell.Tab.0.center/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1623780884914" />
-    <state width="2539" height="327" key="GridCell.Tab.0.center/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1628369777769" />
-    <state width="2539" height="327" key="GridCell.Tab.0.left" timestamp="1628369777768">
+    <state width="2539" height="327" key="GridCell.Tab.0.center/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1630050082476" />
+    <state width="2539" height="327" key="GridCell.Tab.0.left" timestamp="1630050082475">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state width="1771" height="235" key="GridCell.Tab.0.left/0.25.1792.1023@0.25.1792.1023" timestamp="1624057563326" />
     <state width="2539" height="235" key="GridCell.Tab.0.left/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1623780884914" />
-    <state width="2539" height="327" key="GridCell.Tab.0.left/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1628369777768" />
-    <state width="2539" height="327" key="GridCell.Tab.0.right" timestamp="1628369777769">
+    <state width="2539" height="327" key="GridCell.Tab.0.left/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1630050082475" />
+    <state width="2539" height="327" key="GridCell.Tab.0.right" timestamp="1630050082476">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state width="1771" height="235" key="GridCell.Tab.0.right/0.25.1792.1023@0.25.1792.1023" timestamp="1624057563326" />
     <state width="2539" height="235" key="GridCell.Tab.0.right/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1623780884915" />
-    <state width="2539" height="327" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1628369777769" />
+    <state width="2539" height="327" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1630050082476" />
     <state width="2539" height="464" key="GridCell.Tab.1.bottom" timestamp="1624394609768">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
@@ -414,11 +446,11 @@
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state width="554" height="445" key="SwitcherDM/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1628640369119" />
-    <state x="709" y="340" key="Vcs.Push.Dialog.v2" timestamp="1629316392919">
+    <state x="709" y="340" key="Vcs.Push.Dialog.v2" timestamp="1629317146726">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state x="496" y="267" key="Vcs.Push.Dialog.v2/0.25.1792.1023@0.25.1792.1023" timestamp="1624058262671" />
-    <state x="709" y="340" key="Vcs.Push.Dialog.v2/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1629316392919" />
+    <state x="709" y="340" key="Vcs.Push.Dialog.v2/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1629317146726" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
