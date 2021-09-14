@@ -20,23 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
-      <change afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates_twod.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fluxonium/GKP/zak_basis.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2b. Biased-noise fluxonium single-qubit gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2b. Biased-noise fluxonium single-qubit gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3a. Fluxonium direct coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3a. Fluxonium direct coupling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3c. High coherence fluxonium CZ gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3c. High coherence fluxonium CZ gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3e. Fluxonium ZZ gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3e. Fluxonium ZZ gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3f. Biased noise fluxonium CZ gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3f. Biased noise fluxonium CZ gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Untitled1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629317137575</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update notebooks">
+      <created>1631557594167</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1631557594167</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
