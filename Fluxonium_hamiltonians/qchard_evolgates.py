@@ -235,8 +235,25 @@ def H_drive_coeff_gate_nonorm(t, args):
         # Shift to ensure that we start and end at zero.
         xi_x -= np.exp(-0.5 * (T_rise / sigma) ** 2)
 
+    elif shape == 'cosflattop':
+        T_rise = args['T_rise']
+        T_left = T_start + T_rise
+        T_right = T_start + T_gate - T_rise
+        # Without shift and normalization.
+        if t < T_left:
+            xi_x = (1+np.cos(2 * np.pi * (t - T_left) / T_rise / 2))/2
+            xi_y = alpha * np.sin(2 * np.pi * (t - T_left) / T_rise / 2)
+        elif t > T_right:
+            xi_x = (1+np.cos(2 * np.pi * (t - T_right) / T_rise / 2))/2
+            xi_y = -alpha * np.sin(2 * np.pi * (t - T_right) / T_rise / 2)
+        else:
+            xi_x = 1
+            xi_y = 0
+        # Shift to ensure that we start and end at zero.
+        # xi_x -= np.exp(-0.5 * (T_rise / sigma) ** 2)
+
     elif shape == 'cos':
-        xi_x =  (1 - np.cos(two_pi_t2 / T_gate))
+        xi_x = (1 - np.cos(two_pi_t2 / T_gate))
         xi_x += beta * np.cos(two_pi_t2 / T_gate)
         xi_y = alpha * np.sin(two_pi_t2 / T_gate)
     elif shape == 'gauss':
