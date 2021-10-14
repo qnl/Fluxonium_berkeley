@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks" />
+    <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/0a. Two-level system CR gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0a. Two-level system CR gate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/1b. Transmon dynamics.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1b. Transmon dynamics.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +44,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Quantum_optics" />
   </component>
   <component name="ProjectId" id="1kXraD5gR6XomSyBMIVyYK0zLHJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -376,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632267104892</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update notebooks">
+      <created>1632267413791</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1632267413791</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -449,11 +461,12 @@
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state width="554" height="445" key="SwitcherDM/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1628640369119" />
-    <state x="497" y="268" key="Vcs.Push.Dialog.v2" timestamp="1632267116233">
-      <screen x="0" y="25" width="1792" height="1026" />
+    <state x="497" y="268" key="Vcs.Push.Dialog.v2" timestamp="1632267422156">
+      <screen x="0" y="25" width="1792" height="1027" />
     </state>
     <state x="496" y="267" key="Vcs.Push.Dialog.v2/0.25.1792.1023@0.25.1792.1023" timestamp="1624058262671" />
     <state x="497" y="268" key="Vcs.Push.Dialog.v2/0.25.1792.1026@0.25.1792.1026" timestamp="1632267116233" />
+    <state x="497" y="268" key="Vcs.Push.Dialog.v2/0.25.1792.1027@0.25.1792.1027" timestamp="1632267422156" />
     <state x="532" y="258" key="Vcs.Push.Dialog.v2/0.25.1920.982/1920.25.1792.1095@0.25.1920.982" timestamp="1631663644365" />
     <state x="709" y="340" key="Vcs.Push.Dialog.v2/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1629317146726" />
   </component>

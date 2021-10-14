@@ -581,7 +581,7 @@ def evolution_psi_microwave(
     return result.states
 
 def evolution_psi_microwave_diss(
-        H_nodrive, H_drive, psi0, c_ops = [], t_points=None, **kwargs):
+        H_nodrive, H_drive1, H_drive2, psi0, c_ops = [], t_points=None, **kwargs):
     """
     Calculates the unitary evolution of a specific starting state for
     a gate activated by a microwave drive.
@@ -610,7 +610,7 @@ def evolution_psi_microwave_diss(
         T_gate = kwargs['T_gate']
         t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
 
-    H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate]]
+    H = [2 * np.pi * H_nodrive, [H_drive1, H_drive_coeff_gate1], [H_drive2, H_drive_coeff_gate2]]
     result = qt.mesolve(H, psi0, t_points, c_ops, args=kwargs,
                         options=qt.Options(nsteps=25000))
 
