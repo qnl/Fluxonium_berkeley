@@ -20,10 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
+      <change beforePath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/0a. Decoherence error.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0a. Decoherence error.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/0a. Two-level system CR gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0a. Two-level system CR gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/1b. Transmon dynamics.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1b. Transmon dynamics.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/0c. Two-level ac-Stack iSWAP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0c. Two-level ac-Stack iSWAP.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/1c. Transmon iSWAP gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1c. Transmon iSWAP gate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/7. cos(2phi) qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/7. cos(2phi) qubit.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +55,8 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Quantum_optics" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../qtrl" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1kXraD5gR6XomSyBMIVyYK0zLHJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">

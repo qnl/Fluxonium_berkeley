@@ -12,5 +12,6 @@
     <orderEntry type="module" module-name="Layout" />
     <orderEntry type="module" module-name="Fluxonium_v2" />
     <orderEntry type="module" module-name="Data analysis" />
+    <orderEntry type="module" module-name="qtrl" />
   </component>
 </module>
