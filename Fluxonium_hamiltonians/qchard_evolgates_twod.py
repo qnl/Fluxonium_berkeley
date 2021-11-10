@@ -612,7 +612,7 @@ def evolution_psi_microwave_diss(
 
     H = [2 * np.pi * H_nodrive, [H_drive1, H_drive_coeff_gate1], [H_drive2, H_drive_coeff_gate2]]
     result = qt.mesolve(H, psi0, t_points, c_ops, args=kwargs,
-                        options=qt.Options(nsteps=25000))
+                        options=qt.Options(nsteps=100000, atol=1e-12, rtol=1e-10))
 
     return result.states
 
