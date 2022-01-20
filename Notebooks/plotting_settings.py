@@ -5,7 +5,7 @@ A module to customize Matplotlib parameters
 from matplotlib import pyplot as plt
 # from cycler import cycler
 
-plt.figure(figsize=[10,7])
+plt.figure(figsize=[5,4])
 
 plt.style.use(['seaborn-deep'])
 # custom_cycler = (cycler(color=['#003262', '#C4820F','#55A868',
@@ -15,22 +15,22 @@ plt.style.use(['seaborn-deep'])
 # plt.rc('axes', prop_cycle=custom_cycler)
 
 plt.rc('lines',
-       linewidth=3,
+       linewidth=2,
        dashed_pattern=[4, 3],
        dashdot_pattern=[4, 2, 1, 2],
        dotted_pattern=[1, 2])
 
 plt.rc('font',
-       family='sans-serif',
-       size=15)
+       family='serif',
+       size=16)
 
 plt.rc('mathtext',
        fontset='cm')
 
 plt.rc('axes',
-       linewidth=2,
-       titlesize=25,
-       labelsize=25,
+       linewidth=1.5,
+       titlesize=16,
+       labelsize=20,
        titlepad=10,
        )
 
@@ -40,12 +40,12 @@ plt.rc('xtick',
        direction='in')
 
 plt.rc('xtick.major',
-       size=10,
-       width=2)
+       size=7,
+       width=1.5)
 
 plt.rc('xtick.minor',
-       size=5,
-       width=2,
+       size=4,
+       width=1.5,
        visible=True)
 
 plt.rc('ytick',
@@ -54,18 +54,18 @@ plt.rc('ytick',
        direction='in')
 
 plt.rc('ytick.major',
-       size=10,
-       width=2)
+       size=7,
+       width=1.5)
 
 plt.rc('ytick.minor',
-       size=5,
-       width=2,
+       size=4,
+       width=1.5,
        visible=True)
 
 plt.rc('legend',
-       fontsize=16)
+       fontsize=15)
 
 plt.rc('figure',
-       titlesize=16)
+       titlesize=15)
 
 plt.tick_params(labelsize = 16)

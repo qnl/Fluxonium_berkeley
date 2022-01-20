@@ -347,6 +347,42 @@ def evolution_psi_microwave_diss(
 
     return result.states
 
+def evolution_psi_microwave_nonorm_diss(
+        H_nodrive, H_drive, psi0, c_ops = [], t_points=None, **kwargs):
+    """
+    Calculates the unitary evolution of a specific starting state for
+    a gate activated by a microwave drive.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        The Hamiltonian without the drive term.
+    H_drive : :class:`qutip.Qobj`
+        The time-independent part of the driving term.
+        Example: f * (a + a.dag()) or f * qubit.n()
+        Normalization: see `H_drive_coeff_gate` function.
+    psi0 : :class:`qutip.Qobj`
+        Initial state of the system (ket or density matrix).
+    t_points : *array* of float (optional)
+        Times at which the evolution operator is returned.
+        If None, it is generated from `kwargs['T_gate']`.
+    **kwargs:
+        Contains gate parameters such as pulse shape and gate time.
+    Returns
+    -------
+    *array* of :class:`qutip.Qobj`
+        The evolving state at time(s) defined in `t_points`.
+    """
+    if t_points is None:
+        T_gate = kwargs['T_gate']
+        t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
+
+    H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate_nonorm]]
+    result = qt.mesolve(H, psi0, t_points, c_ops, args=kwargs,
+                        options=qt.Options(nsteps=100000, atol=1e-12, rtol=1e-10))
+
+    return result.states
+
 def evolution_operator_microwave(
         H_nodrive, H_drive, t_points=None, parallel=False, **kwargs):
     """
@@ -378,7 +414,8 @@ def evolution_operator_microwave(
         t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
 
     H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate]]
-    U_t = qt.propagator(H, t_points, [], args=kwargs, parallel=parallel)
+    U_t = qt.propagator(H, t_points, [], args=kwargs, parallel=parallel,
+                        options=qt.Options(nsteps=1000))
 
     return U_t
 

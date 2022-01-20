@@ -192,6 +192,8 @@ class CoupledObjects(object):
                         'This type of coupling is not implemented yet.')
                 if coupling_term[3] == 'JC-rwa':
                     V += E_int * (op1 * op2.dag() + op1.dag() * op2)
+                elif coupling_term[3] == 'flux':
+                    V -= E_int * op1 * op2
                 else:
                     V += E_int * op1 * op2
             else:
