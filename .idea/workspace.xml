@@ -21,29 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/Measured samples/Junctions calculation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Measured samples/Junctions calculation.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_coupobj.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_coupobj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_evolgates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/0a. Decoherence error.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0a. Decoherence error.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/0a. Two-level system CR gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0a. Two-level system CR gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/0b. Two-level system ZZ gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0b. Two-level system ZZ gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/1c. Transmon iSWAP gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1c. Transmon iSWAP gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/1d. Qutrit gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1d. Qutrit gate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Untitled1-checkpoint.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3a. Fluxonium direct coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3a. Fluxonium direct coupling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3d. Fluxonium CR gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3d. Fluxonium CR gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3e. Fluxonium ZZ gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3e. Fluxonium ZZ gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3f. Biased noise fluxonium CZ gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3f. Biased noise fluxonium CZ gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/7. cos(2phi) qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/7. cos(2phi) qubit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Untitled1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/plotting_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/plotting_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Surface code.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Surface code.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Yield.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Yield.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Fluxonium_v2/scripts_coupledQubits/time_dynamics_ZZrate.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fluxonium_v2/scripts_coupledQubits/time_dynamics_ZZrate.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
