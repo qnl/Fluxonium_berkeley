@@ -20,16 +20,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
+      <change afterPath="$PROJECT_DIR$/../materials-mask/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../materials-mask/.idea/materials-mask.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../materials-mask/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parametric-mask/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parametric-mask/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parametric-mask/.idea/parametric-mask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Untitled1-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Devices/Measured samples/Junctions calculation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Measured samples/Junctions calculation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_fluxonium.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_fluxonium.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_transmon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_transmon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/0a. Decoherence error.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0a. Decoherence error.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/0c. Two-level ac-Stack iSWAP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0c. Two-level ac-Stack iSWAP.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Surface code.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Surface code.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Untitled1.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Yield.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Yield.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fluxonium_v2/scripts_coupledQubits/time_dynamics_ZZrate.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fluxonium_v2/scripts_coupledQubits/time_dynamics_ZZrate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/2b. Biased-noise fluxonium single-qubit gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2b. Biased-noise fluxonium single-qubit gate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3a. Fluxonium direct coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3a. Fluxonium direct coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/3f. Biased noise fluxonium CZ gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3f. Biased noise fluxonium CZ gate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/5. GKP qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/5. GKP qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/6. 0-pi qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/6. 0-pi qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/7. cos(2phi) qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/7. cos(2phi) qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/9. Flux qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/9. Flux qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qtrl/qtrl/analysis/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/../qtrl/qtrl/analysis/plotting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qtrl/qtrl/benchmarking/cpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/../qtrl/qtrl/benchmarking/cpu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qtrl/qtrl/benchmarking/tomography.py" beforeDir="false" afterPath="$PROJECT_DIR$/../qtrl/qtrl/benchmarking/tomography.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +73,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Fluxonium" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1kXraD5gR6XomSyBMIVyYK0zLHJ" />
@@ -63,6 +86,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Fluxonium_hamiltonians" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -402,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635972808752</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update notebooks">
+      <created>1644463831324</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1644463831324</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,38 +453,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="update notebooks" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2539" height="327" key="GridCell.Tab.0.bottom" timestamp="1630050082476">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state x="1685" y="-103" key="Vcs.Push.Dialog.v2" timestamp="1644463853638">
+      <screen x="1152" y="-335" width="1920" height="979" />
     </state>
-    <state width="2539" height="327" key="GridCell.Tab.0.bottom/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1630050082476" />
-    <state width="2539" height="327" key="GridCell.Tab.0.center" timestamp="1630050082476">
-      <screen x="0" y="25" width="2560" height="1330" />
-    </state>
-    <state width="2539" height="327" key="GridCell.Tab.0.center/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1630050082476" />
-    <state width="2539" height="327" key="GridCell.Tab.0.left" timestamp="1630050082475">
-      <screen x="0" y="25" width="2560" height="1330" />
-    </state>
-    <state width="2539" height="327" key="GridCell.Tab.0.left/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1630050082475" />
-    <state width="2539" height="327" key="GridCell.Tab.0.right" timestamp="1630050082476">
-      <screen x="0" y="25" width="2560" height="1330" />
-    </state>
-    <state width="2539" height="327" key="GridCell.Tab.0.right/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1630050082476" />
-    <state x="117" y="319" key="SettingsEditor" timestamp="1628369644796">
-      <screen x="0" y="25" width="2560" height="1330" />
-    </state>
-    <state x="117" y="319" key="SettingsEditor/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1628369644796" />
-    <state width="554" height="445" key="SwitcherDM" timestamp="1628640369119">
-      <screen x="0" y="25" width="2560" height="1330" />
-    </state>
-    <state width="554" height="445" key="SwitcherDM/2560.25.1920.1055/-1536.284.1536.935/0.25.2560.1330@0.25.2560.1330" timestamp="1628640369119" />
-    <state x="2933" y="592" key="Vcs.Push.Dialog.v2" timestamp="1635972857766">
-      <screen x="2560" y="399" width="1344" height="815" />
-    </state>
-    <state x="497" y="268" key="Vcs.Push.Dialog.v2/0.25.1792.1026@0.25.1792.1026" timestamp="1632267116233" />
-    <state x="497" y="268" key="Vcs.Push.Dialog.v2/0.25.1792.1027@0.25.1792.1027" timestamp="1632267422156" />
-    <state x="532" y="258" key="Vcs.Push.Dialog.v2/0.25.1920.982/1920.25.1792.1095@0.25.1920.982" timestamp="1631663644365" />
-    <state x="709" y="340" key="Vcs.Push.Dialog.v2/0.25.2560.1330/2560.25.1920.1055/-1536.284.1536.935@0.25.2560.1330" timestamp="1629317146726" />
+    <state x="1685" y="-103" key="Vcs.Push.Dialog.v2/-1920.-335.1920.1055/1152.-335.1920.979/0.25.1152.695@1152.-335.1920.979" timestamp="1644463853638" />
     <state x="2933" y="592" key="Vcs.Push.Dialog.v2/3904.279.1920.977/2560.399.1344.815/0.25.2560.1415@2560.399.1344.815" timestamp="1635972857766" />
+    <state x="1918" y="72" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1644463842277">
+      <screen x="1152" y="-335" width="1920" height="979" />
+    </state>
+    <state x="1918" y="72" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-335.1920.1055/1152.-335.1920.979/0.25.1152.695@1152.-335.1920.979" timestamp="1644463842277" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

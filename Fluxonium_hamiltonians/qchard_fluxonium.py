@@ -111,7 +111,7 @@ class Fluxonium(object):
         phi = self._phi_lc()
         n = self._n_lc()
         delta_phi = phi - self.phi_ext
-        return 4 * E_C * n ** 2 + 0.5 * E_L * phi ** 2 - E_J * delta_phi.cosm()
+        return 4 * E_C * n ** 2 + 0.5 * E_L * delta_phi ** 2 - E_J * phi.cosm()
 
     def _eigenspectrum_lc(self, eigvecs_flag=False):
         """Eigenenergies and eigenstates in the LC basis."""

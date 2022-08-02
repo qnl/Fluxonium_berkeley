@@ -27,7 +27,7 @@ class TransmonSimple(object):
 
     def __str__(self):
         s = ('A transmon qubit with omega_q = {} '.format(self.omega_q) + self.units
-             + 'and  alpha = {} '.format(self.alpha) + self.units)
+             + ' and  alpha = {} '.format(self.alpha) + self.units)
         return s
 
     @property
