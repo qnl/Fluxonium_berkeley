@@ -1,0 +1,594 @@
+{
+  "scope": "Fresh byte-hash checks against existing historical pins; no numerical validation rerun, signatures, or independent timestamps.",
+  "checks": [
+    {
+      "path": "research/sandbox/epsj011_k380_preregistration/evaluation.json",
+      "expected_sha256": "43903489aba94442dc868dae2eafa319de82f3cf3e3441db6144d6568c4a91aa",
+      "observed_sha256": "43903489aba94442dc868dae2eafa319de82f3cf3e3441db6144d6568c4a91aa",
+      "matches": true,
+      "kind": "October 24 anchors"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_preregistration/k380_metrics.json",
+      "expected_sha256": "aa637be253bc1b6a9f4f89307b42056f108bab637f72832248dce39ddd0e314e",
+      "observed_sha256": "aa637be253bc1b6a9f4f89307b42056f108bab637f72832248dce39ddd0e314e",
+      "matches": true,
+      "kind": "October 24 anchors"
+    },
+    {
+      "path": "research/sandbox/k380_p340_s2_base_matched_validation_continuation_001/OUTPUT_MANIFEST.json",
+      "expected_sha256": "418874afc97a8cfc017b452c9f7c5f65844944c1a55d8b74f0d97b0ee61cbe0f",
+      "observed_sha256": "418874afc97a8cfc017b452c9f7c5f65844944c1a55d8b74f0d97b0ee61cbe0f",
+      "matches": true,
+      "kind": "October 24 anchors"
+    },
+    {
+      "path": "research/sandbox/k380_s2_final_authorization_execution_2026_10_24/DELIVERY_MANIFEST.json",
+      "expected_sha256": "f4c2d91c5eb3fa72f5f6ce03e0d3ad76fe87bf7895889cbd932ed828a3ab390a",
+      "observed_sha256": "f4c2d91c5eb3fa72f5f6ce03e0d3ad76fe87bf7895889cbd932ed828a3ab390a",
+      "matches": true,
+      "kind": "October 24 anchors"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_2026_10_24/execution_integration/SOURCE_PINS.json",
+      "expected_sha256": "a46cc31834b37f1750f07ad7dfaa477dc10b048916453b23b65cd4db750434be",
+      "observed_sha256": "a46cc31834b37f1750f07ad7dfaa477dc10b048916453b23b65cd4db750434be",
+      "matches": true,
+      "kind": "October 24 anchors"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/OUTPUT_MANIFEST.json",
+      "expected_sha256": "637d2758e657df47cb002bc492e78dd76262ec032d2ca135b0595e0a8cdaf918",
+      "observed_sha256": "637d2758e657df47cb002bc492e78dd76262ec032d2ca135b0595e0a8cdaf918",
+      "matches": true,
+      "kind": "October 24 anchors"
+    },
+    {
+      "path": "research/sandbox/k380_wb5_final_authorization_execution_2026_10_24/DELIVERY_MANIFEST.json",
+      "expected_sha256": "680ec08930590e12377036940f300856989d445c2aa0fd6f039bc9e1e91a481b",
+      "observed_sha256": "680ec08930590e12377036940f300856989d445c2aa0fd6f039bc9e1e91a481b",
+      "matches": true,
+      "kind": "October 24 anchors"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_diagnostic_review/SPECTRAL_DECOMPOSITION.csv",
+      "expected_sha256": "9f586b2a77da32202328f5fe14d4312ad4fc20ba17c034d12eb441113d1348ed",
+      "observed_sha256": "9f586b2a77da32202328f5fe14d4312ad4fc20ba17c034d12eb441113d1348ed",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_preregistration/evaluation.json",
+      "expected_sha256": "43903489aba94442dc868dae2eafa319de82f3cf3e3441db6144d6568c4a91aa",
+      "observed_sha256": "43903489aba94442dc868dae2eafa319de82f3cf3e3441db6144d6568c4a91aa",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_preregistration/k380_metrics.json",
+      "expected_sha256": "aa637be253bc1b6a9f4f89307b42056f108bab637f72832248dce39ddd0e314e",
+      "observed_sha256": "aa637be253bc1b6a9f4f89307b42056f108bab637f72832248dce39ddd0e314e",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_coupling_vs_schur_2026_10_21/RESULTS.json",
+      "expected_sha256": "6fb471d85d4e182ace1f77f0acd819c22ac7cb7c56590779e1f9f03831c99d1d",
+      "observed_sha256": "6fb471d85d4e182ace1f77f0acd819c22ac7cb7c56590779e1f9f03831c99d1d",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_cross_shell_selector_transfer_2026_10_21/TRANSFER_SUMMARY.json",
+      "expected_sha256": "bcd401b58a5c0ad2cc3bf8fe438ff6e4355f4055606f1df4fd7fc60924b32d99",
+      "observed_sha256": "bcd401b58a5c0ad2cc3bf8fe438ff6e4355f4055606f1df4fd7fc60924b32d99",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_high_rank_state_fingerprints_2026_10_21/FINGERPRINTS.csv",
+      "expected_sha256": "290ca31d317f403eaa6c4df58a0dc11995f6990f0dcaee98370b3f6a6b305848",
+      "observed_sha256": "290ca31d317f403eaa6c4df58a0dc11995f6990f0dcaee98370b3f6a6b305848",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_p340_s2_base_matched_validation_continuation_001/RUN_RESULT.json",
+      "expected_sha256": "ea3347ea55e564ee09e6ac3d579f44588ae876378f77d349f3152dc80b4ed824",
+      "observed_sha256": "ea3347ea55e564ee09e6ac3d579f44588ae876378f77d349f3152dc80b4ed824",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_s2_final_authorization_execution_2026_10_24/NUMERICAL_SUMMARY.json",
+      "expected_sha256": "a16e807cf6b4a4f6018427dba8a22a0bf7407eff373b25ca2faea058d4ad94a1",
+      "observed_sha256": "a16e807cf6b4a4f6018427dba8a22a0bf7407eff373b25ca2faea058d4ad94a1",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/RUN_RESULT.json",
+      "expected_sha256": "2dd9d825197f40ec7c299b3511bc275bfdd48fd22a201d7b8f7569ea59339eec",
+      "observed_sha256": "2dd9d825197f40ec7c299b3511bc275bfdd48fd22a201d7b8f7569ea59339eec",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_01_RESULT.json",
+      "expected_sha256": "40a2eb9f14484e63eca7e48ef970c5981dd8e4248c05bc7145c7596abf05396c",
+      "observed_sha256": "40a2eb9f14484e63eca7e48ef970c5981dd8e4248c05bc7145c7596abf05396c",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_02_RESULT.json",
+      "expected_sha256": "88dce00f3eb7d0f4a28acd35edb9e310df464dab577312b53fae456aa9b3870e",
+      "observed_sha256": "88dce00f3eb7d0f4a28acd35edb9e310df464dab577312b53fae456aa9b3870e",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_03_RESULT.json",
+      "expected_sha256": "44118bf113d4cbc9923fea995e715333dc266a94cc453802bdd06188b1007d9c",
+      "observed_sha256": "44118bf113d4cbc9923fea995e715333dc266a94cc453802bdd06188b1007d9c",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_04_RESULT.json",
+      "expected_sha256": "d6833b2e5449bc3ca80e9f1518941c0417502d5ba4fa997d3e4daf4a0afbc42e",
+      "observed_sha256": "d6833b2e5449bc3ca80e9f1518941c0417502d5ba4fa997d3e4daf4a0afbc42e",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_05_RESULT.json",
+      "expected_sha256": "87bc0d25e98f01574d412f7a40558a85e4ca5b3602e395e02baa6ca81b1453a0",
+      "observed_sha256": "87bc0d25e98f01574d412f7a40558a85e4ca5b3602e395e02baa6ca81b1453a0",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_06_RESULT.json",
+      "expected_sha256": "1a22d993a24c34ce895679ec11373debf6183b41fd15d05239debbddc68b41bb",
+      "observed_sha256": "1a22d993a24c34ce895679ec11373debf6183b41fd15d05239debbddc68b41bb",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_07_RESULT.json",
+      "expected_sha256": "c567b19b5b55392844ef10a852199ba1b3dd9dee72588fb687924021ee351a89",
+      "observed_sha256": "c567b19b5b55392844ef10a852199ba1b3dd9dee72588fb687924021ee351a89",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_08_RESULT.json",
+      "expected_sha256": "eed778fd2051ee958a6dbe9c395763bdab1860d24b95f36236707a234bcde459",
+      "observed_sha256": "eed778fd2051ee958a6dbe9c395763bdab1860d24b95f36236707a234bcde459",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_09_RESULT.json",
+      "expected_sha256": "09ccf83da07cace4fc5c3711b72d335e4d7eccfa636529d6c460f88fc02df99c",
+      "observed_sha256": "09ccf83da07cace4fc5c3711b72d335e4d7eccfa636529d6c460f88fc02df99c",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_10_RESULT.json",
+      "expected_sha256": "a20d9c3eafa6b88c649bdffe0275d52df190f5af6fa8e86cbaedd618ba621e39",
+      "observed_sha256": "a20d9c3eafa6b88c649bdffe0275d52df190f5af6fa8e86cbaedd618ba621e39",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_11_RESULT.json",
+      "expected_sha256": "1eab2e4dab674b331ebfc7c7e26036661e92ea7fc6b508826b754c8964430955",
+      "observed_sha256": "1eab2e4dab674b331ebfc7c7e26036661e92ea7fc6b508826b754c8964430955",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_12_RESULT.json",
+      "expected_sha256": "b8e4daf8def62ac6d623e1ebab0ac6281b67e39c3f1d6b56eed8540a605f9041",
+      "observed_sha256": "b8e4daf8def62ac6d623e1ebab0ac6281b67e39c3f1d6b56eed8540a605f9041",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_13_RESULT.json",
+      "expected_sha256": "77df69afb022d6ddc30dcab07750c79d72febe0a90d07503e67238098190a6f2",
+      "observed_sha256": "77df69afb022d6ddc30dcab07750c79d72febe0a90d07503e67238098190a6f2",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_14_RESULT.json",
+      "expected_sha256": "152c07fd26ae2a512fb9d1907a224aa1c2d534c9c323aa1f29cbf2e39bf1e472",
+      "observed_sha256": "152c07fd26ae2a512fb9d1907a224aa1c2d534c9c323aa1f29cbf2e39bf1e472",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_15_RESULT.json",
+      "expected_sha256": "ce162e5bbd69e1e4f6f0262c53e4ed885d0e7c2493657e5bf048227ded6dcfb2",
+      "observed_sha256": "ce162e5bbd69e1e4f6f0262c53e4ed885d0e7c2493657e5bf048227ded6dcfb2",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_16_RESULT.json",
+      "expected_sha256": "378246ab1a6b9fda5b78c8b2e117553c9846b59eb7605c53c5ab5b25cba02af0",
+      "observed_sha256": "378246ab1a6b9fda5b78c8b2e117553c9846b59eb7605c53c5ab5b25cba02af0",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_17_RESULT.json",
+      "expected_sha256": "2f22824d1e2f9183c7c7a8c0c0451c667da518a299dc6288eaf322460df5c2a6",
+      "observed_sha256": "2f22824d1e2f9183c7c7a8c0c0451c667da518a299dc6288eaf322460df5c2a6",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_18_RESULT.json",
+      "expected_sha256": "40978dccfbf8dc7c841ffe08fa4ee170934b7a237d6f3fd76a71eff454cd89dc",
+      "observed_sha256": "40978dccfbf8dc7c841ffe08fa4ee170934b7a237d6f3fd76a71eff454cd89dc",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/cell_19_RESULT.json",
+      "expected_sha256": "b3b4c312b7dc548dccd8663144c2409f17d7c69f21fbb30c710a3cf74fdef412",
+      "observed_sha256": "b3b4c312b7dc548dccd8663144c2409f17d7c69f21fbb30c710a3cf74fdef412",
+      "matches": true,
+      "kind": "October 24 primary_inputs"
+    },
+    {
+      "path": "research/sandbox/k380_coupling_vs_schur_2026_10_21/OUTPUT_HASHES.json",
+      "expected_sha256": "d5437f773673343cbb0f00595efbf541712fc5e7d3ab711b8cef477bfdcf4bde",
+      "observed_sha256": "d5437f773673343cbb0f00595efbf541712fc5e7d3ab711b8cef477bfdcf4bde",
+      "matches": true,
+      "kind": "October 24 manifest pin"
+    },
+    {
+      "path": "research/sandbox/k380_high_rank_state_fingerprints_2026_10_21/OUTPUT_HASHES.json",
+      "expected_sha256": "95a709835abbb06bd87df14d15c50aba002b6c058357dc2cb99176282ca3bce2",
+      "observed_sha256": "95a709835abbb06bd87df14d15c50aba002b6c058357dc2cb99176282ca3bce2",
+      "matches": true,
+      "kind": "October 24 manifest pin"
+    },
+    {
+      "path": "research/sandbox/k380_cross_shell_selector_transfer_2026_10_21/OUTPUT_HASHES.json",
+      "expected_sha256": "4b527e3d4317a2c49e4159648ad84eef057a813f71d57a663bd9e7676fa1d503",
+      "observed_sha256": "4b527e3d4317a2c49e4159648ad84eef057a813f71d57a663bd9e7676fa1d503",
+      "matches": true,
+      "kind": "October 24 manifest pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_diagnostic_review/OUTPUT_HASHES.json",
+      "expected_sha256": "0fd48adac195f2164d5d15e60a2082257ad8e9e65922a0a83794573da001e9f9",
+      "observed_sha256": "0fd48adac195f2164d5d15e60a2082257ad8e9e65922a0a83794573da001e9f9",
+      "matches": true,
+      "kind": "October 24 manifest pin"
+    },
+    {
+      "path": "research/sandbox/k380_s2_final_authorization_execution_2026_10_24/DELIVERY_MANIFEST.json",
+      "expected_sha256": "f4c2d91c5eb3fa72f5f6ce03e0d3ad76fe87bf7895889cbd932ed828a3ab390a",
+      "observed_sha256": "f4c2d91c5eb3fa72f5f6ce03e0d3ad76fe87bf7895889cbd932ed828a3ab390a",
+      "matches": true,
+      "kind": "October 24 manifest pin"
+    },
+    {
+      "path": "research/sandbox/k380_p340_s2_base_matched_validation_continuation_001/OUTPUT_MANIFEST.json",
+      "expected_sha256": "418874afc97a8cfc017b452c9f7c5f65844944c1a55d8b74f0d97b0ee61cbe0f",
+      "observed_sha256": "418874afc97a8cfc017b452c9f7c5f65844944c1a55d8b74f0d97b0ee61cbe0f",
+      "matches": true,
+      "kind": "October 24 manifest pin"
+    },
+    {
+      "path": "research/sandbox/k380_wb5_final_authorization_execution_2026_10_24/DELIVERY_MANIFEST.json",
+      "expected_sha256": "680ec08930590e12377036940f300856989d445c2aa0fd6f039bc9e1e91a481b",
+      "observed_sha256": "680ec08930590e12377036940f300856989d445c2aa0fd6f039bc9e1e91a481b",
+      "matches": true,
+      "kind": "October 24 manifest pin"
+    },
+    {
+      "path": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/OUTPUT_MANIFEST.json",
+      "expected_sha256": "637d2758e657df47cb002bc492e78dd76262ec032d2ca135b0595e0a8cdaf918",
+      "observed_sha256": "637d2758e657df47cb002bc492e78dd76262ec032d2ca135b0595e0a8cdaf918",
+      "matches": true,
+      "kind": "October 24 manifest pin"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-epsj011-k300/stage1_eigensystem.npz",
+      "expected_sha256": "fcb5d91130b2fef9b908c0573b4d8297f3cff8aa81e2ba9ef11874601849a3f3",
+      "observed_sha256": "fcb5d91130b2fef9b908c0573b4d8297f3cff8aa81e2ba9ef11874601849a3f3",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-epsj011-k300/projected_operators.npz",
+      "expected_sha256": "b528fed0f47ff6d387f679a41f81deb1a4bd7075755930a1f0cd75a803564a6c",
+      "observed_sha256": "b528fed0f47ff6d387f679a41f81deb1a4bd7075755930a1f0cd75a803564a6c",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-epsj011-k300/analysis.json",
+      "expected_sha256": "0e67d3989a1e9fe3158ae385db3b15895ffeeeb3120f6d5070e5cc0beaba4880",
+      "observed_sha256": "0e67d3989a1e9fe3158ae385db3b15895ffeeeb3120f6d5070e5cc0beaba4880",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-epsj011-k340/stage1_eigensystem.npz",
+      "expected_sha256": "aa28cf17934e0e5f447a7a846b44f3a3f6de2c3699b7df8cabfaeb12d526487f",
+      "observed_sha256": "aa28cf17934e0e5f447a7a846b44f3a3f6de2c3699b7df8cabfaeb12d526487f",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-epsj011-k340/projected_operators.npz",
+      "expected_sha256": "cfa3e1ecf26085c466d40276ff461ccd6e83d5920de780451f3da7a083f08b01",
+      "observed_sha256": "cfa3e1ecf26085c466d40276ff461ccd6e83d5920de780451f3da7a083f08b01",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-epsj011-k340/analysis.json",
+      "expected_sha256": "996e0db5368a881956768e368724caa7026bb8d63f21605cddcb986dcdc14a24",
+      "observed_sha256": "996e0db5368a881956768e368724caa7026bb8d63f21605cddcb986dcdc14a24",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-epsj011-k380/stage1_eigensystem.npz",
+      "expected_sha256": "8975937187c070097a8e0c7001671c31ae1027446c05dfc6e295beafba923164",
+      "observed_sha256": "8975937187c070097a8e0c7001671c31ae1027446c05dfc6e295beafba923164",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-epsj011-k380/projected_operators.npz",
+      "expected_sha256": "a01255f861cce247c677aecd64a5b746942032c4f82416aeb2f8843bf1219063",
+      "observed_sha256": "a01255f861cce247c677aecd64a5b746942032c4f82416aeb2f8843bf1219063",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-epsj011-k380/analysis.json",
+      "expected_sha256": "49b447ea8df6c6889e7cf4b2d5c5f7eef7cc4696821ac1a3f2d7265dc361787b",
+      "observed_sha256": "49b447ea8df6c6889e7cf4b2d5c5f7eef7cc4696821ac1a3f2d7265dc361787b",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k180/stage1_eigensystem.npz",
+      "expected_sha256": "5b2d1801be949c983f05eeb16eb553d524416e5b730636f5caa1090601fc1aec",
+      "observed_sha256": "5b2d1801be949c983f05eeb16eb553d524416e5b730636f5caa1090601fc1aec",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k180/projected_operators.npz",
+      "expected_sha256": "646db735f7506295f5b2e1fe047078ad53dfcedd71792ce36dfdd0786cfdfbce",
+      "observed_sha256": "646db735f7506295f5b2e1fe047078ad53dfcedd71792ce36dfdd0786cfdfbce",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k180/analysis.json",
+      "expected_sha256": "08082c2a79dacf63f659f4fbacd8630a70b25b633e3b820cce4d4527639eb1d7",
+      "observed_sha256": "08082c2a79dacf63f659f4fbacd8630a70b25b633e3b820cce4d4527639eb1d7",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k220/stage1_eigensystem.npz",
+      "expected_sha256": "04b70ef505d5a918be66e9384e60e70b8d6584df2660ce3b71434f4bea432cb7",
+      "observed_sha256": "04b70ef505d5a918be66e9384e60e70b8d6584df2660ce3b71434f4bea432cb7",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k220/projected_operators.npz",
+      "expected_sha256": "a9cbf618f3b634cb011c9a52defaa464bb40e066765de43cf63c8377c7263389",
+      "observed_sha256": "a9cbf618f3b634cb011c9a52defaa464bb40e066765de43cf63c8377c7263389",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k220/analysis.json",
+      "expected_sha256": "754978a913ecc7378e591b09815aeba83cd87db4d7a8c722f6ba2775e82ab0a7",
+      "observed_sha256": "754978a913ecc7378e591b09815aeba83cd87db4d7a8c722f6ba2775e82ab0a7",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k260/stage1_eigensystem.npz",
+      "expected_sha256": "03a7f320a3adf38c242010ceefbdf414fa327321e1398229a7bf0bb56db37e82",
+      "observed_sha256": "03a7f320a3adf38c242010ceefbdf414fa327321e1398229a7bf0bb56db37e82",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k260/projected_operators.npz",
+      "expected_sha256": "4e360cdbde0c9720a5ba4337d60b9f36243ba7ba2e4bc09e4ba654c53aa27c5f",
+      "observed_sha256": "4e360cdbde0c9720a5ba4337d60b9f36243ba7ba2e4bc09e4ba654c53aa27c5f",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k260/analysis.json",
+      "expected_sha256": "7002989dd9c24defe54f6f7566491804a258efcb1846683367150bdc87575b05",
+      "observed_sha256": "7002989dd9c24defe54f6f7566491804a258efcb1846683367150bdc87575b05",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k300/stage1_eigensystem.npz",
+      "expected_sha256": "1fb7e9f19c0192746a216a9065ca31eed563a2249cdc6f8957c6e5066c41158d",
+      "observed_sha256": "1fb7e9f19c0192746a216a9065ca31eed563a2249cdc6f8957c6e5066c41158d",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k300/projected_operators.npz",
+      "expected_sha256": "b30bf0799ef5ea41229994529e7f2e1ca1aa52953380819db594917a09d5638d",
+      "observed_sha256": "b30bf0799ef5ea41229994529e7f2e1ca1aa52953380819db594917a09d5638d",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "research/checkpoints/four-mode-asymmetric-n71-k300/analysis.json",
+      "expected_sha256": "84f5a4a9bc6037bb7db5f679a910b44bddb5aed40f9083739c4f3749652d9d0b",
+      "observed_sha256": "84f5a4a9bc6037bb7db5f679a910b44bddb5aed40f9083739c4f3749652d9d0b",
+      "matches": true,
+      "kind": "completed N71 checkpoint payload"
+    },
+    {
+      "path": "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py",
+      "expected_sha256": "ebae73f9b04257502c293ea9a3fdd2cb7adc60701a5610f3b986f37424dc748c",
+      "observed_sha256": "ebae73f9b04257502c293ea9a3fdd2cb7adc60701a5610f3b986f37424dc748c",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "Simulations/Rabi_3Photon/four_mode_retained_basis_audit.py",
+      "expected_sha256": "e31e5ee28f3a460fc4adbf7ad69252d1b9d7b7a4268217b232600cdd82a8563a",
+      "observed_sha256": "e31e5ee28f3a460fc4adbf7ad69252d1b9d7b7a4268217b232600cdd82a8563a",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "Circuit_Objs/qchard_gridium_netlist.py",
+      "expected_sha256": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315",
+      "observed_sha256": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k340_preregistration/criteria.json",
+      "expected_sha256": "ffdbe09ae353c0eb6746a95c67b7c6dd1461db1a6c3e2d1260b61f831c0e4c72",
+      "observed_sha256": "ffdbe09ae353c0eb6746a95c67b7c6dd1461db1a6c3e2d1260b61f831c0e4c72",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k340_preregistration/profile.py",
+      "expected_sha256": "c1426521e710fc716e973cdd1eaa69ff0b2ba9ec010e3869ec1a37350621d513",
+      "observed_sha256": "c1426521e710fc716e973cdd1eaa69ff0b2ba9ec010e3869ec1a37350621d513",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k340_preregistration/selection_hook.py",
+      "expected_sha256": "fbc1a0a77799a4fc810a2c2c37e1255607d1ec2c1d291fde101d388162148c04",
+      "observed_sha256": "fbc1a0a77799a4fc810a2c2c37e1255607d1ec2c1d291fde101d388162148c04",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k340_preregistration/parent_analysis.py",
+      "expected_sha256": "e256a859dd1bcfe8d2f887d7481083cd769fbe0cfd73d05159752a3c891435f0",
+      "observed_sha256": "e256a859dd1bcfe8d2f887d7481083cd769fbe0cfd73d05159752a3c891435f0",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k340_preregistration/analyze_k340.py",
+      "expected_sha256": "65658ec629a6d82d2d350f2aef11a83d8fae7d934035349e73d2a076ddb77c8e",
+      "observed_sha256": "65658ec629a6d82d2d350f2aef11a83d8fae7d934035349e73d2a076ddb77c8e",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k340_preregistration/evaluate.py",
+      "expected_sha256": "7d63065fa2f228eca363914aae25d2072179961d60c308541c0d2d45d131d59c",
+      "observed_sha256": "7d63065fa2f228eca363914aae25d2072179961d60c308541c0d2d45d131d59c",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k340_preregistration/preregistration_manifest.json",
+      "expected_sha256": "dd26b9b819e53859a807ef99aab7d96e57a2a7cda6b6862187846518b7924d52",
+      "observed_sha256": "dd26b9b819e53859a807ef99aab7d96e57a2a7cda6b6862187846518b7924d52",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_preregistration/criteria.json",
+      "expected_sha256": "a2318603f3e2b5cefcb68873425c7873d0a6243fc7017949352129c3beeb616a",
+      "observed_sha256": "a2318603f3e2b5cefcb68873425c7873d0a6243fc7017949352129c3beeb616a",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_preregistration/profile.py",
+      "expected_sha256": "f0086cc367bfa70870bdd5b0540b1a56b47454c8d99dbd0c6697b82f8c7bf5a5",
+      "observed_sha256": "f0086cc367bfa70870bdd5b0540b1a56b47454c8d99dbd0c6697b82f8c7bf5a5",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_preregistration/selection_hook.py",
+      "expected_sha256": "46fc9478bc7ac1cc03cbd2cc27d117eeb1a98d69da11da508ae1f51d532934d3",
+      "observed_sha256": "46fc9478bc7ac1cc03cbd2cc27d117eeb1a98d69da11da508ae1f51d532934d3",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_preregistration/parent_analysis.py",
+      "expected_sha256": "48a8abf25b408c1a21f26a73fd6f5633abfc2148fe8083be9981523bdb14bf18",
+      "observed_sha256": "48a8abf25b408c1a21f26a73fd6f5633abfc2148fe8083be9981523bdb14bf18",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_preregistration/analyze_k380.py",
+      "expected_sha256": "1f444cdf8134b02813bff201f664c810e267d821d10e0cd2a393fd7ded4509f9",
+      "observed_sha256": "1f444cdf8134b02813bff201f664c810e267d821d10e0cd2a393fd7ded4509f9",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_preregistration/evaluate.py",
+      "expected_sha256": "f9e51997f6dd4f48c32f684f1df5d0f6e0b7b81ed219302a1af0e0ccedfd547f",
+      "observed_sha256": "f9e51997f6dd4f48c32f684f1df5d0f6e0b7b81ed219302a1af0e0ccedfd547f",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/sandbox/epsj011_k380_preregistration/preregistration_manifest.json",
+      "expected_sha256": "95f33014769195605ef871f62fee229d0417f610fb6e96dd44df71e710707656",
+      "observed_sha256": "95f33014769195605ef871f62fee229d0417f610fb6e96dd44df71e710707656",
+      "matches": true,
+      "kind": "k380 recorded source-file pin"
+    },
+    {
+      "path": "research/checkpoints/2026-09-26-asymmetric-n51/checkpoint.json",
+      "expected_sha256": "03058680bebe8569be4c9d071682a5b00105765454e45c2f14bff68398c04e51",
+      "observed_sha256": "03058680bebe8569be4c9d071682a5b00105765454e45c2f14bff68398c04e51",
+      "matches": true,
+      "kind": "pinned N51 input"
+    },
+    {
+      "path": "research/checkpoints/2026-09-26-asymmetric-n51/stage1_eigensystem.npz",
+      "expected_sha256": "3f836490946a400877837eaf4df74305e4bad9dd9e57b69a4070abcde1938ea8",
+      "observed_sha256": "3f836490946a400877837eaf4df74305e4bad9dd9e57b69a4070abcde1938ea8",
+      "matches": true,
+      "kind": "pinned N51 input"
+    },
+    {
+      "path": "research/checkpoints/2026-09-26-asymmetric-n51/projected_operators.npz",
+      "expected_sha256": "7236dc7baf9fd25fbe7b75965aea38ad7484fae311d4162df803fd7d34112ce1",
+      "observed_sha256": "7236dc7baf9fd25fbe7b75965aea38ad7484fae311d4162df803fd7d34112ce1",
+      "matches": true,
+      "kind": "pinned N51 input"
+    }
+  ],
+  "scientific_eigensolves": 0
+}

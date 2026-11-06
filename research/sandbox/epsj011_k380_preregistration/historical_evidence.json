@@ -1,0 +1,2804 @@
+{
+  "status": "PINNED_AUTHENTICATED_HISTORY",
+  "files": {
+    "Circuit_Objs/qchard_gridium_netlist.py": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315",
+    "Simulations/Rabi_3Photon/four_mode_retained_basis_audit.py": "e31e5ee28f3a460fc4adbf7ad69252d1b9d7b7a4268217b232600cdd82a8563a",
+    "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py": "ebae73f9b04257502c293ea9a3fdd2cb7adc60701a5610f3b986f37424dc748c",
+    "research/checkpoints/four-mode-asymmetric-n71-epsj011-k340/COMPLETE": "48a4aa9bd4ea5cfebe25fb91a9033b3ca669a184bbb6df5f2896a4c2948534f6",
+    "research/checkpoints/four-mode-asymmetric-n71-epsj011-k340/analysis.json": "996e0db5368a881956768e368724caa7026bb8d63f21605cddcb986dcdc14a24",
+    "research/checkpoints/four-mode-asymmetric-n71-epsj011-k340/checkpoint.json": "a6f30847458108adee7a6776463d39a033672b2d3476af739e59bede91b80d13",
+    "research/checkpoints/four-mode-asymmetric-n71-epsj011-k340/projected_operators.npz": "cfa3e1ecf26085c466d40276ff461ccd6e83d5920de780451f3da7a083f08b01",
+    "research/checkpoints/four-mode-asymmetric-n71-epsj011-k340/run_state.json": "337b933bb74926976d608d3e3bfe76a746b69f1a813481d44095a91c35f6b999",
+    "research/checkpoints/four-mode-asymmetric-n71-epsj011-k340/stage1_eigensystem.npz": "aa28cf17934e0e5f447a7a846b44f3a3f6de2c3699b7df8cabfaeb12d526487f",
+    "research/sandbox/epsj011_k340_preregistration/REPORT.md": "0fea296ff5c3a2a6fa78a94e4ba5b4def64e851455287c0996acecd8f68a3e59",
+    "research/sandbox/epsj011_k340_preregistration/analysis_plan.md": "204ffa4e5e1d4199e3ab24961f4cdfb3751214b7f44b3bd9f581d40778302156",
+    "research/sandbox/epsj011_k340_preregistration/analyze_k340.py": "65658ec629a6d82d2d350f2aef11a83d8fae7d934035349e73d2a076ddb77c8e",
+    "research/sandbox/epsj011_k340_preregistration/authenticate_existing.py": "15e1666661962164b655282dc9c69f7e71350b8c4d1fd71ef531cd122b627aa9",
+    "research/sandbox/epsj011_k340_preregistration/criteria.json": "ffdbe09ae353c0eb6746a95c67b7c6dd1461db1a6c3e2d1260b61f831c0e4c72",
+    "research/sandbox/epsj011_k340_preregistration/evaluate.py": "7d63065fa2f228eca363914aae25d2072179961d60c308541c0d2d45d131d59c",
+    "research/sandbox/epsj011_k340_preregistration/evaluation.json": "f58f524516a90ae9a7bf0d66748963fe2e3c90872631d532257ed1a596867811",
+    "research/sandbox/epsj011_k340_preregistration/execution_plan.md": "1326bba586aad7d7d636a07ce5e88e60cb90aa55d5945c671747a11ee4b4ca2b",
+    "research/sandbox/epsj011_k340_preregistration/existing_evidence.json": "a842fd4fe7bf4016f74499c254d4f70473f06603d812f87b6744047144067c32",
+    "research/sandbox/epsj011_k340_preregistration/experiment_plan.md": "8b4be94555c46a8b36c31e47521f43b32fb4c4902aa8d1a91b4013f2ff0cd738",
+    "research/sandbox/epsj011_k340_preregistration/guarded_k340.py": "1cd32d0acaaed7c62631a64659b9c5305b4cef79166e89f6e3646f3bd47edb24",
+    "research/sandbox/epsj011_k340_preregistration/k340_metrics.json": "3da6f16bed2a17825013f671d2d207dcfd9cb6c1f0f802a3a465aecb594dd68c",
+    "research/sandbox/epsj011_k340_preregistration/parent_analysis.py": "e256a859dd1bcfe8d2f887d7481083cd769fbe0cfd73d05159752a3c891435f0",
+    "research/sandbox/epsj011_k340_preregistration/preregistration_manifest.json": "dd26b9b819e53859a807ef99aab7d96e57a2a7cda6b6862187846518b7924d52",
+    "research/sandbox/epsj011_k340_preregistration/preregistration_seal.json": "c65cd2436aee39cacb53d8d20d2741a46e648c40b632b35c41379f94f7fd18d1",
+    "research/sandbox/epsj011_k340_preregistration/profile.py": "c1426521e710fc716e973cdd1eaa69ff0b2ba9ec010e3869ec1a37350621d513",
+    "research/sandbox/epsj011_k340_preregistration/run_analysis_keyfix.py": "36fabb6b9da77d934da354f80e0a75e81a6bb4a2ccc96469381082d6b9c40f32",
+    "research/sandbox/epsj011_k340_preregistration/selection.json": "635e43ffa0241b633ccab4a7a082796c96feee726a77d7713d60d455a453da52",
+    "research/sandbox/epsj011_k340_preregistration/selection.json.seal.json": "2f9183563d940f4905e19e44cd7f405da3fdede48875bbb9f47508cfc4c3b716",
+    "research/sandbox/epsj011_k340_preregistration/selection_hook.py": "fbc1a0a77799a4fc810a2c2c37e1255607d1ec2c1d291fde101d388162148c04",
+    "research/sandbox/epsj011_k340_preregistration/test_preregistration.py": "c3dadd0e1015c083cb5274b51e9efb2d5a676750059e82ce637a9a4fffd3d39f",
+    "research/sandbox/epsj011_k340_preregistration/test_results.json": "1946a70282f4c9c99271277df7963d110c6c343f7966fa5589d1d869351a8f98",
+    "research/sandbox/epsj011_shell_attribution/REPORT.md": "c950ed9500da7955f4ccbfc28a5896781ebac1d01ee0e3d8180f3201dbf90c8a",
+    "research/sandbox/epsj011_shell_attribution/attribute.py": "6d187de3f8e464f300db3c22042e498363e189ace9be2c4568eccb2233b0c36a",
+    "research/sandbox/epsj011_shell_attribution/input_hashes.json": "86cea52b6585b692c0d79ca7a7b26d82a965520a9fdad9dd3b8f8b7a9471d84c",
+    "research/sandbox/epsj011_shell_attribution/methodology.md": "1df2a8d19a7b11c4ea35195f63650eb31c0b1baff4f57dc03e4577adf3bcdbbc",
+    "research/sandbox/epsj011_shell_attribution/preservation.json": "8cb9280dc1af73321eb80bf015dcda77b0da27fe8f05f92ec5b2d0a141bcce13",
+    "research/sandbox/epsj011_shell_attribution/summary.json": "7f189e4ceaedf3afdc26155554939549cb378261a96e949f800b1098e4a45ff8",
+    "research/sandbox/k300_preregistration/selector.py": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+    "research/sandbox/k300_preregistration/selector_method.md": "2055c7d54d81ada97379f4941ef08354dbb3cbf9378aa2b10dde1349ca2ff7cc",
+    "research/sandbox/parameter_point_validation/REPORT.md": "f82b354d0ab2d07e4478f0e735b5b3c0be11c9eb8f6b2c5d743f154ccd65a9e2",
+    "research/sandbox/parameter_point_validation/analyze_parameter_point.py": "e642b2a4140dbab89696e5229e2cd5eb9e16cc8bb3f674d75e1f3f7da4808caf",
+    "research/sandbox/parameter_point_validation/authenticate.py": "537ab1f696b2a646fa6522af87b5909de3be71e0f895672cb26608a174f362b5",
+    "research/sandbox/parameter_point_validation/authentication.json": "ab1adaf7c50a0f17e3d904432a3991a6fc8f32db663e92ff7308377204fcadf4",
+    "research/sandbox/parameter_point_validation/authentication_post_adapter.json": "ab1adaf7c50a0f17e3d904432a3991a6fc8f32db663e92ff7308377204fcadf4",
+    "research/sandbox/parameter_point_validation/criteria.json": "8c3c44c69eb290c965beebc0b176c0166410c3d98602a05bd530673c9172ea18",
+    "research/sandbox/parameter_point_validation/evaluate.py": "17c731318447af6f54e8c5501d71aa8f2aaeeb5ba4193182218e9f62326bdd66",
+    "research/sandbox/parameter_point_validation/evaluation.json": "86c0c2412db90fce7c4de0ff2f8c14ba0db193fbf8cde46c62d91e65b0ee3930",
+    "research/sandbox/parameter_point_validation/execution_plan.md": "b982eb45691b49b8217f2db65306e1683e80f3bf990e4059eb68a496dc0ea1d8",
+    "research/sandbox/parameter_point_validation/export_results.py": "29b9487b4808d558f32f26a2546c192068fe15481bf429282f0870bec3a7efe3",
+    "research/sandbox/parameter_point_validation/figure_backlog.md": "a7f016df6a65854239e72ecf91c2d0ec3b473493b9e44627739d6dcde14b83b1",
+    "research/sandbox/parameter_point_validation/frozen_selector.py": "6f35646b461af48651ff7081af25f82b8957a72c317c465ce763d6675bca81c6",
+    "research/sandbox/parameter_point_validation/guarded_parameter_point.py": "a6f698db8950cb5a59a8c5edc3c6416388965cbbf5653bc1a6f4dc87e01d33be",
+    "research/sandbox/parameter_point_validation/parameter_analysis.py": "736f275fc28f816f98169e0be1f9c7d04255206ed8416dfa39e5ef343b2fb08f",
+    "research/sandbox/parameter_point_validation/parameter_choice.md": "c4eb87e789994acec382b8b423e6a3d6fc8a2e9c067749cc8cc7afa6f0a00cba",
+    "research/sandbox/parameter_point_validation/parameter_point_metrics.json": "27edea1da4dd474813429214448070ae88f128c3c6c6331ce889f8a87b3a556c",
+    "research/sandbox/parameter_point_validation/preregistration_manifest.json": "5961225d66934decd5f16a88d086dcad14c708983e920fd6476a9a646eab7862",
+    "research/sandbox/parameter_point_validation/preregistration_seal.json": "95c2d36d5b8890c0c6353e2c5f2c878735e2c53a68c052ab69fd974a1e66bdb4",
+    "research/sandbox/parameter_point_validation/profile.py": "88722da0f0738166ee91c62056a6c200bd5e8d5a3fd6545d33482c6271566a3e",
+    "research/sandbox/parameter_point_validation/run_analysis_keyfix.py": "f0d327980d3dab87c6a63abab0a096b0ecbbc15dadbd2fa12089a8952cb64bd4",
+    "research/sandbox/parameter_point_validation/runtime_compatibility_record.json": "26085e28ec0df528b2ac4b0adbdf5599c8761747107357e751a7f1229b82cfa1",
+    "research/sandbox/parameter_point_validation/selection.json": "17ec7b93304099399f152cb34e819fa4aedc5133d23bc3c04c3b7b1f6292a931",
+    "research/sandbox/parameter_point_validation/selection.json.seal.json": "94808eb5c683000b7fbd53b041777178b85bdca8d9510e86b557606211c5f847",
+    "research/sandbox/parameter_point_validation/selection_hook.py": "7d9ee01ec47747df599e6276e182c813cd0f07a679afa6adc3009d7cb6e34660",
+    "research/sandbox/parameter_point_validation/selector_provenance.md": "f27a29350a39842caa8ad02a6c9ca1c8e45b4ce0485721d57fa98900ab4e8967",
+    "research/sandbox/parameter_point_validation/test_preregistration.py": "89a28fbc6eb6583b10df33373f1b9a836c61120fcf61349d40d7e6c0bc53cf89",
+    "research/sandbox/parameter_point_validation/test_results.json": "4901813910ea66d31520baec878b394099617eaf1e348b3f226a6580334c89f6",
+    "research/sandbox/parameter_point_validation/validation_plan.md": "8f2f650f9094e096e3da6da31c4e52d88c0ac2821dc60ef80e2bd9eccf3b92f7"
+  },
+  "k340_configuration": {
+    "physical_parameters": {
+      "EJ": 5.0,
+      "EC": 0.5,
+      "EL": 1.0,
+      "ELK": 1.0,
+      "EJS": 4.0,
+      "ECS": 8.0,
+      "eC": 5.5,
+      "eP": 10.0,
+      "eps_J": 0.11,
+      "eps_LK": 0.05,
+      "ng": 0.0,
+      "phi_ext": 0.0,
+      "theta_ext": 3.141592653589793
+    },
+    "spatial_cutoffs": {
+      "n1max": 4,
+      "N2": 71,
+      "L2": 11.0,
+      "N3": 71,
+      "L3": 14.0,
+      "N4": 8
+    },
+    "solver_settings": {
+      "k": 340,
+      "sigma": -24.0,
+      "which": "LM",
+      "tol": 1e-08,
+      "ncv": null,
+      "v0": null,
+      "permc_spec": "MMD_AT_PLUS_A"
+    }
+  },
+  "k340_performance": {
+    "path": "explicit_shift_invert",
+    "permc_spec": "MMD_AT_PLUS_A",
+    "factorization_seconds": 67.85470762502518,
+    "eigsh_seconds": 318.7397363749915,
+    "opinv_solve_count": 1367,
+    "L_nnz": 40131007,
+    "U_nnz": 40131007,
+    "LU_nnz": 80262014,
+    "fill_ratio": 68.19984790099119,
+    "matrix_dimension": 45369,
+    "matrix_nnz": 1176865,
+    "k": 340,
+    "sigma": -24.0,
+    "which": "LM",
+    "tol": 1e-08,
+    "ncv": null,
+    "v0": null,
+    "assembly_seconds": 0.13703237500158139,
+    "projection_seconds": 1.9429308749968186,
+    "max_eigenpair_residual": 3.751495977804843e-12,
+    "median_eigenpair_residual": 2.157842915798782e-12,
+    "orthogonality_residual_inf": 9.794177066688955e-12,
+    "validation_thresholds": {
+      "max_eigenpair_residual": 1e-07,
+      "orthogonality_residual_inf": 1e-08
+    }
+  },
+  "k340_internal_seconds": 436.89563949999865,
+  "k340_checkpoint_bytes": 256340356,
+  "historical_final_shell": {
+    "rank_range": [
+      320,
+      339
+    ],
+    "P_dimension": 2560,
+    "Q_dimension": 160,
+    "states": {
+      "0": {
+        "observed_shift_MHz": -0.1083783758986101,
+        "exact_self_energy_MHz": -0.12027431861177883,
+        "P_space_relaxation_MHz": 0.011895942690465233,
+        "shell_probability": 1.5567897913919528e-06,
+        "q_vector_error": 8.02933234042369e-18,
+        "schur_equation_residual_GHz": 4.208125950374706e-14,
+        "identity_error_GHz": 2.2703491864284332e-14,
+        "minimum_signed_denominator_GHz": -160.46758678898334,
+        "minimum_abs_denominator_GHz": 45.808030052234585,
+        "maximum_eta": 0.0007695896500976168,
+        "near_resonant_absolute_weight_fraction": 0.0,
+        "rank_participation": {
+          "absolute_total_MHz": 0.1202743186117788,
+          "top3_fraction": 0.960044150142401,
+          "count50": 1,
+          "count80": 2,
+          "count90": 2,
+          "effective_count": 1.5792362012594574
+        },
+        "mode_participation": {
+          "absolute_total_MHz": 0.12027431861177951,
+          "top3_fraction": 0.6792379694499829,
+          "count50": 2,
+          "count80": 5,
+          "count90": 9,
+          "effective_count": 5.26920221545299
+        },
+        "ranks": [
+          {
+            "rank": 320,
+            "exact_self_energy_MHz": -3.832122969654677e-05,
+            "coupling_norm_GHz": 0.0017447373779283263,
+            "Q_probability": 5.13752761660457e-10
+          },
+          {
+            "rank": 321,
+            "exact_self_energy_MHz": -5.32522647317757e-06,
+            "coupling_norm_GHz": 0.0007119930232331462,
+            "Q_probability": 6.149563687078869e-11
+          },
+          {
+            "rank": 322,
+            "exact_self_energy_MHz": -0.000216158349348858,
+            "coupling_norm_GHz": 0.004266447128038855,
+            "Q_probability": 2.7654655202521406e-09
+          },
+          {
+            "rank": 323,
+            "exact_self_energy_MHz": -6.034962517750904e-06,
+            "coupling_norm_GHz": 0.0006557669452513454,
+            "Q_probability": 9.012757789143569e-11
+          },
+          {
+            "rank": 324,
+            "exact_self_energy_MHz": -5.354930271245651e-06,
+            "coupling_norm_GHz": 0.0006510427289947471,
+            "Q_probability": 7.46831136656058e-11
+          },
+          {
+            "rank": 325,
+            "exact_self_energy_MHz": -0.000649939168370625,
+            "coupling_norm_GHz": 0.00753763884561232,
+            "Q_probability": 7.875783766748771e-09
+          },
+          {
+            "rank": 326,
+            "exact_self_energy_MHz": -2.317308015665876e-05,
+            "coupling_norm_GHz": 0.0015804280211818584,
+            "Q_probability": 2.2286543658703388e-10
+          },
+          {
+            "rank": 327,
+            "exact_self_energy_MHz": -1.7285255925177705e-05,
+            "coupling_norm_GHz": 0.0012653281521905872,
+            "Q_probability": 2.059210584726675e-10
+          },
+          {
+            "rank": 328,
+            "exact_self_energy_MHz": -0.09369639218209018,
+            "coupling_norm_GHz": 0.08609982209175783,
+            "Q_probability": 1.258858148726021e-06
+          },
+          {
+            "rank": 329,
+            "exact_self_energy_MHz": -0.00011712056883436208,
+            "coupling_norm_GHz": 0.0029763584838913525,
+            "Q_probability": 1.5943920312976911e-09
+          },
+          {
+            "rank": 330,
+            "exact_self_energy_MHz": -0.0002239760085438396,
+            "coupling_norm_GHz": 0.004852062422598473,
+            "Q_probability": 2.2069788777189826e-09
+          },
+          {
+            "rank": 331,
+            "exact_self_energy_MHz": -7.755297332880787e-05,
+            "coupling_norm_GHz": 0.002491263706523604,
+            "Q_probability": 1.0300363093314257e-09
+          },
+          {
+            "rank": 332,
+            "exact_self_energy_MHz": -0.019248705363962133,
+            "coupling_norm_GHz": 0.04329141233357092,
+            "Q_probability": 2.080795018994506e-07
+          },
+          {
+            "rank": 333,
+            "exact_self_energy_MHz": -0.002523558449549225,
+            "coupling_norm_GHz": 0.015806503557289717,
+            "Q_probability": 2.6981430670681012e-08
+          },
+          {
+            "rank": 334,
+            "exact_self_energy_MHz": -1.8704072135837016e-05,
+            "coupling_norm_GHz": 0.001299722742784259,
+            "Q_probability": 2.167115561601853e-10
+          },
+          {
+            "rank": 335,
+            "exact_self_energy_MHz": -0.0007888343970959835,
+            "coupling_norm_GHz": 0.007397625136938548,
+            "Q_probability": 1.2000779682711138e-08
+          },
+          {
+            "rank": 336,
+            "exact_self_energy_MHz": -2.1308877677689586e-05,
+            "coupling_norm_GHz": 0.0015434038699615133,
+            "Q_probability": 1.960292259612504e-10
+          },
+          {
+            "rank": 337,
+            "exact_self_energy_MHz": -0.00015435336553807984,
+            "coupling_norm_GHz": 0.003257192850906975,
+            "Q_probability": 2.3421830379354244e-09
+          },
+          {
+            "rank": 338,
+            "exact_self_energy_MHz": -0.00125982728200995,
+            "coupling_norm_GHz": 0.011367234202991298,
+            "Q_probability": 1.284519147648591e-08
+          },
+          {
+            "rank": 339,
+            "exact_self_energy_MHz": -0.0011823928682526774,
+            "coupling_norm_GHz": 0.008668712646671125,
+            "Q_probability": 1.8628313026049466e-08
+          }
+        ]
+      },
+      "1": {
+        "observed_shift_MHz": -0.07778093119803486,
+        "exact_self_energy_MHz": -0.08665024751420917,
+        "P_space_relaxation_MHz": 0.008869316351578505,
+        "shell_probability": 1.00313324992672e-06,
+        "q_vector_error": 4.1790894001604835e-16,
+        "schur_equation_residual_GHz": 2.124546763886505e-13,
+        "identity_error_GHz": 3.540419346581558e-14,
+        "minimum_signed_denominator_GHz": -160.45155156846687,
+        "minimum_abs_denominator_GHz": 45.791994831718114,
+        "maximum_eta": 0.0006006923699746798,
+        "near_resonant_absolute_weight_fraction": 0.0,
+        "rank_participation": {
+          "absolute_total_MHz": 0.08665024751420917,
+          "top3_fraction": 0.9578032621644819,
+          "count50": 1,
+          "count80": 2,
+          "count90": 2,
+          "effective_count": 1.7656332287957748
+        },
+        "mode_participation": {
+          "absolute_total_MHz": 0.08665024751420893,
+          "top3_fraction": 0.6919275543303515,
+          "count50": 2,
+          "count80": 6,
+          "count90": 11,
+          "effective_count": 5.092258518579823
+        },
+        "ranks": [
+          {
+            "rank": 320,
+            "exact_self_energy_MHz": -4.049316985192288e-05,
+            "coupling_norm_GHz": 0.001798753718868319,
+            "Q_probability": 5.472947677736008e-10
+          },
+          {
+            "rank": 321,
+            "exact_self_energy_MHz": -4.678754529220089e-06,
+            "coupling_norm_GHz": 0.0006910663340705693,
+            "Q_probability": 5.022810128640882e-11
+          },
+          {
+            "rank": 322,
+            "exact_self_energy_MHz": -0.000228310467897336,
+            "coupling_norm_GHz": 0.0043715243324753345,
+            "Q_probability": 2.9188703888253987e-09
+          },
+          {
+            "rank": 323,
+            "exact_self_energy_MHz": -3.930844430038178e-06,
+            "coupling_norm_GHz": 0.0005380352302157005,
+            "Q_probability": 5.564952687342552e-11
+          },
+          {
+            "rank": 324,
+            "exact_self_energy_MHz": -4.328738555664594e-06,
+            "coupling_norm_GHz": 0.0006118713309514498,
+            "Q_probability": 6.158561005057754e-11
+          },
+          {
+            "rank": 325,
+            "exact_self_energy_MHz": -0.000703879330292355,
+            "coupling_norm_GHz": 0.007726644252395127,
+            "Q_probability": 8.890926628110019e-09
+          },
+          {
+            "rank": 326,
+            "exact_self_energy_MHz": -2.2206626793906234e-05,
+            "coupling_norm_GHz": 0.0015637837188161568,
+            "Q_probability": 2.074718083711453e-10
+          },
+          {
+            "rank": 327,
+            "exact_self_energy_MHz": -1.3993547235656083e-05,
+            "coupling_norm_GHz": 0.001188176638213136,
+            "Q_probability": 1.5967804500298215e-10
+          },
+          {
+            "rank": 328,
+            "exact_self_energy_MHz": -0.06257565390261731,
+            "coupling_norm_GHz": 0.07487817264857262,
+            "Q_probability": 7.409350615096298e-07
+          },
+          {
+            "rank": 329,
+            "exact_self_energy_MHz": -3.508713410853723e-05,
+            "coupling_norm_GHz": 0.001784782332350113,
+            "Q_probability": 4.135865815319508e-10
+          },
+          {
+            "rank": 330,
+            "exact_self_energy_MHz": -0.00025022302815582825,
+            "coupling_norm_GHz": 0.005091829967222438,
+            "Q_probability": 2.5020198158567413e-09
+          },
+          {
+            "rank": 331,
+            "exact_self_energy_MHz": -6.586300351320468e-05,
+            "coupling_norm_GHz": 0.002302867359667548,
+            "Q_probability": 8.587301617832346e-10
+          },
+          {
+            "rank": 332,
+            "exact_self_energy_MHz": -0.018118824562580692,
+            "coupling_norm_GHz": 0.042203580356541176,
+            "Q_probability": 1.938558832154826e-07
+          },
+          {
+            "rank": 333,
+            "exact_self_energy_MHz": -0.0022994112712713304,
+            "coupling_norm_GHz": 0.015205815332986988,
+            "Q_probability": 2.4170515453465262e-08
+          },
+          {
+            "rank": 334,
+            "exact_self_energy_MHz": -1.7652479648516766e-05,
+            "coupling_norm_GHz": 0.0012966818139542756,
+            "Q_probability": 1.904930373912764e-10
+          },
+          {
+            "rank": 335,
+            "exact_self_energy_MHz": -0.0006132928720413917,
+            "coupling_norm_GHz": 0.006528625752306144,
+            "Q_probability": 9.077868064985226e-09
+          },
+          {
+            "rank": 336,
+            "exact_self_energy_MHz": -1.811147483327625e-05,
+            "coupling_norm_GHz": 0.0014456741500651316,
+            "Q_probability": 1.607506680173034e-10
+          },
+          {
+            "rank": 337,
+            "exact_self_energy_MHz": -3.575718976217004e-05,
+            "coupling_norm_GHz": 0.001725106502030972,
+            "Q_probability": 5.106330625038527e-10
+          },
+          {
+            "rank": 338,
+            "exact_self_energy_MHz": -0.0014639763375421317,
+            "coupling_norm_GHz": 0.012142071669626013,
+            "Q_probability": 1.507207778315755e-08
+          },
+          {
+            "rank": 339,
+            "exact_self_energy_MHz": -0.00013457277854869696,
+            "coupling_norm_GHz": 0.002801895804975061,
+            "Q_probability": 2.4939256966221027e-09
+          }
+        ]
+      },
+      "2": {
+        "observed_shift_MHz": -0.41457696554658696,
+        "exact_self_energy_MHz": -0.4668511929642868,
+        "P_space_relaxation_MHz": 0.052274227451576394,
+        "shell_probability": 6.3668241294370406e-06,
+        "q_vector_error": 1.8902827943248432e-16,
+        "schur_equation_residual_GHz": 1.4364191484404237e-13,
+        "identity_error_GHz": 3.387656821729479e-14,
+        "minimum_signed_denominator_GHz": -157.0439115916872,
+        "minimum_abs_denominator_GHz": 42.38435485493842,
+        "maximum_eta": 0.001491657448549538,
+        "near_resonant_absolute_weight_fraction": 0.0,
+        "rank_participation": {
+          "absolute_total_MHz": 0.4668511929642868,
+          "top3_fraction": 0.9175115074549218,
+          "count50": 1,
+          "count80": 2,
+          "count90": 3,
+          "effective_count": 1.9467036975210905
+        },
+        "mode_participation": {
+          "absolute_total_MHz": 0.46685119296427874,
+          "top3_fraction": 0.6563159878595195,
+          "count50": 2,
+          "count80": 7,
+          "count90": 14,
+          "effective_count": 5.918863638279923
+        },
+        "ranks": [
+          {
+            "rank": 320,
+            "exact_self_energy_MHz": -0.0006714213641455567,
+            "coupling_norm_GHz": 0.007530835866058575,
+            "Q_probability": 8.461472149266168e-09
+          },
+          {
+            "rank": 321,
+            "exact_self_energy_MHz": -0.0009273946540312961,
+            "coupling_norm_GHz": 0.008449225154845037,
+            "Q_probability": 1.2845743716958864e-08
+          },
+          {
+            "rank": 322,
+            "exact_self_energy_MHz": -0.000258357537553281,
+            "coupling_norm_GHz": 0.003979450670608401,
+            "Q_probability": 4.537920144276224e-09
+          },
+          {
+            "rank": 323,
+            "exact_self_energy_MHz": -1.3607240371350493e-05,
+            "coupling_norm_GHz": 0.0011388148164211366,
+            "Q_probability": 1.4380686475105261e-10
+          },
+          {
+            "rank": 324,
+            "exact_self_energy_MHz": -5.379506494879808e-06,
+            "coupling_norm_GHz": 0.001083833368761665,
+            "Q_probability": 5.376160515462256e-11
+          },
+          {
+            "rank": 325,
+            "exact_self_energy_MHz": -0.005291996549016501,
+            "coupling_norm_GHz": 0.02054989557718656,
+            "Q_probability": 7.086665406019114e-08
+          },
+          {
+            "rank": 326,
+            "exact_self_energy_MHz": -0.0011039527171213055,
+            "coupling_norm_GHz": 0.009166827117881086,
+            "Q_probability": 1.5550152531062367e-08
+          },
+          {
+            "rank": 327,
+            "exact_self_energy_MHz": -0.0020584864462047433,
+            "coupling_norm_GHz": 0.012842782523597654,
+            "Q_probability": 2.7220705491250996e-08
+          },
+          {
+            "rank": 328,
+            "exact_self_energy_MHz": -0.32596254437516325,
+            "coupling_norm_GHz": 0.15533754113795872,
+            "Q_probability": 4.6449166088512455e-06
+          },
+          {
+            "rank": 329,
+            "exact_self_energy_MHz": -0.0008641163383704356,
+            "coupling_norm_GHz": 0.00767272283597794,
+            "Q_probability": 1.3430931899647786e-08
+          },
+          {
+            "rank": 330,
+            "exact_self_energy_MHz": -0.0021353548370523514,
+            "coupling_norm_GHz": 0.013364152707013851,
+            "Q_probability": 2.7599004800195045e-08
+          },
+          {
+            "rank": 331,
+            "exact_self_energy_MHz": -4.6653812741063295e-05,
+            "coupling_norm_GHz": 0.0014912604630273178,
+            "Q_probability": 1.0624435811052462e-09
+          },
+          {
+            "rank": 332,
+            "exact_self_energy_MHz": -0.058328244744779024,
+            "coupling_norm_GHz": 0.07086693712272062,
+            "Q_probability": 7.201778496462096e-07
+          },
+          {
+            "rank": 333,
+            "exact_self_energy_MHz": -0.006939991436501177,
+            "coupling_norm_GHz": 0.025407144457478742,
+            "Q_probability": 7.895123982001282e-08
+          },
+          {
+            "rank": 334,
+            "exact_self_energy_MHz": -5.853287018748858e-05,
+            "coupling_norm_GHz": 0.002523433382003255,
+            "Q_probability": 5.825736724765419e-10
+          },
+          {
+            "rank": 335,
+            "exact_self_energy_MHz": -0.0003626248184842198,
+            "coupling_norm_GHz": 0.005892536388134398,
+            "Q_probability": 4.893007062576926e-09
+          },
+          {
+            "rank": 336,
+            "exact_self_energy_MHz": -0.00010690285972123764,
+            "coupling_norm_GHz": 0.0033432268967282137,
+            "Q_probability": 1.0455512057529727e-09
+          },
+          {
+            "rank": 337,
+            "exact_self_energy_MHz": -0.0010928804499451446,
+            "coupling_norm_GHz": 0.010178504300073013,
+            "Q_probability": 1.2554275990024647e-08
+          },
+          {
+            "rank": 338,
+            "exact_self_energy_MHz": -0.044050552693849075,
+            "coupling_norm_GHz": 0.06081629012779322,
+            "Q_probability": 5.576143311015971e-07
+          },
+          {
+            "rank": 339,
+            "exact_self_energy_MHz": -0.01657219771255342,
+            "coupling_norm_GHz": 0.04142552945796801,
+            "Q_probability": 1.6431609524328443e-07
+          }
+        ]
+      },
+      "3": {
+        "observed_shift_MHz": -0.4537240642932261,
+        "exact_self_energy_MHz": -0.5099831640206756,
+        "P_space_relaxation_MHz": 0.05625909970063958,
+        "shell_probability": 7.1864769001933355e-06,
+        "q_vector_error": 4.017585152686877e-16,
+        "schur_equation_residual_GHz": 2.3292455863268056e-13,
+        "identity_error_GHz": 2.6809887643253205e-14,
+        "minimum_signed_denominator_GHz": -156.80679009807832,
+        "minimum_abs_denominator_GHz": 42.14723336132957,
+        "maximum_eta": 0.0014734955597472473,
+        "near_resonant_absolute_weight_fraction": 0.0,
+        "rank_participation": {
+          "absolute_total_MHz": 0.5099831640206758,
+          "top3_fraction": 0.8778864263275403,
+          "count50": 1,
+          "count80": 3,
+          "count90": 4,
+          "effective_count": 2.6212359941969394
+        },
+        "mode_participation": {
+          "absolute_total_MHz": 0.509983164020678,
+          "top3_fraction": 0.5344281314957404,
+          "count50": 3,
+          "count80": 10,
+          "count90": 17,
+          "effective_count": 7.156187516451348
+        },
+        "ranks": [
+          {
+            "rank": 320,
+            "exact_self_energy_MHz": -0.0012984245055214574,
+            "coupling_norm_GHz": 0.010414024760279663,
+            "Q_probability": 1.6606828238771748e-08
+          },
+          {
+            "rank": 321,
+            "exact_self_energy_MHz": -0.0016273646696526717,
+            "coupling_norm_GHz": 0.011206388860731463,
+            "Q_probability": 2.258314767788889e-08
+          },
+          {
+            "rank": 322,
+            "exact_self_energy_MHz": -0.0003229064697081563,
+            "coupling_norm_GHz": 0.004316086413222296,
+            "Q_probability": 5.859621950455698e-09
+          },
+          {
+            "rank": 323,
+            "exact_self_energy_MHz": -5.449768783501855e-05,
+            "coupling_norm_GHz": 0.0021431385540419054,
+            "Q_probability": 6.555513809060912e-10
+          },
+          {
+            "rank": 324,
+            "exact_self_energy_MHz": -1.5441753280827092e-05,
+            "coupling_norm_GHz": 0.0016013416550743438,
+            "Q_probability": 1.4818981714026486e-10
+          },
+          {
+            "rank": 325,
+            "exact_self_energy_MHz": -0.008006922363980358,
+            "coupling_norm_GHz": 0.025101284050381985,
+            "Q_probability": 1.0983185841946178e-07
+          },
+          {
+            "rank": 326,
+            "exact_self_energy_MHz": -0.001386629178018231,
+            "coupling_norm_GHz": 0.010257575938196414,
+            "Q_probability": 1.9450966527441245e-08
+          },
+          {
+            "rank": 327,
+            "exact_self_energy_MHz": -0.003586433569734957,
+            "coupling_norm_GHz": 0.017033828993257134,
+            "Q_probability": 4.7396676395171244e-08
+          },
+          {
+            "rank": 328,
+            "exact_self_energy_MHz": -0.29180804250555725,
+            "coupling_norm_GHz": 0.1435926598710064,
+            "Q_probability": 4.453506771202662e-06
+          },
+          {
+            "rank": 329,
+            "exact_self_energy_MHz": -0.002290133803634059,
+            "coupling_norm_GHz": 0.012752112987509393,
+            "Q_probability": 3.441561526034663e-08
+          },
+          {
+            "rank": 330,
+            "exact_self_energy_MHz": -0.00251400373202852,
+            "coupling_norm_GHz": 0.014593741878520663,
+            "Q_probability": 3.192353086015144e-08
+          },
+          {
+            "rank": 331,
+            "exact_self_energy_MHz": -3.2345780247356724e-05,
+            "coupling_norm_GHz": 0.0015055675044408987,
+            "Q_probability": 6.198462283107317e-10
+          },
+          {
+            "rank": 332,
+            "exact_self_energy_MHz": -0.10025995983344335,
+            "coupling_norm_GHz": 0.0910794554029639,
+            "Q_probability": 1.3026150689244133e-06
+          },
+          {
+            "rank": 333,
+            "exact_self_energy_MHz": -0.013566438018410256,
+            "coupling_norm_GHz": 0.03433419439335418,
+            "Q_probability": 1.6783856999840453e-07
+          },
+          {
+            "rank": 334,
+            "exact_self_energy_MHz": -0.00012405029182181038,
+            "coupling_norm_GHz": 0.0035298869121985306,
+            "Q_probability": 1.2645554078346178e-09
+          },
+          {
+            "rank": 335,
+            "exact_self_energy_MHz": -0.0006377023459765464,
+            "coupling_norm_GHz": 0.0071807068408171635,
+            "Q_probability": 9.309063446495421e-09
+          },
+          {
+            "rank": 336,
+            "exact_self_energy_MHz": -0.00024217493382200822,
+            "coupling_norm_GHz": 0.004805640713448721,
+            "Q_probability": 2.6523943963394073e-09
+          },
+          {
+            "rank": 337,
+            "exact_self_energy_MHz": -0.0012582147218531076,
+            "coupling_norm_GHz": 0.011700803975026831,
+            "Q_probability": 1.2225664636290328e-08
+          },
+          {
+            "rank": 338,
+            "exact_self_energy_MHz": -0.05563929501032228,
+            "coupling_norm_GHz": 0.0687308756548505,
+            "Q_probability": 6.937594226888345e-07
+          },
+          {
+            "rank": 339,
+            "exact_self_energy_MHz": -0.025312182845827497,
+            "coupling_norm_GHz": 0.05107438994795723,
+            "Q_probability": 2.538135567360152e-07
+          }
+        ]
+      },
+      "7": {
+        "observed_shift_MHz": -1.1410797450608356,
+        "exact_self_energy_MHz": -1.3114381377322595,
+        "P_space_relaxation_MHz": 0.1703583927561425,
+        "shell_probability": 1.7028974571241108e-05,
+        "q_vector_error": 4.163562292331733e-16,
+        "schur_equation_residual_GHz": 2.512107013458434e-13,
+        "identity_error_GHz": 8.471867651849152e-14,
+        "minimum_signed_denominator_GHz": -154.2843218327538,
+        "minimum_abs_denominator_GHz": 39.62476509600502,
+        "maximum_eta": 0.0026320098279025,
+        "near_resonant_absolute_weight_fraction": 0.0,
+        "rank_participation": {
+          "absolute_total_MHz": 1.3114381377322593,
+          "top3_fraction": 0.9795413343394446,
+          "count50": 1,
+          "count80": 1,
+          "count90": 2,
+          "effective_count": 1.4055050898944812
+        },
+        "mode_participation": {
+          "absolute_total_MHz": 1.3114381377322641,
+          "top3_fraction": 0.725415124980309,
+          "count50": 2,
+          "count80": 5,
+          "count90": 9,
+          "effective_count": 4.509138790086893
+        },
+        "ranks": [
+          {
+            "rank": 320,
+            "exact_self_energy_MHz": -1.3417423302358715e-05,
+            "coupling_norm_GHz": 0.0012313568689690398,
+            "Q_probability": 1.4586730038697006e-10
+          },
+          {
+            "rank": 321,
+            "exact_self_energy_MHz": -0.00037750452069323665,
+            "coupling_norm_GHz": 0.005696960818778678,
+            "Q_probability": 4.743937982480572e-09
+          },
+          {
+            "rank": 322,
+            "exact_self_energy_MHz": -0.000626610921855455,
+            "coupling_norm_GHz": 0.0074003277864555135,
+            "Q_probability": 7.696155487850904e-09
+          },
+          {
+            "rank": 323,
+            "exact_self_energy_MHz": -5.590089335875591e-05,
+            "coupling_norm_GHz": 0.0022496861371382407,
+            "Q_probability": 6.507886040007684e-10
+          },
+          {
+            "rank": 324,
+            "exact_self_energy_MHz": -0.0018781895612497497,
+            "coupling_norm_GHz": 0.01189857325108753,
+            "Q_probability": 2.6711799249475198e-08
+          },
+          {
+            "rank": 325,
+            "exact_self_energy_MHz": -2.161798312387898e-05,
+            "coupling_norm_GHz": 0.0014922238065722382,
+            "Q_probability": 2.1861418847595465e-10
+          },
+          {
+            "rank": 326,
+            "exact_self_energy_MHz": -0.0002477565091594056,
+            "coupling_norm_GHz": 0.004077300623381464,
+            "Q_probability": 3.873028775093085e-09
+          },
+          {
+            "rank": 327,
+            "exact_self_energy_MHz": -0.0070594940889914274,
+            "coupling_norm_GHz": 0.024292731717684368,
+            "Q_probability": 9.089805324241895e-08
+          },
+          {
+            "rank": 328,
+            "exact_self_energy_MHz": -1.0925307075638084,
+            "coupling_norm_GHz": 0.2995752642613917,
+            "Q_probability": 1.4243323169376461e-05
+          },
+          {
+            "rank": 329,
+            "exact_self_energy_MHz": -0.0006945257017088643,
+            "coupling_norm_GHz": 0.007426270624683285,
+            "Q_probability": 9.573229936971888e-09
+          },
+          {
+            "rank": 330,
+            "exact_self_energy_MHz": -0.0006203821294307417,
+            "coupling_norm_GHz": 0.007926827817636354,
+            "Q_probability": 6.378468673387558e-09
+          },
+          {
+            "rank": 331,
+            "exact_self_energy_MHz": -0.000417411578964236,
+            "coupling_norm_GHz": 0.005693152287569531,
+            "Q_probability": 5.7717792609318505e-09
+          },
+          {
+            "rank": 332,
+            "exact_self_energy_MHz": -0.17178016025256213,
+            "coupling_norm_GHz": 0.12103853166779081,
+            "Q_probability": 2.1735021972210187e-06
+          },
+          {
+            "rank": 333,
+            "exact_self_energy_MHz": -0.020296995521522827,
+            "coupling_norm_GHz": 0.04180923036938372,
+            "Q_probability": 2.5530538781971134e-07
+          },
+          {
+            "rank": 334,
+            "exact_self_energy_MHz": -0.000259985404775875,
+            "coupling_norm_GHz": 0.004455499966199855,
+            "Q_probability": 3.6339414020955595e-09
+          },
+          {
+            "rank": 335,
+            "exact_self_energy_MHz": -0.0023454356401745946,
+            "coupling_norm_GHz": 0.014332850523847846,
+            "Q_probability": 2.8948826063295765e-08
+          },
+          {
+            "rank": 336,
+            "exact_self_energy_MHz": -0.00023083559164932554,
+            "coupling_norm_GHz": 0.004457000226491211,
+            "Q_probability": 2.8985237163282868e-09
+          },
+          {
+            "rank": 337,
+            "exact_self_energy_MHz": -0.004485990666908566,
+            "coupling_norm_GHz": 0.01854933290334042,
+            "Q_probability": 6.408505627427885e-08
+          },
+          {
+            "rank": 338,
+            "exact_self_energy_MHz": -0.006419004943011007,
+            "coupling_norm_GHz": 0.02374961984233559,
+            "Q_probability": 7.85427848316255e-08
+          },
+          {
+            "rank": 339,
+            "exact_self_energy_MHz": -0.0010762108360081815,
+            "coupling_norm_GHz": 0.0075240526731580465,
+            "Q_probability": 2.2072961834821147e-08
+          }
+        ]
+      },
+      "8": {
+        "observed_shift_MHz": -1.377616847875629,
+        "exact_self_energy_MHz": -1.5788833736077352,
+        "P_space_relaxation_MHz": 0.20126652574248283,
+        "shell_probability": 1.9912195344759142e-05,
+        "q_vector_error": 1.677222516988835e-16,
+        "schur_equation_residual_GHz": 1.22562211442458e-13,
+        "identity_error_GHz": 1.0376588477356563e-14,
+        "minimum_signed_denominator_GHz": -154.2675731119261,
+        "minimum_abs_denominator_GHz": 39.60801637517735,
+        "maximum_eta": 0.002798664586870337,
+        "near_resonant_absolute_weight_fraction": 0.0,
+        "rank_participation": {
+          "absolute_total_MHz": 1.5788833736077352,
+          "top3_fraction": 0.9574601756335165,
+          "count50": 1,
+          "count80": 1,
+          "count90": 2,
+          "effective_count": 1.3188354349152998
+        },
+        "mode_participation": {
+          "absolute_total_MHz": 1.578883373607752,
+          "top3_fraction": 0.7037763267177252,
+          "count50": 2,
+          "count80": 5,
+          "count90": 9,
+          "effective_count": 4.214556864945913
+        },
+        "ranks": [
+          {
+            "rank": 320,
+            "exact_self_energy_MHz": -0.003952183056791772,
+            "coupling_norm_GHz": 0.017897149041837923,
+            "Q_probability": 5.226789059237193e-08
+          },
+          {
+            "rank": 321,
+            "exact_self_energy_MHz": -0.005240965783046437,
+            "coupling_norm_GHz": 0.02012982243000154,
+            "Q_probability": 7.302563236310816e-08
+          },
+          {
+            "rank": 322,
+            "exact_self_energy_MHz": -0.0014447029300638063,
+            "coupling_norm_GHz": 0.011723245289119036,
+            "Q_probability": 1.6025859818637434e-08
+          },
+          {
+            "rank": 323,
+            "exact_self_energy_MHz": -0.0003916093311787881,
+            "coupling_norm_GHz": 0.005621295684074094,
+            "Q_probability": 5.028312124431716e-09
+          },
+          {
+            "rank": 324,
+            "exact_self_energy_MHz": -0.0008216482434208986,
+            "coupling_norm_GHz": 0.008120395736566685,
+            "Q_probability": 1.0873465974171522e-08
+          },
+          {
+            "rank": 325,
+            "exact_self_energy_MHz": -0.003434649386646925,
+            "coupling_norm_GHz": 0.01596103978309818,
+            "Q_probability": 4.9620186883516857e-08
+          },
+          {
+            "rank": 326,
+            "exact_self_energy_MHz": -0.001145566906161598,
+            "coupling_norm_GHz": 0.008517038127531578,
+            "Q_probability": 1.9473725118125975e-08
+          },
+          {
+            "rank": 327,
+            "exact_self_energy_MHz": -0.023789563869116657,
+            "coupling_norm_GHz": 0.04352380746196647,
+            "Q_probability": 3.191668013037844e-07
+          },
+          {
+            "rank": 328,
+            "exact_self_energy_MHz": -1.3704543314116993,
+            "coupling_norm_GHz": 0.33862549747437354,
+            "Q_probability": 1.739164773907328e-05
+          },
+          {
+            "rank": 329,
+            "exact_self_energy_MHz": -0.0050988783021884,
+            "coupling_norm_GHz": 0.019104816220321435,
+            "Q_probability": 7.581729428109556e-08
+          },
+          {
+            "rank": 330,
+            "exact_self_energy_MHz": -0.0009287877123921711,
+            "coupling_norm_GHz": 0.009549468548711717,
+            "Q_probability": 1.014471697423637e-08
+          },
+          {
+            "rank": 331,
+            "exact_self_energy_MHz": -7.662715349008287e-06,
+            "coupling_norm_GHz": 0.0012332148420685868,
+            "Q_probability": 1.778128251323669e-10
+          },
+          {
+            "rank": 332,
+            "exact_self_energy_MHz": -0.09562617107371904,
+            "coupling_norm_GHz": 0.0939086661699252,
+            "Q_probability": 1.1039083645323551e-06
+          },
+          {
+            "rank": 333,
+            "exact_self_energy_MHz": -0.009332946352618117,
+            "coupling_norm_GHz": 0.029592138626241313,
+            "Q_probability": 1.0713661588994441e-07
+          },
+          {
+            "rank": 334,
+            "exact_self_energy_MHz": -0.000491346824702017,
+            "coupling_norm_GHz": 0.006109499439537005,
+            "Q_probability": 6.980554260764861e-09
+          },
+          {
+            "rank": 335,
+            "exact_self_energy_MHz": -0.0005001822755982716,
+            "coupling_norm_GHz": 0.006923907535356252,
+            "Q_probability": 5.725621170070207e-09
+          },
+          {
+            "rank": 336,
+            "exact_self_energy_MHz": -2.834049342913552e-05,
+            "coupling_norm_GHz": 0.0017034074629637716,
+            "Q_probability": 2.9926830992546147e-10
+          },
+          {
+            "rank": 337,
+            "exact_self_energy_MHz": -0.0007998699295274447,
+            "coupling_norm_GHz": 0.006912306720541656,
+            "Q_probability": 1.3603975424750423e-08
+          },
+          {
+            "rank": 338,
+            "exact_self_energy_MHz": -0.00975651729620237,
+            "coupling_norm_GHz": 0.02653787169997025,
+            "Q_probability": 1.51654090066632e-07
+          },
+          {
+            "rank": 339,
+            "exact_self_energy_MHz": -0.04563744971388303,
+            "coupling_norm_GHz": 0.06556870094645639,
+            "Q_probability": 4.996174177728036e-07
+          }
+        ]
+      }
+    },
+    "aggregate_rank_order": [
+      328,
+      332,
+      338,
+      339,
+      333,
+      327,
+      325,
+      329,
+      321,
+      337,
+      330,
+      320,
+      335,
+      326,
+      322,
+      324,
+      334,
+      336,
+      331,
+      323
+    ],
+    "aggregate_rank_absolute_weight_MHz": [
+      3.2370276719409357,
+      0.46336206583104633,
+      0.11858917356293681,
+      0.0899150067550735,
+      0.05495934104987293,
+      0.03652525677720862,
+      0.018109004781430644,
+      0.009099861848844659,
+      0.008183233608426039,
+      0.007827066323534512,
+      0.0066727274476034515,
+      0.006014260749309615,
+      0.005248072349371007,
+      0.003929285017411105,
+      0.0030970466764268924,
+      0.002730342733273265,
+      0.0009702719432715447,
+      0.0006476742311326728,
+      0.0006474898641436769,
+      0.0005255809596917022
+    ],
+    "aggregate_rank_participation": {
+      "absolute_total_MHz": 4.074080434450945,
+      "top3_fraction": 0.9373842693534338,
+      "count50": 1,
+      "count80": 2,
+      "count90": 2,
+      "effective_count": 1.5482989172818773
+    },
+    "max_schur_equation_residual_GHz": 2.512107013458434e-13,
+    "max_identity_error_GHz": 8.471867651849152e-14
+  },
+  "historical_comparisons": {
+    "k300_to_k320": {
+      "components": {
+        "carrier:f01": {
+          "value": 0.000814630796597271,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f07": {
+          "value": 0.434168320794015,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f08": {
+          "value": 0.7145717194407553,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f78": {
+          "value": 0.28040339864610075,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f81": {
+          "value": 0.7137570886443427,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f72": {
+          "value": 0.1938265261255765,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f21": {
+          "value": 0.239527163872026,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f03": {
+          "value": 0.36491381520954747,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f38": {
+          "value": 0.3496579042302983,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:0": {
+          "value": 0.9999998161030623,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:1": {
+          "value": 0.999999808260784,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:2": {
+          "value": 0.9999977063730476,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:3": {
+          "value": 0.9999967122832283,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:7": {
+          "value": 0.999994864678805,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:8": {
+          "value": 0.9999904715973446,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "subspace:0_1": {
+          "value": 0.999999808260784,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "subspace:2_3": {
+          "value": 0.9999967122832283,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "subspace:7_8": {
+          "value": 0.9999904715973446,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "subspace:0_1_7_8": {
+          "value": 0.9999831693594434,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "subspace:0_1_2_3_7_8": {
+          "value": 0.9998951499389671,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "centered:0": {
+          "value": -0.29246838015151155,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "centered:1": {
+          "value": -0.2916537493549143,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "excitation:1": {
+          "value": 0.000814630796597271,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "centered:2": {
+          "value": -0.05212658548270355,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "excitation:2": {
+          "value": 0.240341794668808,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "centered:3": {
+          "value": 0.0724454350580217,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "excitation:3": {
+          "value": 0.36491381520953325,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "centered:7": {
+          "value": 0.14169994064250346,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "excitation:7": {
+          "value": 0.434168320794015,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "centered:8": {
+          "value": 0.4221033392886042,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "excitation:8": {
+          "value": 0.7145717194401158,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g07": {
+          "value": 0.00016953769774130412,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g78": {
+          "value": 0.0004267387513268103,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g81": {
+          "value": 0.0004115107400885067,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g72": {
+          "value": 0.00014977892510260144,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g21": {
+          "value": 0.00025324732296979794,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g03": {
+          "value": 0.00010273671597017345,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g38": {
+          "value": 0.0011448436319728868,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g01": {
+          "value": 0.00012360000131717008,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "score:0781": {
+          "value": 0.0010081049413957135,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "score:0721": {
+          "value": 0.00057267021149735,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "score:0381": {
+          "value": 0.0006311426799795422,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:primary:frobenius": {
+          "value": 0.00030589283864012646,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:primary:sv0": {
+          "value": 0.00033378169032378594,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:primary:sv1": {
+          "value": 0.00033378169034451176,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:primary:sv2": {
+          "value": 0.0002430532264216779,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:primary:sv3": {
+          "value": 0.00024305322642114617,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_78:frobenius": {
+          "value": 0.0002836879480939176,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_78:sv0": {
+          "value": 0.00016953769774141961,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_78:sv1": {
+          "value": 0.0004115107400882623,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:internal_78:frobenius": {
+          "value": 0.0004267387513273555,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:internal_78:sv0": {
+          "value": 0.0004267387513377639,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:internal_78:sv1": {
+          "value": 0.0004267387513170935,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:frobenius": {
+          "value": 0.0002405220961176649,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv0": {
+          "value": 0.00023701522922186039,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv1": {
+          "value": 0.00023701522920620215,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv2": {
+          "value": 0.00019163277642654002,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv3": {
+          "value": 0.00019163277642483573,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv4": {
+          "value": 0.0014379826301545349,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv5": {
+          "value": 0.0014379826301917503,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_23:frobenius": {
+          "value": 0.00017525651612774204,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_23:sv0": {
+          "value": 0.0001027367159707143,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_23:sv1": {
+          "value": 0.00025324732296979794,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:comparators_to_78:frobenius": {
+          "value": 0.000369273776850333,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:comparators_to_78:sv0": {
+          "value": 0.00014977892510233546,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:comparators_to_78:sv1": {
+          "value": 0.0011448436319725617,
+          "strict": "PASS",
+          "practical": "PASS"
+        }
+      },
+      "strict_units": {
+        "carrier:f01": 0.000814630796597271,
+        "carrier:f07": 0.434168320794015,
+        "carrier:f08": 0.7145717194407553,
+        "carrier:f78": 0.5608067972922015,
+        "carrier:f81": 0.7137570886443427,
+        "carrier:f72": 0.1938265261255765,
+        "carrier:f21": 0.239527163872026,
+        "carrier:f03": 0.36491381520954747,
+        "carrier:f38": 0.3496579042302983,
+        "overlap:0": 0.0001838969376777298,
+        "overlap:1": 0.00019173921594894933,
+        "overlap:2": 0.002293626952365455,
+        "overlap:3": 0.0032877167717160175,
+        "overlap:7": 0.0051353211949489675,
+        "overlap:8": 0.009528402655445403,
+        "subspace:0_1": 0.00019173921594894933,
+        "subspace:2_3": 0.0032877167717160175,
+        "subspace:7_8": 0.009528402655445403,
+        "subspace:0_1_7_8": 0.016830640556575446,
+        "subspace:0_1_2_3_7_8": 0.10485006103289053,
+        "centered:0": 0.29246838015151155,
+        "centered:1": 0.2916537493549143,
+        "excitation:1": 0.000814630796597271,
+        "centered:2": 0.05212658548270355,
+        "excitation:2": 0.240341794668808,
+        "centered:3": 0.0724454350580217,
+        "excitation:3": 0.36491381520953325,
+        "centered:7": 0.14169994064250346,
+        "excitation:7": 0.434168320794015,
+        "centered:8": 0.4221033392886042,
+        "excitation:8": 0.7145717194401158,
+        "edge:g07": 0.005651256591376804,
+        "edge:g78": 0.01422462504422701,
+        "edge:g81": 0.013717024669616891,
+        "edge:g72": 0.0049926308367533815,
+        "edge:g21": 0.008441577432326599,
+        "edge:g03": 0.003424557199005782,
+        "edge:g38": 0.038161454399096226,
+        "edge:g01": 0.004120000043905669,
+        "score:0781": 0.020162098827914268,
+        "score:0721": 0.011453404229947,
+        "score:0381": 0.012622853599590844,
+        "block:primary:frobenius": 0.010196427954670883,
+        "block:primary:sv0": 0.011126056344126199,
+        "block:primary:sv1": 0.011126056344817059,
+        "block:primary:sv2": 0.00810177421405593,
+        "block:primary:sv3": 0.008101774214038206,
+        "block:logical_to_78:frobenius": 0.00945626493646392,
+        "block:logical_to_78:sv0": 0.005651256591380654,
+        "block:logical_to_78:sv1": 0.013717024669608743,
+        "block:internal_78:frobenius": 0.014224625044245183,
+        "block:internal_78:sv0": 0.01422462504459213,
+        "block:internal_78:sv1": 0.014224625043903118,
+        "block:all_targets:frobenius": 0.008017403203922163,
+        "block:all_targets:sv0": 0.00790050764072868,
+        "block:all_targets:sv1": 0.00790050764020674,
+        "block:all_targets:sv2": 0.006387759214218001,
+        "block:all_targets:sv3": 0.006387759214161191,
+        "block:all_targets:sv4": 0.0479327543384845,
+        "block:all_targets:sv5": 0.04793275433972501,
+        "block:logical_to_23:frobenius": 0.005841883870924735,
+        "block:logical_to_23:sv0": 0.0034245571990238104,
+        "block:logical_to_23:sv1": 0.008441577432326599,
+        "block:comparators_to_78:frobenius": 0.0123091258950111,
+        "block:comparators_to_78:sv0": 0.004992630836744515,
+        "block:comparators_to_78:sv1": 0.038161454399085394
+      },
+      "tracking_safe": true,
+      "path_ordering": "PASS",
+      "residual_GHz": 2.672633464305042e-13,
+      "metrics": {
+        "energies_GHz": [
+          7.219327517994762,
+          7.2353329556973325,
+          10.643549255675241,
+          10.880834468403382,
+          11.191961400699668,
+          11.34476732642671,
+          13.17859517478186,
+          13.404059343914282,
+          13.421325005243418,
+          14.107523046682712,
+          14.365997653694203
+        ],
+        "carriers_MHz": {
+          "f01": 16.0054377025709,
+          "f07": 6184.731825919521,
+          "f08": 6201.997487248656,
+          "f78": 17.26566132913554,
+          "f81": 6185.992049546086,
+          "f72": 2760.510088239041,
+          "f21": 3408.2162999779084,
+          "f03": 3661.5069504086205,
+          "f38": 2540.4905368400355
+        },
+        "edges": {
+          "g07": 1.9232731818605664,
+          "g78": 1.257031764170227,
+          "g81": 1.8178332922815332,
+          "g72": 0.8349529176364786,
+          "g21": 0.1979945989805284,
+          "g03": 0.2053041532364802,
+          "g38": 0.6823942360541756,
+          "g01": 0.4406158987266029
+        },
+        "scores": {
+          "0781": 4.394821908888863,
+          "0721": 0.3179481526251785,
+          "0381": 0.2546754826465621
+        },
+        "path_ranks": {
+          "0781": 1,
+          "0721": 3,
+          "0381": 5
+        },
+        "blocks": {
+          "primary": {
+            "frobenius": 4.189932896105798,
+            "singular_values": [
+              2.465733410405179,
+              2.465733410405179,
+              1.642536935885008,
+              1.642536935884945
+            ]
+          },
+          "logical_to_78": {
+            "frobenius": 2.646412214790278,
+            "singular_values": [
+              1.9232731818605664,
+              1.817833292281533
+            ]
+          },
+          "internal_78": {
+            "frobenius": 1.7777113692233149,
+            "singular_values": [
+              1.2570317641702495,
+              1.2570317641702071
+            ]
+          },
+          "all_targets": {
+            "frobenius": 4.487781551466255,
+            "singular_values": [
+              2.6637171820653567,
+              2.6637171820651244,
+              1.6845795560152124,
+              1.6845795560151253,
+              0.36999205432903054,
+              0.3699920543289402
+            ]
+          },
+          "logical_to_23": {
+            "frobenius": 0.28522211793899926,
+            "singular_values": [
+              0.20530415323648027,
+              0.1979945989805284
+            ]
+          },
+          "comparators_to_78": {
+            "frobenius": 1.078335879060708,
+            "singular_values": [
+              0.8349529176364784,
+              0.6823942360541758
+            ]
+          }
+        },
+        "matrix_abs": [
+          [
+            1.3738444589023576e-11,
+            0.44061589872660284,
+            3.28077547162104e-12,
+            0.2053041532364802,
+            1.8192141973909704e-12,
+            0.19823184428781326,
+            8.713871709194725e-12,
+            1.9232731818605664,
+            3.4925296796210913e-11,
+            8.610953558182607e-12,
+            0.30692751220978587
+          ],
+          [
+            0.4406158987266197,
+            1.3619140131464678e-11,
+            0.1979945989805284,
+            3.2509058253186947e-12,
+            0.147442847324822,
+            3.0795201381627593e-12,
+            0.47410108701672654,
+            3.617628484353415e-11,
+            1.8178332922815332,
+            0.6007690160857038,
+            4.271250469925146e-12
+          ],
+          [
+            3.280813147800297e-12,
+            0.1979945989805298,
+            1.136680704629539e-13,
+            0.21946039568549822,
+            4.779370590585812e-13,
+            0.1555786953372703,
+            8.220875929291703e-13,
+            0.8349529176364786,
+            4.646059566769809e-12,
+            2.496490473138802e-13,
+            0.06463837940017013
+          ],
+          [
+            0.20530415323647802,
+            3.2512672782457075e-12,
+            0.21946039568549985,
+            4.270247148644164e-13,
+            0.13256494251382123,
+            3.05950944108745e-13,
+            0.39710689326854676,
+            3.4710974245365524e-12,
+            0.6823942360541756,
+            0.20679875112458107,
+            2.505164074051182e-13
+          ],
+          [
+            1.819217840008824e-12,
+            0.147442847324817,
+            4.778534127074057e-13,
+            0.1325649425138206,
+            5.953547683552406e-13,
+            0.35650491817597973,
+            7.393682463093011e-14,
+            0.38681304702609837,
+            1.4060544673449235e-12,
+            4.165446934022128e-13,
+            0.05958492298035321
+          ],
+          [
+            0.19823184428781757,
+            3.078293579157814e-12,
+            0.15557869533727284,
+            3.059784442014009e-13,
+            0.35650491817598984,
+            1.3726771775150765e-12,
+            0.038192196983314934,
+            1.5579613971563142e-12,
+            0.4011103910576145,
+            0.1068078829559681,
+            1.7531572069534377e-13
+          ],
+          [
+            8.714202758515581e-12,
+            0.47410108701672304,
+            8.220133237598171e-13,
+            0.3971068932685578,
+            7.41555366215519e-14,
+            0.03819219698331294,
+            2.892252852630417e-13,
+            0.31339956756894105,
+            2.5466090771842896e-12,
+            2.1781237180699546e-13,
+            0.18068404595883583
+          ],
+          [
+            1.9232731818605733,
+            3.617639281809024e-11,
+            0.8349529176364792,
+            3.471308101910049e-12,
+            0.38681304702609826,
+            1.5578589951275784e-12,
+            0.31339956756894,
+            8.569793443108404e-12,
+            1.257031764170227,
+            0.3344860865386443,
+            5.561110350439206e-13
+          ],
+          [
+            3.4925503944710574e-11,
+            1.8178332922815257,
+            4.6458154272604135e-12,
+            0.6823942360541752,
+            1.4062246386024125e-12,
+            0.4011103910576133,
+            2.5466057383815792e-12,
+            1.2570317641702293,
+            8.611935573053943e-12,
+            1.7610546363196978e-12,
+            0.09608936360232424
+          ],
+          [
+            8.611222800124032e-12,
+            0.6007690160857025,
+            2.4930692048440793e-13,
+            0.20679875112457452,
+            4.168692799837208e-13,
+            0.10680788295597017,
+            2.1791126251651966e-13,
+            0.3344860865386445,
+            1.7613604325429866e-12,
+            5.136529971127638e-13,
+            0.0853086880380223
+          ],
+          [
+            0.30692751220978803,
+            4.271426223862164e-12,
+            0.06463837940017103,
+            2.506442520795218e-13,
+            0.0595849229803558,
+            1.7534376067253658e-13,
+            0.18068404595883664,
+            5.559407861660683e-13,
+            0.0960893636023225,
+            0.08530868803802147,
+            6.254858278522196e-14
+          ]
+        ],
+        "f78_minus_f01_MHz": 1.2602236265646383
+      },
+      "energy_recovery": {
+        "raw_state_errors_MHz": {
+          "0": 0.024104246925560346,
+          "1": 0.024918877722157617,
+          "2": 0.26444604159436835,
+          "3": 0.3890180621350936,
+          "7": 0.45827256771957536,
+          "8": 0.7386759663656761
+        },
+        "common_offset_MHz": 0.3165726270770719,
+        "centered_state_errors_MHz": {
+          "0": -0.29246838015151155,
+          "1": -0.2916537493549143,
+          "2": -0.05212658548270355,
+          "3": 0.0724454350580217,
+          "7": 0.14169994064250346,
+          "8": 0.4221033392886042
+        },
+        "excitation_errors_MHz": {
+          "0": 0.0,
+          "1": 0.000814630796597271,
+          "2": 0.240341794668808,
+          "3": 0.36491381520953325,
+          "7": 0.434168320794015,
+          "8": 0.7145717194401158
+        }
+      },
+      "cancellation": {
+        "f01": {
+          "excitation_error_i_MHz": 0.0,
+          "excitation_error_j_MHz": 0.000814630796597271,
+          "transition_error_MHz": 0.000814630796597271,
+          "denominator_MHz": 0.000814630796597271,
+          "ratio": 1.0,
+          "flagged": false,
+          "severe": false
+        },
+        "f07": {
+          "excitation_error_i_MHz": 0.0,
+          "excitation_error_j_MHz": 0.434168320794015,
+          "transition_error_MHz": 0.434168320794015,
+          "denominator_MHz": 0.434168320794015,
+          "ratio": 1.0,
+          "flagged": false,
+          "severe": false
+        },
+        "f08": {
+          "excitation_error_i_MHz": 0.0,
+          "excitation_error_j_MHz": 0.7145717194401158,
+          "transition_error_MHz": 0.7145717194401158,
+          "denominator_MHz": 0.7145717194401158,
+          "ratio": 1.0,
+          "flagged": false,
+          "severe": false
+        },
+        "f78": {
+          "excitation_error_i_MHz": 0.434168320794015,
+          "excitation_error_j_MHz": 0.7145717194401158,
+          "transition_error_MHz": 0.28040339864610075,
+          "denominator_MHz": 1.1487400402341308,
+          "ratio": 0.2440964785983696,
+          "flagged": false,
+          "severe": false
+        },
+        "f81": {
+          "excitation_error_i_MHz": 0.000814630796597271,
+          "excitation_error_j_MHz": 0.7145717194401158,
+          "transition_error_MHz": 0.7137570886435185,
+          "denominator_MHz": 0.715386350236713,
+          "ratio": 0.9977225430808745,
+          "flagged": false,
+          "severe": false
+        },
+        "f72": {
+          "excitation_error_i_MHz": 0.240341794668808,
+          "excitation_error_j_MHz": 0.434168320794015,
+          "transition_error_MHz": 0.193826526125207,
+          "denominator_MHz": 0.674510115462823,
+          "ratio": 0.2873589612399077,
+          "flagged": false,
+          "severe": false
+        },
+        "f21": {
+          "excitation_error_i_MHz": 0.000814630796597271,
+          "excitation_error_j_MHz": 0.240341794668808,
+          "transition_error_MHz": 0.23952716387221074,
+          "denominator_MHz": 0.24115642546540528,
+          "ratio": 0.9932439635806914,
+          "flagged": false,
+          "severe": false
+        },
+        "f03": {
+          "excitation_error_i_MHz": 0.0,
+          "excitation_error_j_MHz": 0.36491381520953325,
+          "transition_error_MHz": 0.36491381520953325,
+          "denominator_MHz": 0.36491381520953325,
+          "ratio": 1.0,
+          "flagged": false,
+          "severe": false
+        },
+        "f38": {
+          "excitation_error_i_MHz": 0.36491381520953325,
+          "excitation_error_j_MHz": 0.7145717194401158,
+          "transition_error_MHz": 0.3496579042305825,
+          "denominator_MHz": 1.079485534649649,
+          "ratio": 0.3239116162349181,
+          "flagged": false,
+          "severe": false
+        }
+      },
+      "f78_minus_f01_increment_MHz": -0.2795887678495035
+    },
+    "k320_to_k340": {
+      "components": {
+        "carrier:f01": {
+          "value": -0.030597444700575238,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f07": {
+          "value": 1.0327013691621687,
+          "strict": "BORDERLINE",
+          "practical": "PASS"
+        },
+        "carrier:f08": {
+          "value": 1.2692384719766778,
+          "strict": "BORDERLINE",
+          "practical": "PASS"
+        },
+        "carrier:f78": {
+          "value": 0.23653710281479334,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f81": {
+          "value": 1.299835916676784,
+          "strict": "BORDERLINE",
+          "practical": "PASS"
+        },
+        "carrier:f72": {
+          "value": 0.7265027795137939,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f21": {
+          "value": 0.33679603434848104,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f03": {
+          "value": 0.34534568839444546,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "carrier:f38": {
+          "value": 0.9238927835826871,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:0": {
+          "value": 0.9999990903281573,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:1": {
+          "value": 0.9999994077514042,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:2": {
+          "value": 0.9999960107576092,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:3": {
+          "value": 0.9999953999262609,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:7": {
+          "value": 0.9999878801766795,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "overlap:8": {
+          "value": 0.9999863924426694,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "subspace:0_1": {
+          "value": 0.9999990903281573,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "subspace:2_3": {
+          "value": 0.9999953999262609,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "subspace:7_8": {
+          "value": 0.9999863924426694,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "subspace:0_1_7_8": {
+          "value": 0.9999371356502023,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "subspace:0_1_2_3_7_8": {
+          "value": 0.9997521979334623,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "centered:0": {
+          "value": -0.48714777908021034,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "centered:1": {
+          "value": -0.5177452237807856,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "excitation:1": {
+          "value": -0.030597444700575238,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "centered:2": {
+          "value": -0.18094918943223348,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "excitation:2": {
+          "value": 0.30619858964797686,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "centered:3": {
+          "value": -0.14180209068559435,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "excitation:3": {
+          "value": 0.345345688394616,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "centered:7": {
+          "value": 0.5455535900820152,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "excitation:7": {
+          "value": 1.0327013691622255,
+          "strict": "BORDERLINE",
+          "practical": "PASS"
+        },
+        "centered:8": {
+          "value": 0.7820906928968085,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "excitation:8": {
+          "value": 1.269238471977019,
+          "strict": "BORDERLINE",
+          "practical": "PASS"
+        },
+        "edge:g07": {
+          "value": 0.0004953519829640506,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g78": {
+          "value": 0.002001109262679411,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g81": {
+          "value": 0.0004847842788094361,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g72": {
+          "value": 0.004010297446585335,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g21": {
+          "value": 0.004106717147787348,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g03": {
+          "value": 0.004676287975286058,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g38": {
+          "value": 0.004308406959754708,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "edge:g01": {
+          "value": 0.000573315110708056,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "score:0781": {
+          "value": 0.0029790445063900416,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "score:0721": {
+          "value": 0.007634102831397885,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "score:0381": {
+          "value": 0.00851569260191672,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:primary:frobenius": {
+          "value": 0.000739285011152503,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:primary:sv0": {
+          "value": 0.0010871821985293892,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:primary:sv1": {
+          "value": 0.0010871821985495463,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:primary:sv2": {
+          "value": 4.590104947459919e-05,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:primary:sv3": {
+          "value": 4.59010494763589e-05,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_78:frobenius": {
+          "value": 0.0004903670520690412,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_78:sv0": {
+          "value": 0.0004953519829640506,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_78:sv1": {
+          "value": 0.00048478427880931395,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:internal_78:frobenius": {
+          "value": 0.002001109262680263,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:internal_78:sv0": {
+          "value": 0.0020011092626915417,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:internal_78:sv1": {
+          "value": 0.0020011092626695667,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:frobenius": {
+          "value": 0.00011080424101809294,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv0": {
+          "value": 0.0003953472852915356,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv1": {
+          "value": 0.000395347285272402,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv2": {
+          "value": 0.000299156985341927,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv3": {
+          "value": 0.00029915698534748234,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv4": {
+          "value": 0.006224431506671284,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:all_targets:sv5": {
+          "value": 0.006224431506622996,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_23:frobenius": {
+          "value": 0.004401744145227437,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_23:sv0": {
+          "value": 0.004676287975286332,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:logical_to_23:sv1": {
+          "value": 0.004106717147787065,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:comparators_to_78:frobenius": {
+          "value": 0.00412983290403073,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:comparators_to_78:sv0": {
+          "value": 0.004010297446585335,
+          "strict": "PASS",
+          "practical": "PASS"
+        },
+        "block:comparators_to_78:sv1": {
+          "value": 0.004308406959754544,
+          "strict": "PASS",
+          "practical": "PASS"
+        }
+      },
+      "strict_units": {
+        "carrier:f01": 0.030597444700575238,
+        "carrier:f07": 1.0327013691621687,
+        "carrier:f08": 1.2692384719766778,
+        "carrier:f78": 0.4730742056295867,
+        "carrier:f81": 1.299835916676784,
+        "carrier:f72": 0.7265027795137939,
+        "carrier:f21": 0.33679603434848104,
+        "carrier:f03": 0.34534568839444546,
+        "carrier:f38": 0.9238927835826871,
+        "overlap:0": 0.0009096718427414877,
+        "overlap:1": 0.0005922485958320673,
+        "overlap:2": 0.00398924239075615,
+        "overlap:3": 0.004600073739147166,
+        "overlap:7": 0.012119823320499979,
+        "overlap:8": 0.013607557330597141,
+        "subspace:0_1": 0.0009096718427414877,
+        "subspace:2_3": 0.004600073739147166,
+        "subspace:7_8": 0.013607557330597141,
+        "subspace:0_1_7_8": 0.06286434979774208,
+        "subspace:0_1_2_3_7_8": 0.24780206653773873,
+        "centered:0": 0.48714777908021034,
+        "centered:1": 0.5177452237807856,
+        "excitation:1": 0.030597444700575238,
+        "centered:2": 0.18094918943223348,
+        "excitation:2": 0.30619858964797686,
+        "centered:3": 0.14180209068559435,
+        "excitation:3": 0.345345688394616,
+        "centered:7": 0.5455535900820152,
+        "excitation:7": 1.0327013691622255,
+        "centered:8": 0.7820906928968085,
+        "excitation:8": 1.269238471977019,
+        "edge:g07": 0.016511732765468357,
+        "edge:g78": 0.0667036420893137,
+        "edge:g81": 0.016159475960314536,
+        "edge:g72": 0.1336765815528445,
+        "edge:g21": 0.1368905715929116,
+        "edge:g03": 0.1558762658428686,
+        "edge:g38": 0.14361356532515693,
+        "edge:g01": 0.019110503690268534,
+        "score:0781": 0.05958089012780083,
+        "score:0721": 0.1526820566279577,
+        "score:0381": 0.17031385203833438,
+        "block:primary:frobenius": 0.024642833705083432,
+        "block:primary:sv0": 0.03623940661764631,
+        "block:primary:sv1": 0.03623940661831821,
+        "block:primary:sv2": 0.0015300349824866396,
+        "block:primary:sv3": 0.0015300349825452969,
+        "block:logical_to_78:frobenius": 0.016345568402301374,
+        "block:logical_to_78:sv0": 0.016511732765468357,
+        "block:logical_to_78:sv1": 0.016159475960310466,
+        "block:internal_78:frobenius": 0.0667036420893421,
+        "block:internal_78:sv0": 0.06670364208971806,
+        "block:internal_78:sv1": 0.06670364208898556,
+        "block:all_targets:frobenius": 0.003693474700603098,
+        "block:all_targets:sv0": 0.013178242843051188,
+        "block:all_targets:sv1": 0.013178242842413401,
+        "block:all_targets:sv2": 0.009971899511397568,
+        "block:all_targets:sv3": 0.009971899511582744,
+        "block:all_targets:sv4": 0.20748105022237615,
+        "block:all_targets:sv5": 0.20748105022076654,
+        "block:logical_to_23:frobenius": 0.14672480484091457,
+        "block:logical_to_23:sv0": 0.15587626584287775,
+        "block:logical_to_23:sv1": 0.13689057159290216,
+        "block:comparators_to_78:frobenius": 0.13766109680102434,
+        "block:comparators_to_78:sv0": 0.1336765815528445,
+        "block:comparators_to_78:sv1": 0.14361356532515146
+      },
+      "tracking_safe": true,
+      "path_ordering": "PASS",
+      "residual_GHz": 2.6271040818401525e-13,
+      "metrics": {
+        "energies_GHz": [
+          7.219303413747836,
+          7.23530803681961,
+          10.643284809633647,
+          10.880445450341247,
+          11.19157264970661,
+          11.344300364090655,
+          13.177209757225418,
+          13.403601071346563,
+          13.420586329277052,
+          14.10581111660567,
+          14.362920134517394
+        ],
+        "carriers_MHz": {
+          "f01": 16.004623071774304,
+          "f07": 6184.297657598727,
+          "f08": 6201.282915529216,
+          "f78": 16.98525793048944,
+          "f81": 6185.278292457441,
+          "f72": 2760.3162617129155,
+          "f21": 3407.9767728140364,
+          "f03": 3661.142036593411,
+          "f38": 2540.140878935805
+        },
+        "edges": {
+          "g07": 1.9229471698245162,
+          "g78": 1.2564955688201411,
+          "g81": 1.8170855420653138,
+          "g72": 0.834827878014264,
+          "g21": 0.19794447007338564,
+          "g03": 0.20528306312873007,
+          "g38": 0.6831763661664957,
+          "g01": 0.44056144533137964
+        },
+        "scores": {
+          "0781": 4.390395929058096,
+          "0721": 0.3177661774011595,
+          "0381": 0.2548363207249806
+        },
+        "path_ranks": {
+          "0781": 1,
+          "0721": 3,
+          "0381": 5
+        },
+        "blocks": {
+          "primary": {
+            "frobenius": 4.188651617572424,
+            "singular_values": [
+              2.464910668355798,
+              2.464910668355747,
+              1.6421378089923033,
+              1.6421378089922414
+            ]
+          },
+          "logical_to_78": {
+            "frobenius": 2.6456616724590676,
+            "singular_values": [
+              1.922947169824516,
+              1.817085542065314
+            ]
+          },
+          "internal_78": {
+            "frobenius": 1.776953074487141,
+            "singular_values": [
+              1.2564955688201498,
+              1.2564955688201334
+            ]
+          },
+          "all_targets": {
+            "frobenius": 4.4867024004002545,
+            "singular_values": [
+              2.6630859901289687,
+              2.6630859901287782,
+              1.684256797208948,
+              1.6842567972088638,
+              0.36946077615040285,
+              0.36946077615029893
+            ]
+          },
+          "logical_to_23": {
+            "frobenius": 0.2851721396633052,
+            "singular_values": [
+              0.20528306312873001,
+              0.19794447007338564
+            ]
+          },
+          "comparators_to_78": {
+            "frobenius": 1.0787342273230494,
+            "singular_values": [
+              0.834827878014264,
+              0.6831763661664957
+            ]
+          }
+        },
+        "matrix_abs": [
+          [
+            1.3664370561841592e-11,
+            0.4405614453313796,
+            3.244933563450912e-12,
+            0.20528306312873004,
+            1.8182093282141563e-12,
+            0.1984870032416658,
+            8.735763572939193e-12,
+            1.922947169824516,
+            3.505570772137675e-11,
+            8.630682104893107e-12,
+            0.3065356414800091
+          ],
+          [
+            0.44056144533139596,
+            1.353643705210936e-11,
+            0.19794447007338564,
+            3.221209728272242e-12,
+            0.147691764945698,
+            3.05418393763418e-12,
+            0.4732212556006973,
+            3.631776572883778e-11,
+            1.8170855420653138,
+            0.6036570114602443,
+            4.2373530944668274e-12
+          ],
+          [
+            3.2449724272295545e-12,
+            0.19794447007338742,
+            4.8274526862470284e-14,
+            0.21876321844463983,
+            4.644117257390372e-13,
+            0.15585036002485958,
+            8.240405224292131e-13,
+            0.834827878014264,
+            4.506248044693715e-12,
+            2.81894703304783e-13,
+            0.06162049221441955
+          ],
+          [
+            0.20528306312872757,
+            3.2215726051429e-12,
+            0.2187632184446417,
+            3.72257517303815e-13,
+            0.13286880443059906,
+            3.2757460546366074e-13,
+            0.3952334623119959,
+            3.3445507445246164e-12,
+            0.6831763661664957,
+            0.20624469925486477,
+            2.289061096105934e-13
+          ],
+          [
+            1.8182042147697546e-12,
+            0.147691764945694,
+            4.643470421551693e-13,
+            0.13286880443059873,
+            6.542791334180223e-13,
+            0.35556902215569297,
+            8.505412053836844e-14,
+            0.38753825625438915,
+            1.345050527295815e-12,
+            4.224734618865648e-13,
+            0.05971214717493263
+          ],
+          [
+            0.19848700324167093,
+            3.0529511919385556e-12,
+            0.1558503600248624,
+            3.2759984000758055e-13,
+            0.35556902215570324,
+            1.4134745598856113e-12,
+            0.03827449226268263,
+            1.5141433489014605e-12,
+            0.4020592353958925,
+            0.10499997055690982,
+            1.7376820090837017e-13
+          ],
+          [
+            8.736089513484865e-12,
+            0.4732212556006938,
+            8.239757334551508e-13,
+            0.3952334623120071,
+            8.520203044012762e-14,
+            0.03827449226268067,
+            3.027107238721714e-13,
+            0.3132348467250212,
+            2.5798529302728877e-12,
+            2.313948006987198e-13,
+            0.1774296511850815
+          ],
+          [
+            1.922947169824519,
+            3.6317876222078096e-11,
+            0.8348278780142641,
+            3.344792606693247e-12,
+            0.38753825625438876,
+            1.5140419077648365e-12,
+            0.3132348467250203,
+            9.038851009310177e-12,
+            1.2564955688201411,
+            0.33575398434876824,
+            5.181946229793865e-13
+          ],
+          [
+            3.505591942918887e-11,
+            1.817085542065309,
+            4.50599838931251e-12,
+            0.6831763661664955,
+            1.345202524836535e-12,
+            0.40205923539589133,
+            2.5798484073047307e-12,
+            1.256495568820142,
+            9.055153109897525e-12,
+            1.694203350278562e-12,
+            0.09627898387454505
+          ],
+          [
+            8.63094809010902e-12,
+            0.6036570114602431,
+            2.8155639816982483e-13,
+            0.20624469925485792,
+            4.2277610489232723e-13,
+            0.10499997055691243,
+            2.314987305944135e-13,
+            0.33575398434876796,
+            1.6944847507139976e-12,
+            5.223478411748053e-13,
+            0.08492236045869604
+          ],
+          [
+            0.3065356414800111,
+            4.237528656880036e-12,
+            0.06162049221442074,
+            2.290553645201317e-13,
+            0.059712147174935074,
+            1.7380021409370585e-13,
+            0.1774296511850821,
+            5.18034396227638e-13,
+            0.09627898387454302,
+            0.08492236045869493,
+            6.060276536125055e-14
+          ]
+        ],
+        "f78_minus_f01_MHz": 0.9806348587151348
+      },
+      "energy_recovery": {
+        "raw_state_errors_MHz": {
+          "0": 0.1083783758986101,
+          "1": 0.07778093119803486,
+          "2": 0.41457696554658696,
+          "3": 0.4537240642932261,
+          "7": 1.1410797450608356,
+          "8": 1.377616847875629
+        },
+        "common_offset_MHz": 0.5955261549788204,
+        "centered_state_errors_MHz": {
+          "0": -0.48714777908021034,
+          "1": -0.5177452237807856,
+          "2": -0.18094918943223348,
+          "3": -0.14180209068559435,
+          "7": 0.5455535900820152,
+          "8": 0.7820906928968085
+        },
+        "excitation_errors_MHz": {
+          "0": 0.0,
+          "1": -0.030597444700575238,
+          "2": 0.30619858964797686,
+          "3": 0.345345688394616,
+          "7": 1.0327013691622255,
+          "8": 1.269238471977019
+        }
+      },
+      "cancellation": {
+        "f01": {
+          "excitation_error_i_MHz": 0.0,
+          "excitation_error_j_MHz": -0.030597444700575238,
+          "transition_error_MHz": -0.030597444700575238,
+          "denominator_MHz": 0.030597444700575238,
+          "ratio": 1.0,
+          "flagged": false,
+          "severe": false
+        },
+        "f07": {
+          "excitation_error_i_MHz": 0.0,
+          "excitation_error_j_MHz": 1.0327013691622255,
+          "transition_error_MHz": 1.0327013691622255,
+          "denominator_MHz": 1.0327013691622255,
+          "ratio": 1.0,
+          "flagged": false,
+          "severe": false
+        },
+        "f08": {
+          "excitation_error_i_MHz": 0.0,
+          "excitation_error_j_MHz": 1.269238471977019,
+          "transition_error_MHz": 1.269238471977019,
+          "denominator_MHz": 1.269238471977019,
+          "ratio": 1.0,
+          "flagged": false,
+          "severe": false
+        },
+        "f78": {
+          "excitation_error_i_MHz": 1.0327013691622255,
+          "excitation_error_j_MHz": 1.269238471977019,
+          "transition_error_MHz": 0.23653710281479334,
+          "denominator_MHz": 2.3019398411392444,
+          "ratio": 0.10275555363676649,
+          "flagged": true,
+          "severe": false
+        },
+        "f81": {
+          "excitation_error_i_MHz": -0.030597444700575238,
+          "excitation_error_j_MHz": 1.269238471977019,
+          "transition_error_MHz": 1.2998359166775941,
+          "denominator_MHz": 1.2998359166775941,
+          "ratio": 1.0,
+          "flagged": false,
+          "severe": false
+        },
+        "f72": {
+          "excitation_error_i_MHz": 0.30619858964797686,
+          "excitation_error_j_MHz": 1.0327013691622255,
+          "transition_error_MHz": 0.7265027795142487,
+          "denominator_MHz": 1.3388999588102024,
+          "ratio": 0.5426116975609192,
+          "flagged": false,
+          "severe": false
+        },
+        "f21": {
+          "excitation_error_i_MHz": -0.030597444700575238,
+          "excitation_error_j_MHz": 0.30619858964797686,
+          "transition_error_MHz": 0.3367960343485521,
+          "denominator_MHz": 0.3367960343485521,
+          "ratio": 1.0,
+          "flagged": false,
+          "severe": false
+        },
+        "f03": {
+          "excitation_error_i_MHz": 0.0,
+          "excitation_error_j_MHz": 0.345345688394616,
+          "transition_error_MHz": 0.345345688394616,
+          "denominator_MHz": 0.345345688394616,
+          "ratio": 1.0,
+          "flagged": false,
+          "severe": false
+        },
+        "f38": {
+          "excitation_error_i_MHz": 0.345345688394616,
+          "excitation_error_j_MHz": 1.269238471977019,
+          "transition_error_MHz": 0.9238927835824029,
+          "denominator_MHz": 1.6145841603716349,
+          "ratio": 0.5722171728538121,
+          "flagged": false,
+          "severe": false
+        }
+      },
+      "f78_minus_f01_increment_MHz": -0.2671345475153686
+    }
+  },
+  "evaluation": {
+    "retained_basis_convergence": {
+      "verdict": "FAIL",
+      "failures": [
+        "block:all_targets:sv0: final increment did not shrink",
+        "block:all_targets:sv1: final increment did not shrink",
+        "block:all_targets:sv2: final increment did not shrink",
+        "block:all_targets:sv3: final increment did not shrink",
+        "block:all_targets:sv4: final increment did not shrink",
+        "block:all_targets:sv5: final increment did not shrink",
+        "block:comparators_to_78:frobenius: final increment did not shrink",
+        "block:comparators_to_78:sv0: final increment did not shrink",
+        "block:comparators_to_78:sv1: final increment did not shrink",
+        "block:internal_78:frobenius: final increment did not shrink",
+        "block:internal_78:sv0: final increment did not shrink",
+        "block:internal_78:sv1: final increment did not shrink",
+        "block:logical_to_23:frobenius: final increment did not shrink",
+        "block:logical_to_23:sv0: final increment did not shrink",
+        "block:logical_to_23:sv1: final increment did not shrink",
+        "block:logical_to_78:frobenius: final increment did not shrink",
+        "block:logical_to_78:sv0: final increment did not shrink",
+        "block:logical_to_78:sv1: final increment did not shrink",
+        "block:primary:frobenius: final increment did not shrink",
+        "block:primary:sv0: final increment did not shrink",
+        "block:primary:sv1: final increment did not shrink",
+        "carrier:f01: final increment did not shrink",
+        "carrier:f01: reversal/cancellation",
+        "carrier:f07: final increment did not shrink",
+        "carrier:f08: final increment did not shrink",
+        "carrier:f21: final increment did not shrink",
+        "carrier:f38: final increment did not shrink",
+        "carrier:f72: final increment did not shrink",
+        "carrier:f81: final increment did not shrink",
+        "centered:0: final increment did not shrink",
+        "centered:1: final increment did not shrink",
+        "centered:2: final increment did not shrink",
+        "centered:3: final increment did not shrink",
+        "centered:7: final increment did not shrink",
+        "centered:8: final increment did not shrink",
+        "edge:g01: final increment did not shrink",
+        "edge:g03: final increment did not shrink",
+        "edge:g07: final increment did not shrink",
+        "edge:g21: final increment did not shrink",
+        "edge:g38: final increment did not shrink",
+        "edge:g72: final increment did not shrink",
+        "edge:g78: final increment did not shrink",
+        "edge:g81: final increment did not shrink",
+        "excitation:1: final increment did not shrink",
+        "excitation:2: final increment did not shrink",
+        "excitation:7: final increment did not shrink",
+        "excitation:8: final increment did not shrink",
+        "overlap:0: final increment did not shrink",
+        "overlap:1: final increment did not shrink",
+        "overlap:2: final increment did not shrink",
+        "overlap:3: final increment did not shrink",
+        "overlap:7: final increment did not shrink",
+        "overlap:8: final increment did not shrink",
+        "score:0381: final increment did not shrink",
+        "score:0721: final increment did not shrink",
+        "score:0781: final increment did not shrink",
+        "subspace:0_1: final increment did not shrink",
+        "subspace:0_1_2_3_7_8: final increment did not shrink",
+        "subspace:0_1_7_8: final increment did not shrink",
+        "subspace:2_3: final increment did not shrink",
+        "subspace:7_8: final increment did not shrink"
+      ],
+      "strict_misses": [
+        "k300_to_k340/carrier:f07: BORDERLINE",
+        "k300_to_k340/carrier:f08: BORDERLINE",
+        "k300_to_k340/carrier:f38: BORDERLINE",
+        "k300_to_k340/carrier:f78: BORDERLINE",
+        "k300_to_k340/carrier:f81: BORDERLINE",
+        "k300_to_k340/centered:8: BORDERLINE",
+        "k300_to_k340/excitation:7: BORDERLINE",
+        "k300_to_k340/excitation:8: BORDERLINE",
+        "k320_to_k340/carrier:f07: BORDERLINE",
+        "k320_to_k340/carrier:f08: BORDERLINE",
+        "k320_to_k340/carrier:f81: BORDERLINE",
+        "k320_to_k340/excitation:7: BORDERLINE",
+        "k320_to_k340/excitation:8: BORDERLINE"
+      ]
+    },
+    "tail_hypothesis": {
+      "classification": "D_NONMONOTONIC_UNRESOLVED",
+      "reason": "meaningful reversal or cancellation"
+    },
+    "selector_secondary": {
+      "verdict": "PASS",
+      "failures": [],
+      "pass_requirements_missed": [],
+      "family_ratios": {
+        "S3": {
+          "logical_01": {
+            "vs_prefix": 0.08994964015752831,
+            "vs_best_control": 0.09998054600748346
+          },
+          "comparator_23": {
+            "vs_prefix": 0.10697551351743831,
+            "vs_best_control": 0.10697551351743831
+          },
+          "primary_78": {
+            "vs_prefix": 0.16355205962052752,
+            "vs_best_control": 0.22354143084269162
+          },
+          "cross_carriers": {
+            "vs_prefix": 0.10455368247591125,
+            "vs_best_control": 0.15408909872771515
+          },
+          "operators": {
+            "vs_prefix": 0.05321019093863735,
+            "vs_best_control": 0.06118157884026392
+          },
+          "pathways": {
+            "vs_prefix": 0.07039025478153454,
+            "vs_best_control": 0.09921610322961683
+          }
+        },
+        "S4": {
+          "logical_01": {
+            "vs_prefix": 0.05338843907443076,
+            "vs_best_control": 0.07284862178196908
+          },
+          "comparator_23": {
+            "vs_prefix": 0.03635368230674063,
+            "vs_best_control": 0.0629135102050569
+          },
+          "primary_78": {
+            "vs_prefix": 0.09634892407221693,
+            "vs_best_control": 0.10512432916133493
+          },
+          "cross_carriers": {
+            "vs_prefix": 0.08226918352666662,
+            "vs_best_control": 0.09051894158006783
+          },
+          "operators": {
+            "vs_prefix": 0.01464038231546579,
+            "vs_best_control": 0.01789325758759645
+          },
+          "pathways": {
+            "vs_prefix": 0.01595087039563012,
+            "vs_best_control": 0.017887611326235363
+          }
+        },
+        "union": {
+          "logical_01": {
+            "vs_prefix": 0.07890474224941761,
+            "vs_best_control": 0.09428969025961412
+          },
+          "comparator_23": {
+            "vs_prefix": 0.07464577554594737,
+            "vs_best_control": 0.07464577554594737
+          },
+          "primary_78": {
+            "vs_prefix": 0.1553681884698311,
+            "vs_best_control": 0.1553681884698311
+          },
+          "cross_carriers": {
+            "vs_prefix": 0.10615673005793289,
+            "vs_best_control": 0.12547542636052125
+          },
+          "operators": {
+            "vs_prefix": 0.04198849346202978,
+            "vs_best_control": 0.07126438149677733
+          },
+          "pathways": {
+            "vs_prefix": 0.04686982934026022,
+            "vs_best_control": 0.13178849359873449
+          }
+        }
+      }
+    },
+    "claims": {
+      "smaller_final_increment": "report measured trend only",
+      "plateau_within_tested_range": false,
+      "convergence_beyond_k340": false,
+      "other_spatial_or_model_convergence": false,
+      "k340_is_ground_truth": false
+    }
+  },
+  "count_note": "61 failure entries comprise 60 nonshrinking-component entries plus one f01 reversal/cancellation entry; do not relabel all 61 as nonshrinking components."
+}

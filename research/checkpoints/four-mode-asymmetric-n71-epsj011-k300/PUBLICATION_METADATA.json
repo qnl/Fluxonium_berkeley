@@ -1,0 +1,82 @@
+{
+  "schema": "gridium_checkpoint_publication_metadata_v1",
+  "source_path": "research/checkpoints/four-mode-asymmetric-n71-epsj011-k300/checkpoint.json",
+  "source_sha256": "20a58be10ad8408ce479de259e1d2f3562cc46222e0eebc939d6d695803516bd",
+  "source_status": "complete",
+  "scientific_scope": "Historical finite model and parameter settings. Complete/validated payload is not proof of retained-basis convergence or physical-device validity.",
+  "configuration": {
+    "physical_parameters": {
+      "EJ": 5.0,
+      "EC": 0.5,
+      "EL": 1.0,
+      "ELK": 1.0,
+      "EJS": 4.0,
+      "ECS": 8.0,
+      "eC": 5.5,
+      "eP": 10.0,
+      "eps_J": 0.11,
+      "eps_LK": 0.05,
+      "ng": 0.0,
+      "phi_ext": 0.0,
+      "theta_ext": 3.141592653589793
+    },
+    "spatial_cutoffs": {
+      "n1max": 4,
+      "N2": 71,
+      "L2": 11.0,
+      "N3": 71,
+      "L3": 14.0,
+      "N4": 8
+    },
+    "solver_settings": {
+      "k": 300,
+      "sigma": -24.0,
+      "which": "LM",
+      "tol": 1e-08,
+      "ncv": null,
+      "v0": null,
+      "permc_spec": "MMD_AT_PLUS_A"
+    }
+  },
+  "configuration_sha256": "8ed1b0c72746a2594e9139d4cc782a86007a3b416394eeab71da071dc8364646",
+  "generator": "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py",
+  "code_revision": "c69da9d293c11e46df82377c310c7260acb59a77",
+  "git_dirty_at_generation": true,
+  "source_file_sha256": {
+    "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py": "ebae73f9b04257502c293ea9a3fdd2cb7adc60701a5610f3b986f37424dc748c",
+    "Simulations/Rabi_3Photon/four_mode_retained_basis_audit.py": "e31e5ee28f3a460fc4adbf7ad69252d1b9d7b7a4268217b232600cdd82a8563a",
+    "Circuit_Objs/qchard_gridium_netlist.py": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315",
+    "research/sandbox/k260_preregistration/criteria.json": "8f42b3c10453a048238dea23d28e4a590accacbd87ad5fe54439cca1af799be9",
+    "research/sandbox/k260_preregistration/k260_profile.py": "7b020ae81405512d6320e92cf51c7d7d411caaf24dfbaf29dd2a1783f1b5d46a",
+    "research/sandbox/k260_preregistration/guarded_k260.py": "5b39254d7a6bc6d83416680fa16a8b6f1679675f313db2ff3fdd015cd43f84fd",
+    "research/sandbox/k300_preregistration/criteria.json": "4954e8212c3eb094ffa9e009628da6434badb6ffe618561ce51eadd276d21993",
+    "research/sandbox/k300_preregistration/k300_profile.py": "9362556b9ee90aa6f6a8baa94d2a872d3d1391f01897f8e75e894820e770cc0d",
+    "research/sandbox/k300_preregistration/selector.py": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+    "research/sandbox/k300_preregistration/selector_method.md": "2055c7d54d81ada97379f4941ef08354dbb3cbf9378aa2b10dde1349ca2ff7cc",
+    "research/sandbox/k300_preregistration/validation_plan.md": "07af909a8c32e9e07dd294ecd5d51837461895d56711d4b20dae995e57008f82",
+    "research/sandbox/k300_preregistration/selection_hook.py": "4d472b30f2e9f03afae9103b277ca481ca816941424b9bfb87efb16389138a26",
+    "research/sandbox/k300_preregistration/analyze_spaces.py": "544b9f8672c718600efbcd56e16b8f24b489d3f122228fdd6cd5bf3847d17940",
+    "research/sandbox/k300_preregistration/evaluate.py": "669a2d8a6df8f80a2d0ed088f8cfc095a0a5458d4c85d1f1641f69eefad81df2",
+    "research/sandbox/k300_preregistration/preregistration_manifest.json": "52229c31c720d54097ccb6e7a5fd74d446f8d5e0c3318d47e20293356cec754e",
+    "research/sandbox/parameter_point_validation/criteria.json": "8c3c44c69eb290c965beebc0b176c0166410c3d98602a05bd530673c9172ea18",
+    "research/sandbox/parameter_point_validation/profile.py": "88722da0f0738166ee91c62056a6c200bd5e8d5a3fd6545d33482c6271566a3e",
+    "research/sandbox/parameter_point_validation/frozen_selector.py": "6f35646b461af48651ff7081af25f82b8957a72c317c465ce763d6675bca81c6",
+    "research/sandbox/parameter_point_validation/selection_hook.py": "7d9ee01ec47747df599e6276e182c813cd0f07a679afa6adc3009d7cb6e34660",
+    "research/sandbox/parameter_point_validation/parameter_analysis.py": "736f275fc28f816f98169e0be1f9c7d04255206ed8416dfa39e5ef343b2fb08f",
+    "research/sandbox/parameter_point_validation/analyze_parameter_point.py": "e642b2a4140dbab89696e5229e2cd5eb9e16cc8bb3f674d75e1f3f7da4808caf",
+    "research/sandbox/parameter_point_validation/evaluate.py": "17c731318447af6f54e8c5501d71aa8f2aaeeb5ba4193182218e9f62326bdd66",
+    "research/sandbox/parameter_point_validation/preregistration_manifest.json": "5961225d66934decd5f16a88d086dcad14c708983e920fd6476a9a646eab7862"
+  },
+  "package_versions": {
+    "python_version": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:38:53) [Clang 18.1.8 ]",
+    "numpy_version": "2.2.6",
+    "scipy_version": "1.13.1",
+    "qutip_version": "5.2.2"
+  },
+  "payload_sha256": {
+    "stage1_eigensystem.npz": "fcb5d91130b2fef9b908c0573b4d8297f3cff8aa81e2ba9ef11874601849a3f3",
+    "projected_operators.npz": "b528fed0f47ff6d387f679a41f81deb1a4bd7075755930a1f0cd75a803564a6c",
+    "analysis.json": "0e67d3989a1e9fe3158ae385db3b15895ffeeeb3120f6d5070e5cc0beaba4880"
+  },
+  "retrieval": "Raw payload and original execution metadata excluded. See research/publication/RAW_ARTIFACTS.csv and research/publication/RETRIEVAL.md."
+}

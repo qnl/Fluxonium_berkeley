@@ -1,0 +1,137 @@
+[
+  {
+    "shell": "k340/new_S4",
+    "rank": 328,
+    "states": [
+      0,
+      1
+    ],
+    "rank_scalar_difference_MHz": 0.03112073827947287,
+    "other_rank_scalar_differences_MHz": 0.0025033328180967818,
+    "whole_shell_sigma_difference_MHz": 0.03362407109756965,
+    "P_relaxation_difference_MHz": -0.0030266263388867287,
+    "exact_pair_shift_MHz": 0.030597444700575238,
+    "identity_residual_MHz": 5.810768533009991e-11,
+    "interpretation": "additive differences of exact state-specific scalar partitions; not exact isolated-rank transition shifts"
+  },
+  {
+    "shell": "k340/new_S4",
+    "rank": 328,
+    "states": [
+      2,
+      3
+    ],
+    "rank_scalar_difference_MHz": 0.034154501869606,
+    "other_rank_scalar_differences_MHz": -0.07728647292599478,
+    "whole_shell_sigma_difference_MHz": -0.043131971056388774,
+    "P_relaxation_difference_MHz": 0.003984872249063187,
+    "exact_pair_shift_MHz": -0.03914709874663913,
+    "identity_residual_MHz": -6.0686455860548e-11,
+    "interpretation": "additive differences of exact state-specific scalar partitions; not exact isolated-rank transition shifts"
+  },
+  {
+    "shell": "k340/new_S4",
+    "rank": 328,
+    "states": [
+      7,
+      8
+    ],
+    "rank_scalar_difference_MHz": -0.2779236238478908,
+    "other_rank_scalar_differences_MHz": 0.01047838797241507,
+    "whole_shell_sigma_difference_MHz": -0.26744523587547575,
+    "P_relaxation_difference_MHz": 0.03090813298634032,
+    "exact_pair_shift_MHz": -0.23653710281479334,
+    "identity_residual_MHz": -7.434208804113496e-11,
+    "interpretation": "additive differences of exact state-specific scalar partitions; not exact isolated-rank transition shifts"
+  },
+  {
+    "shell": "k380/S1",
+    "rank": 354,
+    "states": [
+      0,
+      1
+    ],
+    "rank_scalar_difference_MHz": 0.0025826006772602106,
+    "other_rank_scalar_differences_MHz": -0.02141705200547314,
+    "whole_shell_sigma_difference_MHz": -0.01883445132821293,
+    "P_relaxation_difference_MHz": 0.0020408886935996406,
+    "exact_pair_shift_MHz": -0.016793562586769895,
+    "identity_residual_MHz": -4.7843395911684183e-11,
+    "interpretation": "additive differences of exact state-specific scalar partitions; not exact isolated-rank transition shifts"
+  },
+  {
+    "shell": "k380/S1",
+    "rank": 354,
+    "states": [
+      2,
+      3
+    ],
+    "rank_scalar_difference_MHz": -0.01843610877360173,
+    "other_rank_scalar_differences_MHz": -0.15128024054996508,
+    "whole_shell_sigma_difference_MHz": -0.16971634932356683,
+    "P_relaxation_difference_MHz": 0.021669948729652333,
+    "exact_pair_shift_MHz": -0.14804640050769535,
+    "identity_residual_MHz": -8.621914293627242e-11,
+    "interpretation": "additive differences of exact state-specific scalar partitions; not exact isolated-rank transition shifts"
+  },
+  {
+    "shell": "k380/S1",
+    "rank": 354,
+    "states": [
+      7,
+      8
+    ],
+    "rank_scalar_difference_MHz": -0.5119129748671254,
+    "other_rank_scalar_differences_MHz": -0.7048595109757656,
+    "whole_shell_sigma_difference_MHz": -1.216772485842891,
+    "P_relaxation_difference_MHz": 0.15134423523832652,
+    "exact_pair_shift_MHz": -1.0654282506656898,
+    "identity_residual_MHz": 6.112532702218232e-11,
+    "interpretation": "additive differences of exact state-specific scalar partitions; not exact isolated-rank transition shifts"
+  },
+  {
+    "shell": "k380/S2",
+    "rank": 362,
+    "states": [
+      0,
+      1
+    ],
+    "rank_scalar_difference_MHz": -0.019854120777061224,
+    "other_rank_scalar_differences_MHz": 0.001758944217413294,
+    "whole_shell_sigma_difference_MHz": -0.01809517655964793,
+    "P_relaxation_difference_MHz": 0.0016526657873328077,
+    "exact_pair_shift_MHz": -0.016442510721859094,
+    "identity_residual_MHz": -5.045602824438333e-11,
+    "interpretation": "additive differences of exact state-specific scalar partitions; not exact isolated-rank transition shifts"
+  },
+  {
+    "shell": "k380/S2",
+    "rank": 362,
+    "states": [
+      2,
+      3
+    ],
+    "rank_scalar_difference_MHz": -0.03594458373991325,
+    "other_rank_scalar_differences_MHz": -0.02470376190995518,
+    "whole_shell_sigma_difference_MHz": -0.06064834564986843,
+    "P_relaxation_difference_MHz": 0.0072936316772853615,
+    "exact_pair_shift_MHz": -0.053354713889675054,
+    "identity_residual_MHz": -8.290801378763035e-11,
+    "interpretation": "additive differences of exact state-specific scalar partitions; not exact isolated-rank transition shifts"
+  },
+  {
+    "shell": "k380/S2",
+    "rank": 362,
+    "states": [
+      7,
+      8
+    ],
+    "rank_scalar_difference_MHz": -0.9192008768828304,
+    "other_rank_scalar_differences_MHz": 0.2541603429092216,
+    "whole_shell_sigma_difference_MHz": -0.6650405339736087,
+    "P_relaxation_difference_MHz": 0.05854159710061424,
+    "exact_pair_shift_MHz": -0.6064989368379514,
+    "identity_residual_MHz": -3.504307954926844e-11,
+    "interpretation": "additive differences of exact state-specific scalar partitions; not exact isolated-rank transition shifts"
+  }
+]

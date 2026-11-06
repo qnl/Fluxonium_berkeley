@@ -1,0 +1,40 @@
+{
+  "attribution_shell_counts": [
+    20,
+    20
+  ],
+  "available_predictors": 35,
+  "definition_hashes": {
+    "PREDICTOR_DEFINITIONS.md": "da91ade67881fcb7b0490c61b479370d0bc6a82fa38c9ffdad0455961fb4146b",
+    "RESEARCH_PLAN.md": "2d0653be74e185b71e293ef279b2269540379d923f7b84c6b2940d93000565ed"
+  },
+  "eigenvector_members_loaded": 0,
+  "elapsed_seconds": 0.8972032919991761,
+  "fingerprint_max_absolute_comparison_error": 0.0,
+  "hermiticity_errors": {
+    "n1": 2.3092638912203256e-14,
+    "n2": 3.2862894555212404e-14,
+    "n3": 8.197063126497312e-15,
+    "x2": 5.1958437552457326e-14,
+    "x3": 6.217288588596748e-14
+  },
+  "new_eigensolves": 0,
+  "peak_resident_bytes": 161693696,
+  "preservation": "PASS",
+  "preservation_files_checked": 104,
+  "ranking_rows": 152,
+  "selector_trace_max_error": 0.0,
+  "status": "PASS",
+  "target_rows": 240,
+  "tests": [
+    "independent Pearson formula",
+    "average-tie Spearman",
+    "deterministic ties/top3",
+    "missing/zero/constant handling",
+    "complex coherent/gauge invariance",
+    "Hermitian conjugate block",
+    "concentration normalization",
+    "energy-unit correlation invariance"
+  ],
+  "unavailable_predictors": 3
+}

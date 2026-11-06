@@ -1,0 +1,11 @@
+{
+  "status": "SEALED",
+  "configuration_sha256": "8ed1b0c72746a2594e9139d4cc782a86007a3b416394eeab71da071dc8364646",
+  "selector_sha256": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+  "criteria_sha256": "8c3c44c69eb290c965beebc0b176c0166410c3d98602a05bd530673c9172ea18",
+  "manifest_sha256": "5961225d66934decd5f16a88d086dcad14c708983e920fd6476a9a646eab7862",
+  "guard_sha256": "a6f698db8950cb5a59a8c5edc3c6416388965cbbf5653bc1a6f4dc87e01d33be",
+  "new_point_stage1_run": false,
+  "new_point_dressed_results_used": false,
+  "frozen_date_pacific": "2026-10-08"
+}

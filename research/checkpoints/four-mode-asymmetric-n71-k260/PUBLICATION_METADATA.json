@@ -1,0 +1,65 @@
+{
+  "schema": "gridium_checkpoint_publication_metadata_v1",
+  "source_path": "research/checkpoints/four-mode-asymmetric-n71-k260/checkpoint.json",
+  "source_sha256": "ecb9a931d1c576cde5a262d7930276f85a83972ba99dece1c08732a15a7238b4",
+  "source_status": "complete",
+  "scientific_scope": "Historical finite model and parameter settings. Complete/validated payload is not proof of retained-basis convergence or physical-device validity.",
+  "configuration": {
+    "physical_parameters": {
+      "EJ": 5.0,
+      "EC": 0.5,
+      "EL": 1.0,
+      "ELK": 1.0,
+      "EJS": 4.0,
+      "ECS": 8.0,
+      "eC": 5.5,
+      "eP": 10.0,
+      "eps_J": 0.1,
+      "eps_LK": 0.05,
+      "ng": 0.0,
+      "phi_ext": 0.0,
+      "theta_ext": 3.141592653589793
+    },
+    "spatial_cutoffs": {
+      "n1max": 4,
+      "N2": 71,
+      "L2": 11.0,
+      "N3": 71,
+      "L3": 14.0,
+      "N4": 8
+    },
+    "solver_settings": {
+      "k": 260,
+      "sigma": -24.0,
+      "which": "LM",
+      "tol": 1e-08,
+      "ncv": null,
+      "v0": null,
+      "permc_spec": "MMD_AT_PLUS_A"
+    }
+  },
+  "configuration_sha256": "990dad04b52deeef9d90908c6c19ce38e917d7f5b7fab32f0e39699c3c83c4bb",
+  "generator": "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py",
+  "code_revision": "c69da9d293c11e46df82377c310c7260acb59a77",
+  "git_dirty_at_generation": true,
+  "source_file_sha256": {
+    "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py": "ebae73f9b04257502c293ea9a3fdd2cb7adc60701a5610f3b986f37424dc748c",
+    "Simulations/Rabi_3Photon/four_mode_retained_basis_audit.py": "e31e5ee28f3a460fc4adbf7ad69252d1b9d7b7a4268217b232600cdd82a8563a",
+    "Circuit_Objs/qchard_gridium_netlist.py": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315",
+    "research/sandbox/k260_preregistration/criteria.json": "8f42b3c10453a048238dea23d28e4a590accacbd87ad5fe54439cca1af799be9",
+    "research/sandbox/k260_preregistration/k260_profile.py": "7b020ae81405512d6320e92cf51c7d7d411caaf24dfbaf29dd2a1783f1b5d46a",
+    "research/sandbox/k260_preregistration/guarded_k260.py": "5b39254d7a6bc6d83416680fa16a8b6f1679675f313db2ff3fdd015cd43f84fd"
+  },
+  "package_versions": {
+    "python_version": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:38:53) [Clang 18.1.8 ]",
+    "numpy_version": "2.2.6",
+    "scipy_version": "1.13.1",
+    "qutip_version": "5.2.2"
+  },
+  "payload_sha256": {
+    "stage1_eigensystem.npz": "03a7f320a3adf38c242010ceefbdf414fa327321e1398229a7bf0bb56db37e82",
+    "projected_operators.npz": "4e360cdbde0c9720a5ba4337d60b9f36243ba7ba2e4bc09e4ba654c53aa27c5f",
+    "analysis.json": "7002989dd9c24defe54f6f7566491804a258efcb1846683367150bdc87575b05"
+  },
+  "retrieval": "Raw payload and original execution metadata excluded. See research/publication/RAW_ARTIFACTS.csv and research/publication/RETRIEVAL.md."
+}

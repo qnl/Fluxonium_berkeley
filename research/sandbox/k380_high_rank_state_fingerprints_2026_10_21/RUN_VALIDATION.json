@@ -1,0 +1,62 @@
+{
+  "address_space_limit": "UNAVAILABLE: current limit exceeds maximum limit",
+  "complex_coupling_rows": 3200,
+  "elapsed_seconds": 2.4201513750012964,
+  "maximum_marginal_sum_error": 1.84297022087776e-14,
+  "maximum_norm_error": 5.362377208939506e-14,
+  "maximum_reshape_norm_error": 1.8540724511240114e-14,
+  "new_eigensolves": 0,
+  "operator_columns_checked": [
+    300,
+    310,
+    320,
+    326,
+    327,
+    328,
+    329,
+    330,
+    340,
+    350,
+    352,
+    353,
+    354,
+    355,
+    356,
+    360,
+    361,
+    362,
+    363,
+    364,
+    370
+  ],
+  "operator_hermiticity_max_errors": {
+    "n1": 2.3092638912203256e-14,
+    "n2": 3.2862894555212404e-14,
+    "n3": 8.197063126497312e-15,
+    "x2": 5.1958437552457326e-14,
+    "x3": 6.217288588596748e-14
+  },
+  "operator_projection_max_errors": {
+    "n1": 1.6618151118147125e-14,
+    "n2": 9.141828790497115e-15,
+    "n3": 4.165007124043525e-15,
+    "x2": 3.247668030559299e-14,
+    "x3": 3.597846399230694e-14
+  },
+  "orthogonality_inf": 1.3275966932206649e-11,
+  "peak_resident_bytes": 715800576,
+  "plan_sha256": "b7e9cfdec01e21be9dd30b7b14cf45bb9557290f57e0e4cb19616092ec974117",
+  "resident_watchdog_interval_seconds": 0.05,
+  "residuals_recomputed": false,
+  "saved_maximum_eigenpair_residual_GHz": 5.9191273653850065e-08,
+  "state_rows": 80,
+  "status": "PASS",
+  "synthetic_tests": [
+    "unequal-axis one-hot C indexing",
+    "normalized marginal sums",
+    "constant rectangle quadrature",
+    "complex local versus Kronecker contraction",
+    "complex coherent bilinear interference/conjugation",
+    "unitary-invariant ensemble density"
+  ]
+}

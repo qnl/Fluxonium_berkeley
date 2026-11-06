@@ -1,0 +1,62 @@
+{
+  "schema": "gridium_checkpoint_publication_metadata_v1",
+  "source_path": "research/checkpoints/four-mode-asymmetric-n71-k220/checkpoint.json",
+  "source_sha256": "d5401838bcbfdab391edfc835e2d6916730c6111c1592643a5634bf8898bac1c",
+  "source_status": "complete",
+  "scientific_scope": "Historical finite model and parameter settings. Complete/validated payload is not proof of retained-basis convergence or physical-device validity.",
+  "configuration": {
+    "physical_parameters": {
+      "EJ": 5.0,
+      "EC": 0.5,
+      "EL": 1.0,
+      "ELK": 1.0,
+      "EJS": 4.0,
+      "ECS": 8.0,
+      "eC": 5.5,
+      "eP": 10.0,
+      "eps_J": 0.1,
+      "eps_LK": 0.05,
+      "ng": 0.0,
+      "phi_ext": 0.0,
+      "theta_ext": 3.141592653589793
+    },
+    "spatial_cutoffs": {
+      "n1max": 4,
+      "N2": 71,
+      "L2": 11.0,
+      "N3": 71,
+      "L3": 14.0,
+      "N4": 8
+    },
+    "solver_settings": {
+      "k": 220,
+      "sigma": -24.0,
+      "which": "LM",
+      "tol": 1e-08,
+      "ncv": null,
+      "v0": null,
+      "permc_spec": "MMD_AT_PLUS_A"
+    }
+  },
+  "configuration_sha256": "69ee54299c70336f00b06c18250747c2e600b2f48fb9b9365f1651ce57997c39",
+  "generator": "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py",
+  "code_revision": "c69da9d293c11e46df82377c310c7260acb59a77",
+  "git_dirty_at_generation": true,
+  "source_file_sha256": {
+    "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py": "ebae73f9b04257502c293ea9a3fdd2cb7adc60701a5610f3b986f37424dc748c",
+    "Simulations/Rabi_3Photon/four_mode_retained_basis_audit.py": "e31e5ee28f3a460fc4adbf7ad69252d1b9d7b7a4268217b232600cdd82a8563a",
+    "Circuit_Objs/qchard_gridium_netlist.py": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315"
+  },
+  "package_versions": {
+    "python_version": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:38:53) [Clang 18.1.8 ]",
+    "numpy_version": "2.2.6",
+    "scipy_version": "1.13.1",
+    "qutip_version": "5.2.2"
+  },
+  "payload_sha256": {
+    "stage1_eigensystem.npz": "04b70ef505d5a918be66e9384e60e70b8d6584df2660ce3b71434f4bea432cb7",
+    "projected_operators.npz": "a9cbf618f3b634cb011c9a52defaa464bb40e066765de43cf63c8377c7263389",
+    "analysis.json": "754978a913ecc7378e591b09815aeba83cd87db4d7a8c722f6ba2775e82ab0a7"
+  },
+  "retrieval": "Raw payload and original execution metadata excluded. See research/publication/RAW_ARTIFACTS.csv and research/publication/RETRIEVAL.md."
+}

@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "arithmetic_checks": 15,
+  "artifact_checks": 11,
+  "checks": [
+    {
+      "check": "required_deliverables",
+      "status": "PASS"
+    },
+    {
+      "check": "ledger_schema_and_counts",
+      "status": "PASS"
+    },
+    {
+      "check": "contradiction_schema_and_counts",
+      "status": "PASS"
+    },
+    {
+      "check": "all_cited_files_lines_and_JSON_selectors",
+      "status": "PASS"
+    },
+    {
+      "check": "markdown_local_links",
+      "status": "PASS"
+    },
+    {
+      "check": "saved_arithmetic_checks",
+      "status": "PASS"
+    },
+    {
+      "check": "source_hashes",
+      "status": "PASS"
+    },
+    {
+      "check": "all_preexisting_file_bytes_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "git_status_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "git_index_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "git_worktree_preserved",
+      "status": "PASS"
+    }
+  ],
+  "original_files_preserved": 465,
+  "new_eigensolves": 0,
+  "new_propagations": 0,
+  "production_edits": false,
+  "original_reports_edited": false,
+  "commits_or_pushes": false,
+  "limitations": "Checks validate artifact integrity and selected cross-study arithmetic, not all historical computations or physical claims."
+}

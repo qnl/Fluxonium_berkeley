@@ -1,0 +1,15 @@
+{
+  "S2_physics_rows_explicitly_unscored": 4,
+  "changed": [],
+  "checkpoint_arrays_loaded": 0,
+  "git_status": " M EmilianoUPDATE.md\nM  Simulations/Cphase/main.ipynb\nM  Simulations/Cphase/workflow_funcs.py\n?? EmilianoUPDATE-unsaved-backup.md\n",
+  "new_eigensolves": 0,
+  "preservation": "PASS",
+  "prior_investigations_rerun": false,
+  "protected_files_checked": 47,
+  "reproduced_outputs": 4,
+  "rows": 64,
+  "source_authentication": "PASS",
+  "status": "PASS",
+  "v2_benchmark_executed": false
+}

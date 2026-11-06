@@ -1,0 +1,96 @@
+{
+  "preregistered_date_pacific": "2026-10-08",
+  "status": "frozen-before-selected-space-diagonalization",
+  "scope": "exact Stage-2 selected-rank calculations using the authenticated fixed-N71 k260 parent; no Stage-1 eigensolve",
+  "authenticated_inputs": {
+    "checkpoint": "research/checkpoints/four-mode-asymmetric-n71-k260",
+    "configuration_sha256": "990dad04b52deeef9d90908c6c19ce38e917d7f5b7fab32f0e39699c3c83c4bb",
+    "checkpoint_json_sha256": "ecb9a931d1c576cde5a262d7930276f85a83972ba99dece1c08732a15a7238b4",
+    "frozen_convergence_criteria_sha256": "8f42b3c10453a048238dea23d28e4a590accacbd87ad5fe54439cca1af799be9",
+    "shell_methodology_sha256": "921f264e6e62c6233f1906592f282f28ab1d389aa055417c47e05ac62303ec80",
+    "shell_summary_sha256": "dc05333af91c7bee9839e8908308efa6fe9096b55f498039c2b9f42ba1c3c002"
+  },
+  "basis_rule": {
+    "base_ranks": "0 through 219 inclusive",
+    "mode4_states_per_rank": 8,
+    "rank_order": "specified order only affects storage; the Hermitian selected principal submatrix is exact for the rank set",
+    "maximum_selected_dimension": 2080,
+    "state_count": 11
+  },
+  "cases": [
+    {"id": "A_P", "added_ranks": [], "role": "baseline"},
+    {"id": "B_223", "added_ranks": [223], "role": "single dominant"},
+    {"id": "C_230", "added_ranks": [230], "role": "single dominant"},
+    {"id": "D_225", "added_ranks": [225], "role": "single dominant"},
+    {"id": "E_223_230", "added_ranks": [223, 230], "role": "dominant pair"},
+    {"id": "F_dominant3", "added_ranks": [223, 225, 230], "role": "primary selected strategy"},
+    {"id": "G_complement17", "added_ranks": [220, 221, 222, 224, 226, 227, 228, 229, 231, 232, 233, 234, 235, 236, 237, 238, 239], "role": "Q1 ablation complement"},
+    {"id": "H_full_Q1_k240", "added_ranks": [220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239], "role": "authenticated contiguous reconstruction and target"},
+    {"id": "I_Q1_258", "added_ranks": [220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 258], "role": "upper-boundary single"},
+    {"id": "J_Q1_259", "added_ranks": [220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 259], "role": "upper-boundary single"},
+    {"id": "K_Q1_258_259", "added_ranks": [220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 258, 259], "role": "upper-boundary pair"},
+    {"id": "L_full_k260", "added_ranks": [220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259], "role": "authenticated endpoint reconstruction"},
+    {"id": "M_control_prefix3", "added_ranks": [220, 221, 222], "role": "prespecified equal-cost control; first three Q1 prefix ranks"},
+    {"id": "N_control_spread3", "added_ranks": [226, 232, 238], "role": "prespecified equal-cost control; deterministic six-rank spacing"}
+  ],
+  "observables": {
+    "tracked_states": [0, 1, 2, 3, 7, 8],
+    "carriers": ["f01", "f07", "f08", "f78", "f81", "f72", "f21", "f03", "f38"],
+    "edges": ["g07", "g78", "g81", "g72", "g21", "g03", "g38"],
+    "pathway_scores": ["0-7-8-1", "0-7-2-1", "0-3-8-1"],
+    "operator_blocks": ["grid_phi on {0,1,7,8}", "logical {0,1} to {7,8}", "internal {7,8}"],
+    "selectivity": ["f78-f01", "f07-f81"]
+  },
+  "tracking": {
+    "reference": "k260 endpoint eigenvectors with exact zero-padding embedding by selected Stage-1 ranks",
+    "assignment": "maximum-total-absolute-overlap Hungarian assignment",
+    "minimum_assigned_overlap": 0.90,
+    "maximum_competitor_ratio": 0.50,
+    "minimum_overlap_margin": 0.25,
+    "subspace": [0, 1, 7, 8]
+  },
+  "reconstruction_gates": {
+    "cases": ["A_P", "H_full_Q1_k240", "L_full_k260"],
+    "energy_absolute_tolerance_GHz": 1e-10,
+    "grid_phi_magnitude_absolute_tolerance": 1e-10,
+    "selected_eigenpair_residual_GHz": 1e-9,
+    "action": "STOP before scientific interpretation if any reconstruction gate fails"
+  },
+  "metrics": {
+    "effect": "selected observable minus P observable; energy-derived effects are reported in MHz",
+    "full_Q1_effect": "H_full_Q1_k240 minus A_P",
+    "signed_recovery_ratio": "selected effect divided by full_Q1 effect, reported only when abs(full_Q1 effect) >= 0.1 MHz for energy-derived metrics",
+    "recovered_fraction": "1 - abs(selected effect - full_Q1 effect)/abs(full_Q1 effect), not clipped and descriptive only; omitted when abs(full_Q1 effect) < 0.1 MHz",
+    "accuracy_per_added_rank": "(abs(P error versus k240) - abs(selected error versus k240))/number of added ranks; MHz per rank for carriers",
+    "worst_case_carrier_error": "maximum absolute error versus k240 over all nine preregistered carriers",
+    "primary_worst_carrier_error": "maximum absolute error versus k240 over f07, f08, f78",
+    "operator_accuracy": "relative error versus k240 for every edge, pathway score, block Frobenius norm and ordered singular value",
+    "pair_nonadditivity": "effect({223,230}) - effect({223}) - effect({230})",
+    "rank225_group_interaction": "effect({223,225,230}) - effect({223,230}) - effect({225}); this combines interactions of 225 with the pair and any three-way term",
+    "dominant_complement_nonadditivity": "effect(full Q1) - effect(dominant3) - effect(complement17)",
+    "boundary_pair_nonadditivity": "effect(Q1+{258,259}) - effect(Q1+{258}) - effect(Q1+{259}) + effect(Q1)"
+  },
+  "frozen_thresholds": {
+    "standard_carrier_delta_MHz": {"strict_pass_max": 1.0, "strict_borderline_max": 5.0, "practical_pass_max": 5.0, "practical_borderline_max": 10.0},
+    "fine_f78_delta_MHz": {"strict_pass_max": 0.5, "strict_borderline_max": 1.0, "practical_pass_max": 1.0, "practical_borderline_max": 2.0},
+    "state_or_subspace_overlap": {"strict_pass_min": 0.999, "strict_borderline_min": 0.995, "practical_pass_min": 0.995, "practical_borderline_min": 0.990},
+    "edge_or_operator_block_relative_error": {"strict_pass_max": 0.03, "strict_borderline_max": 0.05, "practical_pass_max": 0.05, "practical_borderline_max": 0.10},
+    "path_score_relative_error": {"strict_pass_max": 0.05, "strict_borderline_max": 0.10, "practical_pass_max": 0.10, "practical_borderline_max": 0.20}
+  },
+  "diagnostic_decision_rules": {
+    "dominant_three_recovery_target": "at least 0.80 recovered fraction for state7, state8, f07, f08 and f78; this is descriptive evidence, not convergence",
+    "operator_accuracy_PASS": "every edge and operator-block scalar strict PASS and every pathway score strict PASS versus k240",
+    "operator_accuracy_BORDERLINE": "no operator/path component strict FAIL but at least one strict BORDERLINE",
+    "operator_accuracy_FAIL": "any operator/path component strict FAIL",
+    "strategy_PROMISING": "dominant3 passes its recovery target, tracking gates, operator PASS, f07/f08 errors <=5 MHz and f78 error <=1 MHz versus k240, and beats both three-rank controls on primary worst carrier error and mean absolute state7/8 energy error",
+    "strategy_INCONCLUSIVE": "tracking is safe, operator accuracy is not FAIL, and every primary recovery is at least 0.50, but PROMISING is not met",
+    "strategy_NOT_JUSTIFIED": "tracking is unsafe, operator accuracy FAILS, or any primary recovery is below 0.50",
+    "formal_convergence": "No selected-space result changes or satisfies the previously frozen retained-basis convergence verdict; same-parent agreement is not independent convergence evidence"
+  },
+  "scientific_guardrails": [
+    "k260 is an endpoint, not ground truth",
+    "rank-attribution self-energy shares are not standalone addback predictions",
+    "selected spaces are exact principal-subspace Stage-2 calculations inside the same parent",
+    "no spatial/domain/n1max/N4, omitted-mode, physical-port, X90 or X180 validation follows"
+  ]
+}

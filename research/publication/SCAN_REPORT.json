@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scope": "New publication set; no credential-pattern or machine-private-path matches. Existing historical publications are unchanged.",
+  "findings": [],
+  "maximum_new_payload_bytes": 3629609,
+  "size_policy_bytes": 5242880,
+  "unchanged_scientific_binary_files": [
+    "research/sandbox/k380_coupling_vs_schur_2026_10_21/coupling_vs_attribution.pdf",
+    "research/sandbox/k380_coupling_vs_schur_2026_10_21/predictor_rank_comparison.pdf",
+    "research/sandbox/k_convergence_reaudit/diagnostic_trends.png"
+  ],
+  "authorization_word_mentions": [
+    "research/sandbox/epsj011_k340_preregistration/REPORT.md"
+  ],
+  "authorization_review": "Descriptions of historical execution gates only; credential/authorization records and actual launch authorization markers are excluded.",
+  "array_exports_exactly_checked": 11,
+  "json_numerical_fields_unchanged_in_path_copies": true,
+  "scientific_eigensolves": 0,
+  "figures_regenerated": 0
+}

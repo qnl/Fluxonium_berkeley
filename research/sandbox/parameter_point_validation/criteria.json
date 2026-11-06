@@ -1,0 +1,129 @@
+{
+  "status": "preregistered-before-any-epsj011-stage1-or-dressed-result",
+  "scope": "independent parameter-point validation within the fixed N71 asymmetric four-mode model; k300 is a finite endpoint",
+  "profile": {
+    "name": "n71-k300-epsj011-heldout",
+    "final_directory_name": "four-mode-asymmetric-n71-epsj011-k300",
+    "configuration_sha256": "8ed1b0c72746a2594e9139d4cc782a86007a3b416394eeab71da071dc8364646",
+    "configuration": {
+      "physical_parameters": {"EJ": 5.0, "EC": 0.5, "EL": 1.0, "ELK": 1.0, "EJS": 4.0, "ECS": 8.0, "eC": 5.5, "eP": 10.0, "eps_J": 0.11, "eps_LK": 0.05, "ng": 0.0, "phi_ext": 0.0, "theta_ext": 3.141592653589793},
+      "spatial_cutoffs": {"n1max": 4, "N2": 71, "L2": 11.0, "N3": 71, "L3": 14.0, "N4": 8},
+      "solver_settings": {"k": 300, "sigma": -24.0, "which": "LM", "tol": 1e-8, "ncv": null, "v0": null, "permc_spec": "MMD_AT_PLUS_A"}
+    }
+  },
+  "parameter_choice": {
+    "training_eps_J": 0.10,
+    "validation_eps_J": 0.11,
+    "eps_LK": 0.05,
+    "chosen_before_new_point_results": true,
+    "same_device_claim": false,
+    "same_four_mode_model": true,
+    "sensitivity_evidence_sha256": "58ac59fe9f2fd581431d850861d68a76972114051a61c1476429a15d332f2a96"
+  },
+  "frozen_selector": {
+    "algorithm_source": "research/sandbox/k300_preregistration/selector.py",
+    "algorithm_sha256": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+    "method_source": "research/sandbox/k300_preregistration/selector_method.md",
+    "method_sha256": "2055c7d54d81ada97379f4941ef08354dbb3cbf9378aa2b10dde1349ca2ff7cc",
+    "original_criteria_sha256": "4954e8212c3eb094ffa9e009628da6434badb6ffe618561ce51eadd276d21993",
+    "groups": [[0, 1], [2, 3], [7, 8]],
+    "near_rank_gap_GHz": 1e-6,
+    "denominator_min_GHz": 0.010,
+    "eta_strict_max": 0.10,
+    "whitening_floor_GHz": 1e-14,
+    "whitening_relative_floor": 1e-10,
+    "logdet_scale": 6,
+    "tie_absolute": 1e-12,
+    "operator_weight": 0,
+    "budget_tuning": false,
+    "previous_rank_lists_are_forbidden_inputs": [223, 225, 230, 290, 292]
+  },
+  "authenticated_inputs": {
+    "original_k260_checkpoint_sha256": "ecb9a931d1c576cde5a262d7930276f85a83972ba99dece1c08732a15a7238b4",
+    "original_k300_checkpoint_sha256": "a48ab94ed6b958e7e4422825ca1670784f8ed797f72cf011db32824b35f1145f",
+    "original_k300_authentication_sha256": "057927291c1f3a8ec1ec45e5a58eb00d1fa787c4a8bd5a45e0d6c02dcbedf8cb",
+    "k300_shell_attribution_sha256": "9979415544036038d8b6a2935d54cfc6565f0d1195ee88b394e3e627a1f44008",
+    "required_source_sha256": {
+      "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py": "ebae73f9b04257502c293ea9a3fdd2cb7adc60701a5610f3b986f37424dc748c",
+      "Simulations/Rabi_3Photon/four_mode_retained_basis_audit.py": "e31e5ee28f3a460fc4adbf7ad69252d1b9d7b7a4268217b232600cdd82a8563a",
+      "Circuit_Objs/qchard_gridium_netlist.py": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315"
+    }
+  },
+  "targets": [0, 1, 2, 3, 7, 8],
+  "groups": [[0, 1], [2, 3], [7, 8]],
+  "prefixes": [180, 200, 220, 240, 260, 280, 300],
+  "base": 260,
+  "shells": {"S1": [260, 279], "S2": [280, 299]},
+  "budgets_per_shell": [3, 6, 10, 15],
+  "primary_budget": 10,
+  "confirmation_budget": 15,
+  "comparators": ["physics", "prefix", "spread", "spread_reverse", "union_global_prefix", "union_balanced_prefix"],
+  "frequencies": ["f01", "f07", "f08", "f78", "f81", "f72", "f21", "f03", "f38"],
+  "edges": ["g07", "g78", "g81", "g72", "g21", "g03", "g38", "g01"],
+  "paths": [[0, 7, 8, 1], [0, 7, 2, 1], [0, 3, 8, 1]],
+  "subspaces": [[0, 1], [2, 3], [7, 8], [0, 1, 7, 8], [0, 1, 2, 3, 7, 8]],
+  "blocks": {
+    "primary": [[0, 1, 7, 8], [0, 1, 7, 8]],
+    "logical_to_78": [[0, 1], [7, 8]],
+    "internal_78": [[7, 8], [7, 8]],
+    "all_targets": [[0, 1, 2, 3, 7, 8], [0, 1, 2, 3, 7, 8]],
+    "logical_to_23": [[0, 1], [2, 3]],
+    "comparators_to_78": [[2, 3], [7, 8]]
+  },
+  "strict": {
+    "standard_MHz": [1.0, 5.0],
+    "f78_MHz": [0.5, 1.0],
+    "overlap_min": [0.999, 0.995],
+    "operator_relative": [0.03, 0.05],
+    "score_relative": [0.05, 0.10]
+  },
+  "practical": {
+    "standard_MHz": [5.0, 10.0],
+    "f78_MHz": [1.0, 2.0],
+    "overlap_min": [0.995, 0.990],
+    "operator_relative": [0.05, 0.10],
+    "score_relative": [0.10, 0.20]
+  },
+  "tracking": {"assigned_min": 0.90, "competitor_ratio_strict_max": 0.50, "margin_strict_min": 0.25, "cross_parameter_base_requires_all_11_safe": true},
+  "quality": {"stage1_residual_max": 1e-7, "stage1_orthogonality_inf_max": 1e-8, "stage2_residual_GHz_max": 1e-9, "hermiticity_max": 1e-12},
+  "comparison": {"improvement_pass_ratio": 0.80, "borderline_improvement_ratio": 1.00, "no_harm_slack_strict_units": 0.10, "budget_error_growth_slack_strict_units": 0.10, "primary_and_confirmation_budgets": [10, 15]},
+  "cancellation": {
+    "common_offset": "mean raw energy error over states 0,1,2,3,7,8",
+    "transition_ratio_max": 0.25,
+    "denominator_floor_MHz": 1e-6,
+    "large_excitation_error_MHz": 1.0,
+    "severe_excitation_error_MHz": 5.0,
+    "rule": "flag pair i,j when |x_j-x_i| <= 0.25(|x_i|+|x_j|), denominator exceeds 1e-6 MHz, and max(|x_i|,|x_j|)>1 MHz; x_s is excitation-energy error relative to state 0"
+  },
+  "zero_reference": {"floor": 1e-12, "rule": "if abs(reference)<=floor, only absolute error <=floor passes; never omit a component"},
+  "families": {
+    "logical_01": ["f01", "states_0_1", "subspace_0_1", "centered_0_1", "excitation_1"],
+    "comparator_23": ["f21", "f03", "states_2_3", "subspace_2_3", "centered_2_3", "excitation_2_3"],
+    "primary_78": ["f78", "states_7_8", "subspace_7_8", "centered_7_8", "excitation_7_8"],
+    "cross_carriers": ["f07", "f08", "f81", "f72", "f38"],
+    "operators": ["all_edges", "all_blocks"],
+    "pathways": ["0781", "0721", "0381"]
+  },
+  "decision_rules": {
+    "parameter_point_selector_validation": {
+      "PASS": "all hard gates; no practical mandatory failure at b10/b15; all b15 mandatory metrics strict PASS; at b10 every family <=0.80 times best equal-cost control in S1/S2/union; no cancellation flag for physics; no scalar no-harm or budget-growth miss; path ordering PASS",
+      "BORDERLINE": "all hard gates; no practical mandatory failure; every b10 family improves ordinary prefix in S1/S2/union; all b15 metrics no worse than strict BORDERLINE; no severe cancellation; one or more PASS clauses missed",
+      "FAIL": "hard-gate failure, practical mandatory failure, any b10 family not improved over ordinary prefix, 2/3 group not improved, hidden separate-shell failure, unsafe identity/path ordering, severe cancellation, or material b15 error growth",
+      "precedence": "FAIL then BORDERLINE then PASS"
+    },
+    "multi_target_transfer": {
+      "SUPPORTED": "selector PASS and logical01/comparator23/primary78 each <=0.80 times best equal-cost control at b10 in S1/S2/union with no physics cancellation",
+      "PARTIAL": "not NOT SUPPORTED; every target group improves ordinary prefix in all contexts but at least one misses the 0.80 best-control condition or selector is BORDERLINE",
+      "NOT_SUPPORTED": "selector FAIL, any target group fails to improve ordinary prefix, unsafe mandatory target identity, or cancellation masks >5 MHz individual excitation errors",
+      "precedence": "NOT SUPPORTED then PARTIAL then SUPPORTED"
+    },
+    "retained_basis_convergence": {
+      "PASS": "k260-vs-k300 and k280-vs-k300 pass all strict mandatory metrics; final increments shrink; no meaningful reversal/cancellation; all hard gates",
+      "BORDERLINE": "no practical failure; k280-vs-k300 no worse than strict BORDERLINE; increments shrink; no unresolved reversal/cancellation; at least one strict miss",
+      "FAIL": "practical failure, k280-vs-k300 strict FAIL, nonshrinking problematic increment, meaningful reversal/cancellation, or hard-gate failure",
+      "precedence": "FAIL then BORDERLINE then PASS"
+    }
+  },
+  "mandatory": ["authentication", "sealed_selection_before_validation", "parent_quality", "cross_parameter_base_tracking", "all_nine_carriers", "centered_target_energy_errors", "individual_excitation_energy_errors", "cancellation_flags", "all_six_state_overlaps", "all_five_subspaces", "all_eight_edges", "all_three_scores", "all_six_blocks", "path_ordering", "equal_cost_improvement", "separate_shell_validation", "budget_sensitivity"],
+  "guardrails": {"gate_work": "HOLD", "spatial_convergence": "HOLD", "physical_device_validation": false, "production_selector_validated": false, "beyond_k300_convergence_established": false}
+}

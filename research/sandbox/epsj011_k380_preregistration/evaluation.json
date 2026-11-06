@@ -1,0 +1,206 @@
+{
+  "retained_basis_convergence": {
+    "verdict": "FAIL",
+    "failures": [
+      "block:all_targets:frobenius: final increment did not shrink",
+      "block:all_targets:sv2: final increment did not shrink",
+      "block:all_targets:sv3: final increment did not shrink",
+      "block:comparators_to_78:frobenius: final increment did not shrink",
+      "block:comparators_to_78:sv0: final increment did not shrink",
+      "block:comparators_to_78:sv1: final increment did not shrink",
+      "block:logical_to_23:frobenius: final increment did not shrink",
+      "block:logical_to_23:sv0: final increment did not shrink",
+      "block:logical_to_23:sv1: final increment did not shrink",
+      "block:logical_to_78:frobenius: final increment did not shrink",
+      "block:logical_to_78:sv1: final increment did not shrink",
+      "block:primary:sv2: final increment did not shrink",
+      "block:primary:sv3: final increment did not shrink",
+      "carrier:f07: final increment did not shrink",
+      "carrier:f08: final increment did not shrink",
+      "carrier:f38: final increment did not shrink",
+      "carrier:f72: final increment did not shrink",
+      "carrier:f81: final increment did not shrink",
+      "centered:0: final increment did not shrink",
+      "centered:1: final increment did not shrink",
+      "centered:2: final increment did not shrink",
+      "centered:3: final increment did not shrink",
+      "centered:7: final increment did not shrink",
+      "centered:8: final increment did not shrink",
+      "edge:g01: final increment did not shrink",
+      "edge:g03: final increment did not shrink",
+      "edge:g21: final increment did not shrink",
+      "edge:g38: final increment did not shrink",
+      "edge:g72: final increment did not shrink",
+      "edge:g81: final increment did not shrink",
+      "excitation:7: final increment did not shrink",
+      "excitation:8: final increment did not shrink",
+      "k340_to_k360: within-comparison cancellation",
+      "k340_to_k380/carrier:f07: practical FAIL",
+      "k340_to_k380/carrier:f08: practical FAIL",
+      "k340_to_k380/carrier:f38: practical FAIL",
+      "k340_to_k380/carrier:f72: practical FAIL",
+      "k340_to_k380/carrier:f81: practical FAIL",
+      "k340_to_k380/excitation:7: practical FAIL",
+      "k340_to_k380/excitation:8: practical FAIL",
+      "k340_to_k380: within-comparison cancellation",
+      "k360_to_k380/carrier:f07: final strict FAIL",
+      "k360_to_k380/carrier:f08: final strict FAIL",
+      "k360_to_k380/carrier:f38: final strict FAIL",
+      "k360_to_k380/carrier:f72: final strict FAIL",
+      "k360_to_k380/carrier:f81: final strict FAIL",
+      "k360_to_k380/excitation:7: final strict FAIL",
+      "k360_to_k380/excitation:8: final strict FAIL",
+      "k360_to_k380: within-comparison cancellation",
+      "overlap:0: final increment did not shrink",
+      "overlap:1: final increment did not shrink",
+      "overlap:7: final increment did not shrink",
+      "overlap:8: final increment did not shrink",
+      "score:0381: final increment did not shrink",
+      "score:0721: final increment did not shrink",
+      "subspace:0_1: final increment did not shrink",
+      "subspace:0_1_2_3_7_8: final increment did not shrink",
+      "subspace:0_1_7_8: final increment did not shrink",
+      "subspace:7_8: final increment did not shrink"
+    ],
+    "strict_misses": [
+      "k340_to_k360/carrier:f07: BORDERLINE",
+      "k340_to_k360/carrier:f08: FAIL",
+      "k340_to_k360/carrier:f38: BORDERLINE",
+      "k340_to_k360/carrier:f72: BORDERLINE",
+      "k340_to_k360/carrier:f78: FAIL",
+      "k340_to_k360/carrier:f81: FAIL",
+      "k340_to_k360/centered:0: BORDERLINE",
+      "k340_to_k360/centered:1: BORDERLINE",
+      "k340_to_k360/centered:2: BORDERLINE",
+      "k340_to_k360/centered:3: BORDERLINE",
+      "k340_to_k360/centered:7: BORDERLINE",
+      "k340_to_k360/centered:8: BORDERLINE",
+      "k340_to_k360/excitation:7: BORDERLINE",
+      "k340_to_k360/excitation:8: FAIL",
+      "k340_to_k380/carrier:f07: FAIL",
+      "k340_to_k380/carrier:f08: FAIL",
+      "k340_to_k380/carrier:f38: FAIL",
+      "k340_to_k380/carrier:f72: FAIL",
+      "k340_to_k380/carrier:f78: FAIL",
+      "k340_to_k380/carrier:f81: FAIL",
+      "k340_to_k380/centered:0: BORDERLINE",
+      "k340_to_k380/centered:1: BORDERLINE",
+      "k340_to_k380/centered:2: BORDERLINE",
+      "k340_to_k380/centered:3: BORDERLINE",
+      "k340_to_k380/centered:7: FAIL",
+      "k340_to_k380/centered:8: FAIL",
+      "k340_to_k380/excitation:7: FAIL",
+      "k340_to_k380/excitation:8: FAIL",
+      "k360_to_k380/carrier:f07: FAIL",
+      "k360_to_k380/carrier:f08: FAIL",
+      "k360_to_k380/carrier:f38: FAIL",
+      "k360_to_k380/carrier:f72: FAIL",
+      "k360_to_k380/carrier:f78: BORDERLINE",
+      "k360_to_k380/carrier:f81: FAIL",
+      "k360_to_k380/centered:0: BORDERLINE",
+      "k360_to_k380/centered:1: BORDERLINE",
+      "k360_to_k380/centered:2: BORDERLINE",
+      "k360_to_k380/centered:3: BORDERLINE",
+      "k360_to_k380/centered:7: BORDERLINE",
+      "k360_to_k380/centered:8: BORDERLINE",
+      "k360_to_k380/excitation:7: FAIL",
+      "k360_to_k380/excitation:8: FAIL"
+    ]
+  },
+  "tail_hypothesis": {
+    "classification": "D_NONMONOTONIC_UNRESOLVED",
+    "reason": "nonshrinking component or within-comparison cancellation"
+  },
+  "selector_secondary": {
+    "verdict": "PASS",
+    "failures": [],
+    "pass_requirements_missed": [],
+    "family_ratios": {
+      "S1": {
+        "logical_01": {
+          "vs_prefix": 0.010029429534837446,
+          "vs_best_control": 0.03983487848080751
+        },
+        "comparator_23": {
+          "vs_prefix": 0.010714540403887399,
+          "vs_best_control": 0.05137208654701773
+        },
+        "primary_78": {
+          "vs_prefix": 0.008881648682079414,
+          "vs_best_control": 0.03349069603780124
+        },
+        "cross_carriers": {
+          "vs_prefix": 0.007369124213233654,
+          "vs_best_control": 0.03290335746611914
+        },
+        "operators": {
+          "vs_prefix": 0.008668490626483645,
+          "vs_best_control": 0.0293261660488085
+        },
+        "pathways": {
+          "vs_prefix": 0.0106083353310644,
+          "vs_best_control": 0.033996380908917344
+        }
+      },
+      "S2": {
+        "logical_01": {
+          "vs_prefix": 0.016953994490296852,
+          "vs_best_control": 0.07198667560126815
+        },
+        "comparator_23": {
+          "vs_prefix": 0.018295208937971492,
+          "vs_best_control": 0.07779130385438886
+        },
+        "primary_78": {
+          "vs_prefix": 0.016237146279252358,
+          "vs_best_control": 0.06919289305462255
+        },
+        "cross_carriers": {
+          "vs_prefix": 0.018357292546384654,
+          "vs_best_control": 0.07697362348841147
+        },
+        "operators": {
+          "vs_prefix": 0.001790960710687246,
+          "vs_best_control": 0.00623071610566097
+        },
+        "pathways": {
+          "vs_prefix": 0.0014960588116553807,
+          "vs_best_control": 0.00483306615650201
+        }
+      },
+      "union": {
+        "logical_01": {
+          "vs_prefix": 0.00905633696087288,
+          "vs_best_control": 0.04171376500324631
+        },
+        "comparator_23": {
+          "vs_prefix": 0.010028856230372417,
+          "vs_best_control": 0.0508468727987554
+        },
+        "primary_78": {
+          "vs_prefix": 0.008167268314688019,
+          "vs_best_control": 0.03774859013149843
+        },
+        "cross_carriers": {
+          "vs_prefix": 0.007047844545092126,
+          "vs_best_control": 0.03652237378048043
+        },
+        "operators": {
+          "vs_prefix": 0.008444852101013842,
+          "vs_best_control": 0.020425809177938493
+        },
+        "pathways": {
+          "vs_prefix": 0.01940036636094604,
+          "vs_best_control": 0.01940036636094604
+        }
+      }
+    }
+  },
+  "claims": {
+    "smaller_final_increment": "report measured trend only",
+    "plateau_within_tested_range": false,
+    "convergence_beyond_k380": false,
+    "other_spatial_or_model_convergence": false,
+    "k380_is_ground_truth": false
+  }
+}

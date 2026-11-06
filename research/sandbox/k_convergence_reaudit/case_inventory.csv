@@ -1,0 +1,33 @@
+case,grid,family,k,evidence,stored_states,clean,borderline,ambiguous_states,index_exchanges,minimum_probability,automatic_clusters,source
+N71_priority_k170,71,N71_priority,170,vectors_48_signed_phi,48,28,18,"[45, 46]","[45, 46]",0.5392242337343744,1,
+N71_priority_k172,71,N71_priority,172,vectors_48_signed_phi,48,30,16,"[45, 46]",[],0.5277444508624218,1,
+N71_priority_k175,71,N71_priority,175,vectors_48_signed_phi,48,39,9,[],[],0.9421431899946979,0,
+N71_priority_k177,71,N71_priority,177,vectors_48_signed_phi,48,47,1,[],[],0.9964733080034631,0,
+N71_priority_k179,71,N71_priority,179,vectors_48_signed_phi,48,48,0,[],[],0.9991505150885706,0,
+asymmetric_priority_k170,71,asymmetric_priority,170,vectors_48_signed_phi,48,10,29,"[29, 30, 31, 33, 34, 35, 37, 45, 46]","[32, 33, 36, 37]",0.4460497564410169,4,
+asymmetric_priority_k172,71,asymmetric_priority,172,vectors_48_signed_phi,48,10,31,"[29, 30, 31, 33, 34, 35, 37]","[32, 33, 36, 37]",0.43587858958141196,3,
+asymmetric_priority_k175,71,asymmetric_priority,175,vectors_48_signed_phi,48,16,30,"[30, 33]","[32, 33]",0.7386222854725591,1,
+N71_core160,71,energy,160,vectors_48_signed_phi,48,7,32,"[29, 30, 31, 33, 34, 35, 36, 45, 46]","[32, 33]",0.46469447541428427,5,
+N51_N71_priority_k170,51,N71_priority,170,saved_summary_only,11,,,,,0.989963822269949,,research/sandbox/n71_retained_subspace_postprocess.json
+N51_N71_priority_k172,51,N71_priority,172,saved_summary_only,11,,,,,0.9988706960573323,,research/sandbox/n71_retained_subspace_postprocess.json
+N51_N71_priority_k175,51,N71_priority,175,saved_summary_only,11,,,,,0.9986491772700048,,research/sandbox/n71_retained_subspace_postprocess.json
+N51_N71_priority_k177,51,N71_priority,177,saved_summary_only,11,,,,,0.9987975372626575,,research/sandbox/n71_retained_subspace_postprocess.json
+N51_N71_priority_k179,51,N71_priority,179,saved_summary_only,11,,,,,0.9999699073179256,,research/sandbox/n71_retained_subspace_postprocess.json
+N71_common_priority_k170,71,common_priority,170,saved_summary_only,11,,,,,0.9997486804046639,,research/sandbox/n71_retained_subspace_postprocess.json
+N71_common_priority_k172,71,common_priority,172,saved_summary_only,11,,,,,0.9999151834907144,,research/sandbox/n71_retained_subspace_postprocess.json
+N71_common_priority_k175,71,common_priority,175,saved_summary_only,11,,,,,0.9999565422349329,,research/sandbox/n71_retained_subspace_postprocess.json
+N71_common_priority_k177,71,common_priority,177,saved_summary_only,11,,,,,0.9999769588949857,,research/sandbox/n71_retained_subspace_postprocess.json
+N71_common_priority_k179,71,common_priority,179,saved_summary_only,11,,,,,0.999992797868586,,research/sandbox/n71_retained_subspace_postprocess.json
+N51_common_priority_k170,51,common_priority,170,saved_summary_only,11,,,,,0.9998538124090692,,research/sandbox/n71_retained_subspace_postprocess.json
+N51_common_priority_k172,51,common_priority,172,saved_summary_only,11,,,,,0.9998522598478455,,research/sandbox/n71_retained_subspace_postprocess.json
+N51_common_priority_k175,51,common_priority,175,saved_summary_only,11,,,,,0.9998988561562782,,research/sandbox/n71_retained_subspace_postprocess.json
+N51_common_priority_k177,51,common_priority,177,saved_summary_only,11,,,,,0.9999484745416349,,research/sandbox/n71_retained_subspace_postprocess.json
+N51_common_priority_k179,51,common_priority,179,saved_summary_only,11,,,,,0.9999736965925794,,research/sandbox/n71_retained_subspace_postprocess.json
+N51_energy_k160,51,energy,160,saved_summary_only,11,,,,,0.9740627594954523,,research/sandbox/n71_retained_subspace_postprocess.json
+N51_asymmetric_priority_k170,51,asymmetric_priority,170,saved_summary_only,11,,,,,0.9998757920809805,,Figures/Rabi_3Photon/four_mode_asymmetric_shell_basis_audit.json
+N51_asymmetric_priority_k172,51,asymmetric_priority,172,saved_summary_only,11,,,,,0.9998958098732098,,Figures/Rabi_3Photon/four_mode_asymmetric_shell_basis_audit.json
+N51_asymmetric_priority_k175,51,asymmetric_priority,175,saved_summary_only,11,,,,,0.9999582765313192,,Figures/Rabi_3Photon/four_mode_asymmetric_shell_basis_audit.json
+N51_asymmetric_priority_k177,51,asymmetric_priority,177,saved_summary_only,11,,,,,0.9999907987543947,,Figures/Rabi_3Photon/four_mode_asymmetric_shell_basis_audit.json
+N51_asymmetric_priority_k179,51,asymmetric_priority,179,saved_summary_only,11,,,,,0.9999989399264637,,Figures/Rabi_3Photon/four_mode_asymmetric_shell_basis_audit.json
+N51_inherited_rejected_k170,51,inherited_rejected,170,saved_summary_only,11,,,,,0.9898515100382936,,Figures/Rabi_3Photon/four_mode_asymmetric_shell_basis_audit.json
+N51_energy_k170,51,energy,170,saved_summary_only,11,,,,,0.9719867030372553,,Figures/Rabi_3Photon/four_mode_retained_basis_grid_phi_audit_spatial51_inherited_shell_rejected.json

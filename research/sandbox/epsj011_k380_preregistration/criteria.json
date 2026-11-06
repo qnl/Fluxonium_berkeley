@@ -1,0 +1,531 @@
+{
+  "schema": 1,
+  "status": "frozen-before-any-k380-stage1-or-new-shell-dressed-result",
+  "scope": "fixed-N71 fixed-four-mode retained Stage-1 convergence at epsilon_J=0.11; k380 is a finite endpoint",
+  "profile": {
+    "name": "n71-k380-epsj011-convergence",
+    "final_directory_name": "four-mode-asymmetric-n71-epsj011-k380",
+    "configuration_sha256": "8f02dbfc09f6a6c4e6bcd49d938c79d570b063103edf33beaad8b331e085ac5e",
+    "configuration": {
+      "physical_parameters": {
+        "EJ": 5.0,
+        "EC": 0.5,
+        "EL": 1.0,
+        "ELK": 1.0,
+        "EJS": 4.0,
+        "ECS": 8.0,
+        "eC": 5.5,
+        "eP": 10.0,
+        "eps_J": 0.11,
+        "eps_LK": 0.05,
+        "ng": 0.0,
+        "phi_ext": 0.0,
+        "theta_ext": 3.141592653589793
+      },
+      "spatial_cutoffs": {
+        "n1max": 4,
+        "N2": 71,
+        "L2": 11.0,
+        "N3": 71,
+        "L3": 14.0,
+        "N4": 8
+      },
+      "solver_settings": {
+        "k": 380,
+        "sigma": -24.0,
+        "which": "LM",
+        "tol": 1e-08,
+        "ncv": null,
+        "v0": null,
+        "permc_spec": "MMD_AT_PLUS_A"
+      }
+    }
+  },
+  "authenticated_inputs": {
+    "epsj011_k300_checkpoint_sha256": "20a58be10ad8408ce479de259e1d2f3562cc46222e0eebc939d6d695803516bd",
+    "epsj011_k300_complete_sha256": "109c05ce53c6982a7f9b2666d1a53db9ba248eab026c1cd9b8211bbb8e6960ba",
+    "epsj011_k300_stage1_sha256": "fcb5d91130b2fef9b908c0573b4d8297f3cff8aa81e2ba9ef11874601849a3f3",
+    "epsj011_k300_operators_sha256": "b528fed0f47ff6d387f679a41f81deb1a4bd7075755930a1f0cd75a803564a6c",
+    "epsj011_k300_analysis_sha256": "0e67d3989a1e9fe3158ae385db3b15895ffeeeb3120f6d5070e5cc0beaba4880",
+    "epsj011_k300_run_state_sha256": "fb7cc90d29366cdc455b687caf609673a39cd576b791ebfa55ade87b9009d4a8",
+    "parameter_criteria_sha256": "8c3c44c69eb290c965beebc0b176c0166410c3d98602a05bd530673c9172ea18",
+    "parameter_evaluation_sha256": "86c0c2412db90fce7c4de0ff2f8c14ba0db193fbf8cde46c62d91e65b0ee3930",
+    "parameter_metrics_sha256": "27edea1da4dd474813429214448070ae88f128c3c6c6331ce889f8a87b3a556c",
+    "parameter_selection_sha256": "17ec7b93304099399f152cb34e819fa4aedc5133d23bc3c04c3b7b1f6292a931",
+    "parameter_selection_seal_sha256": "94808eb5c683000b7fbd53b041777178b85bdca8d9510e86b557606211c5f847",
+    "shell_summary_sha256": "7f189e4ceaedf3afdc26155554939549cb378261a96e949f800b1098e4a45ff8",
+    "shell_methodology_sha256": "1df2a8d19a7b11c4ea35195f63650eb31c0b1baff4f57dc03e4577adf3bcdbbc",
+    "shell_input_hashes_sha256": "86cea52b6585b692c0d79ca7a7b26d82a965520a9fdad9dd3b8f8b7a9471d84c",
+    "required_source_sha256": {
+      "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py": "ebae73f9b04257502c293ea9a3fdd2cb7adc60701a5610f3b986f37424dc748c",
+      "Simulations/Rabi_3Photon/four_mode_retained_basis_audit.py": "e31e5ee28f3a460fc4adbf7ad69252d1b9d7b7a4268217b232600cdd82a8563a",
+      "Circuit_Objs/qchard_gridium_netlist.py": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315",
+      "research/sandbox/k300_preregistration/selector.py": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+      "research/sandbox/k300_preregistration/selector_method.md": "2055c7d54d81ada97379f4941ef08354dbb3cbf9378aa2b10dde1349ca2ff7cc"
+    },
+    "epsj011_k340_checkpoint_sha256": "a6f30847458108adee7a6776463d39a033672b2d3476af739e59bede91b80d13",
+    "epsj011_k340_complete_sha256": "48a4aa9bd4ea5cfebe25fb91a9033b3ca669a184bbb6df5f2896a4c2948534f6",
+    "epsj011_k340_stage1_sha256": "aa28cf17934e0e5f447a7a846b44f3a3f6de2c3699b7df8cabfaeb12d526487f",
+    "epsj011_k340_operators_sha256": "cfa3e1ecf26085c466d40276ff461ccd6e83d5920de780451f3da7a083f08b01",
+    "epsj011_k340_analysis_sha256": "996e0db5368a881956768e368724caa7026bb8d63f21605cddcb986dcdc14a24",
+    "epsj011_k340_run_state_sha256": "337b933bb74926976d608d3e3bfe76a746b69f1a813481d44095a91c35f6b999"
+  },
+  "prefixes": [
+    300,
+    320,
+    340,
+    360,
+    380
+  ],
+  "primary_comparisons": [
+    "k340_to_k360",
+    "k360_to_k380",
+    "k340_to_k380"
+  ],
+  "context_comparisons": [
+    "k300_to_k320",
+    "k320_to_k340"
+  ],
+  "shells": {
+    "historical_final": [
+      320,
+      339
+    ],
+    "S1": [
+      340,
+      359
+    ],
+    "S2": [
+      360,
+      379
+    ]
+  },
+  "targets": [
+    0,
+    1,
+    2,
+    3,
+    7,
+    8
+  ],
+  "groups": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "frequencies": [
+    "f01",
+    "f07",
+    "f08",
+    "f78",
+    "f81",
+    "f72",
+    "f21",
+    "f03",
+    "f38"
+  ],
+  "selectivity": [
+    "f78-f01"
+  ],
+  "edges": [
+    "g01",
+    "g07",
+    "g78",
+    "g81"
+  ],
+  "supporting_edges": [
+    "g72",
+    "g21",
+    "g03",
+    "g38"
+  ],
+  "paths": [
+    [
+      0,
+      7,
+      8,
+      1
+    ],
+    [
+      0,
+      7,
+      2,
+      1
+    ],
+    [
+      0,
+      3,
+      8,
+      1
+    ]
+  ],
+  "subspaces": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      0,
+      1,
+      7,
+      8
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      7,
+      8
+    ]
+  ],
+  "blocks": {
+    "primary": [
+      [
+        0,
+        1,
+        7,
+        8
+      ],
+      [
+        0,
+        1,
+        7,
+        8
+      ]
+    ],
+    "logical_to_78": [
+      [
+        0,
+        1
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "internal_78": [
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "all_targets": [
+      [
+        0,
+        1,
+        2,
+        3,
+        7,
+        8
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        7,
+        8
+      ]
+    ],
+    "logical_to_23": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "comparators_to_78": [
+      [
+        2,
+        3
+      ],
+      [
+        7,
+        8
+      ]
+    ]
+  },
+  "strict": {
+    "standard_MHz": [
+      1.0,
+      5.0
+    ],
+    "f78_MHz": [
+      0.5,
+      1.0
+    ],
+    "overlap_min": [
+      0.999,
+      0.995
+    ],
+    "operator_relative": [
+      0.03,
+      0.05
+    ],
+    "score_relative": [
+      0.05,
+      0.1
+    ]
+  },
+  "practical": {
+    "standard_MHz": [
+      5.0,
+      10.0
+    ],
+    "f78_MHz": [
+      1.0,
+      2.0
+    ],
+    "overlap_min": [
+      0.995,
+      0.99
+    ],
+    "operator_relative": [
+      0.05,
+      0.1
+    ],
+    "score_relative": [
+      0.1,
+      0.2
+    ]
+  },
+  "tracking": {
+    "assigned_min": 0.9,
+    "competitor_ratio_strict_max": 0.5,
+    "margin_strict_min": 0.25,
+    "original_k340_to_nested_k340_required": true,
+    "nested_k340_to_k380_required": true
+  },
+  "quality": {
+    "stage1_residual_max": 1e-07,
+    "stage1_orthogonality_inf_max": 1e-08,
+    "stage2_residual_GHz_max": 1e-09,
+    "hermiticity_max": 1e-12,
+    "schur_equation_GHz_max": 1e-09,
+    "schur_identity_GHz_max": 1e-09,
+    "q_vector_max": 1e-08
+  },
+  "cancellation": {
+    "transition_ratio_max": 0.25,
+    "denominator_floor_MHz": 1e-06,
+    "large_excitation_error_MHz": 1.0,
+    "severe_excitation_error_MHz": 5.0,
+    "trend_noise_MHz": 1e-06,
+    "rule": "a small transition increment cannot rescue large same-shell state excitation errors; any meaningful reversal or flagged cancellation is unresolved"
+  },
+  "trend": {
+    "historically_problematic_carriers": [
+      "f07",
+      "f08",
+      "f81",
+      "f72",
+      "f38",
+      "f78"
+    ],
+    "required_final_to_first_ratio_max": 1.0,
+    "small_final_increment_does_not_override_first_shell": true
+  },
+  "selector": {
+    "enabled_as_secondary_diagnostic": true,
+    "algorithm_source": "research/sandbox/k300_preregistration/selector.py",
+    "algorithm_sha256": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+    "method_sha256": "2055c7d54d81ada97379f4941ef08354dbb3cbf9378aa2b10dde1349ca2ff7cc",
+    "base": 340,
+    "budgets_per_shell": [
+      3,
+      6,
+      10,
+      15
+    ],
+    "primary_budget": 10,
+    "confirmation_budget": 15,
+    "operator_weight": 0,
+    "budget_tuning": false,
+    "selection_must_precede_any_candidate_or_full_new_shell_dressed_validation": true
+  },
+  "selector_comparison": {
+    "improvement_pass_ratio": 0.8,
+    "borderline_improvement_ratio": 1.0,
+    "no_harm_slack_strict_units": 0.1,
+    "budget_error_growth_slack_strict_units": 0.1,
+    "semantics": "secondary selector verdict only; it cannot change the retained-basis convergence verdict"
+  },
+  "retained_basis_decision_rule": {
+    "PASS": "No FAIL or BORDERLINE trigger: all primary components strict PASS, stable pathway ordering, nonincreasing error for every mandatory component, no meaningful reversal/cancellation.",
+    "BORDERLINE": "No FAIL trigger, but at least one primary strict component is not PASS or comparator pathway ordering changes.",
+    "FAIL": "Any hard gate fails; any primary practical component FAIL; any final-shell strict component FAIL; ANY mandatory final error exceeds its first-shell error plus 1e-12; meaningful carrier reversal/two-shell cancellation or flagged within-comparison cancellation in any primary comparison; primary pathway ordering FAIL. Missing/nonfinite metrics fail closed.",
+    "precedence": "FAIL then BORDERLINE then PASS"
+  },
+  "tail_hypothesis_rule": {
+    "A_ISOLATED": "No D condition; neither new shell meets concentrated-off-resonant criterion; both new aggregate weights are below historical ranks320-339 weight; final mandatory strict-unit envelope <= first. Evidence only of an isolated tested-rank correction, not proof beyond380.",
+    "B_REPEATED": "No D condition; at least one new shell has top3>=0.70, count80<=5, and aggregate exact-mode near-resonant fraction<0.10. Reports concentration recurrence regardless of absolute size; report inherited influential-shell flag separately.",
+    "C_DISTRIBUTED_WEAK": "No D or B condition; both shells top3<=0.50 and count80>=8; both weights below historical320-339, S2 weight<=S1; final mandatory envelope<=first.",
+    "D_NONMONOTONIC_UNRESOLVED": "Any hard/tracking/Schur gate failure, reversal or cancellation, any mandatory final increment growth; or no A/B/C criterion fits.",
+    "precedence": "D then B then C then A",
+    "influential_shell": "inherited diagnostic: any practical component FAIL or absolute raw target-state shift>10 MHz; not a precondition for B concentration recurrence"
+  },
+  "shell_diagnostics": {
+    "near_resonance_denominator_GHz": 0.01,
+    "near_resonance_eta": 0.1,
+    "mandatory": [
+      "exact shell self-energy and P-space relaxation",
+      "target-state shell occupation",
+      "rank and shell-eigenmode coupling norms",
+      "minimum signed and absolute denominators",
+      "maximum eta",
+      "rank and mode top-three fractions",
+      "counts reaching 50, 80, and 90 percent absolute attribution",
+      "aggregate rank attribution over states 0,1,2,3,7,8"
+    ],
+    "concentrated_top3_min": 0.7,
+    "concentrated_count80_max": 5,
+    "off_resonant_fraction_max": 0.1,
+    "distributed_top3_max": 0.5,
+    "distributed_count80_min": 8,
+    "nonadditivity_partition": "fixed first ten / last ten ranks in each new shell; singleton halves and no-cross diagnostic; no rank328-based selection"
+  },
+  "claim_limits": {
+    "smaller_final_increment": "may be claimed only from the measured k360-to-k380 comparison",
+    "plateau_within_tested_range": "may be claimed only for retained Stage-1 prefixes 340,360,380 when the retained-basis verdict is PASS",
+    "convergence_beyond_k380": "never established by this experiment",
+    "other_spatial_or_model_convergence": "never established by this experiment",
+    "k380_ground_truth": false
+  },
+  "mandatory": [
+    "authentication and frozen hashes",
+    "original-k340 versus nested-k340 tracking",
+    "parent residuals and orthogonality",
+    "all nine carriers and f78-f01",
+    "states 0,1,2,3,7,8 and all five subspaces",
+    "g01,g07,g78,g81",
+    "all six grid_phi block norms and singular values",
+    "0781,0721,0381 pathway scores and ordering",
+    "trend and cancellation diagnostics",
+    "new-shell occupation and coupling diagnostics"
+  ],
+  "guardrails": {
+    "gate_work": "HOLD",
+    "spatial_convergence": "HOLD",
+    "figures": "HOLD",
+    "tracked_production_modifications": false,
+    "authenticated_checkpoint_modifications": false
+  },
+  "zero_reference": {
+    "floor": 1e-12,
+    "rule": "if abs(reference)<=floor, only absolute error <=floor passes; never omit a component"
+  },
+  "schema_notes": {
+    "quality_key": "stage1_orthogonality_inf_max only, unchanged 1e-8",
+    "zero_reference": "copy exact predecessor rule; floor 1e-12, value-preserving",
+    "tail_rules": "new prospective discrimination for historical rank328-dominated weak shell; old k340 criteria remain untouched; concentration thresholds inherited from epsj011_shell_attribution/methodology.md",
+    "decision_enforcement": "explicitly enforce all-component trend rule implemented by k340 evaluator and cancellation/pathway requirements stated by k340 criteria",
+    "principal_angles": "Report singular values and principal angles from the complex overlap block. Preserve predecessor absolute-overlap-block subspace components for threshold classification; report distinction explicitly. No new angle threshold."
+  },
+  "mandatory_component_keys": [
+    "block:all_targets:frobenius",
+    "block:all_targets:sv0",
+    "block:all_targets:sv1",
+    "block:all_targets:sv2",
+    "block:all_targets:sv3",
+    "block:all_targets:sv4",
+    "block:all_targets:sv5",
+    "block:comparators_to_78:frobenius",
+    "block:comparators_to_78:sv0",
+    "block:comparators_to_78:sv1",
+    "block:internal_78:frobenius",
+    "block:internal_78:sv0",
+    "block:internal_78:sv1",
+    "block:logical_to_23:frobenius",
+    "block:logical_to_23:sv0",
+    "block:logical_to_23:sv1",
+    "block:logical_to_78:frobenius",
+    "block:logical_to_78:sv0",
+    "block:logical_to_78:sv1",
+    "block:primary:frobenius",
+    "block:primary:sv0",
+    "block:primary:sv1",
+    "block:primary:sv2",
+    "block:primary:sv3",
+    "carrier:f01",
+    "carrier:f03",
+    "carrier:f07",
+    "carrier:f08",
+    "carrier:f21",
+    "carrier:f38",
+    "carrier:f72",
+    "carrier:f78",
+    "carrier:f81",
+    "centered:0",
+    "centered:1",
+    "centered:2",
+    "centered:3",
+    "centered:7",
+    "centered:8",
+    "edge:g01",
+    "edge:g03",
+    "edge:g07",
+    "edge:g21",
+    "edge:g38",
+    "edge:g72",
+    "edge:g78",
+    "edge:g81",
+    "excitation:1",
+    "excitation:2",
+    "excitation:3",
+    "excitation:7",
+    "excitation:8",
+    "overlap:0",
+    "overlap:1",
+    "overlap:2",
+    "overlap:3",
+    "overlap:7",
+    "overlap:8",
+    "score:0381",
+    "score:0721",
+    "score:0781",
+    "subspace:0_1",
+    "subspace:0_1_2_3_7_8",
+    "subspace:0_1_7_8",
+    "subspace:2_3",
+    "subspace:7_8"
+  ],
+  "hard_gate_keys": [
+    "checkpoint_authentication",
+    "selection_seal",
+    "checkpoint_selection_link",
+    "parent_quality",
+    "stage2_residuals",
+    "tracking",
+    "original_to_nested_k340_tracking",
+    "schur_quality",
+    "q_reconstruction",
+    "hermiticity",
+    "path_ordering",
+    "nonadditivity_quality"
+  ]
+}

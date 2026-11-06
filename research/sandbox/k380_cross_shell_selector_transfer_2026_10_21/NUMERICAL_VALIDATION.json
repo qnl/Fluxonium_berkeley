@@ -1,0 +1,26 @@
+{
+  "baseline_only_S2_rows": 28,
+  "checkpoint_arrays_loaded": 0,
+  "compatible_S1_rows": 32,
+  "dressed_vectors_reconstructed": 0,
+  "elapsed_seconds": 0.1994157920125872,
+  "incompatible_selector_rows": 4,
+  "new_eigensolves": 0,
+  "peak_resident_bytes": 42745856,
+  "preservation": "PASS",
+  "prior_correlations_recomputed": false,
+  "protected_files_checked": 47,
+  "results_rows": 64,
+  "source_authentication": "PASS",
+  "status": "PASS",
+  "synthetic_tests": [
+    "top-k intersection and absolute-weight capture",
+    "incompatible-base null metrics",
+    "independent Spearman permutation identity",
+    "average ties",
+    "forbidden-label/trace-column invariance",
+    "absolute attribution versus signed cancellation",
+    "lower-rank attribution tie rule"
+  ],
+  "whitening_or_feature_recomputation": false
+}

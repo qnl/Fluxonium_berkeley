@@ -1,0 +1,1385 @@
+{
+  "attribution_definition": "EXPERIMENT_SPEC.md; exact full-endpoint rank partition is primary; fixed-base second order is separate",
+  "base_ranks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339
+  ],
+  "budgets": [
+    3,
+    6,
+    10,
+    15
+  ],
+  "candidate_ranks": [
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379
+  ],
+  "classification": "new retrospective study; no new labels calculated",
+  "controls": {
+    "bare_T300": "sum_{p<300} ||H_pr||_F^2, descending then ascending rank; GHz^2",
+    "bare_Tactual": "INELIGIBLE saved S2 order uses p<360, not P340; no mismatched control scored",
+    "denominator_Dplus": "sum_{p<300} ||H_pr||_F^2/(E_r-E_p+omega4), descending then ascending rank; GHz",
+    "denominator_Vplus": "sum_{p<300} |H_(p,0),(r,1)|^2/(E_r-E_p+omega4), descending then ascending rank; GHz",
+    "energy_prefix": "ascending candidate ranks 360..379; P340 always retained",
+    "spread": "historical fixed offsets [0,19,9,14,4,2,6,11,16,1,3,5,7,8,10,12,13,15,17,18]",
+    "spread_reverse": "historical reversed offsets 19 minus spread offsets"
+  },
+  "dressed_states_requested": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "eligible_control_orders": {
+    "bare_T300": [
+      362,
+      379,
+      375,
+      374,
+      368,
+      364,
+      363,
+      377,
+      378,
+      361,
+      373,
+      376,
+      360,
+      371,
+      372,
+      370,
+      369,
+      367,
+      366,
+      365
+    ],
+    "denominator_Dplus": [
+      362,
+      379,
+      375,
+      374,
+      368,
+      364,
+      363,
+      377,
+      378,
+      361,
+      373,
+      360,
+      376,
+      371,
+      372,
+      370,
+      369,
+      367,
+      366,
+      365
+    ],
+    "denominator_Vplus": [
+      362,
+      379,
+      375,
+      374,
+      364,
+      368,
+      363,
+      377,
+      378,
+      361,
+      360,
+      373,
+      376,
+      371,
+      372,
+      369,
+      370,
+      367,
+      366,
+      365
+    ],
+    "energy_prefix": [
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379
+    ],
+    "physics_frozen": [
+      362,
+      379,
+      375,
+      374,
+      378,
+      377,
+      364,
+      373,
+      361,
+      376,
+      366,
+      360,
+      365,
+      372,
+      369,
+      370,
+      371,
+      368,
+      367,
+      363
+    ],
+    "spread": [
+      360,
+      379,
+      369,
+      374,
+      364,
+      362,
+      366,
+      371,
+      376,
+      361,
+      363,
+      365,
+      367,
+      368,
+      370,
+      372,
+      373,
+      375,
+      377,
+      378
+    ],
+    "spread_reverse": [
+      379,
+      360,
+      370,
+      365,
+      375,
+      377,
+      373,
+      368,
+      363,
+      378,
+      376,
+      374,
+      372,
+      371,
+      369,
+      367,
+      366,
+      364,
+      362,
+      361
+    ]
+  },
+  "excluded_ranks": [
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359
+  ],
+  "frozen_at_utc": "2026-10-24T01:41:26.519334+00:00",
+  "historical_algorithm_sha256": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+  "historical_method_sha256": "2055c7d54d81ada97379f4941ef08354dbb3cbf9378aa2b10dde1349ca2ff7cc",
+  "historical_selection_sha256": "6720cb7b2213962bf490ec6096ebd88e0b66e79ec7a2c25dee33116fc02eb8b7",
+  "normalization": "W_g=sum_r A_rg; W_g^-1/2 eigenvalue floor max(1e-14 GHz,1e-10 lambda_max)",
+  "order": [
+    362,
+    379,
+    375,
+    374,
+    378,
+    377,
+    364,
+    373,
+    361,
+    376,
+    366,
+    360,
+    365,
+    372,
+    369,
+    370,
+    371,
+    368,
+    367,
+    363
+  ],
+  "original_saved_features": [
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.003697690648549682,
+          "maximum_eta": 3.8258816568988925e-05,
+          "minimum_denominator_GHz": 48.39372457951481,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 1.9701438030036444e-07
+        },
+        {
+          "coupling_norm_GHz": 0.011017045678421137,
+          "maximum_eta": 6.800334133312896e-05,
+          "minimum_denominator_GHz": 44.85950624567291,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 1.338893910274302e-06
+        },
+        {
+          "coupling_norm_GHz": 0.014515952135315393,
+          "maximum_eta": 0.00011508127432498351,
+          "minimum_denominator_GHz": 42.210102873129955,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 2.4160343492132636e-06
+        }
+      ],
+      "rank": 360
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.010077591562356275,
+          "maximum_eta": 8.205497880518305e-05,
+          "minimum_denominator_GHz": 48.41110875844977,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 1.296635366414655e-06
+        },
+        {
+          "coupling_norm_GHz": 0.005280347245813615,
+          "maximum_eta": 3.326327565132232e-05,
+          "minimum_denominator_GHz": 44.87689042460787,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 2.8634690474123574e-07
+        },
+        {
+          "coupling_norm_GHz": 0.04322312618652337,
+          "maximum_eta": 0.0003662885069642209,
+          "minimum_denominator_GHz": 42.227487052064916,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 2.4816277290025977e-05
+        }
+      ],
+      "rank": 361
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.1701989388328359,
+          "maximum_eta": 0.0012095074402519,
+          "minimum_denominator_GHz": 48.430435668025765,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 0.0003487206541726956
+        },
+        {
+          "coupling_norm_GHz": 0.08072190928778829,
+          "maximum_eta": 0.0007130642147086219,
+          "minimum_denominator_GHz": 44.896217334183866,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 8.498436298869565e-05
+        },
+        {
+          "coupling_norm_GHz": 0.7955840921882946,
+          "maximum_eta": 0.006095718860627944,
+          "minimum_denominator_GHz": 42.24681396164091,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 0.008109465699444353
+        }
+      ],
+      "rank": 362
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.0022052434041047327,
+          "maximum_eta": 1.8809784621654645e-05,
+          "minimum_denominator_GHz": 48.49919396483931,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 6.572545722407664e-08
+        },
+        {
+          "coupling_norm_GHz": 0.000852329715774035,
+          "maximum_eta": 4.701224012324484e-06,
+          "minimum_denominator_GHz": 44.96497563099741,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 7.082485949075467e-09
+        },
+        {
+          "coupling_norm_GHz": 0.008134563611460264,
+          "maximum_eta": 8.604043484052754e-05,
+          "minimum_denominator_GHz": 42.31557225845445,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 9.131430531520564e-07
+        }
+      ],
+      "rank": 363
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.004746919141840077,
+          "maximum_eta": 3.137478493228141e-05,
+          "minimum_denominator_GHz": 48.620407359668704,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 2.525985213046597e-07
+        },
+        {
+          "coupling_norm_GHz": 0.017539366598648683,
+          "maximum_eta": 0.00012678411900152048,
+          "minimum_denominator_GHz": 45.086189025826805,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 3.6153052079442735e-06
+        },
+        {
+          "coupling_norm_GHz": 0.028276371682208333,
+          "maximum_eta": 0.00021267082202991412,
+          "minimum_denominator_GHz": 42.43678565328385,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 9.943333553417459e-06
+        }
+      ],
+      "rank": 364
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.0013928071237312176,
+          "maximum_eta": 1.0160814236544438e-05,
+          "minimum_denominator_GHz": 48.723719888862774,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 2.2545609468841948e-08
+        },
+        {
+          "coupling_norm_GHz": 0.009263637681161556,
+          "maximum_eta": 5.7135006848614084e-05,
+          "minimum_denominator_GHz": 45.189501555020875,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 9.747487956153758e-07
+        },
+        {
+          "coupling_norm_GHz": 0.0060514316874449225,
+          "maximum_eta": 5.4786182082540296e-05,
+          "minimum_denominator_GHz": 42.54009818247792,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 4.3269713896030184e-07
+        }
+      ],
+      "rank": 365
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.002186565209323348,
+          "maximum_eta": 1.4471306121715903e-05,
+          "minimum_denominator_GHz": 48.85800948738049,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 5.444239702425193e-08
+        },
+        {
+          "coupling_norm_GHz": 0.011881787404261934,
+          "maximum_eta": 7.441770636522567e-05,
+          "minimum_denominator_GHz": 45.32379115353859,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 1.6379478523679187e-06
+        },
+        {
+          "coupling_norm_GHz": 0.007495486697225332,
+          "maximum_eta": 7.248728555334143e-05,
+          "minimum_denominator_GHz": 42.67438778099563,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 6.695167214221785e-07
+        }
+      ],
+      "rank": 366
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.0022737321315472827,
+          "maximum_eta": 1.1402633712107445e-05,
+          "minimum_denominator_GHz": 48.90584775291688,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 4.7708449188161534e-08
+        },
+        {
+          "coupling_norm_GHz": 0.0028774082435544467,
+          "maximum_eta": 1.5807231744184582e-05,
+          "minimum_denominator_GHz": 45.37162941907498,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 8.788766111684047e-08
+        },
+        {
+          "coupling_norm_GHz": 0.011012144070018829,
+          "maximum_eta": 6.80690411844244e-05,
+          "minimum_denominator_GHz": 42.722226046532015,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 1.3236240327240815e-06
+        }
+      ],
+      "rank": 367
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.001483659761513965,
+          "maximum_eta": 1.110727859439358e-05,
+          "minimum_denominator_GHz": 48.908677437431045,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 2.6202184770816345e-08
+        },
+        {
+          "coupling_norm_GHz": 0.00429416079627063,
+          "maximum_eta": 2.936414054836275e-05,
+          "minimum_denominator_GHz": 45.374459103589146,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 2.033318410819692e-07
+        },
+        {
+          "coupling_norm_GHz": 0.008720063600480452,
+          "maximum_eta": 7.247467139020542e-05,
+          "minimum_denominator_GHz": 42.72505573104618,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 1.0130030891835863e-06
+        }
+      ],
+      "rank": 368
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.00039626192723476647,
+          "maximum_eta": 2.8106246630848105e-06,
+          "minimum_denominator_GHz": 49.007326039231494,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 1.6541529498008255e-09
+        },
+        {
+          "coupling_norm_GHz": 0.004950597698342907,
+          "maximum_eta": 4.548305312505284e-05,
+          "minimum_denominator_GHz": 45.473107705389594,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 3.73330027829086e-07
+        },
+        {
+          "coupling_norm_GHz": 0.0034705208240852744,
+          "maximum_eta": 5.6622776039077605e-05,
+          "minimum_denominator_GHz": 42.82370433284663,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 2.0158193033202418e-07
+        }
+      ],
+      "rank": 369
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.002887828792329285,
+          "maximum_eta": 2.29801624417525e-05,
+          "minimum_denominator_GHz": 49.06560868803434,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 1.0691961130448348e-07
+        },
+        {
+          "coupling_norm_GHz": 0.004134925836253666,
+          "maximum_eta": 2.6922755617900963e-05,
+          "minimum_denominator_GHz": 45.53139035419244,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 1.8283564915275973e-07
+        },
+        {
+          "coupling_norm_GHz": 0.006853957541330976,
+          "maximum_eta": 6.98468194681423e-05,
+          "minimum_denominator_GHz": 42.881986981649476,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 5.984375296852166e-07
+        }
+      ],
+      "rank": 370
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.003205792049002397,
+          "maximum_eta": 1.794182173769203e-05,
+          "minimum_denominator_GHz": 49.09693307460092,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 1.1036516069396366e-07
+        },
+        {
+          "coupling_norm_GHz": 0.0011145796167265744,
+          "maximum_eta": 1.1087331775911963e-05,
+          "minimum_denominator_GHz": 45.56271474075902,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 1.7446509054040176e-08
+        },
+        {
+          "coupling_norm_GHz": 0.01720338462066867,
+          "maximum_eta": 0.00011425013470608025,
+          "minimum_denominator_GHz": 42.91331136821606,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 3.4794240808913025e-06
+        }
+      ],
+      "rank": 371
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.0013648997879451466,
+          "maximum_eta": 1.2339366506476342e-05,
+          "minimum_denominator_GHz": 49.15799591491734,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 2.55325653839501e-08
+        },
+        {
+          "coupling_norm_GHz": 0.005945943727523495,
+          "maximum_eta": 4.0147612747347335e-05,
+          "minimum_denominator_GHz": 45.623777581075444,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 4.2955362189851824e-07
+        },
+        {
+          "coupling_norm_GHz": 0.008902554624571308,
+          "maximum_eta": 7.060089662033428e-05,
+          "minimum_denominator_GHz": 42.97437420853248,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 8.845948574617316e-07
+        }
+      ],
+      "rank": 372
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.009722325968631077,
+          "maximum_eta": 5.117110182784513e-05,
+          "minimum_denominator_GHz": 49.22488850798539,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 9.39416318601583e-07
+        },
+        {
+          "coupling_norm_GHz": 0.015887129718615927,
+          "maximum_eta": 9.035971294547533e-05,
+          "minimum_denominator_GHz": 45.69067017414349,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 2.591416635733072e-06
+        },
+        {
+          "coupling_norm_GHz": 0.02194632993688778,
+          "maximum_eta": 0.00012691403096961736,
+          "minimum_denominator_GHz": 43.04126680160053,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 5.371615139104239e-06
+        }
+      ],
+      "rank": 373
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.01803492967813494,
+          "maximum_eta": 0.00013544057702085863,
+          "minimum_denominator_GHz": 49.236134129450285,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 3.753985897045246e-06
+        },
+        {
+          "coupling_norm_GHz": 0.05271822601483227,
+          "maximum_eta": 0.0003491835479462362,
+          "minimum_denominator_GHz": 45.701915795608386,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 3.1776806933895126e-05
+        },
+        {
+          "coupling_norm_GHz": 0.02536438302513795,
+          "maximum_eta": 0.000214134960420304,
+          "minimum_denominator_GHz": 43.05251242306542,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 7.081177160781585e-06
+        }
+      ],
+      "rank": 374
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.03848618872504107,
+          "maximum_eta": 0.0002079655465098962,
+          "minimum_denominator_GHz": 49.27634844539613,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 1.4640780485945017e-05
+        },
+        {
+          "coupling_norm_GHz": 0.07912021207205458,
+          "maximum_eta": 0.0004990640109798539,
+          "minimum_denominator_GHz": 45.74213011155423,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 6.972912485175751e-05
+        },
+        {
+          "coupling_norm_GHz": 0.109513489931307,
+          "maximum_eta": 0.0007481989007686645,
+          "minimum_denominator_GHz": 43.09272673901127,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 0.00013471024674380298
+        }
+      ],
+      "rank": 375
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.004804080967034408,
+          "maximum_eta": 2.9162263012762766e-05,
+          "minimum_denominator_GHz": 49.35690501451585,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 2.5477005408021993e-07
+        },
+        {
+          "coupling_norm_GHz": 0.012853782475892693,
+          "maximum_eta": 7.518269616396155e-05,
+          "minimum_denominator_GHz": 45.822686680673954,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 1.7496541189740603e-06
+        },
+        {
+          "coupling_norm_GHz": 0.0055471086304001065,
+          "maximum_eta": 4.94502013306154e-05,
+          "minimum_denominator_GHz": 43.17328330813099,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 3.8598321937866703e-07
+        }
+      ],
+      "rank": 376
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.006111062897458137,
+          "maximum_eta": 5.1258268347597896e-05,
+          "minimum_denominator_GHz": 49.41484450908073,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 4.472443456569515e-07
+        },
+        {
+          "coupling_norm_GHz": 0.01959100704788738,
+          "maximum_eta": 0.00012717473868236942,
+          "minimum_denominator_GHz": 45.88062617523883,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 4.281626763963919e-06
+        },
+        {
+          "coupling_norm_GHz": 0.010940228254949462,
+          "maximum_eta": 9.052075735362685e-05,
+          "minimum_denominator_GHz": 43.23122280269587,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 1.2985031963810351e-06
+        }
+      ],
+      "rank": 377
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.007761379576228899,
+          "maximum_eta": 4.79813560927602e-05,
+          "minimum_denominator_GHz": 49.43312026460837,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 6.488912737125885e-07
+        },
+        {
+          "coupling_norm_GHz": 0.020183185573951153,
+          "maximum_eta": 0.00012613305920065017,
+          "minimum_denominator_GHz": 45.89890193076647,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 4.54102792125149e-06
+        },
+        {
+          "coupling_norm_GHz": 0.01205102508261424,
+          "maximum_eta": 8.062092994344069e-05,
+          "minimum_denominator_GHz": 43.24949855822351,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 1.5005774226181466e-06
+        }
+      ],
+      "rank": 378
+    },
+    {
+      "groups": [
+        {
+          "coupling_norm_GHz": 0.045840018957521614,
+          "maximum_eta": 0.0002553819400801857,
+          "minimum_denominator_GHz": 49.54231033632045,
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 2.0067365284697512e-05
+        },
+        {
+          "coupling_norm_GHz": 0.13033273914007787,
+          "maximum_eta": 0.0011522890776458849,
+          "minimum_denominator_GHz": 46.00809200247855,
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 0.00022425755049460368
+        },
+        {
+          "coupling_norm_GHz": 0.19128008578061373,
+          "maximum_eta": 0.0012410586991378997,
+          "minimum_denominator_GHz": 43.358688629935585,
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 0.00038686035695696544
+        }
+      ],
+      "rank": 379
+    }
+  ],
+  "original_saved_normalization": [
+    {
+      "eigenvalues_GHz": [
+        0.0001893866171089207,
+        0.00020229383457954207
+      ],
+      "floor_GHz": 2.0229383457954206e-14
+    },
+    {
+      "eigenvalues_GHz": [
+        0.00019976873025362237,
+        0.00023329755092227756
+      ],
+      "floor_GHz": 2.3329755092227757e-14
+    },
+    {
+      "eigenvalues_GHz": [
+        0.004135651257248882,
+        0.0045577145696609755
+      ],
+      "floor_GHz": 4.557714569660976e-13
+    }
+  ],
+  "selected_ranks": {
+    "10": [
+      362,
+      379,
+      375,
+      374,
+      378,
+      377,
+      364,
+      373,
+      361,
+      376
+    ],
+    "15": [
+      362,
+      379,
+      375,
+      374,
+      378,
+      377,
+      364,
+      373,
+      361,
+      376,
+      366,
+      360,
+      365,
+      372,
+      369
+    ],
+    "3": [
+      362,
+      379,
+      375
+    ],
+    "6": [
+      362,
+      379,
+      375,
+      374,
+      378,
+      377
+    ]
+  },
+  "target_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "tie_break": "Greedy gain ties within absolute 1e-12 choose smaller Stage-1 rank"
+}

@@ -1,0 +1,13 @@
+{
+  "selection_sha256": "6720cb7b2213962bf490ec6096ebd88e0b66e79ec7a2c25dee33116fc02eb8b7",
+  "provenance": {
+    "criteria_sha256": "a2318603f3e2b5cefcb68873425c7873d0a6243fc7017949352129c3beeb616a",
+    "selector_sha256": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+    "selector_method_sha256": "2055c7d54d81ada97379f4941ef08354dbb3cbf9378aa2b10dde1349ca2ff7cc",
+    "reference_k340_checkpoint_sha256": "a6f30847458108adee7a6776463d39a033672b2d3476af739e59bede91b80d13",
+    "new_configuration_sha256": "8f02dbfc09f6a6c4e6bcd49d938c79d570b063103edf33beaad8b331e085ac5e",
+    "original_to_nested_minimum_overlap": 1.0000000000000757,
+    "selection_used_candidate_or_full_new_shell_dressed_results": false,
+    "old_rank_lists_used": false
+  }
+}

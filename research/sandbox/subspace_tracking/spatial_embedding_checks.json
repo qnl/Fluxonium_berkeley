@@ -1,0 +1,18 @@
+{
+  "saved_overlap_amplitude_error": 2.472883009474458e-13,
+  "interpolation_column_norms": [
+    0.9889349054480215,
+    0.9886835358096173,
+    0.9881086570436612,
+    0.9877479489405246,
+    0.9774730397504684,
+    0.9728375953208886,
+    0.9882962125163631,
+    0.985254483977933,
+    0.9849922300699157,
+    0.9731310670493016,
+    0.9875504155003323
+  ],
+  "normalized_gram_error": 0.028918918080181738,
+  "operator_comparison": "Common target-grid coordinate theta3+theta2/2, including interpolation and Gram whitening."
+}

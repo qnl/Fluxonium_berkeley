@@ -1,0 +1,921 @@
+{
+  "analytic_fixture_evaluations": 0,
+  "cells": [
+    {
+      "archive": "cell_01.npz",
+      "archive_sha256": "4129188689b950ac2fd92e4ffb2e800b199bed7a8111a3ae1c33a36c6d43d3df",
+      "job_id": "cell_01",
+      "result_file": "cell_01_RESULT.json",
+      "result_sha256": "40a2eb9f14484e63eca7e48ef970c5981dd8e4248c05bc7145c7596abf05396c"
+    },
+    {
+      "archive": "cell_02.npz",
+      "archive_sha256": "3d3efd617bd78659336ca0ade8018220b2dfe597a8bd29242a03e77891679fec",
+      "job_id": "cell_02",
+      "result_file": "cell_02_RESULT.json",
+      "result_sha256": "88dce00f3eb7d0f4a28acd35edb9e310df464dab577312b53fae456aa9b3870e"
+    },
+    {
+      "archive": "cell_03.npz",
+      "archive_sha256": "c61371ae2aa59bc4a127387e8eedb8d358b603cbc8f6875d81da67884d0f4bfe",
+      "job_id": "cell_03",
+      "result_file": "cell_03_RESULT.json",
+      "result_sha256": "44118bf113d4cbc9923fea995e715333dc266a94cc453802bdd06188b1007d9c"
+    },
+    {
+      "archive": "cell_04.npz",
+      "archive_sha256": "eb00efd3b5f0c3e95dc4849d0076c62f1070e85052f1b3b82ae9e8ad9a847ed3",
+      "job_id": "cell_04",
+      "result_file": "cell_04_RESULT.json",
+      "result_sha256": "d6833b2e5449bc3ca80e9f1518941c0417502d5ba4fa997d3e4daf4a0afbc42e"
+    },
+    {
+      "archive": "cell_05.npz",
+      "archive_sha256": "76145d87d546716fac5601baaf249bbc2bddee9385d653c94c7e63a1b8e11fa4",
+      "job_id": "cell_05",
+      "result_file": "cell_05_RESULT.json",
+      "result_sha256": "87bc0d25e98f01574d412f7a40558a85e4ca5b3602e395e02baa6ca81b1453a0"
+    },
+    {
+      "archive": "cell_06.npz",
+      "archive_sha256": "e3b08c20c9a729f817aed608bdf4a5c1654053c8d354e7254713bb4adcfa1ed9",
+      "job_id": "cell_06",
+      "result_file": "cell_06_RESULT.json",
+      "result_sha256": "1a22d993a24c34ce895679ec11373debf6183b41fd15d05239debbddc68b41bb"
+    },
+    {
+      "archive": "cell_07.npz",
+      "archive_sha256": "063bfa97b0517a0ab89900ceb6483cf510da632609aab125ed37a7b7173a897a",
+      "job_id": "cell_07",
+      "result_file": "cell_07_RESULT.json",
+      "result_sha256": "c567b19b5b55392844ef10a852199ba1b3dd9dee72588fb687924021ee351a89"
+    },
+    {
+      "archive": "cell_08.npz",
+      "archive_sha256": "58c4c0be0fbc8ffc024545d720f5ea407d62e6732f7db5c0714cadf0c3d8c80c",
+      "job_id": "cell_08",
+      "result_file": "cell_08_RESULT.json",
+      "result_sha256": "eed778fd2051ee958a6dbe9c395763bdab1860d24b95f36236707a234bcde459"
+    },
+    {
+      "archive": "cell_09.npz",
+      "archive_sha256": "524774d4d6bce1060b70c5360774cea92d24a63de591fcf0a1c4fb5a376416b1",
+      "job_id": "cell_09",
+      "result_file": "cell_09_RESULT.json",
+      "result_sha256": "09ccf83da07cace4fc5c3711b72d335e4d7eccfa636529d6c460f88fc02df99c"
+    },
+    {
+      "archive": "cell_10.npz",
+      "archive_sha256": "98b3e04bd1c49c89a803835d0573139fa3e423f9b0bed80731944344f99428f5",
+      "job_id": "cell_10",
+      "result_file": "cell_10_RESULT.json",
+      "result_sha256": "a20d9c3eafa6b88c649bdffe0275d52df190f5af6fa8e86cbaedd618ba621e39"
+    },
+    {
+      "archive": "cell_11.npz",
+      "archive_sha256": "c5c2f5d666f83183e156d530fb7142bfc4cc696b44d940030adae7518038beae",
+      "job_id": "cell_11",
+      "result_file": "cell_11_RESULT.json",
+      "result_sha256": "1eab2e4dab674b331ebfc7c7e26036661e92ea7fc6b508826b754c8964430955"
+    },
+    {
+      "archive": "cell_12.npz",
+      "archive_sha256": "261f6b6638cf6a8aeaf81abb5abdc34ba78cc01602922573c037d159d64e8e8a",
+      "job_id": "cell_12",
+      "result_file": "cell_12_RESULT.json",
+      "result_sha256": "b8e4daf8def62ac6d623e1ebab0ac6281b67e39c3f1d6b56eed8540a605f9041"
+    },
+    {
+      "archive": "cell_13.npz",
+      "archive_sha256": "27c65a72537edf40a520b3ba1ec4c0d0ad051ff9c7a8e32f8c2b9e823796b8e4",
+      "job_id": "cell_13",
+      "result_file": "cell_13_RESULT.json",
+      "result_sha256": "77df69afb022d6ddc30dcab07750c79d72febe0a90d07503e67238098190a6f2"
+    },
+    {
+      "archive": "cell_14.npz",
+      "archive_sha256": "d0769be7304cbd4d4e582cfd7da2a5937e3713a75dc6924dc80c5812f5177e8a",
+      "job_id": "cell_14",
+      "result_file": "cell_14_RESULT.json",
+      "result_sha256": "152c07fd26ae2a512fb9d1907a224aa1c2d534c9c323aa1f29cbf2e39bf1e472"
+    },
+    {
+      "archive": "cell_15.npz",
+      "archive_sha256": "62d38192105046defe7f34f70e483853ac87b9d909bf71248681860de0bf34ce",
+      "job_id": "cell_15",
+      "result_file": "cell_15_RESULT.json",
+      "result_sha256": "ce162e5bbd69e1e4f6f0262c53e4ed885d0e7c2493657e5bf048227ded6dcfb2"
+    },
+    {
+      "archive": "cell_16.npz",
+      "archive_sha256": "e5756da7bd688c48d65ab59b6a4f720ffdaa1200b11bb33d1aa918225b05fb74",
+      "job_id": "cell_16",
+      "result_file": "cell_16_RESULT.json",
+      "result_sha256": "378246ab1a6b9fda5b78c8b2e117553c9846b59eb7605c53c5ab5b25cba02af0"
+    },
+    {
+      "archive": "cell_17.npz",
+      "archive_sha256": "9a61d944fc5e9f8a57802773494363acb6e22fc0c0923ffbb79182b23819a568",
+      "job_id": "cell_17",
+      "result_file": "cell_17_RESULT.json",
+      "result_sha256": "2f22824d1e2f9183c7c7a8c0c0451c667da518a299dc6288eaf322460df5c2a6"
+    },
+    {
+      "archive": "cell_18.npz",
+      "archive_sha256": "c3724ab8c7be12a11064d285e2276c1b67c135c1d77dbead52f9732eee0e0353",
+      "job_id": "cell_18",
+      "result_file": "cell_18_RESULT.json",
+      "result_sha256": "40978dccfbf8dc7c841ffe08fa4ee170934b7a237d6f3fd76a71eff454cd89dc"
+    },
+    {
+      "archive": "cell_19.npz",
+      "archive_sha256": "5ca06a31c53497bafb598c5f9199be408760af306bfddf9eb91097219b5577fe",
+      "job_id": "cell_19",
+      "result_file": "cell_19_RESULT.json",
+      "result_sha256": "b3b4c312b7dc548dccd8663144c2409f17d7c69f21fbb30c710a3cf74fdef412"
+    }
+  ],
+  "claim_limits": [
+    "Retrospective finite-U_S2 comparison only",
+    "Identical-space rows cannot demonstrate strict superiority",
+    "No gate readiness, spatial convergence, infinite-basis convergence or speedup established"
+  ],
+  "comparisons": [
+    {
+      "budget": 3,
+      "job_id": "cell_04",
+      "method": "physics_frozen",
+      "result_file": "cell_04_RESULT.json",
+      "result_sha256": "d6833b2e5449bc3ca80e9f1518941c0417502d5ba4fa997d3e4daf4a0afbc42e",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        362,
+        375,
+        379
+      ]
+    },
+    {
+      "budget": 3,
+      "job_id": "cell_04",
+      "method": "bare_T300",
+      "result_file": "cell_04_RESULT.json",
+      "result_sha256": "d6833b2e5449bc3ca80e9f1518941c0417502d5ba4fa997d3e4daf4a0afbc42e",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        362,
+        375,
+        379
+      ]
+    },
+    {
+      "budget": 3,
+      "job_id": "cell_04",
+      "method": "denominator_Dplus",
+      "result_file": "cell_04_RESULT.json",
+      "result_sha256": "d6833b2e5449bc3ca80e9f1518941c0417502d5ba4fa997d3e4daf4a0afbc42e",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        362,
+        375,
+        379
+      ]
+    },
+    {
+      "budget": 3,
+      "job_id": "cell_04",
+      "method": "denominator_Vplus",
+      "result_file": "cell_04_RESULT.json",
+      "result_sha256": "d6833b2e5449bc3ca80e9f1518941c0417502d5ba4fa997d3e4daf4a0afbc42e",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        362,
+        375,
+        379
+      ]
+    },
+    {
+      "budget": 3,
+      "job_id": "cell_01",
+      "method": "energy_prefix",
+      "result_file": "cell_01_RESULT.json",
+      "result_sha256": "40a2eb9f14484e63eca7e48ef970c5981dd8e4248c05bc7145c7596abf05396c",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        361,
+        362
+      ]
+    },
+    {
+      "budget": 3,
+      "job_id": "cell_02",
+      "method": "spread",
+      "result_file": "cell_02_RESULT.json",
+      "result_sha256": "88dce00f3eb7d0f4a28acd35edb9e310df464dab577312b53fae456aa9b3870e",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        369,
+        379
+      ]
+    },
+    {
+      "budget": 3,
+      "job_id": "cell_03",
+      "method": "spread_reverse",
+      "result_file": "cell_03_RESULT.json",
+      "result_sha256": "44118bf113d4cbc9923fea995e715333dc266a94cc453802bdd06188b1007d9c",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        370,
+        379
+      ]
+    },
+    {
+      "budget": 6,
+      "job_id": "cell_09",
+      "method": "physics_frozen",
+      "result_file": "cell_09_RESULT.json",
+      "result_sha256": "09ccf83da07cace4fc5c3711b72d335e4d7eccfa636529d6c460f88fc02df99c",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        362,
+        374,
+        375,
+        377,
+        378,
+        379
+      ]
+    },
+    {
+      "budget": 6,
+      "job_id": "cell_08",
+      "method": "bare_T300",
+      "result_file": "cell_08_RESULT.json",
+      "result_sha256": "eed778fd2051ee958a6dbe9c395763bdab1860d24b95f36236707a234bcde459",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        362,
+        364,
+        368,
+        374,
+        375,
+        379
+      ]
+    },
+    {
+      "budget": 6,
+      "job_id": "cell_08",
+      "method": "denominator_Dplus",
+      "result_file": "cell_08_RESULT.json",
+      "result_sha256": "eed778fd2051ee958a6dbe9c395763bdab1860d24b95f36236707a234bcde459",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        362,
+        364,
+        368,
+        374,
+        375,
+        379
+      ]
+    },
+    {
+      "budget": 6,
+      "job_id": "cell_08",
+      "method": "denominator_Vplus",
+      "result_file": "cell_08_RESULT.json",
+      "result_sha256": "eed778fd2051ee958a6dbe9c395763bdab1860d24b95f36236707a234bcde459",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        362,
+        364,
+        368,
+        374,
+        375,
+        379
+      ]
+    },
+    {
+      "budget": 6,
+      "job_id": "cell_05",
+      "method": "energy_prefix",
+      "result_file": "cell_05_RESULT.json",
+      "result_sha256": "87bc0d25e98f01574d412f7a40558a85e4ca5b3602e395e02baa6ca81b1453a0",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        361,
+        362,
+        363,
+        364,
+        365
+      ]
+    },
+    {
+      "budget": 6,
+      "job_id": "cell_06",
+      "method": "spread",
+      "result_file": "cell_06_RESULT.json",
+      "result_sha256": "1a22d993a24c34ce895679ec11373debf6183b41fd15d05239debbddc68b41bb",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        362,
+        364,
+        369,
+        374,
+        379
+      ]
+    },
+    {
+      "budget": 6,
+      "job_id": "cell_07",
+      "method": "spread_reverse",
+      "result_file": "cell_07_RESULT.json",
+      "result_sha256": "c567b19b5b55392844ef10a852199ba1b3dd9dee72588fb687924021ee351a89",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        365,
+        370,
+        375,
+        377,
+        379
+      ]
+    },
+    {
+      "budget": 10,
+      "job_id": "cell_14",
+      "method": "physics_frozen",
+      "result_file": "cell_14_RESULT.json",
+      "result_sha256": "152c07fd26ae2a512fb9d1907a224aa1c2d534c9c323aa1f29cbf2e39bf1e472",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        361,
+        362,
+        364,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379
+      ]
+    },
+    {
+      "budget": 10,
+      "job_id": "cell_13",
+      "method": "bare_T300",
+      "result_file": "cell_13_RESULT.json",
+      "result_sha256": "77df69afb022d6ddc30dcab07750c79d72febe0a90d07503e67238098190a6f2",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        361,
+        362,
+        363,
+        364,
+        368,
+        374,
+        375,
+        377,
+        378,
+        379
+      ]
+    },
+    {
+      "budget": 10,
+      "job_id": "cell_13",
+      "method": "denominator_Dplus",
+      "result_file": "cell_13_RESULT.json",
+      "result_sha256": "77df69afb022d6ddc30dcab07750c79d72febe0a90d07503e67238098190a6f2",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        361,
+        362,
+        363,
+        364,
+        368,
+        374,
+        375,
+        377,
+        378,
+        379
+      ]
+    },
+    {
+      "budget": 10,
+      "job_id": "cell_13",
+      "method": "denominator_Vplus",
+      "result_file": "cell_13_RESULT.json",
+      "result_sha256": "77df69afb022d6ddc30dcab07750c79d72febe0a90d07503e67238098190a6f2",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        361,
+        362,
+        363,
+        364,
+        368,
+        374,
+        375,
+        377,
+        378,
+        379
+      ]
+    },
+    {
+      "budget": 10,
+      "job_id": "cell_10",
+      "method": "energy_prefix",
+      "result_file": "cell_10_RESULT.json",
+      "result_sha256": "a20d9c3eafa6b88c649bdffe0275d52df190f5af6fa8e86cbaedd618ba621e39",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369
+      ]
+    },
+    {
+      "budget": 10,
+      "job_id": "cell_11",
+      "method": "spread",
+      "result_file": "cell_11_RESULT.json",
+      "result_sha256": "1eab2e4dab674b331ebfc7c7e26036661e92ea7fc6b508826b754c8964430955",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        361,
+        362,
+        364,
+        366,
+        369,
+        371,
+        374,
+        376,
+        379
+      ]
+    },
+    {
+      "budget": 10,
+      "job_id": "cell_12",
+      "method": "spread_reverse",
+      "result_file": "cell_12_RESULT.json",
+      "result_sha256": "b8e4daf8def62ac6d623e1ebab0ac6281b67e39c3f1d6b56eed8540a605f9041",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        363,
+        365,
+        368,
+        370,
+        373,
+        375,
+        377,
+        378,
+        379
+      ]
+    },
+    {
+      "budget": 15,
+      "job_id": "cell_18",
+      "method": "physics_frozen",
+      "result_file": "cell_18_RESULT.json",
+      "result_sha256": "40978dccfbf8dc7c841ffe08fa4ee170934b7a237d6f3fd76a71eff454cd89dc",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        361,
+        362,
+        364,
+        365,
+        366,
+        369,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379
+      ]
+    },
+    {
+      "budget": 15,
+      "job_id": "cell_17",
+      "method": "bare_T300",
+      "result_file": "cell_17_RESULT.json",
+      "result_sha256": "2f22824d1e2f9183c7c7a8c0c0451c667da518a299dc6288eaf322460df5c2a6",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        360,
+        361,
+        362,
+        363,
+        364,
+        368,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379
+      ]
+    },
+    {
+      "budget": 15,
+      "job_id": "cell_17",
+      "method": "denominator_Dplus",
+      "result_file": "cell_17_RESULT.json",
+      "result_sha256": "2f22824d1e2f9183c7c7a8c0c0451c667da518a299dc6288eaf322460df5c2a6",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        360,
+        361,
+        362,
+        363,
+        364,
+        368,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379
+      ]
+    },
+    {
+      "budget": 15,
+      "job_id": "cell_17",
+      "method": "denominator_Vplus",
+      "result_file": "cell_17_RESULT.json",
+      "result_sha256": "2f22824d1e2f9183c7c7a8c0c0451c667da518a299dc6288eaf322460df5c2a6",
+      "reused_unique_solve": true,
+      "selected_ranks": [
+        360,
+        361,
+        362,
+        363,
+        364,
+        368,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379
+      ]
+    },
+    {
+      "budget": 15,
+      "job_id": "cell_15",
+      "method": "energy_prefix",
+      "result_file": "cell_15_RESULT.json",
+      "result_sha256": "ce162e5bbd69e1e4f6f0262c53e4ed885d0e7c2493657e5bf048227ded6dcfb2",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374
+      ]
+    },
+    {
+      "budget": 15,
+      "job_id": "cell_16",
+      "method": "spread",
+      "result_file": "cell_16_RESULT.json",
+      "result_sha256": "378246ab1a6b9fda5b78c8b2e117553c9846b59eb7605c53c5ab5b25cba02af0",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        374,
+        376,
+        379
+      ]
+    },
+    {
+      "budget": 15,
+      "job_id": "cell_19",
+      "method": "spread_reverse",
+      "result_file": "cell_19_RESULT.json",
+      "result_sha256": "b3b4c312b7dc548dccd8663144c2409f17d7c69f21fbb30c710a3cf74fdef412",
+      "reused_unique_solve": false,
+      "selected_ranks": [
+        360,
+        363,
+        365,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379
+      ]
+    }
+  ],
+  "cost_accounting": {
+    "base_target_preparation_historical_seconds": null,
+    "candidate_screening_historical_seconds": null,
+    "comparison_row_count": 28,
+    "cost_sharing": "Count each unique cell once; alias rows reference the same result. Historical costs unknown, not zero.",
+    "end_to_end_total_location": "Launcher final JSON launcher_total_elapsed_seconds includes directory/manifest publication; EXECUTION_RECEIPT.json separately measures before final receipt/manifest publication",
+    "present_frozen_order_lookup_seconds": 1.1669999366858974e-06,
+    "reusable_input_load_and_cache_inventory_seconds": 0.4772487909995107,
+    "speedup_claim": "NOT_ESTABLISHED",
+    "unique_cell_count": 19,
+    "unique_cells_marginal_seconds": 210.8552094200004,
+    "worker_authentication_seconds": 0.6536326659988845,
+    "worker_elapsed_before_study_publication_seconds": 212.13372724999863
+  },
+  "kind": "research",
+  "metrics_sha256": "97db61d80d581fe8fd5ed0e3267c8cd1b88178968c7644a7fe792269c413020d",
+  "new_research_eigensolves": 19,
+  "overall_scientific_verdict": "MIXED_OR_NOT_IMPROVED",
+  "plan_sha256": "74cfda013d17c8cd0f57a0db67a0e8a0d4d7c718c1bc6bfa809cec8a2c74c50f",
+  "relative_assessments": [
+    {
+      "budget": 3,
+      "control": "bare_T300",
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "IDENTICAL_SPACE"
+    },
+    {
+      "budget": 3,
+      "control": "denominator_Dplus",
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "IDENTICAL_SPACE"
+    },
+    {
+      "budget": 3,
+      "control": "denominator_Vplus",
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "IDENTICAL_SPACE"
+    },
+    {
+      "budget": 3,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "energy_prefix",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [
+        "centered:10"
+      ],
+      "material_improvement": false,
+      "no_harm": false,
+      "verdict": "MIXED_OR_NOT_IMPROVED"
+    },
+    {
+      "budget": 3,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "spread",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [],
+      "material_improvement": true,
+      "no_harm": true,
+      "verdict": "IMPROVED"
+    },
+    {
+      "budget": 3,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "spread_reverse",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [],
+      "material_improvement": true,
+      "no_harm": true,
+      "verdict": "IMPROVED"
+    },
+    {
+      "budget": 6,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "bare_T300",
+      "excitation_and_carrier_envelopes_both_improved": false,
+      "harm_components": [],
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "MIXED_OR_NOT_IMPROVED"
+    },
+    {
+      "budget": 6,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "denominator_Dplus",
+      "excitation_and_carrier_envelopes_both_improved": false,
+      "harm_components": [],
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "MIXED_OR_NOT_IMPROVED"
+    },
+    {
+      "budget": 6,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "denominator_Vplus",
+      "excitation_and_carrier_envelopes_both_improved": false,
+      "harm_components": [],
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "MIXED_OR_NOT_IMPROVED"
+    },
+    {
+      "budget": 6,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "energy_prefix",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [],
+      "material_improvement": true,
+      "no_harm": true,
+      "verdict": "IMPROVED"
+    },
+    {
+      "budget": 6,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "spread",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [],
+      "material_improvement": true,
+      "no_harm": true,
+      "verdict": "IMPROVED"
+    },
+    {
+      "budget": 6,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "spread_reverse",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [],
+      "material_improvement": true,
+      "no_harm": true,
+      "verdict": "IMPROVED"
+    },
+    {
+      "budget": 10,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "bare_T300",
+      "excitation_and_carrier_envelopes_both_improved": false,
+      "harm_components": [],
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "MIXED_OR_NOT_IMPROVED"
+    },
+    {
+      "budget": 10,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "denominator_Dplus",
+      "excitation_and_carrier_envelopes_both_improved": false,
+      "harm_components": [],
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "MIXED_OR_NOT_IMPROVED"
+    },
+    {
+      "budget": 10,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "denominator_Vplus",
+      "excitation_and_carrier_envelopes_both_improved": false,
+      "harm_components": [],
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "MIXED_OR_NOT_IMPROVED"
+    },
+    {
+      "budget": 10,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "energy_prefix",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [],
+      "material_improvement": true,
+      "no_harm": true,
+      "verdict": "IMPROVED"
+    },
+    {
+      "budget": 10,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "spread",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [],
+      "material_improvement": true,
+      "no_harm": true,
+      "verdict": "IMPROVED"
+    },
+    {
+      "budget": 10,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "spread_reverse",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [],
+      "material_improvement": true,
+      "no_harm": true,
+      "verdict": "IMPROVED"
+    },
+    {
+      "budget": 15,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "bare_T300",
+      "excitation_and_carrier_envelopes_both_improved": false,
+      "harm_components": [],
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "MIXED_OR_NOT_IMPROVED"
+    },
+    {
+      "budget": 15,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "denominator_Dplus",
+      "excitation_and_carrier_envelopes_both_improved": false,
+      "harm_components": [],
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "MIXED_OR_NOT_IMPROVED"
+    },
+    {
+      "budget": 15,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "denominator_Vplus",
+      "excitation_and_carrier_envelopes_both_improved": false,
+      "harm_components": [],
+      "material_improvement": false,
+      "no_harm": true,
+      "verdict": "MIXED_OR_NOT_IMPROVED"
+    },
+    {
+      "budget": 15,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "energy_prefix",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [],
+      "material_improvement": true,
+      "no_harm": true,
+      "verdict": "IMPROVED"
+    },
+    {
+      "budget": 15,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "spread",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [],
+      "material_improvement": true,
+      "no_harm": true,
+      "verdict": "IMPROVED"
+    },
+    {
+      "budget": 15,
+      "cancellation_blocks_favorable_verdict": false,
+      "control": "spread_reverse",
+      "excitation_and_carrier_envelopes_both_improved": true,
+      "harm_components": [],
+      "material_improvement": true,
+      "no_harm": true,
+      "verdict": "IMPROVED"
+    }
+  ],
+  "schema": "wb5_study_result_v1",
+  "scope": "WB5:P340_Q360_380:selected_space_spectral_accuracy:v1",
+  "source_pins_sha256": "a46cc31834b37f1750f07ad7dfaa477dc10b048916453b23b65cd4db750434be",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "N71_checkpoint_sha256": "393f14a493b54e075eba75f3e2a6186dbeeee2496533d7a5235c03c335812901",
+  "N71_payload_sha256": {
+    "stage1_eigensystem.npz": "5b2d1801be949c983f05eeb16eb553d524416e5b730636f5caa1090601fc1aec",
+    "projected_operators.npz": "646db735f7506295f5b2e1fe047078ad53dfcedd71792ce36dfdd0786cfdfbce",
+    "analysis.json": "08082c2a79dacf63f659f4fbacd8630a70b25b633e3b820cce4d4527639eb1d7"
+  },
+  "N51_file_sha256": {
+    "checkpoint.json": "03058680bebe8569be4c9d071682a5b00105765454e45c2f14bff68398c04e51",
+    "stage1_eigensystem.npz": "3f836490946a400877837eaf4df74305e4bad9dd9e57b69a4070abcde1938ea8",
+    "projected_operators.npz": "7236dc7baf9fd25fbe7b75965aea38ad7484fae311d4162df803fd7d34112ce1"
+  },
+  "source_sha256": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315",
+  "retained_selection_file_sha256": "4d639774bb14e5098b36ee6fb9a079e0e9932b6d33c62933a9adc462fb606698",
+  "note": "Saved basis selections are inputs, not new optimization. Reconstruct only Stage-2."
+}

@@ -3,3 +3,6 @@
 
 *.ipynb filter=strip-notebook-output
 
+# Preserve authenticated research artifact bytes, including historical CSV CRLF.
+research/** -text
+

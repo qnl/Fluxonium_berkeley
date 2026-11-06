@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "unit_tests": 19,
+  "unit_tests_failed": 0,
+  "artifact_consistency": "PASS",
+  "signed_operator_block_checks": "PASS",
+  "cached_npz_files_unchanged": 12,
+  "reconstruction_driver_unchanged": true,
+  "production_worktree_and_index_diffs_unchanged": true,
+  "git_status_unchanged": true,
+  "new_Gridium_eigensolves": 0,
+  "changed_existing_files": [
+    "shell_assignments.csv",
+    "test_tracking.py",
+    "tests.log",
+    "Stage1_shell_N51_to_N71_tracking.json",
+    "tracking.py"
+  ],
+  "created_files": [
+    "REPORT.md",
+    "code_audit.json",
+    "complete_analysis.py",
+    "completion.log",
+    "low_energy_summary.csv",
+    "pair45_46_operator_analysis.json",
+    "pair45_46_operator_blocks.csv",
+    "resume_manifest.json",
+    "synthetic.log",
+    "synthetic_avoided_crossing.png",
+    "synthetic_crossing.py",
+    "synthetic_summary.json",
+    "synthetic_sweep.csv",
+    "verification.json",
+    "verify_results.py"
+  ],
+  "report_sha256": "156cc3203db3cb99a60584959ec49dd1dbe1200e49544349f7a8d7691e2b50a9"
+}

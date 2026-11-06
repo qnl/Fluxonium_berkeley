@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-24T07:59:38.234016+00:00",
+  "environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "packages": {
+    "numpy": "2.2.6",
+    "qutip": "5.2.2",
+    "scipy": "1.13.1"
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "prepare_command": "PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python research/sandbox/k380_selected_space_spectral_accuracy_2026_10_24/prepare.py",
+  "python": "python",
+  "python_version": "3.12.11",
+  "research_launcher": null,
+  "seal_command": "PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python research/sandbox/k380_selected_space_spectral_accuracy_2026_10_24/seal.py",
+  "validate_command": "PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python research/sandbox/k380_selected_space_spectral_accuracy_2026_10_24/validate.py"
+}

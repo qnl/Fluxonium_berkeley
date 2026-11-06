@@ -1,0 +1,22 @@
+{
+  "source_authentication": "PASS",
+  "spectral_decomposition": "COMPLETE",
+  "csv_rows": 36,
+  "csv_columns": 33,
+  "csv_numeric_roundtrip": "EXACT",
+  "schur_pair_identity_max_residual_MHz": 8.621914293627242e-11,
+  "preserved_baseline_files": 439,
+  "changed_baseline_files": [],
+  "git_status": "M  Simulations/Cphase/main.ipynb\nM  Simulations/Cphase/workflow_funcs.py\n?? EmilianoUPDATE-unsaved-backup.md\n",
+  "git_status_unchanged": true,
+  "new_eigensolves": 0,
+  "production_modifications": [],
+  "figures_generated": 0,
+  "frozen_verdicts_preserved": true,
+  "incomplete_analyses": [
+    "Exact full-shell off-diagonal self-energy matrices and their energy scans require saved dressed vectors/resolvent contractions that are absent.",
+    "Rank354/362 cross-parent Stage-1 identity stability cannot be tested against k340.",
+    "Rank328 historical individual mode lists and fixed-vector second-order diagnostics were not saved.",
+    "No bound or prediction for omitted ranks above379 is established."
+  ]
+}

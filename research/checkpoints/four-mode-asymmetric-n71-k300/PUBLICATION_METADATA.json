@@ -1,0 +1,74 @@
+{
+  "schema": "gridium_checkpoint_publication_metadata_v1",
+  "source_path": "research/checkpoints/four-mode-asymmetric-n71-k300/checkpoint.json",
+  "source_sha256": "a48ab94ed6b958e7e4422825ca1670784f8ed797f72cf011db32824b35f1145f",
+  "source_status": "complete",
+  "scientific_scope": "Historical finite model and parameter settings. Complete/validated payload is not proof of retained-basis convergence or physical-device validity.",
+  "configuration": {
+    "physical_parameters": {
+      "EJ": 5.0,
+      "EC": 0.5,
+      "EL": 1.0,
+      "ELK": 1.0,
+      "EJS": 4.0,
+      "ECS": 8.0,
+      "eC": 5.5,
+      "eP": 10.0,
+      "eps_J": 0.1,
+      "eps_LK": 0.05,
+      "ng": 0.0,
+      "phi_ext": 0.0,
+      "theta_ext": 3.141592653589793
+    },
+    "spatial_cutoffs": {
+      "n1max": 4,
+      "N2": 71,
+      "L2": 11.0,
+      "N3": 71,
+      "L3": 14.0,
+      "N4": 8
+    },
+    "solver_settings": {
+      "k": 300,
+      "sigma": -24.0,
+      "which": "LM",
+      "tol": 1e-08,
+      "ncv": null,
+      "v0": null,
+      "permc_spec": "MMD_AT_PLUS_A"
+    }
+  },
+  "configuration_sha256": "b7596cd4a31727912f570fdd6be6fcd02ec8d97cf067c8e6df13b99fa984760b",
+  "generator": "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py",
+  "code_revision": "c69da9d293c11e46df82377c310c7260acb59a77",
+  "git_dirty_at_generation": true,
+  "source_file_sha256": {
+    "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py": "ebae73f9b04257502c293ea9a3fdd2cb7adc60701a5610f3b986f37424dc748c",
+    "Simulations/Rabi_3Photon/four_mode_retained_basis_audit.py": "e31e5ee28f3a460fc4adbf7ad69252d1b9d7b7a4268217b232600cdd82a8563a",
+    "Circuit_Objs/qchard_gridium_netlist.py": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315",
+    "research/sandbox/k260_preregistration/criteria.json": "8f42b3c10453a048238dea23d28e4a590accacbd87ad5fe54439cca1af799be9",
+    "research/sandbox/k260_preregistration/k260_profile.py": "7b020ae81405512d6320e92cf51c7d7d411caaf24dfbaf29dd2a1783f1b5d46a",
+    "research/sandbox/k260_preregistration/guarded_k260.py": "5b39254d7a6bc6d83416680fa16a8b6f1679675f313db2ff3fdd015cd43f84fd",
+    "research/sandbox/k300_preregistration/criteria.json": "4954e8212c3eb094ffa9e009628da6434badb6ffe618561ce51eadd276d21993",
+    "research/sandbox/k300_preregistration/k300_profile.py": "9362556b9ee90aa6f6a8baa94d2a872d3d1391f01897f8e75e894820e770cc0d",
+    "research/sandbox/k300_preregistration/selector.py": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+    "research/sandbox/k300_preregistration/selector_method.md": "2055c7d54d81ada97379f4941ef08354dbb3cbf9378aa2b10dde1349ca2ff7cc",
+    "research/sandbox/k300_preregistration/validation_plan.md": "07af909a8c32e9e07dd294ecd5d51837461895d56711d4b20dae995e57008f82",
+    "research/sandbox/k300_preregistration/selection_hook.py": "4d472b30f2e9f03afae9103b277ca481ca816941424b9bfb87efb16389138a26",
+    "research/sandbox/k300_preregistration/analyze_spaces.py": "544b9f8672c718600efbcd56e16b8f24b489d3f122228fdd6cd5bf3847d17940",
+    "research/sandbox/k300_preregistration/evaluate.py": "669a2d8a6df8f80a2d0ed088f8cfc095a0a5458d4c85d1f1641f69eefad81df2",
+    "research/sandbox/k300_preregistration/preregistration_manifest.json": "52229c31c720d54097ccb6e7a5fd74d446f8d5e0c3318d47e20293356cec754e"
+  },
+  "package_versions": {
+    "python_version": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:38:53) [Clang 18.1.8 ]",
+    "numpy_version": "2.2.6",
+    "scipy_version": "1.13.1",
+    "qutip_version": "5.2.2"
+  },
+  "payload_sha256": {
+    "stage1_eigensystem.npz": "1fb7e9f19c0192746a216a9065ca31eed563a2249cdc6f8957c6e5066c41158d",
+    "projected_operators.npz": "b30bf0799ef5ea41229994529e7f2e1ca1aa52953380819db594917a09d5638d",
+    "analysis.json": "84f5a4a9bc6037bb7db5f679a910b44bddb5aed40f9083739c4f3749652d9d0b"
+  },
+  "retrieval": "Raw payload and original execution metadata excluded. See research/publication/RAW_ARTIFACTS.csv and research/publication/RETRIEVAL.md."
+}

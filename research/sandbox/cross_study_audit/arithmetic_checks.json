@@ -1,0 +1,162 @@
+{
+  "results": [
+    {
+      "check": "spectral_cycle_identity",
+      "status": "PASS",
+      "detail": {
+        "delta_MHz": 6.876167505474484
+      }
+    },
+    {
+      "check": "signed_loop",
+      "status": "PASS",
+      "detail": {
+        "real": -1.7678421643408448
+      }
+    },
+    {
+      "check": "shared_N71_data_consistency",
+      "status": "PASS",
+      "detail": {
+        "energy_GHz": 0.0,
+        "phi_magnitudes": 2.2351421180162576e-11
+      }
+    },
+    {
+      "check": "gate_metric_from_saved_columns",
+      "status": "PASS",
+      "detail": {
+        "F_best_axis": 0.9810509903112776,
+        "F_fixed_X": 0.32837266368089496,
+        "axis_rad": 1.5463069691548061,
+        "final_mean_leakage": 0.016056884337170674
+      }
+    },
+    {
+      "check": "path_product_0781",
+      "status": "PASS",
+      "detail": {
+        "product": 3.8988592550184795
+      }
+    },
+    {
+      "check": "path_product_0721",
+      "status": "PASS",
+      "detail": {
+        "product": 0.32714199638921204
+      }
+    },
+    {
+      "check": "path_product_0381",
+      "status": "PASS",
+      "detail": {
+        "product": 0.25407739220923053
+      }
+    },
+    {
+      "check": "current_coefficients_match_threat_audit",
+      "status": "PASS",
+      "detail": "Pure matrix inversion/branch assembly; no Hamiltonian or solve."
+    },
+    {
+      "check": "spatial_overlap_convention_0",
+      "status": "PASS",
+      "detail": {
+        "amplitude": 0.999793741009563,
+        "probability": 0.9995875245619217
+      }
+    },
+    {
+      "check": "spatial_overlap_convention_1",
+      "status": "PASS",
+      "detail": {
+        "amplitude": 0.9997981489126468,
+        "probability": 0.9995963385691512
+      }
+    },
+    {
+      "check": "spatial_overlap_convention_7",
+      "status": "PASS",
+      "detail": {
+        "amplitude": 0.999592711166788,
+        "probability": 0.9991855882177669
+      }
+    },
+    {
+      "check": "spatial_overlap_convention_8",
+      "status": "PASS",
+      "detail": {
+        "amplitude": 0.999067479861984,
+        "probability": 0.9981358293177796
+      }
+    },
+    {
+      "check": "synthetic_probability_matrix_scope",
+      "status": "PASS",
+      "detail": "Four entries of a 2x2 overlap matrix; only two ambiguous eigenstates, not four."
+    },
+    {
+      "check": "preregistered_parent_endpoint",
+      "status": "PASS",
+      "detail": "same-parent retained Stage-1 spaces k=180, k=200, and k=220 at fixed N=71 in the fixed four-mode model"
+    },
+    {
+      "check": "missing_controllability_link_confirmed",
+      "status": "PASS",
+      "detail": "Existing independent audit supplies audit/workspace_verification.json instead."
+    }
+  ],
+  "derived_values": {
+    "f01_MHz": 15.857269552160602,
+    "f78_MHz": 22.733437057635086,
+    "collision_MHz": 6.876167505474484,
+    "collision_N51_MHz": 9.029061885307499,
+    "rectangular_null_ns": 145.42984870625193,
+    "Hann_null_ns": 290.85969741250386,
+    "middle_logical_ratio": 0.3969268011180528,
+    "shelf70": {
+      "F_best_axis": 0.9810509903112776,
+      "F_fixed_X_in_saved_interaction_frame": 0.32837266368089496,
+      "axis_rad": 1.5463069691548061,
+      "final_mean_leakage": 0.016056884337170674,
+      "sampled_peak_mean_leakage": 0.9926892938850806
+    },
+    "state_character": {
+      "0": {
+        "theta2_std": 2.6430367592348087,
+        "theta3_std": 2.7511295724322715,
+        "mode4_mean": 0.16719189351651154,
+        "mode4_top_probability": 3.5579581550221945e-07,
+        "entropy_bits": 0.6245552011391271
+      },
+      "1": {
+        "theta2_std": 2.658531015341623,
+        "theta3_std": 2.756557131117345,
+        "mode4_mean": 0.16874182607772942,
+        "mode4_top_probability": 3.6167498476335425e-07,
+        "entropy_bits": 0.6279610520969454
+      },
+      "7": {
+        "theta2_std": 2.506886462418737,
+        "theta3_std": 3.453441191951091,
+        "mode4_mean": 0.40628141293520004,
+        "mode4_top_probability": 4.142592352126483e-06,
+        "entropy_bits": 1.0256791904966351
+      },
+      "8": {
+        "theta2_std": 2.481678705351815,
+        "theta3_std": 3.261068915451099,
+        "mode4_mean": 0.39972075389913486,
+        "mode4_top_probability": 4.399818230576532e-06,
+        "entropy_bits": 1.0213557155953692
+      }
+    },
+    "path_spatial_changes": {
+      "0781": -0.029509146568478816,
+      "0721": 0.01607339424816481,
+      "0381": -0.0007481249645286993
+    }
+  },
+  "no_eigensolves": true,
+  "no_propagation": true
+}

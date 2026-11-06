@@ -1,0 +1,74 @@
+[
+  {
+    "case": "N71_priority_k170",
+    "low11_saved_energy_error_GHz": 1.2612133559741778e-13,
+    "low11_minimum_probability": 0.9999223096564234,
+    "high48_minimum_probability": 0.5392242337343744,
+    "ambiguous_count": 2,
+    "ordering_changes": 2
+  },
+  {
+    "case": "N71_priority_k172",
+    "low11_saved_energy_error_GHz": 8.704148513061227e-14,
+    "low11_minimum_probability": 0.9999677458732295,
+    "high48_minimum_probability": 0.5277444508624218,
+    "ambiguous_count": 2,
+    "ordering_changes": 0
+  },
+  {
+    "case": "N71_priority_k175",
+    "low11_saved_energy_error_GHz": 7.993605777301127e-14,
+    "low11_minimum_probability": 0.9999846460302536,
+    "high48_minimum_probability": 0.9421431899946979,
+    "ambiguous_count": 0,
+    "ordering_changes": 0
+  },
+  {
+    "case": "N71_priority_k177",
+    "low11_saved_energy_error_GHz": 1.0835776720341528e-13,
+    "low11_minimum_probability": 0.9999940434550642,
+    "high48_minimum_probability": 0.9964733080034631,
+    "ambiguous_count": 0,
+    "ordering_changes": 0
+  },
+  {
+    "case": "N71_priority_k179",
+    "low11_saved_energy_error_GHz": 1.509903313490213e-13,
+    "low11_minimum_probability": 0.9999992157619545,
+    "high48_minimum_probability": 0.9991505150885706,
+    "ambiguous_count": 0,
+    "ordering_changes": 0
+  },
+  {
+    "case": "asymmetric_priority_k170",
+    "low11_saved_energy_error_GHz": 7.283063041541027e-14,
+    "low11_minimum_probability": 0.9679407489839696,
+    "high48_minimum_probability": 0.4460497564410169,
+    "ambiguous_count": 9,
+    "ordering_changes": 4
+  },
+  {
+    "case": "asymmetric_priority_k172",
+    "low11_saved_energy_error_GHz": 8.881784197001252e-14,
+    "low11_minimum_probability": 0.9678271981978546,
+    "high48_minimum_probability": 0.43587858958141196,
+    "ambiguous_count": 7,
+    "ordering_changes": 4
+  },
+  {
+    "case": "asymmetric_priority_k175",
+    "low11_saved_energy_error_GHz": 6.394884621840902e-14,
+    "low11_minimum_probability": 0.9862860101095422,
+    "high48_minimum_probability": 0.7386222854725591,
+    "ambiguous_count": 2,
+    "ordering_changes": 2
+  },
+  {
+    "case": "N71_core160",
+    "low11_saved_energy_error_GHz": 1.1546319456101628e-13,
+    "low11_minimum_probability": 0.9704818942545888,
+    "high48_minimum_probability": 0.46469447541428427,
+    "ambiguous_count": 9,
+    "ordering_changes": 2
+  }
+]

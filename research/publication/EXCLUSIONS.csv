@@ -1,0 +1,76 @@
+path,reason
+docs/*.md and docs/references/**,existing local context/reference archive remains outside this result-focused release; old status statements are not rewritten
+"research/**/{*AUTHORIZATION*,*PRESERVATION*,initial_*,*.log,*.lock,*.patch}",local session/authorization/preservation records are not part of this publication
+"research/**/{__pycache__,cache,mplconfig}/**",cache and machine-generated state
+research/checkpoints/**/*.npz,raw eigensolver/vector payload; exact inventory in RAW_ARTIFACTS.csv
+research/sandbox/cross_study_audit/audit.py,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/cross_study_audit/preservation_manifest.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/cross_study_audit/verification.json,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/cross_study_audit/verify.py,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/epsj011_k340_preregistration/execution_plan.md,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k340_preregistration/existing_evidence.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k340_preregistration/guarded_k340.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k340_preregistration/run_analysis_keyfix.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k340_preregistration/test_preregistration.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k340_preregistration/test_results.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_diagnostic_review/build_review.py,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/epsj011_k380_preregistration/RESUME_AUDIT.md,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/execution_plan.md,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/guarded_dry_preflight.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/guarded_dry_preflight_authorized.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/guarded_k380.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/historical_evidence.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/preflight_test_fixture_rejection.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/readiness.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/resume_authentication.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/resume_preservation_before.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/resume_test_results.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/test_preregistration.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_k380_preregistration/test_schema_analysis.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/epsj011_shell_attribution/preservation.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/k260_preregistration/REPORT.md,original machine-path metadata/report; portable copy is research/sandbox/k260_preregistration/REPORT.public.md
+research/sandbox/k260_preregistration/execution_plan.md,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/k260_preregistration/guarded_k260.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/k260_preregistration/k260_return_analysis/k260_analysis_summary.json,original machine-path metadata/report; portable copy is research/sandbox/k260_preregistration/k260_return_analysis/k260_analysis_summary.public.json
+research/sandbox/k260_shell_attribution/preservation.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/k300_results/export_tables.py,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/k300_results/run_analysis_keyfix.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/k300_shell_attribution/preservation.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/k380_coupling_vs_schur_2026_10_21/PREDICTOR_DEFINITIONS.md,original machine-path metadata/report; portable copy is research/sandbox/k380_coupling_vs_schur_2026_10_21/PREDICTOR_DEFINITIONS.public.md
+research/sandbox/k380_coupling_vs_schur_2026_10_21/REPORT.md,original machine-path metadata/report; portable copy is research/sandbox/k380_coupling_vs_schur_2026_10_21/REPORT.public.md
+research/sandbox/k380_coupling_vs_schur_2026_10_21/build_report.py,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/k380_cross_shell_selector_transfer_2026_10_21/SCIENTIFIC_REPORT.md,original machine-path metadata/report; portable copy is research/sandbox/k380_cross_shell_selector_transfer_2026_10_21/SCIENTIFIC_REPORT.public.md
+research/sandbox/k380_cross_shell_selector_transfer_2026_10_21/build_report.py,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/k380_high_rank_state_fingerprints_2026_10_21/PRESERVATION.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/k380_high_rank_state_fingerprints_2026_10_21/PRESERVATION_BASELINE.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/k380_high_rank_state_fingerprints_2026_10_21/REPORT.md,original machine-path metadata/report; portable copy is research/sandbox/k380_high_rank_state_fingerprints_2026_10_21/REPORT.public.md
+research/sandbox/k380_high_rank_state_fingerprints_2026_10_21/build_report.py,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/k380_high_rank_state_fingerprints_2026_10_21/preservation.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/k380_s2_final_authorization_execution_2026_10_24/NUMERICAL_SUMMARY.json,original machine-path metadata/report; portable copy is research/sandbox/k380_s2_final_authorization_execution_2026_10_24/NUMERICAL_SUMMARY.public.json
+research/sandbox/k380_s2_final_authorization_execution_2026_10_24/SCIENTIFIC_RESULTS.md,original machine-path metadata/report; portable copy is research/sandbox/k380_s2_final_authorization_execution_2026_10_24/SCIENTIFIC_RESULTS.public.md
+research/sandbox/k380_selected_space_spectral_accuracy_2026_10_24/REPRODUCIBILITY.json,original machine-path metadata/report; portable copy is research/sandbox/k380_selected_space_spectral_accuracy_2026_10_24/REPRODUCIBILITY.public.json
+research/sandbox/k380_wb5_final_authorization_execution_2026_10_24/NUMERICAL_SUMMARY.json,original machine-path metadata/report; portable copy is research/sandbox/k380_wb5_final_authorization_execution_2026_10_24/NUMERICAL_SUMMARY.public.json
+research/sandbox/k380_wb5_final_authorization_execution_2026_10_24/OUTPUT_AUTHENTICATION.json,original machine-path metadata/report; portable copy is research/sandbox/k380_wb5_final_authorization_execution_2026_10_24/OUTPUT_AUTHENTICATION.public.json
+research/sandbox/k380_wb5_final_authorization_execution_2026_10_24/SCIENTIFIC_RESULTS.md,original machine-path metadata/report; portable copy is research/sandbox/k380_wb5_final_authorization_execution_2026_10_24/SCIENTIFIC_RESULTS.public.md
+research/sandbox/k420*/**,"inactive engineering, synthetic tests, host telemetry, and unexecuted experiment machinery"
+research/sandbox/k_convergence_reaudit/finalize.py,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/k_convergence_reaudit/operator_blocks.json,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/k_convergence_reaudit/preservation_manifest.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/k_convergence_reaudit/test_reaudit.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/k_convergence_reaudit/verification.json,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/parameter_point_validation/execution_plan.md,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/parameter_point_validation/export_results.py,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/parameter_point_validation/figure_backlog.md,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/parameter_point_validation/guarded_parameter_point.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/parameter_point_validation/run_analysis_keyfix.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/parameter_point_validation/runtime_compatibility_record.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/parameter_point_validation/test_preregistration.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/parameter_point_validation/test_results.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/subspace_tracking/complete_analysis.py,large derived matrix or auxiliary report/session builder; source retained locally
+research/sandbox/subspace_tracking/resume_manifest.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/subspace_tracking/synthetic_avoided_crossing.png,"synthetic method illustration, not a Gridium result"
+research/sandbox/subspace_tracking/synthetic_crossing.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/subspace_tracking/synthetic_summary.json,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/subspace_tracking/synthetic_sweep.csv,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/subspace_tracking/test_tracking.py,"execution, synthetic, preservation/session, or superseded adapter record"
+research/sandbox/subspace_tracking/verification.json,large derived matrix or auxiliary report/session builder; source retained locally
