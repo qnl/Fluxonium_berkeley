@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "status": "SEALED",
+  "sealed_date": "2026-10-18",
+  "manifest_sha256": "95f33014769195605ef871f62fee229d0417f610fb6e96dd44df71e710707656",
+  "criteria_sha256": "a2318603f3e2b5cefcb68873425c7873d0a6243fc7017949352129c3beeb616a",
+  "configuration_sha256": "8f02dbfc09f6a6c4e6bcd49d938c79d570b063103edf33beaad8b331e085ac5e",
+  "stage1_eigensolve_run": false,
+  "new_shell_stage2_run": false,
+  "execution_authorized": false
+}

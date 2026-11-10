@@ -1,0 +1,69 @@
+{
+  "hashes": {
+    "CONTEXT_RANK328.json": {
+      "main": "6a4297c22c6c0f328d218025c5addf3ea825e0bcba8606d3c9c21ca50b3d3778",
+      "repeat": "6a4297c22c6c0f328d218025c5addf3ea825e0bcba8606d3c9c21ca50b3d3778"
+    },
+    "RANKING_ANALYSIS.csv": {
+      "main": "a71e98125c36339b561d420d7c083ddc7f246821e58ee1700669f1ccab182521",
+      "repeat": "a71e98125c36339b561d420d7c083ddc7f246821e58ee1700669f1ccab182521"
+    },
+    "RESULTS.json": {
+      "main": "6fb471d85d4e182ace1f77f0acd819c22ac7cb7c56590779e1f9f03831c99d1d",
+      "repeat": "6fb471d85d4e182ace1f77f0acd819c22ac7cb7c56590779e1f9f03831c99d1d"
+    },
+    "SHELL_COMPARISON.csv": {
+      "main": "d1aef885a0c8f829f7677e9088b308140c30b2f16d1d0ad1dd5c0f2a0448a0ae",
+      "repeat": "d1aef885a0c8f829f7677e9088b308140c30b2f16d1d0ad1dd5c0f2a0448a0ae"
+    },
+    "SOURCE_AUTHENTICATION.json": {
+      "main": "ae7b8fed3fe71e7d36b16c5e2c07d151daa0e0ae4734d65b54a70e340c62a463",
+      "repeat": "ae7b8fed3fe71e7d36b16c5e2c07d151daa0e0ae4734d65b54a70e340c62a463"
+    },
+    "TARGET_DIAGNOSTICS.csv": {
+      "main": "fa34cacf200c5f678590901535a6e7ed74c7bf3476150e282b535e4357334a5a",
+      "repeat": "fa34cacf200c5f678590901535a6e7ed74c7bf3476150e282b535e4357334a5a"
+    }
+  },
+  "repeated_validation": {
+    "attribution_shell_counts": [
+      20,
+      20
+    ],
+    "available_predictors": 35,
+    "definition_hashes": {
+      "PREDICTOR_DEFINITIONS.md": "da91ade67881fcb7b0490c61b479370d0bc6a82fa38c9ffdad0455961fb4146b",
+      "RESEARCH_PLAN.md": "2d0653be74e185b71e293ef279b2269540379d923f7b84c6b2940d93000565ed"
+    },
+    "eigenvector_members_loaded": 0,
+    "elapsed_seconds": 0.89860666700406,
+    "fingerprint_max_absolute_comparison_error": 0.0,
+    "hermiticity_errors": {
+      "n1": 2.3092638912203256e-14,
+      "n2": 3.2862894555212404e-14,
+      "n3": 8.197063126497312e-15,
+      "x2": 5.1958437552457326e-14,
+      "x3": 6.217288588596748e-14
+    },
+    "new_eigensolves": 0,
+    "peak_resident_bytes": 162168832,
+    "preservation": "PASS",
+    "preservation_files_checked": 104,
+    "ranking_rows": 152,
+    "selector_trace_max_error": 0.0,
+    "status": "PASS",
+    "target_rows": 240,
+    "tests": [
+      "independent Pearson formula",
+      "average-tie Spearman",
+      "deterministic ties/top3",
+      "missing/zero/constant handling",
+      "complex coherent/gauge invariance",
+      "Hermitian conjugate block",
+      "concentration normalization",
+      "energy-unit correlation invariance"
+    ],
+    "unavailable_predictors": 3
+  },
+  "status": "PASS"
+}

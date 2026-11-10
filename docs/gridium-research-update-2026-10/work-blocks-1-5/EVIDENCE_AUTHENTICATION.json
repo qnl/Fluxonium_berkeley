@@ -1,0 +1,62 @@
+{
+  "Hamiltonians_assembled": 0,
+  "WB1_3_scientific_pin_checks": 236,
+  "WB5_source_pins": 847,
+  "baseline_protected_files": 1304,
+  "computed_checks": [
+    "36 carrier increments reproduce primary k380 metrics",
+    "S1/S2 attribution totals reproduce originals",
+    "56 base-compatible capture rows",
+    "19 unique and 28 WB5 comparison identities",
+    "exact retained-space partition"
+  ],
+  "existing_figures_snapshotted": 95,
+  "figure_data_sha256": "d1163e39b69597d1589633d4c0c2ccbf7c7c8c76c011171acfd07d54cf79fdaa",
+  "manifests": [
+    {
+      "manifest": "research/sandbox/k380_coupling_vs_schur_2026_10_21/OUTPUT_HASHES.json",
+      "sha256": "d5437f773673343cbb0f00595efbf541712fc5e7d3ab711b8cef477bfdcf4bde",
+      "verified_members": 21
+    },
+    {
+      "manifest": "research/sandbox/k380_high_rank_state_fingerprints_2026_10_21/OUTPUT_HASHES.json",
+      "sha256": "95a709835abbb06bd87df14d15c50aba002b6c058357dc2cb99176282ca3bce2",
+      "verified_members": 17
+    },
+    {
+      "manifest": "research/sandbox/k380_cross_shell_selector_transfer_2026_10_21/OUTPUT_HASHES.json",
+      "sha256": "4b527e3d4317a2c49e4159648ad84eef057a813f71d57a663bd9e7676fa1d503",
+      "verified_members": 15
+    },
+    {
+      "manifest": "research/sandbox/epsj011_k380_diagnostic_review/OUTPUT_HASHES.json",
+      "sha256": "0fd48adac195f2164d5d15e60a2082257ad8e9e65922a0a83794573da001e9f9",
+      "verified_members": 12
+    },
+    {
+      "manifest": "research/sandbox/k380_s2_final_authorization_execution_2026_10_24/DELIVERY_MANIFEST.json",
+      "sha256": "f4c2d91c5eb3fa72f5f6ce03e0d3ad76fe87bf7895889cbd932ed828a3ab390a",
+      "verified_members": 11
+    },
+    {
+      "manifest": "research/sandbox/k380_p340_s2_base_matched_validation_continuation_001/OUTPUT_MANIFEST.json",
+      "sha256": "418874afc97a8cfc017b452c9f7c5f65844944c1a55d8b74f0d97b0ee61cbe0f",
+      "verified_members": 25
+    },
+    {
+      "manifest": "research/sandbox/k380_wb5_final_authorization_execution_2026_10_24/DELIVERY_MANIFEST.json",
+      "sha256": "680ec08930590e12377036940f300856989d445c2aa0fd6f039bc9e1e91a481b",
+      "verified_members": 23
+    },
+    {
+      "manifest": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001/OUTPUT_MANIFEST.json",
+      "sha256": "637d2758e657df47cb002bc492e78dd76262ec032d2ca135b0595e0a8cdaf918",
+      "verified_members": 70
+    }
+  ],
+  "missing_figure_inputs": [],
+  "new_eigensolves": 0,
+  "new_preservation_snapshot_files": 2724,
+  "stage1_vectors_loaded": false,
+  "status": "PASS"
+}

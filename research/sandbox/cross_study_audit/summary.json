@@ -1,0 +1,99 @@
+{
+  "status": "AUDIT_COMPLETE_WITH_QUALIFICATIONS",
+  "claims": 48,
+  "contradictions": 24,
+  "claim_classification_counts": {
+    "ESTABLISHED WITHIN CURRENT FOUR-MODE MODEL": 10,
+    "NUMERICALLY SUPPORTED BUT NOT FULLY CONVERGED": 6,
+    "MODEL-CONDITIONAL": 4,
+    "HEURISTIC / PERTURBATIVE": 5,
+    "SOFTWARE/METHOD VALIDATION ONLY": 3,
+    "UNRESOLVED": 3,
+    "OVERSTATED / SHOULD BE WEAKENED": 17
+  },
+  "material_findings": [
+    "No demonstrated algebraic control obstruction in tested finite projections.",
+    "No realistic four-mode X gate is validated.",
+    "0721 comparator merit is criterion-dependent, not universal robustness.",
+    "Oracle-informed same-parent agreement is not independent convergence evidence.",
+    "Pulse axes, mean/transient leakage and overlap amplitude/probability require explicit labels.",
+    "Current-status overclaim in EmilianoUPDATE and stale RESULTS_LEDGER must not override quantified audits.",
+    "Array mode is a conditional model threat; device coupling is unknown."
+  ],
+  "exact_limitations": [
+    "No new eigensolve, dynamics or closure.",
+    "No original artifact edited.",
+    "Independent arithmetic verifies selected consistency relations, not all historical calculations.",
+    "No current remote-job status or new Thomas/device communication checked."
+  ],
+  "blockers": [
+    "authenticated k220 return",
+    "spatial/N4/dynamical truncation checks",
+    "reviewed combined physical model",
+    "array branch/participation/device data",
+    "physical port transfer/calibration",
+    "decoherence and gate specification"
+  ],
+  "input_sha256": {
+    "research/sandbox/state_0178_checkpoint_diagnostics.json": "0249989a277bbfaf74a342f073e5c7c25669c39dbb4259938e6495b0549c072a",
+    "research/sandbox/robust_pathway_audit.json": "e554b0d81b89da65f698714ddc8aa0d608371a0f4f87ae03ce2cc6217dad03f4",
+    "research/sandbox/model_threat_susceptibility.json": "454f010328d1e0fc746df2bc47fd6d363ce6661200ce70994904b416f919afcd",
+    "research/sandbox/k220_preregistered_criteria.json": "fce9a04ae9729cd560c7685b8e54c7d45a03ea474147555bf7fdb428c9e31eb7",
+    "research/sandbox/driven_selectivity_n71/reduced_data.npz": "4e773bb3ce23d7bc2191b964f05ac656087ecc6377ff251f1e5fa4bf0697e010",
+    "research/sandbox/subspace_tracking/N71_k180.npz": "f2b55e27ec8acd765e6ac950f5d6673ef8114da4975edb8998e37f7357f3e152",
+    "research/sandbox/driven_selectivity_n71/final_propagators.npz": "c15cd9d1e6787e9cfdf76eab0d15e78c788b27b08f0ac12d72eaf2f5472e4b85",
+    "research/sandbox/driven_selectivity_n71/final_checks.csv": "1abc15c1b494cdcc7410c43dc1871f971c1e41608ac5082d195070e5347e3267",
+    "Circuit_Objs/qchard_gridium_netlist.py": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315",
+    "research/sandbox/subspace_tracking/N51_to_N71_low11_tracking.json": "0b3938f54070b619cdd558d0bf96826084c73da154b3c2c3a227c23c610e85e7",
+    "research/sandbox/subspace_tracking/synthetic_summary.json": "a00c7c8e43e81272286c7002c24e885db3f9d5b115c5982083211730d2f6ee42",
+    "Tests/four_mode_gridium_netlist_validation_test.py": "7f27746e653b1a904bfddf0e533f94ac93f4ce9109e2e8d9aba38c505fee1670",
+    "EmilianoUPDATE.md": "718704131e1753a1d3a752a437188d84c20227a9f430b05f6990a174c86e4533",
+    "docs/MULTIMODE_GRIDUM_IMPLEMENTATION_SPEC.md": "d4f1685baaae968b824fe10628b78598df34edd9921831f8c129bd48018f4390",
+    "research/sandbox/model_threat_audit.md": "58ac59fe9f2fd581431d850861d68a76972114051a61c1476429a15d332f2a96",
+    "research/sandbox/subspace_tracking/REPORT.md": "156cc3203db3cb99a60584959ec49dd1dbe1200e49544349f7a8d7691e2b50a9",
+    "research/sandbox/driven_selectivity_n71/REPORT.md": "e42402819119f4e0a8c782c88e9206894c71d8ff14b92e0f573a4f6ba2a34966",
+    "research/sandbox/k_convergence_reaudit/REPORT.md": "786fbebcb4b2965c63c16f2563777313699744ffb8478b176d287f17d0c6aeea",
+    "research/sandbox/array_mode_extension_audit.md": "3530b866eaf734bc3a25a4d5c679f71853ec6515b4576ee667c7e13559f8ad76",
+    "research/sandbox/driven_selectivity_n71/floquet_third_order_terms.json": "21cd089fd513416f25833773fa96c984e58934f1f57a74bb74cf9d1343b2d51c",
+    "research/sandbox/driven_selectivity_n71/exact_robustness.csv": "df8e895d59037ec8b6d2cde505a49d8f9b179237b92aa66b6cadff212d453e37",
+    "research/sandbox/driven_selectivity_n71/study.py": "3ff555978ba9bbeb71754fd1a8391547429969f6d12f053462dc761877d4e10a",
+    "research/sandbox/controllability_n71/audit/AUDIT_REPORT.md": "563027a03be4a995e366eff3b83ec7c54a03b16af8a44493cffb6f531d53edac",
+    "research/sandbox/controllability_n71/audit/partition.json": "dec6e5315120fe95851580d41bebda2027e70dde44407427022390fedb1a71ca",
+    "research/sandbox/controllability_n71/audit/restricted_results.json": "8e2a87586b8f9f008edbae54ff0bbc173a90be7b35503feeb40903ae8aa0ea76",
+    "research/sandbox/controllability_n71/logical_subspace_invariance.json": "e69c50312d2d5ed3733192e3e0e75e9d6ac810c3e4ae9b05e7725ef36a4e87b3",
+    "research/sandbox/subspace_tracking/pair45_46_operator_analysis.json": "a5e23f304f2d9b90c4eb05cf5062890eb657450fb500ac3cabbbcd26cf6edb7d",
+    "research/sandbox/k_convergence_reaudit/state_tracking.csv": "a4aa1675e3558ef0897674aa26596400b3cb47adb4e76dc7c0fe89b08afbfc71",
+    "research/sandbox/k_convergence_reaudit/low_energy_convergence.csv": "ba3cb5572bdd9c194f73e9ec42cfe274065d43c21d22904083e3353210b37ad1",
+    "research/sandbox/k_convergence_reaudit/pathway_convergence.csv": "ab07c6c03b934e45d0e9abd9073d42a606ac93fac18adc3650773a4a88caa144",
+    "research/sandbox/n71_retained_subspace_postprocess.json": "4d639774bb14e5098b36ee6fb9a079e0e9932b6d33c62933a9adc462fb606698",
+    "research/sandbox/k_convergence_reaudit/operator_convergence.csv": "5093e351bc2a769f8cd995af0ee6c747f5727730dc3fd146afec525976ff941b",
+    "research/sandbox/k_convergence_reaudit/convergence_trends.csv": "2c48db63a10dd8c9674e5c1ce4fa23997acdbc618496056e448fff5711db9949",
+    "research/sandbox/k220_mock_output/k220_analysis_summary.json": "d71f8cfa81d5ad8c4569a8d9f3c8e60bf6280a707e3c204425c04f7ef1a4c355",
+    "research/sandbox/k220_preregistered_analysis.md": "194972d30e081af421cd773de40c873320b41bcef9624e59aaa94671f4a58c66",
+    "research/sandbox/driven_selectivity_n71/verification.json": "be81a30521b7c06907e2fe2efbd6541c3cb56f97ab6f7f4bcba9a8f0d8fb0cf0",
+    "research/sandbox/controllability_n71/audit/authentication.json": "2c1d790f3b3f839037305771007c93ae725ca5213dd3e7a770c3378484a956ae",
+    "research/sandbox/driven_selectivity_n71/dressing_cancellation.json": "a806d7e8a1aa092337cc842622af51cfda9ea89ecbc9f4d6607b184ce911340f",
+    "research/sandbox/driven_selectivity_n71/refinements.csv": "ecd995eaf471a347bd66b936ffcc9c71c67d54e2b4c74984f822b151b41c3113",
+    "research/sandbox/controllability_n71/audit/stability_results.json": "ef7d8004da66d68410bb75c2ffb081befbf4f4d3c74d62746d5fe5d1d907f7a0",
+    "docs/RESULTS_LEDGER.md": "7143dd23c0bbbcb249afdfae8b42a44fdc82a18ef5def647d3259e3c120d3171",
+    "research/sandbox/subspace_tracking/pair45_46_operator_blocks.csv": "0fa10a7416999b4419f9bda6890241a3c8f72594f67640e0ada8bbff9497981e"
+  },
+  "external_primary_sources": [
+    {
+      "url": "https://arxiv.org/html/2509.14656v1",
+      "locations": "Supplementary Notes 6 and 11, Eq. S33",
+      "scope": "Device-specific array examples; no assignment to benchmark"
+    },
+    {
+      "url": "https://arxiv.org/pdf/quant-ph/0110147",
+      "locations": "Theorem 3, p. 7",
+      "scope": "Connected B-regular graph is sufficient in specified finite bilinear model"
+    }
+  ],
+  "verification": {
+    "status": "PASS",
+    "arithmetic_checks": 15,
+    "artifact_checks": 11,
+    "preexisting_files_preserved": 465
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "status": "frozen-before-any-k340-stage1-or-new-shell-dressed-result",
+  "scope": "fixed-N71 fixed-four-mode retained Stage-1 convergence at epsilon_J=0.11; k340 is a finite endpoint",
+  "profile": {
+    "name": "n71-k340-epsj011-convergence",
+    "final_directory_name": "four-mode-asymmetric-n71-epsj011-k340",
+    "configuration_sha256": "10997084ff05005d20219d8d7110fe8751a10ee64a410a031f81e6ec479829a0",
+    "configuration": {
+      "physical_parameters": {
+        "EJ": 5.0,
+        "EC": 0.5,
+        "EL": 1.0,
+        "ELK": 1.0,
+        "EJS": 4.0,
+        "ECS": 8.0,
+        "eC": 5.5,
+        "eP": 10.0,
+        "eps_J": 0.11,
+        "eps_LK": 0.05,
+        "ng": 0.0,
+        "phi_ext": 0.0,
+        "theta_ext": 3.141592653589793
+      },
+      "spatial_cutoffs": {
+        "n1max": 4,
+        "N2": 71,
+        "L2": 11.0,
+        "N3": 71,
+        "L3": 14.0,
+        "N4": 8
+      },
+      "solver_settings": {
+        "k": 340,
+        "sigma": -24.0,
+        "which": "LM",
+        "tol": 1e-08,
+        "ncv": null,
+        "v0": null,
+        "permc_spec": "MMD_AT_PLUS_A"
+      }
+    }
+  },
+  "authenticated_inputs": {
+    "epsj011_k300_checkpoint_sha256": "20a58be10ad8408ce479de259e1d2f3562cc46222e0eebc939d6d695803516bd",
+    "epsj011_k300_complete_sha256": "109c05ce53c6982a7f9b2666d1a53db9ba248eab026c1cd9b8211bbb8e6960ba",
+    "epsj011_k300_stage1_sha256": "fcb5d91130b2fef9b908c0573b4d8297f3cff8aa81e2ba9ef11874601849a3f3",
+    "epsj011_k300_operators_sha256": "b528fed0f47ff6d387f679a41f81deb1a4bd7075755930a1f0cd75a803564a6c",
+    "epsj011_k300_analysis_sha256": "0e67d3989a1e9fe3158ae385db3b15895ffeeeb3120f6d5070e5cc0beaba4880",
+    "epsj011_k300_run_state_sha256": "fb7cc90d29366cdc455b687caf609673a39cd576b791ebfa55ade87b9009d4a8",
+    "parameter_criteria_sha256": "8c3c44c69eb290c965beebc0b176c0166410c3d98602a05bd530673c9172ea18",
+    "parameter_evaluation_sha256": "86c0c2412db90fce7c4de0ff2f8c14ba0db193fbf8cde46c62d91e65b0ee3930",
+    "parameter_metrics_sha256": "27edea1da4dd474813429214448070ae88f128c3c6c6331ce889f8a87b3a556c",
+    "parameter_selection_sha256": "17ec7b93304099399f152cb34e819fa4aedc5133d23bc3c04c3b7b1f6292a931",
+    "parameter_selection_seal_sha256": "94808eb5c683000b7fbd53b041777178b85bdca8d9510e86b557606211c5f847",
+    "shell_summary_sha256": "7f189e4ceaedf3afdc26155554939549cb378261a96e949f800b1098e4a45ff8",
+    "shell_methodology_sha256": "1df2a8d19a7b11c4ea35195f63650eb31c0b1baff4f57dc03e4577adf3bcdbbc",
+    "shell_input_hashes_sha256": "86cea52b6585b692c0d79ca7a7b26d82a965520a9fdad9dd3b8f8b7a9471d84c",
+    "required_source_sha256": {
+      "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py": "ebae73f9b04257502c293ea9a3fdd2cb7adc60701a5610f3b986f37424dc748c",
+      "Simulations/Rabi_3Photon/four_mode_retained_basis_audit.py": "e31e5ee28f3a460fc4adbf7ad69252d1b9d7b7a4268217b232600cdd82a8563a",
+      "Circuit_Objs/qchard_gridium_netlist.py": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315",
+      "research/sandbox/k300_preregistration/selector.py": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+      "research/sandbox/k300_preregistration/selector_method.md": "2055c7d54d81ada97379f4941ef08354dbb3cbf9378aa2b10dde1349ca2ff7cc"
+    }
+  },
+  "prefixes": [260, 280, 300, 320, 340],
+  "primary_comparisons": ["k300_to_k320", "k320_to_k340", "k300_to_k340"],
+  "context_comparisons": ["k260_to_k280", "k280_to_k300"],
+  "shells": {
+    "historical_S2": [280, 299],
+    "new_S3": [300, 319],
+    "new_S4": [320, 339]
+  },
+  "targets": [0, 1, 2, 3, 7, 8],
+  "groups": [[0, 1], [2, 3], [7, 8]],
+  "frequencies": ["f01", "f07", "f08", "f78", "f81", "f72", "f21", "f03", "f38"],
+  "selectivity": ["f78-f01"],
+  "edges": ["g01", "g07", "g78", "g81"],
+  "supporting_edges": ["g72", "g21", "g03", "g38"],
+  "paths": [[0, 7, 8, 1], [0, 7, 2, 1], [0, 3, 8, 1]],
+  "subspaces": [[0, 1], [2, 3], [7, 8], [0, 1, 7, 8], [0, 1, 2, 3, 7, 8]],
+  "blocks": {
+    "primary": [[0, 1, 7, 8], [0, 1, 7, 8]],
+    "logical_to_78": [[0, 1], [7, 8]],
+    "internal_78": [[7, 8], [7, 8]],
+    "all_targets": [[0, 1, 2, 3, 7, 8], [0, 1, 2, 3, 7, 8]],
+    "logical_to_23": [[0, 1], [2, 3]],
+    "comparators_to_78": [[2, 3], [7, 8]]
+  },
+  "strict": {
+    "standard_MHz": [1.0, 5.0],
+    "f78_MHz": [0.5, 1.0],
+    "overlap_min": [0.999, 0.995],
+    "operator_relative": [0.03, 0.05],
+    "score_relative": [0.05, 0.10]
+  },
+  "practical": {
+    "standard_MHz": [5.0, 10.0],
+    "f78_MHz": [1.0, 2.0],
+    "overlap_min": [0.995, 0.990],
+    "operator_relative": [0.05, 0.10],
+    "score_relative": [0.10, 0.20]
+  },
+  "tracking": {
+    "assigned_min": 0.90,
+    "competitor_ratio_strict_max": 0.50,
+    "margin_strict_min": 0.25,
+    "original_k300_to_nested_k300_required": true,
+    "nested_k300_to_k340_required": true
+  },
+  "quality": {
+    "stage1_residual_max": 1e-07,
+    "stage1_orthogonality_inf_max": 1e-08,
+    "stage2_residual_GHz_max": 1e-09,
+    "hermiticity_max": 1e-12,
+    "schur_equation_GHz_max": 1e-09,
+    "schur_identity_GHz_max": 1e-09,
+    "q_vector_max": 1e-08
+  },
+  "cancellation": {
+    "transition_ratio_max": 0.25,
+    "denominator_floor_MHz": 1e-06,
+    "large_excitation_error_MHz": 1.0,
+    "severe_excitation_error_MHz": 5.0,
+    "trend_noise_MHz": 1e-06,
+    "rule": "a small transition increment cannot rescue large same-shell state excitation errors; any meaningful reversal or flagged cancellation is unresolved"
+  },
+  "trend": {
+    "historically_problematic_carriers": ["f07", "f08", "f81", "f72", "f38", "f78"],
+    "required_final_to_first_ratio_max": 1.0,
+    "small_final_increment_does_not_override_first_shell": true
+  },
+  "selector": {
+    "enabled_as_secondary_diagnostic": true,
+    "algorithm_source": "research/sandbox/k300_preregistration/selector.py",
+    "algorithm_sha256": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+    "method_sha256": "2055c7d54d81ada97379f4941ef08354dbb3cbf9378aa2b10dde1349ca2ff7cc",
+    "base": 300,
+    "budgets_per_shell": [3, 6, 10, 15],
+    "primary_budget": 10,
+    "confirmation_budget": 15,
+    "operator_weight": 0,
+    "budget_tuning": false,
+    "selection_must_precede_any_candidate_or_full_new_shell_dressed_validation": true
+  },
+  "selector_comparison": {
+    "improvement_pass_ratio": 0.80,
+    "borderline_improvement_ratio": 1.00,
+    "no_harm_slack_strict_units": 0.10,
+    "budget_error_growth_slack_strict_units": 0.10,
+    "semantics": "secondary selector verdict only; it cannot change the retained-basis convergence verdict"
+  },
+  "retained_basis_decision_rule": {
+    "PASS": "all hard gates pass; every mandatory component is strict PASS for k300-to-k320, k320-to-k340, and k300-to-k340; the final-shell error magnitude does not exceed the first-new-shell magnitude for any mandatory component; and there is no meaningful reversal or cancellation",
+    "BORDERLINE": "all hard gates pass; no mandatory component practical-FAILS in any primary comparison; k320-to-k340 is no worse than strict BORDERLINE for every mandatory component; required trends shrink; no unresolved reversal or cancellation; and at least one strict PASS condition is missed",
+    "FAIL": "any hard gate fails; any mandatory component practical-FAILS in any primary comparison; any k320-to-k340 mandatory component strict-FAILS; a historically problematic carrier fails to shrink; or meaningful reversal/cancellation is present",
+    "precedence": "FAIL then BORDERLINE then PASS"
+  },
+  "tail_hypothesis_rule": {
+    "influential_shell": "a shell with any practical mandatory FAIL or any target-state absolute excitation shift above 10 MHz",
+    "A_ISOLATED": "historical 280-299 is influential, neither new shell is influential, both new shells are tracking-safe, and the 320-339 mandatory-error envelope is no larger than 300-319",
+    "B_REPEATED": "at least one new shell is influential and diagnostics are tracking-safe without a qualifying D condition",
+    "C_DISTRIBUTED_WEAK": "neither new shell is individually influential, at least one cumulative k300-to-k340 mandatory metric misses strict tolerance, both shells have aggregate exact-rank top-three fraction at most 0.50 with at least 8 ranks required for 80 percent, and the final shell does not decay by a factor of two",
+    "D_NONMONOTONIC_UNRESOLVED": "a hard/tracking/Schur gate fails, a meaningful reversal or cancellation occurs, or the evidence conflicts so A/B/C is not uniquely satisfied",
+    "precedence": "D then B then C then A"
+  },
+  "shell_diagnostics": {
+    "near_resonance_denominator_GHz": 0.010,
+    "near_resonance_eta": 0.10,
+    "mandatory": [
+      "exact shell self-energy and P-space relaxation",
+      "target-state shell occupation",
+      "rank and shell-eigenmode coupling norms",
+      "minimum signed and absolute denominators",
+      "maximum eta",
+      "rank and mode top-three fractions",
+      "counts reaching 50, 80, and 90 percent absolute attribution",
+      "aggregate rank attribution over states 0,1,2,3,7,8"
+    ]
+  },
+  "claim_limits": {
+    "smaller_final_increment": "may be claimed only from the measured k320-to-k340 comparison",
+    "plateau_within_tested_range": "may be claimed only for retained Stage-1 prefixes 300,320,340 when the retained-basis verdict is PASS",
+    "convergence_beyond_k340": "never established by this experiment",
+    "other_spatial_or_model_convergence": "never established by this experiment",
+    "k340_ground_truth": false
+  },
+  "mandatory": [
+    "authentication and frozen hashes",
+    "original-k300 versus nested-k300 tracking",
+    "parent residuals and orthogonality",
+    "all nine carriers and f78-f01",
+    "states 0,1,2,3,7,8 and all five subspaces",
+    "g01,g07,g78,g81",
+    "all six grid_phi block norms and singular values",
+    "0781,0721,0381 pathway scores and ordering",
+    "trend and cancellation diagnostics",
+    "new-shell occupation and coupling diagnostics"
+  ],
+  "guardrails": {
+    "gate_work": "HOLD",
+    "spatial_convergence": "HOLD",
+    "figures": "HOLD",
+    "tracked_production_modifications": false,
+    "authenticated_checkpoint_modifications": false
+  }
+}

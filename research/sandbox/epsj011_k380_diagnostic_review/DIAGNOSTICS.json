@@ -1,0 +1,3092 @@
+{
+  "schema": 1,
+  "date": "2026-10-18",
+  "source_authentication": {
+    "status": "PASS",
+    "configuration_sha256": "8f02dbfc09f6a6c4e6bcd49d938c79d570b063103edf33beaad8b331e085ac5e",
+    "checkpoint_sha256": "399d3806566f7479a66227ff128bd37b80710f5ec44cbee49b27697df46101a8",
+    "historical_references_preserved": true,
+    "prefixes": [
+      300,
+      320,
+      340,
+      360,
+      380
+    ]
+  },
+  "frozen_verdicts": {
+    "retained_basis_convergence": {
+      "verdict": "FAIL",
+      "failures": [
+        "block:all_targets:frobenius: final increment did not shrink",
+        "block:all_targets:sv2: final increment did not shrink",
+        "block:all_targets:sv3: final increment did not shrink",
+        "block:comparators_to_78:frobenius: final increment did not shrink",
+        "block:comparators_to_78:sv0: final increment did not shrink",
+        "block:comparators_to_78:sv1: final increment did not shrink",
+        "block:logical_to_23:frobenius: final increment did not shrink",
+        "block:logical_to_23:sv0: final increment did not shrink",
+        "block:logical_to_23:sv1: final increment did not shrink",
+        "block:logical_to_78:frobenius: final increment did not shrink",
+        "block:logical_to_78:sv1: final increment did not shrink",
+        "block:primary:sv2: final increment did not shrink",
+        "block:primary:sv3: final increment did not shrink",
+        "carrier:f07: final increment did not shrink",
+        "carrier:f08: final increment did not shrink",
+        "carrier:f38: final increment did not shrink",
+        "carrier:f72: final increment did not shrink",
+        "carrier:f81: final increment did not shrink",
+        "centered:0: final increment did not shrink",
+        "centered:1: final increment did not shrink",
+        "centered:2: final increment did not shrink",
+        "centered:3: final increment did not shrink",
+        "centered:7: final increment did not shrink",
+        "centered:8: final increment did not shrink",
+        "edge:g01: final increment did not shrink",
+        "edge:g03: final increment did not shrink",
+        "edge:g21: final increment did not shrink",
+        "edge:g38: final increment did not shrink",
+        "edge:g72: final increment did not shrink",
+        "edge:g81: final increment did not shrink",
+        "excitation:7: final increment did not shrink",
+        "excitation:8: final increment did not shrink",
+        "k340_to_k360: within-comparison cancellation",
+        "k340_to_k380/carrier:f07: practical FAIL",
+        "k340_to_k380/carrier:f08: practical FAIL",
+        "k340_to_k380/carrier:f38: practical FAIL",
+        "k340_to_k380/carrier:f72: practical FAIL",
+        "k340_to_k380/carrier:f81: practical FAIL",
+        "k340_to_k380/excitation:7: practical FAIL",
+        "k340_to_k380/excitation:8: practical FAIL",
+        "k340_to_k380: within-comparison cancellation",
+        "k360_to_k380/carrier:f07: final strict FAIL",
+        "k360_to_k380/carrier:f08: final strict FAIL",
+        "k360_to_k380/carrier:f38: final strict FAIL",
+        "k360_to_k380/carrier:f72: final strict FAIL",
+        "k360_to_k380/carrier:f81: final strict FAIL",
+        "k360_to_k380/excitation:7: final strict FAIL",
+        "k360_to_k380/excitation:8: final strict FAIL",
+        "k360_to_k380: within-comparison cancellation",
+        "overlap:0: final increment did not shrink",
+        "overlap:1: final increment did not shrink",
+        "overlap:7: final increment did not shrink",
+        "overlap:8: final increment did not shrink",
+        "score:0381: final increment did not shrink",
+        "score:0721: final increment did not shrink",
+        "subspace:0_1: final increment did not shrink",
+        "subspace:0_1_2_3_7_8: final increment did not shrink",
+        "subspace:0_1_7_8: final increment did not shrink",
+        "subspace:7_8: final increment did not shrink"
+      ],
+      "strict_misses": [
+        "k340_to_k360/carrier:f07: BORDERLINE",
+        "k340_to_k360/carrier:f08: FAIL",
+        "k340_to_k360/carrier:f38: BORDERLINE",
+        "k340_to_k360/carrier:f72: BORDERLINE",
+        "k340_to_k360/carrier:f78: FAIL",
+        "k340_to_k360/carrier:f81: FAIL",
+        "k340_to_k360/centered:0: BORDERLINE",
+        "k340_to_k360/centered:1: BORDERLINE",
+        "k340_to_k360/centered:2: BORDERLINE",
+        "k340_to_k360/centered:3: BORDERLINE",
+        "k340_to_k360/centered:7: BORDERLINE",
+        "k340_to_k360/centered:8: BORDERLINE",
+        "k340_to_k360/excitation:7: BORDERLINE",
+        "k340_to_k360/excitation:8: FAIL",
+        "k340_to_k380/carrier:f07: FAIL",
+        "k340_to_k380/carrier:f08: FAIL",
+        "k340_to_k380/carrier:f38: FAIL",
+        "k340_to_k380/carrier:f72: FAIL",
+        "k340_to_k380/carrier:f78: FAIL",
+        "k340_to_k380/carrier:f81: FAIL",
+        "k340_to_k380/centered:0: BORDERLINE",
+        "k340_to_k380/centered:1: BORDERLINE",
+        "k340_to_k380/centered:2: BORDERLINE",
+        "k340_to_k380/centered:3: BORDERLINE",
+        "k340_to_k380/centered:7: FAIL",
+        "k340_to_k380/centered:8: FAIL",
+        "k340_to_k380/excitation:7: FAIL",
+        "k340_to_k380/excitation:8: FAIL",
+        "k360_to_k380/carrier:f07: FAIL",
+        "k360_to_k380/carrier:f08: FAIL",
+        "k360_to_k380/carrier:f38: FAIL",
+        "k360_to_k380/carrier:f72: FAIL",
+        "k360_to_k380/carrier:f78: BORDERLINE",
+        "k360_to_k380/carrier:f81: FAIL",
+        "k360_to_k380/centered:0: BORDERLINE",
+        "k360_to_k380/centered:1: BORDERLINE",
+        "k360_to_k380/centered:2: BORDERLINE",
+        "k360_to_k380/centered:3: BORDERLINE",
+        "k360_to_k380/centered:7: BORDERLINE",
+        "k360_to_k380/centered:8: BORDERLINE",
+        "k360_to_k380/excitation:7: FAIL",
+        "k360_to_k380/excitation:8: FAIL"
+      ]
+    },
+    "tail_hypothesis": {
+      "classification": "D_NONMONOTONIC_UNRESOLVED",
+      "reason": "nonshrinking component or within-comparison cancellation"
+    },
+    "selector_secondary": {
+      "verdict": "PASS",
+      "failures": [],
+      "pass_requirements_missed": [],
+      "family_ratios": {
+        "S1": {
+          "logical_01": {
+            "vs_prefix": 0.010029429534837446,
+            "vs_best_control": 0.03983487848080751
+          },
+          "comparator_23": {
+            "vs_prefix": 0.010714540403887399,
+            "vs_best_control": 0.05137208654701773
+          },
+          "primary_78": {
+            "vs_prefix": 0.008881648682079414,
+            "vs_best_control": 0.03349069603780124
+          },
+          "cross_carriers": {
+            "vs_prefix": 0.007369124213233654,
+            "vs_best_control": 0.03290335746611914
+          },
+          "operators": {
+            "vs_prefix": 0.008668490626483645,
+            "vs_best_control": 0.0293261660488085
+          },
+          "pathways": {
+            "vs_prefix": 0.0106083353310644,
+            "vs_best_control": 0.033996380908917344
+          }
+        },
+        "S2": {
+          "logical_01": {
+            "vs_prefix": 0.016953994490296852,
+            "vs_best_control": 0.07198667560126815
+          },
+          "comparator_23": {
+            "vs_prefix": 0.018295208937971492,
+            "vs_best_control": 0.07779130385438886
+          },
+          "primary_78": {
+            "vs_prefix": 0.016237146279252358,
+            "vs_best_control": 0.06919289305462255
+          },
+          "cross_carriers": {
+            "vs_prefix": 0.018357292546384654,
+            "vs_best_control": 0.07697362348841147
+          },
+          "operators": {
+            "vs_prefix": 0.001790960710687246,
+            "vs_best_control": 0.00623071610566097
+          },
+          "pathways": {
+            "vs_prefix": 0.0014960588116553807,
+            "vs_best_control": 0.00483306615650201
+          }
+        },
+        "union": {
+          "logical_01": {
+            "vs_prefix": 0.00905633696087288,
+            "vs_best_control": 0.04171376500324631
+          },
+          "comparator_23": {
+            "vs_prefix": 0.010028856230372417,
+            "vs_best_control": 0.0508468727987554
+          },
+          "primary_78": {
+            "vs_prefix": 0.008167268314688019,
+            "vs_best_control": 0.03774859013149843
+          },
+          "cross_carriers": {
+            "vs_prefix": 0.007047844545092126,
+            "vs_best_control": 0.03652237378048043
+          },
+          "operators": {
+            "vs_prefix": 0.008444852101013842,
+            "vs_best_control": 0.020425809177938493
+          },
+          "pathways": {
+            "vs_prefix": 0.01940036636094604,
+            "vs_best_control": 0.01940036636094604
+          }
+        }
+      }
+    },
+    "claims": {
+      "smaller_final_increment": "report measured trend only",
+      "plateau_within_tested_range": false,
+      "convergence_beyond_k380": false,
+      "other_spatial_or_model_convergence": false,
+      "k380_is_ground_truth": false
+    }
+  },
+  "spectral_decomposition": "COMPLETE",
+  "new_eigensolves": 0,
+  "convention": "new signed corrections are upper prefix minus lower prefix; frozen component values use the opposite sign",
+  "spectral_columns": [
+    "comparison",
+    "lower_k",
+    "upper_k",
+    "carrier",
+    "state_i",
+    "state_j",
+    "frequency_lower_MHz",
+    "frequency_upper_MHz",
+    "signed_upper_minus_lower_MHz",
+    "absolute_correction_MHz",
+    "frozen_lower_minus_upper_MHz",
+    "previous_shell_absolute_MHz",
+    "absolute_growth_ratio_vs_previous_shell",
+    "raw_sign_reversal_vs_previous_shell",
+    "cumulative_from_k300_MHz",
+    "cumulative_from_k340_MHz",
+    "Ei_lower_MHz",
+    "Ei_upper_MHz",
+    "Ej_lower_MHz",
+    "Ej_upper_MHz",
+    "raw_Ei_shift_MHz",
+    "raw_Ej_shift_MHz",
+    "raw_pair_common_shift_MHz",
+    "raw_pair_differential_shift_MHz",
+    "raw_pair_cancellation_ratio",
+    "excitation_i_shift_MHz",
+    "excitation_j_shift_MHz",
+    "excitation_cancellation_ratio",
+    "frozen_cancellation_flag",
+    "frozen_cancellation_severe",
+    "strict",
+    "practical",
+    "source_json_pointer"
+  ],
+  "spectral_rows": [
+    {
+      "comparison": "k300_to_k320",
+      "lower_k": 300,
+      "upper_k": 320,
+      "carrier": "f01",
+      "state_i": 0,
+      "state_j": 1,
+      "frequency_lower_MHz": 16.00543770279117,
+      "frequency_upper_MHz": 16.004623071841806,
+      "signed_upper_minus_lower_MHz": -0.0008146309493639592,
+      "absolute_correction_MHz": 0.0008146309493639592,
+      "frozen_lower_minus_upper_MHz": 0.0008146309493639592,
+      "previous_shell_absolute_MHz": null,
+      "absolute_growth_ratio_vs_previous_shell": null,
+      "raw_sign_reversal_vs_previous_shell": null,
+      "cumulative_from_k300_MHz": -0.0008146309493639592,
+      "cumulative_from_k340_MHz": null,
+      "Ei_lower_MHz": 7219.327517994685,
+      "Ei_upper_MHz": 7219.303413747724,
+      "Ej_lower_MHz": 7235.332955697477,
+      "Ej_upper_MHz": 7235.308036819566,
+      "raw_Ei_shift_MHz": -0.024104246961087483,
+      "raw_Ej_shift_MHz": -0.024918877910451442,
+      "raw_pair_common_shift_MHz": -0.024511562435769463,
+      "raw_pair_differential_shift_MHz": -0.0008146309493639592,
+      "raw_pair_cancellation_ratio": 0.016617279120795192,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -0.0008146309493639592,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k300_to_k320/components/carrier:f01"
+    },
+    {
+      "comparison": "k300_to_k320",
+      "lower_k": 300,
+      "upper_k": 320,
+      "carrier": "f07",
+      "state_i": 0,
+      "state_j": 7,
+      "frequency_lower_MHz": 6184.731825918984,
+      "frequency_upper_MHz": 6184.297657598293,
+      "signed_upper_minus_lower_MHz": -0.4341683206912421,
+      "absolute_correction_MHz": 0.4341683206912421,
+      "frozen_lower_minus_upper_MHz": 0.4341683206912421,
+      "previous_shell_absolute_MHz": null,
+      "absolute_growth_ratio_vs_previous_shell": null,
+      "raw_sign_reversal_vs_previous_shell": null,
+      "cumulative_from_k300_MHz": -0.4341683206912421,
+      "cumulative_from_k340_MHz": null,
+      "Ei_lower_MHz": 7219.327517994685,
+      "Ei_upper_MHz": 7219.303413747724,
+      "Ej_lower_MHz": 13404.05934391367,
+      "Ej_upper_MHz": 13403.601071346016,
+      "raw_Ei_shift_MHz": -0.024104246961087483,
+      "raw_Ej_shift_MHz": -0.4582725676520738,
+      "raw_pair_common_shift_MHz": -0.24118840730658064,
+      "raw_pair_differential_shift_MHz": -0.4341683206909863,
+      "raw_pair_cancellation_ratio": 0.9000605077571247,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -0.4341683206909863,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k300_to_k320/components/carrier:f07"
+    },
+    {
+      "comparison": "k300_to_k320",
+      "lower_k": 300,
+      "upper_k": 320,
+      "carrier": "f08",
+      "state_i": 0,
+      "state_j": 8,
+      "frequency_lower_MHz": 6201.997487248651,
+      "frequency_upper_MHz": 6201.282915529145,
+      "signed_upper_minus_lower_MHz": -0.7145717195062389,
+      "absolute_correction_MHz": 0.7145717195062389,
+      "frozen_lower_minus_upper_MHz": 0.7145717195062389,
+      "previous_shell_absolute_MHz": null,
+      "absolute_growth_ratio_vs_previous_shell": null,
+      "raw_sign_reversal_vs_previous_shell": null,
+      "cumulative_from_k300_MHz": -0.7145717195062389,
+      "cumulative_from_k340_MHz": null,
+      "Ei_lower_MHz": 7219.327517994685,
+      "Ei_upper_MHz": 7219.303413747724,
+      "Ej_lower_MHz": 13421.325005243336,
+      "Ej_upper_MHz": 13420.586329276868,
+      "raw_Ei_shift_MHz": -0.024104246961087483,
+      "raw_Ej_shift_MHz": -0.7386759664669285,
+      "raw_pair_common_shift_MHz": -0.38139010671400797,
+      "raw_pair_differential_shift_MHz": -0.714571719505841,
+      "raw_pair_cancellation_ratio": 0.9367989716126474,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -0.714571719505841,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k300_to_k320/components/carrier:f08"
+    },
+    {
+      "comparison": "k300_to_k320",
+      "lower_k": 300,
+      "upper_k": 320,
+      "carrier": "f78",
+      "state_i": 7,
+      "state_j": 8,
+      "frequency_lower_MHz": 17.26566132966667,
+      "frequency_upper_MHz": 16.985257930851816,
+      "signed_upper_minus_lower_MHz": -0.28040339881485465,
+      "absolute_correction_MHz": 0.28040339881485465,
+      "frozen_lower_minus_upper_MHz": 0.28040339881485465,
+      "previous_shell_absolute_MHz": null,
+      "absolute_growth_ratio_vs_previous_shell": null,
+      "raw_sign_reversal_vs_previous_shell": null,
+      "cumulative_from_k300_MHz": -0.28040339881485465,
+      "cumulative_from_k340_MHz": null,
+      "Ei_lower_MHz": 13404.05934391367,
+      "Ei_upper_MHz": 13403.601071346016,
+      "Ej_lower_MHz": 13421.325005243336,
+      "Ej_upper_MHz": 13420.586329276868,
+      "raw_Ei_shift_MHz": -0.4582725676520738,
+      "raw_Ej_shift_MHz": -0.7386759664669285,
+      "raw_pair_common_shift_MHz": -0.5984742670595011,
+      "raw_pair_differential_shift_MHz": -0.28040339881485465,
+      "raw_pair_cancellation_ratio": 0.23426520925667182,
+      "excitation_i_shift_MHz": -0.4341683206909863,
+      "excitation_j_shift_MHz": -0.714571719505841,
+      "excitation_cancellation_ratio": 0.24409647875319973,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k300_to_k320/components/carrier:f78"
+    },
+    {
+      "comparison": "k300_to_k320",
+      "lower_k": 300,
+      "upper_k": 320,
+      "carrier": "f81",
+      "state_i": 1,
+      "state_j": 8,
+      "frequency_lower_MHz": 6185.992049545859,
+      "frequency_upper_MHz": 6185.278292457303,
+      "signed_upper_minus_lower_MHz": -0.7137570885561217,
+      "absolute_correction_MHz": 0.7137570885561217,
+      "frozen_lower_minus_upper_MHz": 0.7137570885561217,
+      "previous_shell_absolute_MHz": null,
+      "absolute_growth_ratio_vs_previous_shell": null,
+      "raw_sign_reversal_vs_previous_shell": null,
+      "cumulative_from_k300_MHz": -0.7137570885561217,
+      "cumulative_from_k340_MHz": null,
+      "Ei_lower_MHz": 7235.332955697477,
+      "Ei_upper_MHz": 7235.308036819566,
+      "Ej_lower_MHz": 13421.325005243336,
+      "Ej_upper_MHz": 13420.586329276868,
+      "raw_Ei_shift_MHz": -0.024918877910451442,
+      "raw_Ej_shift_MHz": -0.7386759664669285,
+      "raw_pair_common_shift_MHz": -0.38179742218868995,
+      "raw_pair_differential_shift_MHz": -0.713757088556477,
+      "raw_pair_cancellation_ratio": 0.934732723527567,
+      "excitation_i_shift_MHz": -0.0008146309493639592,
+      "excitation_j_shift_MHz": -0.714571719505841,
+      "excitation_cancellation_ratio": 0.9977225426544815,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k300_to_k320/components/carrier:f81"
+    },
+    {
+      "comparison": "k300_to_k320",
+      "lower_k": 300,
+      "upper_k": 320,
+      "carrier": "f72",
+      "state_i": 2,
+      "state_j": 7,
+      "frequency_lower_MHz": 2760.510088238677,
+      "frequency_upper_MHz": 2760.31626171274,
+      "signed_upper_minus_lower_MHz": -0.19382652593685634,
+      "absolute_correction_MHz": 0.19382652593685634,
+      "frozen_lower_minus_upper_MHz": 0.19382652593685634,
+      "previous_shell_absolute_MHz": null,
+      "absolute_growth_ratio_vs_previous_shell": null,
+      "raw_sign_reversal_vs_previous_shell": null,
+      "cumulative_from_k300_MHz": -0.19382652593685634,
+      "cumulative_from_k340_MHz": null,
+      "Ei_lower_MHz": 10643.549255674992,
+      "Ei_upper_MHz": 10643.284809633276,
+      "Ej_lower_MHz": 13404.05934391367,
+      "Ej_upper_MHz": 13403.601071346016,
+      "raw_Ei_shift_MHz": -0.2644460417151606,
+      "raw_Ej_shift_MHz": -0.4582725676520738,
+      "raw_pair_common_shift_MHz": -0.3613593046836172,
+      "raw_pair_differential_shift_MHz": -0.19382652593691319,
+      "raw_pair_cancellation_ratio": 0.2681908607647659,
+      "excitation_i_shift_MHz": -0.24034179475407313,
+      "excitation_j_shift_MHz": -0.4341683206909863,
+      "excitation_cancellation_ratio": 0.287358960968319,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k300_to_k320/components/carrier:f72"
+    },
+    {
+      "comparison": "k300_to_k320",
+      "lower_k": 300,
+      "upper_k": 320,
+      "carrier": "f21",
+      "state_i": 1,
+      "state_j": 2,
+      "frequency_lower_MHz": 3408.216299977516,
+      "frequency_upper_MHz": 3407.9767728137112,
+      "signed_upper_minus_lower_MHz": -0.2395271638047234,
+      "absolute_correction_MHz": 0.2395271638047234,
+      "frozen_lower_minus_upper_MHz": 0.2395271638047234,
+      "previous_shell_absolute_MHz": null,
+      "absolute_growth_ratio_vs_previous_shell": null,
+      "raw_sign_reversal_vs_previous_shell": null,
+      "cumulative_from_k300_MHz": -0.2395271638047234,
+      "cumulative_from_k340_MHz": null,
+      "Ei_lower_MHz": 7235.332955697477,
+      "Ei_upper_MHz": 7235.308036819566,
+      "Ej_lower_MHz": 10643.549255674992,
+      "Ej_upper_MHz": 10643.284809633276,
+      "raw_Ei_shift_MHz": -0.024918877910451442,
+      "raw_Ej_shift_MHz": -0.2644460417151606,
+      "raw_pair_common_shift_MHz": -0.14468245981280603,
+      "raw_pair_differential_shift_MHz": -0.23952716380470918,
+      "raw_pair_cancellation_ratio": 0.8277684942411669,
+      "excitation_i_shift_MHz": -0.0008146309493639592,
+      "excitation_j_shift_MHz": -0.24034179475407313,
+      "excitation_cancellation_ratio": 0.993243962320409,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k300_to_k320/components/carrier:f21"
+    },
+    {
+      "comparison": "k300_to_k320",
+      "lower_k": 300,
+      "upper_k": 320,
+      "carrier": "f03",
+      "state_i": 0,
+      "state_j": 3,
+      "frequency_lower_MHz": 3661.5069504081976,
+      "frequency_upper_MHz": 3661.142036593077,
+      "signed_upper_minus_lower_MHz": -0.364913815120417,
+      "absolute_correction_MHz": 0.364913815120417,
+      "frozen_lower_minus_upper_MHz": 0.364913815120417,
+      "previous_shell_absolute_MHz": null,
+      "absolute_growth_ratio_vs_previous_shell": null,
+      "raw_sign_reversal_vs_previous_shell": null,
+      "cumulative_from_k300_MHz": -0.364913815120417,
+      "cumulative_from_k340_MHz": null,
+      "Ei_lower_MHz": 7219.327517994685,
+      "Ei_upper_MHz": 7219.303413747724,
+      "Ej_lower_MHz": 10880.834468402883,
+      "Ej_upper_MHz": 10880.445450340801,
+      "raw_Ei_shift_MHz": -0.024104246961087483,
+      "raw_Ej_shift_MHz": -0.3890180620818029,
+      "raw_pair_common_shift_MHz": -0.2065611545214452,
+      "raw_pair_differential_shift_MHz": -0.3649138151207154,
+      "raw_pair_cancellation_ratio": 0.8833069701951876,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -0.3649138151207154,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k300_to_k320/components/carrier:f03"
+    },
+    {
+      "comparison": "k300_to_k320",
+      "lower_k": 300,
+      "upper_k": 320,
+      "carrier": "f38",
+      "state_i": 3,
+      "state_j": 8,
+      "frequency_lower_MHz": 2540.490536840453,
+      "frequency_upper_MHz": 2540.140878936068,
+      "signed_upper_minus_lower_MHz": -0.3496579043849124,
+      "absolute_correction_MHz": 0.3496579043849124,
+      "frozen_lower_minus_upper_MHz": 0.3496579043849124,
+      "previous_shell_absolute_MHz": null,
+      "absolute_growth_ratio_vs_previous_shell": null,
+      "raw_sign_reversal_vs_previous_shell": null,
+      "cumulative_from_k300_MHz": -0.3496579043849124,
+      "cumulative_from_k340_MHz": null,
+      "Ei_lower_MHz": 10880.834468402883,
+      "Ei_upper_MHz": 10880.445450340801,
+      "Ej_lower_MHz": 13421.325005243336,
+      "Ej_upper_MHz": 13420.586329276868,
+      "raw_Ei_shift_MHz": -0.3890180620818029,
+      "raw_Ej_shift_MHz": -0.7386759664669285,
+      "raw_pair_common_shift_MHz": -0.5638470142743657,
+      "raw_pair_differential_shift_MHz": -0.34965790438512556,
+      "raw_pair_cancellation_ratio": 0.3100645170881258,
+      "excitation_i_shift_MHz": -0.3649138151207154,
+      "excitation_j_shift_MHz": -0.714571719505841,
+      "excitation_cancellation_ratio": 0.3239116163850109,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k300_to_k320/components/carrier:f38"
+    },
+    {
+      "comparison": "k320_to_k340",
+      "lower_k": 320,
+      "upper_k": 340,
+      "carrier": "f01",
+      "state_i": 0,
+      "state_j": 1,
+      "frequency_lower_MHz": 16.004623071841806,
+      "frequency_upper_MHz": 16.03522051669337,
+      "signed_upper_minus_lower_MHz": 0.03059744485156557,
+      "absolute_correction_MHz": 0.03059744485156557,
+      "frozen_lower_minus_upper_MHz": -0.03059744485156557,
+      "previous_shell_absolute_MHz": 0.0008146309493639592,
+      "absolute_growth_ratio_vs_previous_shell": 37.55988509331151,
+      "raw_sign_reversal_vs_previous_shell": true,
+      "cumulative_from_k300_MHz": 0.02978281390220161,
+      "cumulative_from_k340_MHz": 0.0,
+      "Ei_lower_MHz": 7219.303413747724,
+      "Ei_upper_MHz": 7219.195035371831,
+      "Ej_lower_MHz": 7235.308036819566,
+      "Ej_upper_MHz": 7235.230255888524,
+      "raw_Ei_shift_MHz": -0.10837837589328103,
+      "raw_Ej_shift_MHz": -0.07778093104171546,
+      "raw_pair_common_shift_MHz": -0.09307965346749825,
+      "raw_pair_differential_shift_MHz": 0.03059744485156557,
+      "raw_pair_cancellation_ratio": 0.1643616177742306,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": 0.03059744485156557,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k320_to_k340/components/carrier:f01"
+    },
+    {
+      "comparison": "k320_to_k340",
+      "lower_k": 320,
+      "upper_k": 340,
+      "carrier": "f07",
+      "state_i": 0,
+      "state_j": 7,
+      "frequency_lower_MHz": 6184.297657598293,
+      "frequency_upper_MHz": 6183.264956229232,
+      "signed_upper_minus_lower_MHz": -1.0327013690612148,
+      "absolute_correction_MHz": 1.0327013690612148,
+      "frozen_lower_minus_upper_MHz": 1.0327013690612148,
+      "previous_shell_absolute_MHz": 0.4341683206912421,
+      "absolute_growth_ratio_vs_previous_shell": 2.3785737462766616,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -1.466869689752457,
+      "cumulative_from_k340_MHz": 0.0,
+      "Ei_lower_MHz": 7219.303413747724,
+      "Ei_upper_MHz": 7219.195035371831,
+      "Ej_lower_MHz": 13403.601071346016,
+      "Ej_upper_MHz": 13402.459991601063,
+      "raw_Ei_shift_MHz": -0.10837837589328103,
+      "raw_Ej_shift_MHz": -1.1410797449542542,
+      "raw_pair_common_shift_MHz": -0.6247290604237676,
+      "raw_pair_differential_shift_MHz": -1.0327013690609732,
+      "raw_pair_cancellation_ratio": 0.8265193941518175,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -1.0327013690609732,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "BORDERLINE",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k320_to_k340/components/carrier:f07"
+    },
+    {
+      "comparison": "k320_to_k340",
+      "lower_k": 320,
+      "upper_k": 340,
+      "carrier": "f08",
+      "state_i": 0,
+      "state_j": 8,
+      "frequency_lower_MHz": 6201.282915529145,
+      "frequency_upper_MHz": 6200.0136770571735,
+      "signed_upper_minus_lower_MHz": -1.2692384719712209,
+      "absolute_correction_MHz": 1.2692384719712209,
+      "frozen_lower_minus_upper_MHz": 1.2692384719712209,
+      "previous_shell_absolute_MHz": 0.7145717195062389,
+      "absolute_growth_ratio_vs_previous_shell": 1.7762226482294186,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -1.9838101914774597,
+      "cumulative_from_k340_MHz": 0.0,
+      "Ei_lower_MHz": 7219.303413747724,
+      "Ei_upper_MHz": 7219.195035371831,
+      "Ej_lower_MHz": 13420.586329276868,
+      "Ej_upper_MHz": 13419.208712429005,
+      "raw_Ei_shift_MHz": -0.10837837589328103,
+      "raw_Ej_shift_MHz": -1.3776168478649709,
+      "raw_pair_common_shift_MHz": -0.7429976118791259,
+      "raw_pair_differential_shift_MHz": -1.2692384719716898,
+      "raw_pair_cancellation_ratio": 0.8541336147512242,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -1.2692384719716898,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "BORDERLINE",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k320_to_k340/components/carrier:f08"
+    },
+    {
+      "comparison": "k320_to_k340",
+      "lower_k": 320,
+      "upper_k": 340,
+      "carrier": "f78",
+      "state_i": 7,
+      "state_j": 8,
+      "frequency_lower_MHz": 16.985257930851816,
+      "frequency_upper_MHz": 16.7487208279411,
+      "signed_upper_minus_lower_MHz": -0.2365371029107166,
+      "absolute_correction_MHz": 0.2365371029107166,
+      "frozen_lower_minus_upper_MHz": 0.2365371029107166,
+      "previous_shell_absolute_MHz": 0.28040339881485465,
+      "absolute_growth_ratio_vs_previous_shell": 0.8435600421052594,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -0.5169405017255713,
+      "cumulative_from_k340_MHz": 0.0,
+      "Ei_lower_MHz": 13403.601071346016,
+      "Ei_upper_MHz": 13402.459991601063,
+      "Ej_lower_MHz": 13420.586329276868,
+      "Ej_upper_MHz": 13419.208712429005,
+      "raw_Ei_shift_MHz": -1.1410797449542542,
+      "raw_Ej_shift_MHz": -1.3776168478649709,
+      "raw_pair_common_shift_MHz": -1.2593482964096125,
+      "raw_pair_differential_shift_MHz": -0.2365371029107166,
+      "raw_pair_cancellation_ratio": 0.0939125036279007,
+      "excitation_i_shift_MHz": -1.0327013690609732,
+      "excitation_j_shift_MHz": -1.2692384719716898,
+      "excitation_cancellation_ratio": 0.10275555368319476,
+      "frozen_cancellation_flag": true,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k320_to_k340/components/carrier:f78"
+    },
+    {
+      "comparison": "k320_to_k340",
+      "lower_k": 320,
+      "upper_k": 340,
+      "carrier": "f81",
+      "state_i": 1,
+      "state_j": 8,
+      "frequency_lower_MHz": 6185.278292457303,
+      "frequency_upper_MHz": 6183.97845654048,
+      "signed_upper_minus_lower_MHz": -1.2998359168232128,
+      "absolute_correction_MHz": 1.2998359168232128,
+      "frozen_lower_minus_upper_MHz": 1.2998359168232128,
+      "previous_shell_absolute_MHz": 0.7137570885561217,
+      "absolute_growth_ratio_vs_previous_shell": 1.8211180493530166,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -2.0135930053793345,
+      "cumulative_from_k340_MHz": 0.0,
+      "Ei_lower_MHz": 7235.308036819566,
+      "Ei_upper_MHz": 7235.230255888524,
+      "Ej_lower_MHz": 13420.586329276868,
+      "Ej_upper_MHz": 13419.208712429005,
+      "raw_Ei_shift_MHz": -0.07778093104171546,
+      "raw_Ej_shift_MHz": -1.3776168478649709,
+      "raw_pair_common_shift_MHz": -0.7276988894533432,
+      "raw_pair_differential_shift_MHz": -1.2998359168232554,
+      "raw_pair_cancellation_ratio": 0.8931138522141411,
+      "excitation_i_shift_MHz": 0.03059744485156557,
+      "excitation_j_shift_MHz": -1.2692384719716898,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "BORDERLINE",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k320_to_k340/components/carrier:f81"
+    },
+    {
+      "comparison": "k320_to_k340",
+      "lower_k": 320,
+      "upper_k": 340,
+      "carrier": "f72",
+      "state_i": 2,
+      "state_j": 7,
+      "frequency_lower_MHz": 2760.31626171274,
+      "frequency_upper_MHz": 2759.589758933256,
+      "signed_upper_minus_lower_MHz": -0.7265027794842354,
+      "absolute_correction_MHz": 0.7265027794842354,
+      "frozen_lower_minus_upper_MHz": 0.7265027794842354,
+      "previous_shell_absolute_MHz": 0.19382652593685634,
+      "absolute_growth_ratio_vs_previous_shell": 3.7482113243927775,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -0.9203293054210917,
+      "cumulative_from_k340_MHz": 0.0,
+      "Ei_lower_MHz": 10643.284809633276,
+      "Ei_upper_MHz": 10642.870232667807,
+      "Ej_lower_MHz": 13403.601071346016,
+      "Ej_upper_MHz": 13402.459991601063,
+      "raw_Ei_shift_MHz": -0.4145769654702036,
+      "raw_Ej_shift_MHz": -1.1410797449542542,
+      "raw_pair_common_shift_MHz": -0.7778283552122289,
+      "raw_pair_differential_shift_MHz": -0.7265027794840506,
+      "raw_pair_cancellation_ratio": 0.4670071324963628,
+      "excitation_i_shift_MHz": -0.3061985895769226,
+      "excitation_j_shift_MHz": -1.0327013690609732,
+      "excitation_cancellation_ratio": 0.5426116976081949,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k320_to_k340/components/carrier:f72"
+    },
+    {
+      "comparison": "k320_to_k340",
+      "lower_k": 320,
+      "upper_k": 340,
+      "carrier": "f21",
+      "state_i": 1,
+      "state_j": 2,
+      "frequency_lower_MHz": 3407.9767728137112,
+      "frequency_upper_MHz": 3407.6399767792827,
+      "signed_upper_minus_lower_MHz": -0.3367960344285166,
+      "absolute_correction_MHz": 0.3367960344285166,
+      "frozen_lower_minus_upper_MHz": 0.3367960344285166,
+      "previous_shell_absolute_MHz": 0.2395271638047234,
+      "absolute_growth_ratio_vs_previous_shell": 1.406087013592715,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -0.57632319823324,
+      "cumulative_from_k340_MHz": 0.0,
+      "Ei_lower_MHz": 7235.308036819566,
+      "Ei_upper_MHz": 7235.230255888524,
+      "Ej_lower_MHz": 10643.284809633276,
+      "Ej_upper_MHz": 10642.870232667807,
+      "raw_Ei_shift_MHz": -0.07778093104171546,
+      "raw_Ej_shift_MHz": -0.4145769654702036,
+      "raw_pair_common_shift_MHz": -0.24617894825595954,
+      "raw_pair_differential_shift_MHz": -0.33679603442848816,
+      "raw_pair_cancellation_ratio": 0.6840471876545499,
+      "excitation_i_shift_MHz": 0.03059744485156557,
+      "excitation_j_shift_MHz": -0.3061985895769226,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k320_to_k340/components/carrier:f21"
+    },
+    {
+      "comparison": "k320_to_k340",
+      "lower_k": 320,
+      "upper_k": 340,
+      "carrier": "f03",
+      "state_i": 0,
+      "state_j": 3,
+      "frequency_lower_MHz": 3661.142036593077,
+      "frequency_upper_MHz": 3660.79669090451,
+      "signed_upper_minus_lower_MHz": -0.34534568856724945,
+      "absolute_correction_MHz": 0.34534568856724945,
+      "frozen_lower_minus_upper_MHz": 0.34534568856724945,
+      "previous_shell_absolute_MHz": 0.364913815120417,
+      "absolute_growth_ratio_vs_previous_shell": 0.9463760325250764,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -0.7102595036876664,
+      "cumulative_from_k340_MHz": 0.0,
+      "Ei_lower_MHz": 7219.303413747724,
+      "Ei_upper_MHz": 7219.195035371831,
+      "Ej_lower_MHz": 10880.445450340801,
+      "Ej_upper_MHz": 10879.991726276341,
+      "raw_Ei_shift_MHz": -0.10837837589328103,
+      "raw_Ej_shift_MHz": -0.45372406446020364,
+      "raw_pair_common_shift_MHz": -0.28105122017674233,
+      "raw_pair_differential_shift_MHz": -0.3453456885669226,
+      "raw_pair_cancellation_ratio": 0.6143821192979485,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -0.3453456885669226,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k320_to_k340/components/carrier:f03"
+    },
+    {
+      "comparison": "k320_to_k340",
+      "lower_k": 320,
+      "upper_k": 340,
+      "carrier": "f38",
+      "state_i": 3,
+      "state_j": 8,
+      "frequency_lower_MHz": 2540.140878936068,
+      "frequency_upper_MHz": 2539.216986152663,
+      "signed_upper_minus_lower_MHz": -0.9238927834048809,
+      "absolute_correction_MHz": 0.9238927834048809,
+      "frozen_lower_minus_upper_MHz": 0.9238927834048809,
+      "previous_shell_absolute_MHz": 0.3496579043849124,
+      "absolute_growth_ratio_vs_previous_shell": 2.642276270087794,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -1.2735506877897933,
+      "cumulative_from_k340_MHz": 0.0,
+      "Ei_lower_MHz": 10880.445450340801,
+      "Ei_upper_MHz": 10879.991726276341,
+      "Ej_lower_MHz": 13420.586329276868,
+      "Ej_upper_MHz": 13419.208712429005,
+      "raw_Ei_shift_MHz": -0.45372406446020364,
+      "raw_Ej_shift_MHz": -1.3776168478649709,
+      "raw_pair_common_shift_MHz": -0.9156704561625872,
+      "raw_pair_differential_shift_MHz": -0.9238927834047672,
+      "raw_pair_cancellation_ratio": 0.504489785155152,
+      "excitation_i_shift_MHz": -0.3453456885669226,
+      "excitation_j_shift_MHz": -1.2692384719716898,
+      "excitation_cancellation_ratio": 0.5722171726846149,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k320_to_k340/components/carrier:f38"
+    },
+    {
+      "comparison": "k340_to_k360",
+      "lower_k": 340,
+      "upper_k": 360,
+      "carrier": "f01",
+      "state_i": 0,
+      "state_j": 1,
+      "frequency_lower_MHz": 16.03522051669337,
+      "frequency_upper_MHz": 16.0184269541066,
+      "signed_upper_minus_lower_MHz": -0.016793562586769895,
+      "absolute_correction_MHz": 0.016793562586769895,
+      "frozen_lower_minus_upper_MHz": 0.016793562586769895,
+      "previous_shell_absolute_MHz": 0.03059744485156557,
+      "absolute_growth_ratio_vs_previous_shell": 0.5488550651284407,
+      "raw_sign_reversal_vs_previous_shell": true,
+      "cumulative_from_k300_MHz": 0.012989251315431716,
+      "cumulative_from_k340_MHz": -0.016793562586769895,
+      "Ei_lower_MHz": 7219.195035371831,
+      "Ei_upper_MHz": 7218.959278622297,
+      "Ej_lower_MHz": 7235.230255888524,
+      "Ej_upper_MHz": 7234.977705576403,
+      "raw_Ei_shift_MHz": -0.23575674953413284,
+      "raw_Ej_shift_MHz": -0.25255031212090273,
+      "raw_pair_common_shift_MHz": -0.24415353082751778,
+      "raw_pair_differential_shift_MHz": -0.016793562586769895,
+      "raw_pair_cancellation_ratio": 0.03439139817034574,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -0.016793562586769895,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k340_to_k360/components/carrier:f01"
+    },
+    {
+      "comparison": "k340_to_k360",
+      "lower_k": 340,
+      "upper_k": 360,
+      "carrier": "f07",
+      "state_i": 0,
+      "state_j": 7,
+      "frequency_lower_MHz": 6183.264956229232,
+      "frequency_upper_MHz": 6178.735838411417,
+      "signed_upper_minus_lower_MHz": -4.529117817814949,
+      "absolute_correction_MHz": 4.529117817814949,
+      "frozen_lower_minus_upper_MHz": 4.529117817814949,
+      "previous_shell_absolute_MHz": 1.0327013690612148,
+      "absolute_growth_ratio_vs_previous_shell": 4.38569944177781,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -5.995987507567406,
+      "cumulative_from_k340_MHz": -4.529117817814949,
+      "Ei_lower_MHz": 7219.195035371831,
+      "Ei_upper_MHz": 7218.959278622297,
+      "Ej_lower_MHz": 13402.459991601063,
+      "Ej_upper_MHz": 13397.695117033712,
+      "raw_Ei_shift_MHz": -0.23575674953413284,
+      "raw_Ej_shift_MHz": -4.764874567349864,
+      "raw_pair_common_shift_MHz": -2.5003156584419983,
+      "raw_pair_differential_shift_MHz": -4.529117817815731,
+      "raw_pair_cancellation_ratio": 0.9057092056604412,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -4.529117817815731,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "BORDERLINE",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k340_to_k360/components/carrier:f07"
+    },
+    {
+      "comparison": "k340_to_k360",
+      "lower_k": 340,
+      "upper_k": 360,
+      "carrier": "f08",
+      "state_i": 0,
+      "state_j": 8,
+      "frequency_lower_MHz": 6200.0136770571735,
+      "frequency_upper_MHz": 6194.419130988692,
+      "signed_upper_minus_lower_MHz": -5.594546068481577,
+      "absolute_correction_MHz": 5.594546068481577,
+      "frozen_lower_minus_upper_MHz": 5.594546068481577,
+      "previous_shell_absolute_MHz": 1.2692384719712209,
+      "absolute_growth_ratio_vs_previous_shell": 4.407797425012523,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -7.578356259959037,
+      "cumulative_from_k340_MHz": -5.594546068481577,
+      "Ei_lower_MHz": 7219.195035371831,
+      "Ei_upper_MHz": 7218.959278622297,
+      "Ej_lower_MHz": 13419.208712429005,
+      "Ej_upper_MHz": 13413.378409610988,
+      "raw_Ei_shift_MHz": -0.23575674953413284,
+      "raw_Ej_shift_MHz": -5.830302818015554,
+      "raw_pair_common_shift_MHz": -3.0330297837748432,
+      "raw_pair_differential_shift_MHz": -5.594546068481421,
+      "raw_pair_cancellation_ratio": 0.9222702161398775,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -5.594546068481421,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "FAIL",
+      "practical": "BORDERLINE",
+      "source_json_pointer": "/comparisons/k340_to_k360/components/carrier:f08"
+    },
+    {
+      "comparison": "k340_to_k360",
+      "lower_k": 340,
+      "upper_k": 360,
+      "carrier": "f78",
+      "state_i": 7,
+      "state_j": 8,
+      "frequency_lower_MHz": 16.7487208279411,
+      "frequency_upper_MHz": 15.68329257727541,
+      "signed_upper_minus_lower_MHz": -1.0654282506656898,
+      "absolute_correction_MHz": 1.0654282506656898,
+      "frozen_lower_minus_upper_MHz": 1.0654282506656898,
+      "previous_shell_absolute_MHz": 0.2365371029107166,
+      "absolute_growth_ratio_vs_previous_shell": 4.504275386630768,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -1.582368752391261,
+      "cumulative_from_k340_MHz": -1.0654282506656898,
+      "Ei_lower_MHz": 13402.459991601063,
+      "Ei_upper_MHz": 13397.695117033712,
+      "Ej_lower_MHz": 13419.208712429005,
+      "Ej_upper_MHz": 13413.378409610988,
+      "raw_Ei_shift_MHz": -4.764874567349864,
+      "raw_Ej_shift_MHz": -5.830302818015554,
+      "raw_pair_common_shift_MHz": -5.297588692682709,
+      "raw_pair_differential_shift_MHz": -1.0654282506656898,
+      "raw_pair_cancellation_ratio": 0.10055784928502584,
+      "excitation_i_shift_MHz": -4.529117817815731,
+      "excitation_j_shift_MHz": -5.594546068481421,
+      "excitation_cancellation_ratio": 0.10524136939273501,
+      "frozen_cancellation_flag": true,
+      "frozen_cancellation_severe": true,
+      "strict": "FAIL",
+      "practical": "BORDERLINE",
+      "source_json_pointer": "/comparisons/k340_to_k360/components/carrier:f78"
+    },
+    {
+      "comparison": "k340_to_k360",
+      "lower_k": 340,
+      "upper_k": 360,
+      "carrier": "f81",
+      "state_i": 1,
+      "state_j": 8,
+      "frequency_lower_MHz": 6183.97845654048,
+      "frequency_upper_MHz": 6178.400704034585,
+      "signed_upper_minus_lower_MHz": -5.57775250589475,
+      "absolute_correction_MHz": 5.57775250589475,
+      "frozen_lower_minus_upper_MHz": 5.57775250589475,
+      "previous_shell_absolute_MHz": 1.2998359168232128,
+      "absolute_growth_ratio_vs_previous_shell": 4.291120466594528,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -7.591345511274085,
+      "cumulative_from_k340_MHz": -5.57775250589475,
+      "Ei_lower_MHz": 7235.230255888524,
+      "Ei_upper_MHz": 7234.977705576403,
+      "Ej_lower_MHz": 13419.208712429005,
+      "Ej_upper_MHz": 13413.378409610988,
+      "raw_Ei_shift_MHz": -0.25255031212090273,
+      "raw_Ej_shift_MHz": -5.830302818015554,
+      "raw_pair_common_shift_MHz": -3.041426565068228,
+      "raw_pair_differential_shift_MHz": -5.577752505894651,
+      "raw_pair_cancellation_ratio": 0.9169632056806746,
+      "excitation_i_shift_MHz": -0.016793562586769895,
+      "excitation_j_shift_MHz": -5.594546068481421,
+      "excitation_cancellation_ratio": 0.9940144194823677,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "FAIL",
+      "practical": "BORDERLINE",
+      "source_json_pointer": "/comparisons/k340_to_k360/components/carrier:f81"
+    },
+    {
+      "comparison": "k340_to_k360",
+      "lower_k": 340,
+      "upper_k": 360,
+      "carrier": "f72",
+      "state_i": 2,
+      "state_j": 7,
+      "frequency_lower_MHz": 2759.589758933256,
+      "frequency_upper_MHz": 2755.650602835605,
+      "signed_upper_minus_lower_MHz": -3.9391560976509936,
+      "absolute_correction_MHz": 3.9391560976509936,
+      "frozen_lower_minus_upper_MHz": 3.9391560976509936,
+      "previous_shell_absolute_MHz": 0.7265027794842354,
+      "absolute_growth_ratio_vs_previous_shell": 5.422079872079101,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -4.859485403072085,
+      "cumulative_from_k340_MHz": -3.9391560976509936,
+      "Ei_lower_MHz": 10642.870232667807,
+      "Ei_upper_MHz": 10642.044514198109,
+      "Ej_lower_MHz": 13402.459991601063,
+      "Ej_upper_MHz": 13397.695117033712,
+      "raw_Ei_shift_MHz": -0.8257184696986997,
+      "raw_Ej_shift_MHz": -4.764874567349864,
+      "raw_pair_common_shift_MHz": -2.7952965185242817,
+      "raw_pair_differential_shift_MHz": -3.939156097651164,
+      "raw_pair_cancellation_ratio": 0.7046043365250494,
+      "excitation_i_shift_MHz": -0.5899617201645668,
+      "excitation_j_shift_MHz": -4.529117817815731,
+      "excitation_cancellation_ratio": 0.7695047651487233,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "BORDERLINE",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k340_to_k360/components/carrier:f72"
+    },
+    {
+      "comparison": "k340_to_k360",
+      "lower_k": 340,
+      "upper_k": 360,
+      "carrier": "f21",
+      "state_i": 1,
+      "state_j": 2,
+      "frequency_lower_MHz": 3407.6399767792827,
+      "frequency_upper_MHz": 3407.066808621705,
+      "signed_upper_minus_lower_MHz": -0.5731681575775838,
+      "absolute_correction_MHz": 0.5731681575775838,
+      "frozen_lower_minus_upper_MHz": 0.5731681575775838,
+      "previous_shell_absolute_MHz": 0.3367960344285166,
+      "absolute_growth_ratio_vs_previous_shell": 1.7018257312623915,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -1.1494913558108237,
+      "cumulative_from_k340_MHz": -0.5731681575775838,
+      "Ei_lower_MHz": 7235.230255888524,
+      "Ei_upper_MHz": 7234.977705576403,
+      "Ej_lower_MHz": 10642.870232667807,
+      "Ej_upper_MHz": 10642.044514198109,
+      "raw_Ei_shift_MHz": -0.25255031212090273,
+      "raw_Ej_shift_MHz": -0.8257184696986997,
+      "raw_pair_common_shift_MHz": -0.5391343909098012,
+      "raw_pair_differential_shift_MHz": -0.5731681575777969,
+      "raw_pair_cancellation_ratio": 0.5315633423148568,
+      "excitation_i_shift_MHz": -0.016793562586769895,
+      "excitation_j_shift_MHz": -0.5899617201645668,
+      "excitation_cancellation_ratio": 0.9446446926325245,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k340_to_k360/components/carrier:f21"
+    },
+    {
+      "comparison": "k340_to_k360",
+      "lower_k": 340,
+      "upper_k": 360,
+      "carrier": "f03",
+      "state_i": 0,
+      "state_j": 3,
+      "frequency_lower_MHz": 3660.79669090451,
+      "frequency_upper_MHz": 3660.058682783838,
+      "signed_upper_minus_lower_MHz": -0.7380081206720206,
+      "absolute_correction_MHz": 0.7380081206720206,
+      "frozen_lower_minus_upper_MHz": 0.7380081206720206,
+      "previous_shell_absolute_MHz": 0.34534568856724945,
+      "absolute_growth_ratio_vs_previous_shell": 2.137012695116672,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -1.448267624359687,
+      "cumulative_from_k340_MHz": -0.7380081206720206,
+      "Ei_lower_MHz": 7219.195035371831,
+      "Ei_upper_MHz": 7218.959278622297,
+      "Ej_lower_MHz": 10879.991726276341,
+      "Ej_upper_MHz": 10879.017961406134,
+      "raw_Ei_shift_MHz": -0.23575674953413284,
+      "raw_Ej_shift_MHz": -0.973764870206395,
+      "raw_pair_common_shift_MHz": -0.6047608098702639,
+      "raw_pair_differential_shift_MHz": -0.7380081206722622,
+      "raw_pair_cancellation_ratio": 0.6101652989308145,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -0.7380081206722622,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k340_to_k360/components/carrier:f03"
+    },
+    {
+      "comparison": "k340_to_k360",
+      "lower_k": 340,
+      "upper_k": 360,
+      "carrier": "f38",
+      "state_i": 3,
+      "state_j": 8,
+      "frequency_lower_MHz": 2539.216986152663,
+      "frequency_upper_MHz": 2534.360448204854,
+      "signed_upper_minus_lower_MHz": -4.856537947809102,
+      "absolute_correction_MHz": 4.856537947809102,
+      "frozen_lower_minus_upper_MHz": 4.856537947809102,
+      "previous_shell_absolute_MHz": 0.9238927834048809,
+      "absolute_growth_ratio_vs_previous_shell": 5.2566034014369,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -6.130088635598895,
+      "cumulative_from_k340_MHz": -4.856537947809102,
+      "Ei_lower_MHz": 10879.991726276341,
+      "Ei_upper_MHz": 10879.017961406134,
+      "Ej_lower_MHz": 13419.208712429005,
+      "Ej_upper_MHz": 13413.378409610988,
+      "raw_Ei_shift_MHz": -0.973764870206395,
+      "raw_Ej_shift_MHz": -5.830302818015554,
+      "raw_pair_common_shift_MHz": -3.4020338441109743,
+      "raw_pair_differential_shift_MHz": -4.856537947809159,
+      "raw_pair_cancellation_ratio": 0.7137697874781546,
+      "excitation_i_shift_MHz": -0.7380081206722622,
+      "excitation_j_shift_MHz": -5.594546068481421,
+      "excitation_cancellation_ratio": 0.7669161293759434,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "BORDERLINE",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k340_to_k360/components/carrier:f38"
+    },
+    {
+      "comparison": "k360_to_k380",
+      "lower_k": 360,
+      "upper_k": 380,
+      "carrier": "f01",
+      "state_i": 0,
+      "state_j": 1,
+      "frequency_lower_MHz": 16.0184269541066,
+      "frequency_upper_MHz": 16.001984443384742,
+      "signed_upper_minus_lower_MHz": -0.016442510721859094,
+      "absolute_correction_MHz": 0.016442510721859094,
+      "frozen_lower_minus_upper_MHz": 0.016442510721859094,
+      "previous_shell_absolute_MHz": 0.016793562586769895,
+      "absolute_growth_ratio_vs_previous_shell": 0.9790960456962621,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -0.003453259406427378,
+      "cumulative_from_k340_MHz": -0.03323607330862899,
+      "Ei_lower_MHz": 7218.959278622297,
+      "Ei_upper_MHz": 7218.684660540056,
+      "Ej_lower_MHz": 7234.977705576403,
+      "Ej_upper_MHz": 7234.686644983441,
+      "raw_Ei_shift_MHz": -0.27461808224060746,
+      "raw_Ej_shift_MHz": -0.29106059296246656,
+      "raw_pair_common_shift_MHz": -0.282839337601537,
+      "raw_pair_differential_shift_MHz": -0.016442510721859094,
+      "raw_pair_cancellation_ratio": 0.029066873903203734,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -0.016442510721859094,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k360_to_k380/components/carrier:f01"
+    },
+    {
+      "comparison": "k360_to_k380",
+      "lower_k": 360,
+      "upper_k": 380,
+      "carrier": "f07",
+      "state_i": 0,
+      "state_j": 7,
+      "frequency_lower_MHz": 6178.735838411417,
+      "frequency_upper_MHz": 6172.604139810369,
+      "signed_upper_minus_lower_MHz": -6.131698601047901,
+      "absolute_correction_MHz": 6.131698601047901,
+      "frozen_lower_minus_upper_MHz": 6.131698601047901,
+      "previous_shell_absolute_MHz": 4.529117817814949,
+      "absolute_growth_ratio_vs_previous_shell": 1.3538394998092829,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -12.127686108615308,
+      "cumulative_from_k340_MHz": -10.66081641886285,
+      "Ei_lower_MHz": 7218.959278622297,
+      "Ei_upper_MHz": 7218.684660540056,
+      "Ej_lower_MHz": 13397.695117033712,
+      "Ej_upper_MHz": 13391.288800350425,
+      "raw_Ei_shift_MHz": -0.27461808224060746,
+      "raw_Ej_shift_MHz": -6.406316683287727,
+      "raw_pair_common_shift_MHz": -3.3404673827641673,
+      "raw_pair_differential_shift_MHz": -6.13169860104712,
+      "raw_pair_cancellation_ratio": 0.9177905212732936,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -6.13169860104712,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "FAIL",
+      "practical": "BORDERLINE",
+      "source_json_pointer": "/comparisons/k360_to_k380/components/carrier:f07"
+    },
+    {
+      "comparison": "k360_to_k380",
+      "lower_k": 360,
+      "upper_k": 380,
+      "carrier": "f08",
+      "state_i": 0,
+      "state_j": 8,
+      "frequency_lower_MHz": 6194.419130988692,
+      "frequency_upper_MHz": 6187.680933450807,
+      "signed_upper_minus_lower_MHz": -6.738197537884844,
+      "absolute_correction_MHz": 6.738197537884844,
+      "frozen_lower_minus_upper_MHz": 6.738197537884844,
+      "previous_shell_absolute_MHz": 5.594546068481577,
+      "absolute_growth_ratio_vs_previous_shell": 1.2044225671581013,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -14.31655379784388,
+      "cumulative_from_k340_MHz": -12.33274360636642,
+      "Ei_lower_MHz": 7218.959278622297,
+      "Ei_upper_MHz": 7218.684660540056,
+      "Ej_lower_MHz": 13413.378409610988,
+      "Ej_upper_MHz": 13406.365593990862,
+      "raw_Ei_shift_MHz": -0.27461808224060746,
+      "raw_Ej_shift_MHz": -7.012815620125679,
+      "raw_pair_common_shift_MHz": -3.643716851183143,
+      "raw_pair_differential_shift_MHz": -6.738197537885071,
+      "raw_pair_cancellation_ratio": 0.9246324307138638,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -6.738197537885071,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "FAIL",
+      "practical": "BORDERLINE",
+      "source_json_pointer": "/comparisons/k360_to_k380/components/carrier:f08"
+    },
+    {
+      "comparison": "k360_to_k380",
+      "lower_k": 360,
+      "upper_k": 380,
+      "carrier": "f78",
+      "state_i": 7,
+      "state_j": 8,
+      "frequency_lower_MHz": 15.68329257727541,
+      "frequency_upper_MHz": 15.076793640437458,
+      "signed_upper_minus_lower_MHz": -0.6064989368379514,
+      "absolute_correction_MHz": 0.6064989368379514,
+      "frozen_lower_minus_upper_MHz": 0.6064989368379514,
+      "previous_shell_absolute_MHz": 1.0654282506656898,
+      "absolute_growth_ratio_vs_previous_shell": 0.5692536653303543,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -2.1888676892292125,
+      "cumulative_from_k340_MHz": -1.6719271875036412,
+      "Ei_lower_MHz": 13397.695117033712,
+      "Ei_upper_MHz": 13391.288800350425,
+      "Ej_lower_MHz": 13413.378409610988,
+      "Ej_upper_MHz": 13406.365593990862,
+      "raw_Ei_shift_MHz": -6.406316683287727,
+      "raw_Ej_shift_MHz": -7.012815620125679,
+      "raw_pair_common_shift_MHz": -6.709566151706703,
+      "raw_pair_differential_shift_MHz": -0.6064989368379514,
+      "raw_pair_cancellation_ratio": 0.04519658373765919,
+      "excitation_i_shift_MHz": -6.13169860104712,
+      "excitation_j_shift_MHz": -6.738197537885071,
+      "excitation_cancellation_ratio": 0.047125394819873996,
+      "frozen_cancellation_flag": true,
+      "frozen_cancellation_severe": true,
+      "strict": "BORDERLINE",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k360_to_k380/components/carrier:f78"
+    },
+    {
+      "comparison": "k360_to_k380",
+      "lower_k": 360,
+      "upper_k": 380,
+      "carrier": "f81",
+      "state_i": 1,
+      "state_j": 8,
+      "frequency_lower_MHz": 6178.400704034585,
+      "frequency_upper_MHz": 6171.678949007422,
+      "signed_upper_minus_lower_MHz": -6.721755027163454,
+      "absolute_correction_MHz": 6.721755027163454,
+      "frozen_lower_minus_upper_MHz": 6.721755027163454,
+      "previous_shell_absolute_MHz": 5.57775250589475,
+      "absolute_growth_ratio_vs_previous_shell": 1.2051009828886607,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -14.313100538437538,
+      "cumulative_from_k340_MHz": -12.299507533058204,
+      "Ei_lower_MHz": 7234.977705576403,
+      "Ei_upper_MHz": 7234.686644983441,
+      "Ej_lower_MHz": 13413.378409610988,
+      "Ej_upper_MHz": 13406.365593990862,
+      "raw_Ei_shift_MHz": -0.29106059296246656,
+      "raw_Ej_shift_MHz": -7.012815620125679,
+      "raw_pair_common_shift_MHz": -3.6519381065440726,
+      "raw_pair_differential_shift_MHz": -6.721755027163212,
+      "raw_pair_cancellation_ratio": 0.9202996917059185,
+      "excitation_i_shift_MHz": -0.016442510721859094,
+      "excitation_j_shift_MHz": -6.738197537885071,
+      "excitation_cancellation_ratio": 0.9951314916550587,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "FAIL",
+      "practical": "BORDERLINE",
+      "source_json_pointer": "/comparisons/k360_to_k380/components/carrier:f81"
+    },
+    {
+      "comparison": "k360_to_k380",
+      "lower_k": 360,
+      "upper_k": 380,
+      "carrier": "f72",
+      "state_i": 2,
+      "state_j": 7,
+      "frequency_lower_MHz": 2755.650602835605,
+      "frequency_upper_MHz": 2749.5413743719137,
+      "signed_upper_minus_lower_MHz": -6.1092284636911245,
+      "absolute_correction_MHz": 6.1092284636911245,
+      "frozen_lower_minus_upper_MHz": 6.1092284636911245,
+      "previous_shell_absolute_MHz": 3.9391560976509936,
+      "absolute_growth_ratio_vs_previous_shell": 1.5508977842574436,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -10.96871386676321,
+      "cumulative_from_k340_MHz": -10.048384561342118,
+      "Ei_lower_MHz": 10642.044514198109,
+      "Ei_upper_MHz": 10641.747425978512,
+      "Ej_lower_MHz": 13397.695117033712,
+      "Ej_upper_MHz": 13391.288800350425,
+      "raw_Ei_shift_MHz": -0.2970882195967306,
+      "raw_Ej_shift_MHz": -6.406316683287727,
+      "raw_pair_common_shift_MHz": -3.351702451442229,
+      "raw_pair_differential_shift_MHz": -6.109228463690997,
+      "raw_pair_cancellation_ratio": 0.9113619947173729,
+      "excitation_i_shift_MHz": -0.022470137356123132,
+      "excitation_j_shift_MHz": -6.13169860104712,
+      "excitation_cancellation_ratio": 0.9926975881516199,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "FAIL",
+      "practical": "BORDERLINE",
+      "source_json_pointer": "/comparisons/k360_to_k380/components/carrier:f72"
+    },
+    {
+      "comparison": "k360_to_k380",
+      "lower_k": 360,
+      "upper_k": 380,
+      "carrier": "f21",
+      "state_i": 1,
+      "state_j": 2,
+      "frequency_lower_MHz": 3407.066808621705,
+      "frequency_upper_MHz": 3407.0607809950707,
+      "signed_upper_minus_lower_MHz": -0.006027626634477201,
+      "absolute_correction_MHz": 0.006027626634477201,
+      "frozen_lower_minus_upper_MHz": 0.006027626634477201,
+      "previous_shell_absolute_MHz": 0.5731681575775838,
+      "absolute_growth_ratio_vs_previous_shell": 0.010516331995748219,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -1.155518982445301,
+      "cumulative_from_k340_MHz": -0.579195784212061,
+      "Ei_lower_MHz": 7234.977705576403,
+      "Ei_upper_MHz": 7234.686644983441,
+      "Ej_lower_MHz": 10642.044514198109,
+      "Ej_upper_MHz": 10641.747425978512,
+      "raw_Ei_shift_MHz": -0.29106059296246656,
+      "raw_Ej_shift_MHz": -0.2970882195967306,
+      "raw_pair_common_shift_MHz": -0.2940744062795986,
+      "raw_pair_differential_shift_MHz": -0.006027626634264038,
+      "raw_pair_cancellation_ratio": 0.010248471994759588,
+      "excitation_i_shift_MHz": -0.016442510721859094,
+      "excitation_j_shift_MHz": -0.022470137356123132,
+      "excitation_cancellation_ratio": 0.15490147630622508,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k360_to_k380/components/carrier:f21"
+    },
+    {
+      "comparison": "k360_to_k380",
+      "lower_k": 360,
+      "upper_k": 380,
+      "carrier": "f03",
+      "state_i": 0,
+      "state_j": 3,
+      "frequency_lower_MHz": 3660.058682783838,
+      "frequency_upper_MHz": 3659.9828579325917,
+      "signed_upper_minus_lower_MHz": -0.07582485124612504,
+      "absolute_correction_MHz": 0.07582485124612504,
+      "frozen_lower_minus_upper_MHz": 0.07582485124612504,
+      "previous_shell_absolute_MHz": 0.7380081206720206,
+      "absolute_growth_ratio_vs_previous_shell": 0.10274257033524227,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -1.524092475605812,
+      "cumulative_from_k340_MHz": -0.8138329719181456,
+      "Ei_lower_MHz": 7218.959278622297,
+      "Ei_upper_MHz": 7218.684660540056,
+      "Ej_lower_MHz": 10879.017961406134,
+      "Ej_upper_MHz": 10878.667518472648,
+      "raw_Ei_shift_MHz": -0.27461808224060746,
+      "raw_Ej_shift_MHz": -0.35044293348640565,
+      "raw_pair_common_shift_MHz": -0.31253050786350656,
+      "raw_pair_differential_shift_MHz": -0.07582485124579819,
+      "raw_pair_cancellation_ratio": 0.12130791928785663,
+      "excitation_i_shift_MHz": 0.0,
+      "excitation_j_shift_MHz": -0.07582485124579819,
+      "excitation_cancellation_ratio": 1.0,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "PASS",
+      "practical": "PASS",
+      "source_json_pointer": "/comparisons/k360_to_k380/components/carrier:f03"
+    },
+    {
+      "comparison": "k360_to_k380",
+      "lower_k": 360,
+      "upper_k": 380,
+      "carrier": "f38",
+      "state_i": 3,
+      "state_j": 8,
+      "frequency_lower_MHz": 2534.360448204854,
+      "frequency_upper_MHz": 2527.698075518215,
+      "signed_upper_minus_lower_MHz": -6.6623726866391735,
+      "absolute_correction_MHz": 6.6623726866391735,
+      "frozen_lower_minus_upper_MHz": 6.6623726866391735,
+      "previous_shell_absolute_MHz": 4.856537947809102,
+      "absolute_growth_ratio_vs_previous_shell": 1.3718358135438282,
+      "raw_sign_reversal_vs_previous_shell": false,
+      "cumulative_from_k300_MHz": -12.792461322238069,
+      "cumulative_from_k340_MHz": -11.518910634448275,
+      "Ei_lower_MHz": 10879.017961406134,
+      "Ei_upper_MHz": 10878.667518472648,
+      "Ej_lower_MHz": 13413.378409610988,
+      "Ej_upper_MHz": 13406.365593990862,
+      "raw_Ei_shift_MHz": -0.35044293348640565,
+      "raw_Ej_shift_MHz": -7.012815620125679,
+      "raw_pair_common_shift_MHz": -3.681629276806042,
+      "raw_pair_differential_shift_MHz": -6.662372686639273,
+      "raw_pair_cancellation_ratio": 0.9048130848768052,
+      "excitation_i_shift_MHz": -0.07582485124579819,
+      "excitation_j_shift_MHz": -6.738197537885071,
+      "excitation_cancellation_ratio": 0.9777444666554816,
+      "frozen_cancellation_flag": false,
+      "frozen_cancellation_severe": false,
+      "strict": "FAIL",
+      "practical": "BORDERLINE",
+      "source_json_pointer": "/comparisons/k360_to_k380/components/carrier:f38"
+    }
+  ],
+  "state_shifts": [
+    {
+      "comparison": "k300_to_k320",
+      "raw_shifts_MHz": {
+        "0": -0.024104246961087483,
+        "1": -0.024918877910451442,
+        "2": -0.2644460417151606,
+        "3": -0.3890180620818029,
+        "7": -0.4582725676520738,
+        "8": -0.7386759664669285
+      },
+      "six_target_common_shift_MHz": -0.3165726271312508,
+      "centered_shifts_MHz": {
+        "0": 0.2924683801701633,
+        "1": 0.29165374922079934,
+        "2": 0.052126585416090165,
+        "3": -0.07244543495055211,
+        "7": -0.14169994052082302,
+        "8": -0.4221033393356777
+      },
+      "excitation_shifts_MHz": {
+        "0": 0.0,
+        "1": -0.0008146309493639592,
+        "2": -0.24034179475407313,
+        "3": -0.3649138151207154,
+        "7": -0.4341683206909863,
+        "8": -0.714571719505841
+      }
+    },
+    {
+      "comparison": "k320_to_k340",
+      "raw_shifts_MHz": {
+        "0": -0.10837837589328103,
+        "1": -0.07778093104171546,
+        "2": -0.4145769654702036,
+        "3": -0.45372406446020364,
+        "7": -1.1410797449542542,
+        "8": -1.3776168478649709
+      },
+      "six_target_common_shift_MHz": -0.5955261549474381,
+      "centered_shifts_MHz": {
+        "0": 0.48714777905415707,
+        "1": 0.5177452239057226,
+        "2": 0.18094918947723448,
+        "3": 0.14180209048723447,
+        "7": -0.5455535900068161,
+        "8": -0.7820906929175327
+      },
+      "excitation_shifts_MHz": {
+        "0": 0.0,
+        "1": 0.03059744485156557,
+        "2": -0.3061985895769226,
+        "3": -0.3453456885669226,
+        "7": -1.0327013690609732,
+        "8": -1.2692384719716898
+      }
+    },
+    {
+      "comparison": "k340_to_k360",
+      "raw_shifts_MHz": {
+        "0": -0.23575674953413284,
+        "1": -0.25255031212090273,
+        "2": -0.8257184696986997,
+        "3": -0.973764870206395,
+        "7": -4.764874567349864,
+        "8": -5.830302818015554
+      },
+      "six_target_common_shift_MHz": -2.1471612978209245,
+      "centered_shifts_MHz": {
+        "0": 1.9114045482867916,
+        "1": 1.8946109857000217,
+        "2": 1.3214428281222248,
+        "3": 1.1733964276145294,
+        "7": -2.6177132695289393,
+        "8": -3.683141520194629
+      },
+      "excitation_shifts_MHz": {
+        "0": 0.0,
+        "1": -0.016793562586769895,
+        "2": -0.5899617201645668,
+        "3": -0.7380081206722622,
+        "7": -4.529117817815731,
+        "8": -5.594546068481421
+      }
+    },
+    {
+      "comparison": "k360_to_k380",
+      "raw_shifts_MHz": {
+        "0": -0.27461808224060746,
+        "1": -0.29106059296246656,
+        "2": -0.2970882195967306,
+        "3": -0.35044293348640565,
+        "7": -6.406316683287727,
+        "8": -7.012815620125679
+      },
+      "six_target_common_shift_MHz": -2.438723688616603,
+      "centered_shifts_MHz": {
+        "0": 2.1641056063759954,
+        "1": 2.1476630956541363,
+        "2": 2.1416354690198722,
+        "3": 2.088280755130197,
+        "7": -3.9675929946711244,
+        "8": -4.574091931509075
+      },
+      "excitation_shifts_MHz": {
+        "0": 0.0,
+        "1": -0.016442510721859094,
+        "2": -0.022470137356123132,
+        "3": -0.07582485124579819,
+        "7": -6.13169860104712,
+        "8": -6.738197537885071
+      }
+    }
+  ],
+  "step_summaries": [
+    {
+      "comparison": "k300_to_k320",
+      "maximum_carrier_correction_MHz": 0.7145717195062389
+    },
+    {
+      "comparison": "k320_to_k340",
+      "maximum_carrier_correction_MHz": 1.2998359168232128
+    },
+    {
+      "comparison": "k340_to_k360",
+      "maximum_carrier_correction_MHz": 5.594546068481577
+    },
+    {
+      "comparison": "k360_to_k380",
+      "maximum_carrier_correction_MHz": 6.738197537884844
+    }
+  ],
+  "rank_results": [
+    {
+      "rank": 328,
+      "parent": 340,
+      "shell": "new_S4",
+      "stage1_energy_GHz": 45.99149769331049,
+      "neighbor_gap_below_GHz": 0.1689422422236504,
+      "neighbor_gap_above_GHz": 0.025231970323645214,
+      "k380_stage1_energy_GHz": 45.99149769331093,
+      "absolute_weight_MHz": 3.2370276719409357,
+      "fraction_of_shell": 0.794541915414388,
+      "targets": {
+        "0": {
+          "rank": 328,
+          "exact_self_energy_MHz": -0.09369639218209018,
+          "coupling_norm_GHz": 0.08609982209175783,
+          "Q_probability": 1.258858148726021e-06
+        },
+        "1": {
+          "rank": 328,
+          "exact_self_energy_MHz": -0.06257565390261731,
+          "coupling_norm_GHz": 0.07487817264857262,
+          "Q_probability": 7.409350615096298e-07
+        },
+        "2": {
+          "rank": 328,
+          "exact_self_energy_MHz": -0.32596254437516325,
+          "coupling_norm_GHz": 0.15533754113795872,
+          "Q_probability": 4.6449166088512455e-06
+        },
+        "3": {
+          "rank": 328,
+          "exact_self_energy_MHz": -0.29180804250555725,
+          "coupling_norm_GHz": 0.1435926598710064,
+          "Q_probability": 4.453506771202662e-06
+        },
+        "7": {
+          "rank": 328,
+          "exact_self_energy_MHz": -1.0925307075638084,
+          "coupling_norm_GHz": 0.2995752642613917,
+          "Q_probability": 1.4243323169376461e-05
+        },
+        "8": {
+          "rank": 328,
+          "exact_self_energy_MHz": -1.3704543314116993,
+          "coupling_norm_GHz": 0.33862549747437354,
+          "Q_probability": 1.739164773907328e-05
+        }
+      },
+      "pairs": [
+        {
+          "states": [
+            0,
+            1
+          ],
+          "rank_scalar_mean_MHz": -0.07813602304235374,
+          "rank_scalar_difference_j_minus_i_MHz": 0.03112073827947287,
+          "pair_absolute_weight_MHz": 0.1562720460847075,
+          "actual_full_shell_pair_energy_shift_MHz": 0.030597444700575238,
+          "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+        },
+        {
+          "states": [
+            2,
+            3
+          ],
+          "rank_scalar_mean_MHz": -0.30888529344036025,
+          "rank_scalar_difference_j_minus_i_MHz": 0.034154501869606,
+          "pair_absolute_weight_MHz": 0.6177705868807205,
+          "actual_full_shell_pair_energy_shift_MHz": -0.03914709874663913,
+          "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+        },
+        {
+          "states": [
+            7,
+            8
+          ],
+          "rank_scalar_mean_MHz": -1.231492519487754,
+          "rank_scalar_difference_j_minus_i_MHz": -0.2779236238478908,
+          "pair_absolute_weight_MHz": 2.462985038975508,
+          "actual_full_shell_pair_energy_shift_MHz": -0.23653710281479334,
+          "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+        }
+      ],
+      "saved_isolated_rank_selector_response": [
+        {
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 0.00012379272993122344,
+          "coupling_norm_GHz": 0.10123717159638877,
+          "minimum_denominator_GHz": 46.68687095774675,
+          "maximum_eta": 0.0008411429357711389,
+          "positive_response_matrix_real_MHz": [
+            [
+              0.07471146183296523,
+              4.961106271846343e-13
+            ],
+            [
+              4.961106271846343e-13,
+              0.04908126809825822
+            ]
+          ],
+          "positive_response_matrix_imag_MHz": [
+            [
+              0.0,
+              -8.747084001781437e-14
+            ],
+            [
+              8.747084001781437e-14,
+              0.0
+            ]
+          ],
+          "offdiagonal_magnitude_MHz": 5.037627440164201e-13,
+          "trace_MHz": 0.12379272993122345
+        },
+        {
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 0.000473193436856667,
+          "coupling_norm_GHz": 0.18431811687886476,
+          "minimum_denominator_GHz": 43.152009332553476,
+          "maximum_eta": 0.0015586579019649914,
+          "positive_response_matrix_real_MHz": [
+            [
+              0.24877692741292762,
+              1.273798809849308e-13
+            ],
+            [
+              1.273798809849308e-13,
+              0.22441650944373936
+            ]
+          ],
+          "positive_response_matrix_imag_MHz": [
+            [
+              0.0,
+              -2.3454312675383637e-13
+            ],
+            [
+              2.3454312675383637e-13,
+              0.0
+            ]
+          ],
+          "offdiagonal_magnitude_MHz": 2.6690094115083463e-13,
+          "trace_MHz": 0.473193436856667
+        },
+        {
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 0.0018445319806371942,
+          "coupling_norm_GHz": 0.3916130573864021,
+          "minimum_denominator_GHz": 40.50150902001394,
+          "maximum_eta": 0.0026913519320391557,
+          "positive_response_matrix_real_MHz": [
+            [
+              0.8094996353664705,
+              -1.4806517540904945e-12
+            ],
+            [
+              -1.4806517540904945e-12,
+              1.035032345270724
+            ]
+          ],
+          "positive_response_matrix_imag_MHz": [
+            [
+              0.0,
+              2.0538813818117452e-12
+            ],
+            [
+              -2.0538813818117452e-12,
+              0.0
+            ]
+          ],
+          "offdiagonal_magnitude_MHz": 2.5319475404210455e-12,
+          "trace_MHz": 1.8445319806371945
+        }
+      ],
+      "selector_base": 300,
+      "exact_schur_P_prefix": 320,
+      "identity_tracking": {
+        "old_parent": 340,
+        "new_parent": 380,
+        "old_rank": 328,
+        "best_new_rank": 328,
+        "same_rank_absolute_overlap": 1.0000000000000002,
+        "best_competing_absolute_overlap": 3.1300394028995887e-12,
+        "method": "absolute Stage-1 inner product on the identical physical grid; no new assignment threshold"
+      }
+    },
+    {
+      "rank": 354,
+      "parent": 380,
+      "shell": "S1",
+      "stage1_energy_GHz": 47.38513595273746,
+      "neighbor_gap_below_GHz": 0.10437684237923861,
+      "neighbor_gap_above_GHz": 0.03770816490171569,
+      "k380_stage1_energy_GHz": 47.38513595273746,
+      "absolute_weight_MHz": 9.784721459881808,
+      "fraction_of_shell": 0.6682307857407603,
+      "targets": {
+        "0": {
+          "rank": 354,
+          "exact_self_energy_MHz": -0.19645174328576767,
+          "coupling_norm_GHz": 0.12612043495370703,
+          "Q_probability": 2.562344456437635e-06
+        },
+        "1": {
+          "rank": 354,
+          "exact_self_energy_MHz": -0.19386914260850746,
+          "coupling_norm_GHz": 0.12660035125429994,
+          "Q_probability": 2.509365017265631e-06
+        },
+        "2": {
+          "rank": 354,
+          "exact_self_energy_MHz": -0.08400782661585754,
+          "coupling_norm_GHz": 0.07722798133166058,
+          "Q_probability": 1.2397017418977889e-06
+        },
+        "3": {
+          "rank": 354,
+          "exact_self_energy_MHz": -0.10244393538945927,
+          "coupling_norm_GHz": 0.08785069014633394,
+          "Q_probability": 1.4567802600331134e-06
+        },
+        "7": {
+          "rank": 354,
+          "exact_self_energy_MHz": -4.348017918557545,
+          "coupling_norm_GHz": 0.5781079333952746,
+          "Q_probability": 6.119403578505913e-05
+        },
+        "8": {
+          "rank": 354,
+          "exact_self_energy_MHz": -4.8599308934246706,
+          "coupling_norm_GHz": 0.6134423258385245,
+          "Q_probability": 6.68141624287651e-05
+        }
+      },
+      "pairs": [
+        {
+          "states": [
+            0,
+            1
+          ],
+          "rank_scalar_mean_MHz": -0.19516044294713758,
+          "rank_scalar_difference_j_minus_i_MHz": 0.0025826006772602106,
+          "pair_absolute_weight_MHz": 0.39032088589427516,
+          "actual_full_shell_pair_energy_shift_MHz": -0.016793562586769895,
+          "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+        },
+        {
+          "states": [
+            2,
+            3
+          ],
+          "rank_scalar_mean_MHz": -0.09322588100265841,
+          "rank_scalar_difference_j_minus_i_MHz": -0.01843610877360173,
+          "pair_absolute_weight_MHz": 0.18645176200531682,
+          "actual_full_shell_pair_energy_shift_MHz": -0.14804640050769535,
+          "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+        },
+        {
+          "states": [
+            7,
+            8
+          ],
+          "rank_scalar_mean_MHz": -4.603974405991108,
+          "rank_scalar_difference_j_minus_i_MHz": -0.5119129748671254,
+          "pair_absolute_weight_MHz": 9.207948811982217,
+          "actual_full_shell_pair_energy_shift_MHz": -1.0654282506656898,
+          "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+        }
+      ],
+      "saved_isolated_rank_selector_response": [
+        {
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 0.00032106385478596153,
+          "coupling_norm_GHz": 0.161413371771372,
+          "minimum_denominator_GHz": 48.08062680838958,
+          "maximum_eta": 0.0011740262085920582,
+          "positive_response_matrix_real_MHz": [
+            [
+              0.16145367069516606,
+              1.9797662802895635e-13
+            ],
+            [
+              1.9797662802895635e-13,
+              0.15961018409079547
+            ]
+          ],
+          "positive_response_matrix_imag_MHz": [
+            [
+              0.0,
+              -2.9482828520081606e-14
+            ],
+            [
+              2.9482828520081606e-14,
+              0.0
+            ]
+          ],
+          "offdiagonal_magnitude_MHz": 2.001598921444061e-13,
+          "trace_MHz": 0.32106385478596156
+        },
+        {
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 0.00014289248849975883,
+          "coupling_norm_GHz": 0.10320561743792395,
+          "minimum_denominator_GHz": 44.54640847454768,
+          "maximum_eta": 0.0008507567479861722,
+          "positive_response_matrix_real_MHz": [
+            [
+              0.06497537986051363,
+              -9.079553051029577e-14
+            ],
+            [
+              -9.079553051029577e-14,
+              0.0779171086392452
+            ]
+          ],
+          "positive_response_matrix_imag_MHz": [
+            [
+              0.0,
+              2.325784208878244e-13
+            ],
+            [
+              -2.325784208878244e-13,
+              0.0
+            ]
+          ],
+          "offdiagonal_magnitude_MHz": 2.4967288644007794e-13,
+          "trace_MHz": 0.14289248849975883
+        },
+        {
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 0.007159321676027373,
+          "coupling_norm_GHz": 0.7408257611884114,
+          "minimum_denominator_GHz": 41.89700510200473,
+          "maximum_eta": 0.005490831286979822,
+          "positive_response_matrix_real_MHz": [
+            [
+              3.379072801146593,
+              1.720590504147121e-13
+            ],
+            [
+              1.720590504147121e-13,
+              3.78024887488078
+            ]
+          ],
+          "positive_response_matrix_imag_MHz": [
+            [
+              0.0,
+              1.0374904859468339e-11
+            ],
+            [
+              -1.0374904859468339e-11,
+              0.0
+            ]
+          ],
+          "offdiagonal_magnitude_MHz": 1.0376331488529526e-11,
+          "trace_MHz": 7.159321676027373
+        }
+      ],
+      "selector_base": 340,
+      "exact_schur_P_prefix": 340,
+      "identity_tracking": {
+        "within_parent": "sorted nondegenerate Stage-1 rank in the single k380 parent",
+        "cross_parent_stability": "INCOMPLETE: ranks beyond339 do not exist in the k340 checkpoint"
+      }
+    },
+    {
+      "rank": 362,
+      "parent": 380,
+      "shell": "S2",
+      "stage1_energy_GHz": 47.73494481237364,
+      "neighbor_gap_below_GHz": 0.019326909575994478,
+      "neighbor_gap_above_GHz": 0.06875829681354162,
+      "k380_stage1_energy_GHz": 47.73494481237364,
+      "absolute_weight_MHz": 15.138873587301712,
+      "fraction_of_shell": 0.8899244804228169,
+      "targets": {
+        "0": {
+          "rank": 362,
+          "exact_self_energy_MHz": -0.27072295000862284,
+          "coupling_norm_GHz": 0.150596965794404,
+          "Q_probability": 3.4479725224624384e-06
+        },
+        "1": {
+          "rank": 362,
+          "exact_self_energy_MHz": -0.29057707078568407,
+          "coupling_norm_GHz": 0.1544518395972151,
+          "Q_probability": 3.736085823484274e-06
+        },
+        "2": {
+          "rank": 362,
+          "exact_self_energy_MHz": -0.05130742589925399,
+          "coupling_norm_GHz": 0.06652116471343111,
+          "Q_probability": 6.364769652562774e-07
+        },
+        "3": {
+          "rank": 362,
+          "exact_self_energy_MHz": -0.08725200963916724,
+          "coupling_norm_GHz": 0.08478869735766598,
+          "Q_probability": 1.1232873070546477e-06
+        },
+        "7": {
+          "rank": 362,
+          "exact_self_energy_MHz": -6.759906627043076,
+          "coupling_norm_GHz": 0.7269470921263873,
+          "Q_probability": 9.197434572577624e-05
+        },
+        "8": {
+          "rank": 362,
+          "exact_self_energy_MHz": -7.6791075039259065,
+          "coupling_norm_GHz": 0.7705440295347674,
+          "Q_probability": 0.00010713858099377356
+        }
+      },
+      "pairs": [
+        {
+          "states": [
+            0,
+            1
+          ],
+          "rank_scalar_mean_MHz": -0.2806500103971534,
+          "rank_scalar_difference_j_minus_i_MHz": -0.019854120777061224,
+          "pair_absolute_weight_MHz": 0.5613000207943069,
+          "actual_full_shell_pair_energy_shift_MHz": -0.016442510721859094,
+          "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+        },
+        {
+          "states": [
+            2,
+            3
+          ],
+          "rank_scalar_mean_MHz": -0.06927971776921062,
+          "rank_scalar_difference_j_minus_i_MHz": -0.03594458373991325,
+          "pair_absolute_weight_MHz": 0.13855943553842123,
+          "actual_full_shell_pair_energy_shift_MHz": -0.053354713889675054,
+          "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+        },
+        {
+          "states": [
+            7,
+            8
+          ],
+          "rank_scalar_mean_MHz": -7.219507065484491,
+          "rank_scalar_difference_j_minus_i_MHz": -0.9192008768828304,
+          "pair_absolute_weight_MHz": 14.439014130968982,
+          "actual_full_shell_pair_energy_shift_MHz": -0.6064989368379514,
+          "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+        }
+      ],
+      "saved_isolated_rank_selector_response": [
+        {
+          "states": [
+            0,
+            1
+          ],
+          "trace_GHz": 0.0003487206541726956,
+          "coupling_norm_GHz": 0.1701989388328359,
+          "minimum_denominator_GHz": 48.430435668025765,
+          "maximum_eta": 0.0012095074402519,
+          "positive_response_matrix_real_MHz": [
+            [
+              0.1670617796084959,
+              3.05621310815753e-13
+            ],
+            [
+              3.05621310815753e-13,
+              0.18165887456419974
+            ]
+          ],
+          "positive_response_matrix_imag_MHz": [
+            [
+              0.0,
+              -1.0697286700368763e-13
+            ],
+            [
+              1.0697286700368763e-13,
+              0.0
+            ]
+          ],
+          "offdiagonal_magnitude_MHz": 3.238017601862716e-13,
+          "trace_MHz": 0.3487206541726956
+        },
+        {
+          "states": [
+            2,
+            3
+          ],
+          "trace_GHz": 8.498436298869565e-05,
+          "coupling_norm_GHz": 0.08072190928778829,
+          "minimum_denominator_GHz": 44.896217334183866,
+          "maximum_eta": 0.0007130642147086219,
+          "positive_response_matrix_real_MHz": [
+            [
+              0.031261103751126756,
+              -3.272419162345688e-14
+            ],
+            [
+              -3.272419162345688e-14,
+              0.05372325923756889
+            ]
+          ],
+          "positive_response_matrix_imag_MHz": [
+            [
+              0.0,
+              1.794395266753396e-13
+            ],
+            [
+              -1.794395266753396e-13,
+              0.0
+            ]
+          ],
+          "offdiagonal_magnitude_MHz": 1.8239905825107387e-13,
+          "trace_MHz": 0.08498436298869565
+        },
+        {
+          "states": [
+            7,
+            8
+          ],
+          "trace_GHz": 0.008109465699444353,
+          "coupling_norm_GHz": 0.7955840921882946,
+          "minimum_denominator_GHz": 42.24681396164091,
+          "maximum_eta": 0.006095718860627944,
+          "positive_response_matrix_real_MHz": [
+            [
+              3.7686554394863743,
+              -4.737572513829084e-14
+            ],
+            [
+              -4.737572513829084e-14,
+              4.340810259957979
+            ]
+          ],
+          "positive_response_matrix_imag_MHz": [
+            [
+              0.0,
+              1.3759251522162395e-11
+            ],
+            [
+              -1.3759251522162395e-11,
+              0.0
+            ]
+          ],
+          "offdiagonal_magnitude_MHz": 1.375933308374576e-11,
+          "trace_MHz": 8.109465699444353
+        }
+      ],
+      "selector_base": 340,
+      "exact_schur_P_prefix": 360,
+      "identity_tracking": {
+        "within_parent": "sorted nondegenerate Stage-1 rank in the single k380 parent",
+        "cross_parent_stability": "INCOMPLETE: ranks beyond339 do not exist in the k340 checkpoint"
+      }
+    }
+  ],
+  "shell_audit": {
+    "k340/new_S4": {
+      "aggregate": {
+        "absolute_total_MHz": 4.074080434450945,
+        "top3_fraction": 0.9373842693534338,
+        "count50": 1,
+        "count80": 2,
+        "count90": 2,
+        "effective_count": 1.5482989172818773
+      },
+      "states": {
+        "0": {
+          "observed_shift_MHz": -0.1083783758986101,
+          "exact_self_energy_MHz": -0.12027431861177883,
+          "P_space_relaxation_MHz": 0.011895942690465233,
+          "shell_probability": 1.5567897913919528e-06,
+          "fixed_vector_second_order_MHz": null,
+          "second_order_minus_observed_MHz": null,
+          "mode_participation": {
+            "absolute_total_MHz": 0.12027431861177951,
+            "top3_fraction": 0.6792379694499829,
+            "count50": 2,
+            "count80": 5,
+            "count90": 9,
+            "effective_count": 5.26920221545299
+          },
+          "minimum_abs_denominator_GHz": 45.808030052234585,
+          "maximum_eta": 0.0007695896500976168,
+          "q_vector_error": 8.02933234042369e-18,
+          "recomputed_identity_residual_MHz": 2.270349186428433e-11,
+          "rank_sum_minus_self_energy_MHz": 2.7755575615628914e-17,
+          "fixed_p_self_energy_derivative": -1.5567922149901804e-06,
+          "relaxation_fraction_of_abs_self_energy": 0.09890675605374187,
+          "missing": "INCOMPLETE: historical metric has no individual shell modes or fixed-vector second-order calculation"
+        },
+        "1": {
+          "observed_shift_MHz": -0.07778093119803486,
+          "exact_self_energy_MHz": -0.08665024751420917,
+          "P_space_relaxation_MHz": 0.008869316351578505,
+          "shell_probability": 1.00313324992672e-06,
+          "fixed_vector_second_order_MHz": null,
+          "second_order_minus_observed_MHz": null,
+          "mode_participation": {
+            "absolute_total_MHz": 0.08665024751420893,
+            "top3_fraction": 0.6919275543303515,
+            "count50": 2,
+            "count80": 6,
+            "count90": 11,
+            "effective_count": 5.092258518579823
+          },
+          "minimum_abs_denominator_GHz": 45.791994831718114,
+          "maximum_eta": 0.0006006923699746798,
+          "q_vector_error": 4.1790894001604835e-16,
+          "recomputed_identity_residual_MHz": -3.540419346581558e-11,
+          "rank_sum_minus_self_energy_MHz": -1.3877787807814457e-17,
+          "fixed_p_self_energy_derivative": -1.0031342562040466e-06,
+          "relaxation_fraction_of_abs_self_energy": 0.10235765743339725,
+          "missing": "INCOMPLETE: historical metric has no individual shell modes or fixed-vector second-order calculation"
+        },
+        "2": {
+          "observed_shift_MHz": -0.41457696554658696,
+          "exact_self_energy_MHz": -0.4668511929642868,
+          "P_space_relaxation_MHz": 0.052274227451576394,
+          "shell_probability": 6.3668241294370406e-06,
+          "fixed_vector_second_order_MHz": null,
+          "second_order_minus_observed_MHz": null,
+          "mode_participation": {
+            "absolute_total_MHz": 0.46685119296427874,
+            "top3_fraction": 0.6563159878595195,
+            "count50": 2,
+            "count80": 7,
+            "count90": 14,
+            "effective_count": 5.918863638279923
+          },
+          "minimum_abs_denominator_GHz": 42.38435485493842,
+          "maximum_eta": 0.001491657448549538,
+          "q_vector_error": 1.8902827943248432e-16,
+          "recomputed_identity_residual_MHz": -3.387656821729479e-11,
+          "rank_sum_minus_self_energy_MHz": 0.0,
+          "fixed_p_self_energy_derivative": -6.366864666144626e-06,
+          "relaxation_fraction_of_abs_self_energy": 0.11197192647117274,
+          "missing": "INCOMPLETE: historical metric has no individual shell modes or fixed-vector second-order calculation"
+        },
+        "3": {
+          "observed_shift_MHz": -0.4537240642932261,
+          "exact_self_energy_MHz": -0.5099831640206756,
+          "P_space_relaxation_MHz": 0.05625909970063958,
+          "shell_probability": 7.1864769001933355e-06,
+          "fixed_vector_second_order_MHz": null,
+          "second_order_minus_observed_MHz": null,
+          "mode_participation": {
+            "absolute_total_MHz": 0.509983164020678,
+            "top3_fraction": 0.5344281314957404,
+            "count50": 3,
+            "count80": 10,
+            "count90": 17,
+            "effective_count": 7.156187516451348
+          },
+          "minimum_abs_denominator_GHz": 42.14723336132957,
+          "maximum_eta": 0.0014734955597472473,
+          "q_vector_error": 4.017585152686877e-16,
+          "recomputed_identity_residual_MHz": 2.6809887643253205e-11,
+          "rank_sum_minus_self_energy_MHz": -1.1102230246251565e-16,
+          "fixed_p_self_energy_derivative": -7.1865285460147245e-06,
+          "relaxation_fraction_of_abs_self_energy": 0.11031560190555377,
+          "missing": "INCOMPLETE: historical metric has no individual shell modes or fixed-vector second-order calculation"
+        },
+        "7": {
+          "observed_shift_MHz": -1.1410797450608356,
+          "exact_self_energy_MHz": -1.3114381377322595,
+          "P_space_relaxation_MHz": 0.1703583927561425,
+          "shell_probability": 1.7028974571241108e-05,
+          "fixed_vector_second_order_MHz": null,
+          "second_order_minus_observed_MHz": null,
+          "mode_participation": {
+            "absolute_total_MHz": 1.3114381377322641,
+            "top3_fraction": 0.725415124980309,
+            "count50": 2,
+            "count80": 5,
+            "count90": 9,
+            "effective_count": 4.509138790086893
+          },
+          "minimum_abs_denominator_GHz": 39.62476509600502,
+          "maximum_eta": 0.0026320098279025,
+          "q_vector_error": 4.163562292331733e-16,
+          "recomputed_identity_residual_MHz": -8.471867651849152e-11,
+          "rank_sum_minus_self_energy_MHz": 4.440892098500626e-16,
+          "fixed_p_self_energy_derivative": -1.7029264562154305e-05,
+          "relaxation_fraction_of_abs_self_energy": 0.12990196628773237,
+          "missing": "INCOMPLETE: historical metric has no individual shell modes or fixed-vector second-order calculation"
+        },
+        "8": {
+          "observed_shift_MHz": -1.377616847875629,
+          "exact_self_energy_MHz": -1.5788833736077352,
+          "P_space_relaxation_MHz": 0.20126652574248283,
+          "shell_probability": 1.9912195344759142e-05,
+          "fixed_vector_second_order_MHz": null,
+          "second_order_minus_observed_MHz": null,
+          "mode_participation": {
+            "absolute_total_MHz": 1.578883373607752,
+            "top3_fraction": 0.7037763267177252,
+            "count50": 2,
+            "count80": 5,
+            "count90": 9,
+            "effective_count": 4.214556864945913
+          },
+          "minimum_abs_denominator_GHz": 39.60801637517735,
+          "maximum_eta": 0.002798664586870337,
+          "q_vector_error": 1.677222516988835e-16,
+          "recomputed_identity_residual_MHz": -1.0376588477356563e-11,
+          "rank_sum_minus_self_energy_MHz": 0.0,
+          "fixed_p_self_energy_derivative": -1.9912591848177843e-05,
+          "relaxation_fraction_of_abs_self_energy": 0.1274739661629285,
+          "missing": "INCOMPLETE: historical metric has no individual shell modes or fixed-vector second-order calculation"
+        }
+      },
+      "max_saved_schur_residual_GHz": 2.512107013458434e-13,
+      "max_saved_identity_error_GHz": 8.471867651849152e-14
+    },
+    "k380/S1": {
+      "aggregate": {
+        "absolute_total_MHz": 14.642727735201628,
+        "top3_fraction": 0.8715037190619542,
+        "count50": 1,
+        "count80": 3,
+        "count90": 4,
+        "effective_count": 2.1108677627940153
+      },
+      "states": {
+        "0": {
+          "observed_shift_MHz": -0.23575674953413284,
+          "exact_self_energy_MHz": -0.26098288363013344,
+          "P_space_relaxation_MHz": 0.025226134106048903,
+          "shell_probability": 3.281706334455777e-06,
+          "fixed_vector_second_order_MHz": -0.21302321933136242,
+          "second_order_minus_observed_MHz": 0.022733530202770413,
+          "mode_participation": {
+            "absolute_total_MHz": 0.26098288363013245,
+            "top3_fraction": 0.7012163905425753,
+            "count50": 2,
+            "count80": 5,
+            "count90": 11,
+            "effective_count": 4.731614348355437
+          },
+          "minimum_abs_denominator_GHz": 47.08705737849449,
+          "maximum_eta": 0.001158328506467414,
+          "q_vector_error": 1.3511724953866509e-17,
+          "recomputed_identity_residual_MHz": -1.0048295528974904e-11,
+          "rank_sum_minus_self_energy_MHz": -5.551115123125783e-17,
+          "fixed_p_self_energy_derivative": -3.2817171040875854e-06,
+          "relaxation_fraction_of_abs_self_energy": 0.09665819365303487,
+          "modal_sum_minus_self_energy_MHz": 9.992007221626409e-16,
+          "modal_derivative": -3.2817171040875574e-06,
+          "derivative_identity_absolute_difference": 2.795208725939191e-20,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -47.08705737849449,
+          "fixed_vector_relative_shift_discrepancy": 0.0964279082049316
+        },
+        "1": {
+          "observed_shift_MHz": -0.25255031212090273,
+          "exact_self_energy_MHz": -0.2798173349583464,
+          "P_space_relaxation_MHz": 0.027267022799648544,
+          "shell_probability": 3.5415174735473595e-06,
+          "fixed_vector_second_order_MHz": -0.22799449685175632,
+          "second_order_minus_observed_MHz": 0.024555815269146408,
+          "mode_participation": {
+            "absolute_total_MHz": 0.2798173349583477,
+            "top3_fraction": 0.6688872909962005,
+            "count50": 2,
+            "count80": 6,
+            "count90": 14,
+            "effective_count": 4.396478643575022
+          },
+          "minimum_abs_denominator_GHz": 47.07103895154038,
+          "maximum_eta": 0.0012360607051415692,
+          "q_vector_error": 3.472675899998773e-16,
+          "recomputed_identity_residual_MHz": 3.779510038270928e-11,
+          "rank_sum_minus_self_energy_MHz": 0.0,
+          "fixed_p_self_energy_derivative": -3.541530015937794e-06,
+          "relaxation_fraction_of_abs_self_energy": 0.09744579549979458,
+          "modal_sum_minus_self_energy_MHz": -1.27675647831893e-15,
+          "modal_derivative": -3.5415300159378082e-06,
+          "derivative_identity_absolute_difference": 1.4399560103323106e-20,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -47.07103895154038,
+          "fixed_vector_relative_shift_discrepancy": 0.09723137961275165
+        },
+        "2": {
+          "observed_shift_MHz": -0.8257184696986997,
+          "exact_self_energy_MHz": -0.9355947592725221,
+          "P_space_relaxation_MHz": 0.10987628964898022,
+          "shell_probability": 1.3239718468484928e-05,
+          "fixed_vector_second_order_MHz": -0.729082484878231,
+          "second_order_minus_observed_MHz": 0.09663598482046865,
+          "mode_participation": {
+            "absolute_total_MHz": 0.9355947592725312,
+            "top3_fraction": 0.49954975423626036,
+            "count50": 4,
+            "count80": 10,
+            "count90": 14,
+            "effective_count": 7.216181436894886
+          },
+          "minimum_abs_denominator_GHz": 43.66397214291868,
+          "maximum_eta": 0.0019943288298862765,
+          "q_vector_error": 2.6353046800659117e-16,
+          "recomputed_identity_residual_MHz": -7.515776889732706e-11,
+          "rank_sum_minus_self_energy_MHz": -1.1102230246251565e-16,
+          "fixed_p_self_energy_derivative": -1.3239893760950875e-05,
+          "relaxation_fraction_of_abs_self_energy": 0.11744004395066861,
+          "modal_sum_minus_self_energy_MHz": -9.2148511043888e-15,
+          "modal_derivative": -1.3239893760951138e-05,
+          "derivative_identity_absolute_difference": 2.625802136488331e-19,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -43.66397214291868,
+          "fixed_vector_relative_shift_discrepancy": 0.11703260659257217
+        },
+        "3": {
+          "observed_shift_MHz": -0.973764870206395,
+          "exact_self_energy_MHz": -1.105311108596089,
+          "P_space_relaxation_MHz": 0.13154623837863255,
+          "shell_probability": 1.5418993647758726e-05,
+          "fixed_vector_second_order_MHz": -0.8582523901401747,
+          "second_order_minus_observed_MHz": 0.11551248006622028,
+          "mode_participation": {
+            "absolute_total_MHz": 1.1053111085960827,
+            "top3_fraction": 0.5267655385427255,
+            "count50": 3,
+            "count80": 8,
+            "count90": 14,
+            "effective_count": 8.291295245019825
+          },
+          "minimum_abs_denominator_GHz": 43.42699869571065,
+          "maximum_eta": 0.0021139296095870185,
+          "q_vector_error": 4.4029489204431613e-16,
+          "recomputed_identity_residual_MHz": 1.106137403894536e-11,
+          "rank_sum_minus_self_energy_MHz": -2.220446049250313e-16,
+          "fixed_p_self_energy_derivative": -1.5419231396789685e-05,
+          "relaxation_fraction_of_abs_self_energy": 0.11901286194953385,
+          "modal_sum_minus_self_energy_MHz": 6.439293542825908e-15,
+          "modal_derivative": -1.5419231396789624e-05,
+          "derivative_identity_absolute_difference": 6.098637220230962e-20,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -43.42699869571065,
+          "fixed_vector_relative_shift_discrepancy": 0.11862461216303352
+        },
+        "7": {
+          "observed_shift_MHz": -4.764874567349864,
+          "exact_self_energy_MHz": -5.422124581450823,
+          "P_space_relaxation_MHz": 0.6572500140631377,
+          "shell_probability": 7.464114561538636e-05,
+          "fixed_vector_second_order_MHz": -4.188603260332238,
+          "second_order_minus_observed_MHz": 0.5762713070176257,
+          "mode_participation": {
+            "absolute_total_MHz": 5.422124581450841,
+            "top3_fraction": 0.758580713666963,
+            "count50": 2,
+            "count80": 4,
+            "count90": 11,
+            "effective_count": 3.563396046899721
+          },
+          "minimum_abs_denominator_GHz": 40.90832154008307,
+          "maximum_eta": 0.0059868026799948714,
+          "q_vector_error": 4.58967758232458e-16,
+          "recomputed_identity_residual_MHz": 3.782130164609043e-11,
+          "rank_sum_minus_self_energy_MHz": 0.0,
+          "fixed_p_self_energy_derivative": -7.464671733188443e-05,
+          "relaxation_fraction_of_abs_self_energy": 0.12121632474318292,
+          "modal_sum_minus_self_energy_MHz": -1.9539925233402755e-14,
+          "modal_derivative": -7.464671733188461e-05,
+          "derivative_identity_absolute_difference": 1.7618285302889447e-19,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -40.90832154008307,
+          "fixed_vector_relative_shift_discrepancy": 0.12094154817135876
+        },
+        "8": {
+          "observed_shift_MHz": -5.830302818015554,
+          "exact_self_energy_MHz": -6.638897067293714,
+          "P_space_relaxation_MHz": 0.8085942493014642,
+          "shell_probability": 8.998489466532092e-05,
+          "fixed_vector_second_order_MHz": -5.1213247966921385,
+          "second_order_minus_observed_MHz": 0.7089780213234151,
+          "mode_participation": {
+            "absolute_total_MHz": 6.638897067293723,
+            "top3_fraction": 0.6991488728854462,
+            "count50": 2,
+            "count80": 6,
+            "count90": 10,
+            "effective_count": 4.487835413118849
+          },
+          "minimum_abs_denominator_GHz": 40.8926382475058,
+          "maximum_eta": 0.005745338030506901,
+          "q_vector_error": 2.0217399633478434e-16,
+          "recomputed_identity_residual_MHz": -2.3304025376091886e-11,
+          "rank_sum_minus_self_energy_MHz": 0.0,
+          "fixed_p_self_energy_derivative": -8.999299267528742e-05,
+          "relaxation_fraction_of_abs_self_energy": 0.12179647328544593,
+          "modal_sum_minus_self_energy_MHz": -9.769962616701378e-15,
+          "modal_derivative": -8.999299267528686e-05,
+          "derivative_identity_absolute_difference": 5.55653613398821e-19,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -40.8926382475058,
+          "fixed_vector_relative_shift_discrepancy": 0.12160226380226478
+        }
+      },
+      "max_saved_schur_residual_GHz": 2.849450438660995e-13,
+      "max_saved_identity_error_GHz": 7.515776889732706e-14,
+      "aggregate_mode_diagnostics": {
+        "top_modes": [
+          {
+            "mode": 55,
+            "shell_mode_energy_GHz": 87.03609785389159,
+            "absolute_weight_MHz": 2.8272649392727147
+          },
+          {
+            "mode": 75,
+            "shell_mode_energy_GHz": 102.90941892476143,
+            "absolute_weight_MHz": 2.4932611018494013
+          },
+          {
+            "mode": 35,
+            "shell_mode_energy_GHz": 71.16031275512276,
+            "absolute_weight_MHz": 2.0447945446109124
+          },
+          {
+            "mode": 95,
+            "shell_mode_energy_GHz": 118.78319206344128,
+            "absolute_weight_MHz": 0.9828971999544353
+          },
+          {
+            "mode": 46,
+            "shell_mode_energy_GHz": 86.40198406220489,
+            "absolute_weight_MHz": 0.6290360992845877
+          },
+          {
+            "mode": 17,
+            "shell_mode_energy_GHz": 55.300067536136595,
+            "absolute_weight_MHz": 0.5858648436249003
+          },
+          {
+            "mode": 66,
+            "shell_mode_energy_GHz": 102.22524264966155,
+            "absolute_weight_MHz": 0.4188972317085323
+          },
+          {
+            "mode": 115,
+            "shell_mode_energy_GHz": 134.65820086327076,
+            "absolute_weight_MHz": 0.35747216337574317
+          }
+        ],
+        "top3_fraction": 0.5030019487439165,
+        "effective_count": 10.204358080921189,
+        "near_resonant_fraction": 0.0
+      }
+    },
+    "k380/S2": {
+      "aggregate": {
+        "absolute_total_MHz": 17.011413800088967,
+        "top3_fraction": 0.9887335103895737,
+        "count50": 1,
+        "count80": 1,
+        "count90": 2,
+        "effective_count": 1.2531999626991968
+      },
+      "states": {
+        "0": {
+          "observed_shift_MHz": -0.27461808224060746,
+          "exact_self_energy_MHz": -0.3099187303987763,
+          "P_space_relaxation_MHz": 0.03530064814949441,
+          "shell_probability": 3.910637704566579e-06,
+          "fixed_vector_second_order_MHz": -0.2433973327866231,
+          "second_order_minus_observed_MHz": 0.03122074945398437,
+          "mode_participation": {
+            "absolute_total_MHz": 0.3099187303987774,
+            "top3_fraction": 0.8729459006003316,
+            "count50": 1,
+            "count80": 3,
+            "count90": 4,
+            "effective_count": 2.7799236310342947
+          },
+          "minimum_abs_denominator_GHz": 48.20921912220597,
+          "maximum_eta": 0.0014597268124557088,
+          "q_vector_error": 6.751522865665093e-18,
+          "recomputed_identity_residual_MHz": 8.674450047152504e-12,
+          "rank_sum_minus_self_energy_MHz": 5.551115123125783e-17,
+          "fixed_p_self_energy_derivative": -3.9106529977136415e-06,
+          "relaxation_fraction_of_abs_self_energy": 0.11390291933653904,
+          "modal_sum_minus_self_energy_MHz": -9.992007221626409e-16,
+          "modal_derivative": -3.910652997713651e-06,
+          "derivative_identity_absolute_difference": 9.317362419797304e-21,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -48.20921912220597,
+          "fixed_vector_relative_shift_discrepancy": 0.11368788682542112
+        },
+        "1": {
+          "observed_shift_MHz": -0.29106059296246656,
+          "exact_self_energy_MHz": -0.32801390695842425,
+          "P_space_relaxation_MHz": 0.036953313936827215,
+          "shell_probability": 4.168845354817138e-06,
+          "fixed_vector_second_order_MHz": -0.2583593617137893,
+          "second_order_minus_observed_MHz": 0.03270123124867724,
+          "mode_participation": {
+            "absolute_total_MHz": 0.32801390695842264,
+            "top3_fraction": 0.9058947674038299,
+            "count50": 2,
+            "count80": 2,
+            "count90": 3,
+            "effective_count": 2.7567754912790425
+          },
+          "minimum_abs_denominator_GHz": 48.19321713776259,
+          "maximum_eta": 0.0015339281574617758,
+          "q_vector_error": 3.7266463920620953e-16,
+          "recomputed_identity_residual_MHz": 5.913047829153584e-11,
+          "rank_sum_minus_self_energy_MHz": 0.0,
+          "fixed_p_self_energy_derivative": -4.1688627341611825e-06,
+          "relaxation_fraction_of_abs_self_energy": 0.11265776588402712,
+          "modal_sum_minus_self_energy_MHz": 1.6653345369377348e-15,
+          "modal_derivative": -4.168862734161162e-06,
+          "derivative_identity_absolute_difference": 2.0328790734103208e-20,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -48.19321713776259,
+          "fixed_vector_relative_shift_discrepancy": 0.11235197082448808
+        },
+        "2": {
+          "observed_shift_MHz": -0.2970882195967306,
+          "exact_self_energy_MHz": -0.3311325539922078,
+          "P_space_relaxation_MHz": 0.03404433446085875,
+          "shell_probability": 4.364171481008901e-06,
+          "fixed_vector_second_order_MHz": -0.2666384559737804,
+          "second_order_minus_observed_MHz": 0.03044976362295021,
+          "mode_participation": {
+            "absolute_total_MHz": 0.33113255399221087,
+            "top3_fraction": 0.6920875822815677,
+            "count50": 2,
+            "count80": 6,
+            "count90": 9,
+            "effective_count": 4.720219141641792
+          },
+          "minimum_abs_denominator_GHz": 44.78615635676752,
+          "maximum_eta": 0.001416710462596784,
+          "q_vector_error": 1.7635048047839775e-16,
+          "recomputed_identity_residual_MHz": -6.538153352053655e-11,
+          "rank_sum_minus_self_energy_MHz": 0.0,
+          "fixed_p_self_energy_derivative": -4.364190527084737e-06,
+          "relaxation_fraction_of_abs_self_energy": 0.10281180164986098,
+          "modal_sum_minus_self_energy_MHz": -3.0531133177191805e-15,
+          "modal_derivative": -4.364190527084795e-06,
+          "derivative_identity_absolute_difference": 5.844527336054672e-20,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -44.78615635676752,
+          "fixed_vector_relative_shift_discrepancy": 0.10249401226438029
+        },
+        "3": {
+          "observed_shift_MHz": -0.35044293348640565,
+          "exact_self_energy_MHz": -0.39178089964207624,
+          "P_space_relaxation_MHz": 0.04133796613814411,
+          "shell_probability": 4.977457405131004e-06,
+          "fixed_vector_second_order_MHz": -0.3135222151823592,
+          "second_order_minus_observed_MHz": 0.036920718304046474,
+          "mode_participation": {
+            "absolute_total_MHz": 0.39178089964207596,
+            "top3_fraction": 0.5369596675439537,
+            "count50": 3,
+            "count80": 7,
+            "count90": 12,
+            "effective_count": 7.448947310837888
+          },
+          "minimum_abs_denominator_GHz": 44.54923626427338,
+          "maximum_eta": 0.0011800273369436344,
+          "q_vector_error": 4.200112021995449e-16,
+          "recomputed_identity_residual_MHz": 1.7526480267093802e-11,
+          "rank_sum_minus_self_energy_MHz": 0.0,
+          "fixed_p_self_energy_derivative": -4.977482180336542e-06,
+          "relaxation_fraction_of_abs_self_energy": 0.10551296956005182,
+          "modal_sum_minus_self_energy_MHz": 2.7755575615628914e-16,
+          "modal_derivative": -4.977482180336541e-06,
+          "derivative_identity_absolute_difference": 8.470329472543003e-22,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -44.54923626427338,
+          "fixed_vector_relative_shift_discrepancy": 0.10535443798720141
+        },
+        "7": {
+          "observed_shift_MHz": -6.406316683287727,
+          "exact_self_energy_MHz": -7.492763587561934,
+          "P_space_relaxation_MHz": 1.086446904283278,
+          "shell_probability": 0.00010174838200421459,
+          "fixed_vector_second_order_MHz": -5.478974912132933,
+          "second_order_minus_observed_MHz": 0.9273417711547944,
+          "mode_participation": {
+            "absolute_total_MHz": 7.4927635875619005,
+            "top3_fraction": 0.903190906929887,
+            "count50": 2,
+            "count80": 2,
+            "count90": 3,
+            "effective_count": 2.8012245003929355
+          },
+          "minimum_abs_denominator_GHz": 42.036614982395605,
+          "maximum_eta": 0.007199707316938498,
+          "q_vector_error": 4.196806649562483e-16,
+          "recomputed_identity_residual_MHz": -9.070966200397379e-12,
+          "rank_sum_minus_self_energy_MHz": -8.881784197001252e-16,
+          "fixed_p_self_energy_derivative": -0.0001017587357909361,
+          "relaxation_fraction_of_abs_self_energy": 0.14499949072019186,
+          "modal_sum_minus_self_energy_MHz": 3.197442310920451e-14,
+          "modal_derivative": -0.00010175873579093583,
+          "derivative_identity_absolute_difference": 2.710505431213761e-19,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -42.036614982395605,
+          "fixed_vector_relative_shift_discrepancy": 0.14475428190647638
+        },
+        "8": {
+          "observed_shift_MHz": -7.012815620125679,
+          "exact_self_energy_MHz": -8.157804121535543,
+          "P_space_relaxation_MHz": 1.1449885013838923,
+          "shell_probability": 0.0001135501480705666,
+          "fixed_vector_second_order_MHz": -6.030450010996181,
+          "second_order_minus_observed_MHz": 0.9823656091294977,
+          "mode_participation": {
+            "absolute_total_MHz": 8.157804121535548,
+            "top3_fraction": 0.9210159828122689,
+            "count50": 1,
+            "count80": 3,
+            "count90": 3,
+            "effective_count": 2.4762478068469584
+          },
+          "minimum_abs_denominator_GHz": 42.021538188755166,
+          "maximum_eta": 0.008056604724521422,
+          "q_vector_error": 2.2439397722127242e-16,
+          "recomputed_identity_residual_MHz": 2.5972113348871062e-11,
+          "rank_sum_minus_self_energy_MHz": 0.0,
+          "fixed_p_self_energy_derivative": -0.000113563043170934,
+          "relaxation_fraction_of_abs_self_energy": 0.1403549882205766,
+          "modal_sum_minus_self_energy_MHz": -7.105427357601002e-15,
+          "modal_derivative": -0.00011356304317093396,
+          "derivative_identity_absolute_difference": 4.0657581468206416e-20,
+          "near_resonant_mode_count": 0,
+          "maximum_signed_denominator_GHz": -42.021538188755166,
+          "fixed_vector_relative_shift_discrepancy": 0.14008148258030095
+        }
+      },
+      "max_saved_schur_residual_GHz": 2.7150588328199635e-13,
+      "max_saved_identity_error_GHz": 6.538153352053655e-14,
+      "aggregate_mode_diagnostics": {
+        "top_modes": [
+          {
+            "mode": 42,
+            "shell_mode_energy_GHz": 87.1540214002174,
+            "absolute_weight_MHz": 4.983979794291995
+          },
+          {
+            "mode": 63,
+            "shell_mode_energy_GHz": 102.95972585485389,
+            "absolute_weight_MHz": 3.426385199375153
+          },
+          {
+            "mode": 21,
+            "shell_mode_energy_GHz": 71.35278324614029,
+            "absolute_weight_MHz": 3.1865112597372276
+          },
+          {
+            "mode": 83,
+            "shell_mode_energy_GHz": 118.76341005763746,
+            "absolute_weight_MHz": 1.7432234592851383
+          },
+          {
+            "mode": 1,
+            "shell_mode_energy_GHz": 55.55105167118927,
+            "absolute_weight_MHz": 1.098171315689792
+          },
+          {
+            "mode": 103,
+            "shell_mode_energy_GHz": 134.5684606008473,
+            "absolute_weight_MHz": 0.5222395154405269
+          },
+          {
+            "mode": 57,
+            "shell_mode_energy_GHz": 88.43552718999645,
+            "absolute_weight_MHz": 0.3446656615550278
+          },
+          {
+            "mode": 38,
+            "shell_mode_energy_GHz": 72.56853793128622,
+            "absolute_weight_MHz": 0.2312174121269577
+          }
+        ],
+        "top3_fraction": 0.6817114902785884,
+        "effective_count": 5.610445048834989,
+        "near_resonant_fraction": 0.0
+      }
+    }
+  },
+  "f78_identities": [
+    {
+      "prefix": 340,
+      "f01": 16.03522051669337,
+      "f07": 6183.264956229232,
+      "f08": 6200.0136770571735,
+      "f78": 16.7487208279411,
+      "f78_minus_f01_MHz": 0.7135003112477278,
+      "identity_residual_MHz": -6.252776074688882e-13
+    },
+    {
+      "prefix": 360,
+      "f01": 16.0184269541066,
+      "f07": 6178.735838411417,
+      "f08": 6194.419130988692,
+      "f78": 15.68329257727541,
+      "f78_minus_f01_MHz": -0.33513437683119207,
+      "identity_residual_MHz": 3.126388037344441e-13
+    },
+    {
+      "prefix": 380,
+      "f01": 16.001984443384742,
+      "f07": 6172.604139810369,
+      "f08": 6187.680933450807,
+      "f78": 15.076793640437458,
+      "f78_minus_f01_MHz": -0.9251908029472844,
+      "identity_residual_MHz": -6.963318810448982e-13
+    }
+  ],
+  "nonadditivity": {
+    "S1": {
+      "partition": [
+        [
+          340,
+          341,
+          342,
+          343,
+          344,
+          345,
+          346,
+          347,
+          348,
+          349
+        ],
+        [
+          350,
+          351,
+          352,
+          353,
+          354,
+          355,
+          356,
+          357,
+          358,
+          359
+        ]
+      ],
+      "quality_pass": true,
+      "states": {
+        "0": {
+          "total_nonadditivity_MHz": -0.00031576801617916317,
+          "explicit_cross_MHz": 0.0001712453823188298,
+          "P_mediated_remainder_MHz": -0.00048701339849799297
+        },
+        "1": {
+          "total_nonadditivity_MHz": 0.0007511090469591863,
+          "explicit_cross_MHz": 0.0011465600788795882,
+          "P_mediated_remainder_MHz": -0.0003954510319204019
+        },
+        "2": {
+          "total_nonadditivity_MHz": -0.012822843416415708,
+          "explicit_cross_MHz": -0.0111042065995548,
+          "P_mediated_remainder_MHz": -0.0017186368168609079
+        },
+        "3": {
+          "total_nonadditivity_MHz": -0.01657722068770795,
+          "explicit_cross_MHz": -0.013992815034669093,
+          "P_mediated_remainder_MHz": -0.002584405653038857
+        },
+        "7": {
+          "total_nonadditivity_MHz": -0.003932648567683827,
+          "explicit_cross_MHz": 0.011383351161242672,
+          "P_mediated_remainder_MHz": -0.0153159997289265
+        },
+        "8": {
+          "total_nonadditivity_MHz": 0.0003622978645978492,
+          "explicit_cross_MHz": 0.02120515532766376,
+          "P_mediated_remainder_MHz": -0.02084285746306591
+        }
+      },
+      "transitions": {
+        "f01": {
+          "total_nonadditivity_MHz": 0.0010668770631383495,
+          "explicit_cross_MHz": 0.0009753146965607584
+        },
+        "f07": {
+          "total_nonadditivity_MHz": -0.0036168805515046643,
+          "explicit_cross_MHz": 0.011212105778923842
+        },
+        "f08": {
+          "total_nonadditivity_MHz": 0.0006780658807770124,
+          "explicit_cross_MHz": 0.02103390994534493
+        },
+        "f78": {
+          "total_nonadditivity_MHz": 0.004294946432281677,
+          "explicit_cross_MHz": 0.009821804166421089
+        },
+        "f81": {
+          "total_nonadditivity_MHz": -0.00038881118236133716,
+          "explicit_cross_MHz": 0.020058595248784172
+        },
+        "f72": {
+          "total_nonadditivity_MHz": 0.00889019484873188,
+          "explicit_cross_MHz": 0.022487557760797472
+        },
+        "f21": {
+          "total_nonadditivity_MHz": -0.013573952463374894,
+          "explicit_cross_MHz": -0.012250766678434388
+        },
+        "f03": {
+          "total_nonadditivity_MHz": -0.016261452671528787,
+          "explicit_cross_MHz": -0.014164060416987923
+        },
+        "f38": {
+          "total_nonadditivity_MHz": 0.0169395185523058,
+          "explicit_cross_MHz": 0.03519797036233285
+        }
+      }
+    },
+    "S2": {
+      "partition": [
+        [
+          360,
+          361,
+          362,
+          363,
+          364,
+          365,
+          366,
+          367,
+          368,
+          369
+        ],
+        [
+          370,
+          371,
+          372,
+          373,
+          374,
+          375,
+          376,
+          377,
+          378,
+          379
+        ]
+      ],
+      "quality_pass": true,
+      "states": {
+        "0": {
+          "total_nonadditivity_MHz": -0.007923333146919731,
+          "explicit_cross_MHz": -0.006911674857335015,
+          "P_mediated_remainder_MHz": -0.001011658289584716
+        },
+        "1": {
+          "total_nonadditivity_MHz": -0.007421130533202813,
+          "explicit_cross_MHz": -0.006454353550289227,
+          "P_mediated_remainder_MHz": -0.0009667769829135864
+        },
+        "2": {
+          "total_nonadditivity_MHz": 0.010768135876304541,
+          "explicit_cross_MHz": 0.008849211926786893,
+          "P_mediated_remainder_MHz": 0.001918923949517648
+        },
+        "3": {
+          "total_nonadditivity_MHz": 0.014720718718663761,
+          "explicit_cross_MHz": 0.01190644918658279,
+          "P_mediated_remainder_MHz": 0.0028142695320809707
+        },
+        "7": {
+          "total_nonadditivity_MHz": -0.20983764311388597,
+          "explicit_cross_MHz": -0.17479200764647373,
+          "P_mediated_remainder_MHz": -0.03504563546741224
+        },
+        "8": {
+          "total_nonadditivity_MHz": -0.1710671700543287,
+          "explicit_cross_MHz": -0.14611244930762268,
+          "P_mediated_remainder_MHz": -0.024954720746706016
+        }
+      },
+      "transitions": {
+        "f01": {
+          "total_nonadditivity_MHz": 0.0005022026137169178,
+          "explicit_cross_MHz": 0.0004573213070457882
+        },
+        "f07": {
+          "total_nonadditivity_MHz": -0.20191430996696624,
+          "explicit_cross_MHz": -0.16788033278913872
+        },
+        "f08": {
+          "total_nonadditivity_MHz": -0.16314383690740897,
+          "explicit_cross_MHz": -0.13920077445028767
+        },
+        "f78": {
+          "total_nonadditivity_MHz": 0.038770473059557276,
+          "explicit_cross_MHz": 0.028679558338851052
+        },
+        "f81": {
+          "total_nonadditivity_MHz": -0.16364603952112589,
+          "explicit_cross_MHz": -0.13965809575733346
+        },
+        "f72": {
+          "total_nonadditivity_MHz": -0.22060577899019052,
+          "explicit_cross_MHz": -0.18364121957326063
+        },
+        "f21": {
+          "total_nonadditivity_MHz": 0.018189266409507354,
+          "explicit_cross_MHz": 0.01530356547707612
+        },
+        "f03": {
+          "total_nonadditivity_MHz": 0.022644051865583492,
+          "explicit_cross_MHz": 0.018818124043917805
+        },
+        "f38": {
+          "total_nonadditivity_MHz": -0.18578788877299246,
+          "explicit_cross_MHz": -0.15801889849420547
+        }
+      }
+    }
+  },
+  "maximum_spectral_algebra_residual_MHz": 7.815970093361102e-13,
+  "incomplete": [
+    "Exact full-shell off-diagonal self-energy matrices and their energy scans require saved dressed vectors/resolvent contractions that are absent.",
+    "Rank354/362 cross-parent Stage-1 identity stability cannot be tested against k340.",
+    "Rank328 historical individual mode lists and fixed-vector second-order diagnostics were not saved.",
+    "No bound or prediction for omitted ranks above379 is established."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "gridium_checkpoint_publication_metadata_v1",
+  "source_path": "research/checkpoints/2026-09-26-asymmetric-n51/checkpoint.json",
+  "source_sha256": "03058680bebe8569be4c9d071682a5b00105765454e45c2f14bff68398c04e51",
+  "source_status": "historical Stage-1 checkpoint",
+  "scientific_scope": "Historical finite model and parameter settings. Complete/validated payload is not proof of retained-basis convergence or physical-device validity.",
+  "configuration": {
+    "physical_parameters": {
+      "EJ": 5.0,
+      "EC": 0.5,
+      "EL": 1.0,
+      "ELK": 1.0,
+      "EJS": 4.0,
+      "ECS": 8.0,
+      "eC": 5.5,
+      "eP": 10.0,
+      "eps_J": 0.1,
+      "eps_LK": 0.05,
+      "ng": 0.0,
+      "phi_ext": 0.0,
+      "theta_ext": 3.141592653589793
+    },
+    "spatial_cutoffs": {
+      "n1max": 4,
+      "N2": 51,
+      "L2": 11.0,
+      "N3": 51,
+      "L3": 14.0,
+      "N4": 8
+    },
+    "solver_settings": {
+      "k": 180,
+      "sigma": -24.0,
+      "which": "LM",
+      "tol": 1e-08,
+      "ncv": null,
+      "v0": null,
+      "permc_spec": "MMD_AT_PLUS_A"
+    }
+  },
+  "configuration_sha256": null,
+  "generator": "Simulations/Rabi_3Photon/four_mode_retained_basis_audit.py",
+  "code_revision": "956869faea96bb8dbbfe096227dff897d92c3289 with uncommitted audit fixes",
+  "git_dirty_at_generation": null,
+  "source_file_sha256": {},
+  "package_versions": {},
+  "payload_sha256": {},
+  "retrieval": "Raw payload and original execution metadata excluded. See research/publication/RAW_ARTIFACTS.csv and research/publication/RETRIEVAL.md."
+}

@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+*.ipynb filter=strip-notebook-output
+
+# Preserve authenticated research artifact bytes, including historical CSV CRLF.
+research/** -text
+

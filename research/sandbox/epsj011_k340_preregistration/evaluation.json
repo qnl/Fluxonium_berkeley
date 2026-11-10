@@ -1,0 +1,179 @@
+{
+  "retained_basis_convergence": {
+    "verdict": "FAIL",
+    "failures": [
+      "block:all_targets:sv0: final increment did not shrink",
+      "block:all_targets:sv1: final increment did not shrink",
+      "block:all_targets:sv2: final increment did not shrink",
+      "block:all_targets:sv3: final increment did not shrink",
+      "block:all_targets:sv4: final increment did not shrink",
+      "block:all_targets:sv5: final increment did not shrink",
+      "block:comparators_to_78:frobenius: final increment did not shrink",
+      "block:comparators_to_78:sv0: final increment did not shrink",
+      "block:comparators_to_78:sv1: final increment did not shrink",
+      "block:internal_78:frobenius: final increment did not shrink",
+      "block:internal_78:sv0: final increment did not shrink",
+      "block:internal_78:sv1: final increment did not shrink",
+      "block:logical_to_23:frobenius: final increment did not shrink",
+      "block:logical_to_23:sv0: final increment did not shrink",
+      "block:logical_to_23:sv1: final increment did not shrink",
+      "block:logical_to_78:frobenius: final increment did not shrink",
+      "block:logical_to_78:sv0: final increment did not shrink",
+      "block:logical_to_78:sv1: final increment did not shrink",
+      "block:primary:frobenius: final increment did not shrink",
+      "block:primary:sv0: final increment did not shrink",
+      "block:primary:sv1: final increment did not shrink",
+      "carrier:f01: final increment did not shrink",
+      "carrier:f01: reversal/cancellation",
+      "carrier:f07: final increment did not shrink",
+      "carrier:f08: final increment did not shrink",
+      "carrier:f21: final increment did not shrink",
+      "carrier:f38: final increment did not shrink",
+      "carrier:f72: final increment did not shrink",
+      "carrier:f81: final increment did not shrink",
+      "centered:0: final increment did not shrink",
+      "centered:1: final increment did not shrink",
+      "centered:2: final increment did not shrink",
+      "centered:3: final increment did not shrink",
+      "centered:7: final increment did not shrink",
+      "centered:8: final increment did not shrink",
+      "edge:g01: final increment did not shrink",
+      "edge:g03: final increment did not shrink",
+      "edge:g07: final increment did not shrink",
+      "edge:g21: final increment did not shrink",
+      "edge:g38: final increment did not shrink",
+      "edge:g72: final increment did not shrink",
+      "edge:g78: final increment did not shrink",
+      "edge:g81: final increment did not shrink",
+      "excitation:1: final increment did not shrink",
+      "excitation:2: final increment did not shrink",
+      "excitation:7: final increment did not shrink",
+      "excitation:8: final increment did not shrink",
+      "overlap:0: final increment did not shrink",
+      "overlap:1: final increment did not shrink",
+      "overlap:2: final increment did not shrink",
+      "overlap:3: final increment did not shrink",
+      "overlap:7: final increment did not shrink",
+      "overlap:8: final increment did not shrink",
+      "score:0381: final increment did not shrink",
+      "score:0721: final increment did not shrink",
+      "score:0781: final increment did not shrink",
+      "subspace:0_1: final increment did not shrink",
+      "subspace:0_1_2_3_7_8: final increment did not shrink",
+      "subspace:0_1_7_8: final increment did not shrink",
+      "subspace:2_3: final increment did not shrink",
+      "subspace:7_8: final increment did not shrink"
+    ],
+    "strict_misses": [
+      "k300_to_k340/carrier:f07: BORDERLINE",
+      "k300_to_k340/carrier:f08: BORDERLINE",
+      "k300_to_k340/carrier:f38: BORDERLINE",
+      "k300_to_k340/carrier:f78: BORDERLINE",
+      "k300_to_k340/carrier:f81: BORDERLINE",
+      "k300_to_k340/centered:8: BORDERLINE",
+      "k300_to_k340/excitation:7: BORDERLINE",
+      "k300_to_k340/excitation:8: BORDERLINE",
+      "k320_to_k340/carrier:f07: BORDERLINE",
+      "k320_to_k340/carrier:f08: BORDERLINE",
+      "k320_to_k340/carrier:f81: BORDERLINE",
+      "k320_to_k340/excitation:7: BORDERLINE",
+      "k320_to_k340/excitation:8: BORDERLINE"
+    ]
+  },
+  "tail_hypothesis": {
+    "classification": "D_NONMONOTONIC_UNRESOLVED",
+    "reason": "meaningful reversal or cancellation"
+  },
+  "selector_secondary": {
+    "verdict": "PASS",
+    "failures": [],
+    "pass_requirements_missed": [],
+    "family_ratios": {
+      "S3": {
+        "logical_01": {
+          "vs_prefix": 0.08994964015752831,
+          "vs_best_control": 0.09998054600748346
+        },
+        "comparator_23": {
+          "vs_prefix": 0.10697551351743831,
+          "vs_best_control": 0.10697551351743831
+        },
+        "primary_78": {
+          "vs_prefix": 0.16355205962052752,
+          "vs_best_control": 0.22354143084269162
+        },
+        "cross_carriers": {
+          "vs_prefix": 0.10455368247591125,
+          "vs_best_control": 0.15408909872771515
+        },
+        "operators": {
+          "vs_prefix": 0.05321019093863735,
+          "vs_best_control": 0.06118157884026392
+        },
+        "pathways": {
+          "vs_prefix": 0.07039025478153454,
+          "vs_best_control": 0.09921610322961683
+        }
+      },
+      "S4": {
+        "logical_01": {
+          "vs_prefix": 0.05338843907443076,
+          "vs_best_control": 0.07284862178196908
+        },
+        "comparator_23": {
+          "vs_prefix": 0.03635368230674063,
+          "vs_best_control": 0.0629135102050569
+        },
+        "primary_78": {
+          "vs_prefix": 0.09634892407221693,
+          "vs_best_control": 0.10512432916133493
+        },
+        "cross_carriers": {
+          "vs_prefix": 0.08226918352666662,
+          "vs_best_control": 0.09051894158006783
+        },
+        "operators": {
+          "vs_prefix": 0.01464038231546579,
+          "vs_best_control": 0.01789325758759645
+        },
+        "pathways": {
+          "vs_prefix": 0.01595087039563012,
+          "vs_best_control": 0.017887611326235363
+        }
+      },
+      "union": {
+        "logical_01": {
+          "vs_prefix": 0.07890474224941761,
+          "vs_best_control": 0.09428969025961412
+        },
+        "comparator_23": {
+          "vs_prefix": 0.07464577554594737,
+          "vs_best_control": 0.07464577554594737
+        },
+        "primary_78": {
+          "vs_prefix": 0.1553681884698311,
+          "vs_best_control": 0.1553681884698311
+        },
+        "cross_carriers": {
+          "vs_prefix": 0.10615673005793289,
+          "vs_best_control": 0.12547542636052125
+        },
+        "operators": {
+          "vs_prefix": 0.04198849346202978,
+          "vs_best_control": 0.07126438149677733
+        },
+        "pathways": {
+          "vs_prefix": 0.04686982934026022,
+          "vs_best_control": 0.13178849359873449
+        }
+      }
+    }
+  },
+  "claims": {
+    "smaller_final_increment": "report measured trend only",
+    "plateau_within_tested_range": false,
+    "convergence_beyond_k340": false,
+    "other_spatial_or_model_convergence": false,
+    "k340_is_ground_truth": false
+  }
+}

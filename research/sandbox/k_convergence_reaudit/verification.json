@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "tests_passed": 12,
+  "new_eigensolves": 0,
+  "cached_and_prior_toolkit_files_preserved": 72,
+  "tracked_files_preserved": 208,
+  "staged_and_unstaged_diffs_preserved": true,
+  "git_status_preserved": true,
+  "changed_preexisting_paths": [],
+  "commits_or_pushes": false
+}

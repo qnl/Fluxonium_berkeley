@@ -1,0 +1,21 @@
+# Portable IdealGridium baseline validated on 2026-09-07.
+# The root environment.yml is retained as a machine-specific historical export.
+name: gridium-idealgridium-py312
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.11
+  - pip=26.2.1
+  - pip:
+      - numpy==2.2.6
+      - scipy==1.13.1
+      - qutip==5.2.2
+      - scqubits==4.3.1
+      - qutip-qip==0.4.1
+      - matplotlib==3.10.7
+      - dill==0.4.0
+      - PyYAML==6.0.3
+      - pytest==8.4.2
+      - ipython==9.6.0
+      - ipykernel==6.31.0
+      - tqdm==4.67.1

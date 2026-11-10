@@ -1,0 +1,30 @@
+{
+  "status": "PASS after targeted corrections",
+  "fixes": [
+    "Propagate customized ambiguity policy to cluster assessment.",
+    "Expose competitive candidates outside an assigned cluster and connect column competitors.",
+    "Do not call non-energy singleton ambiguity an energy watch.",
+    "Do not certify a nonoptimal greedy assignment using the optimal-assignment gap.",
+    "Require a strict unitary operator alignment; reject nonfinite normalization.",
+    "Repair stale global energy-index flags in saved rectangular shell metadata."
+  ],
+  "shell_metadata": {
+    "original_sha256": "f74bad01323e9b3e0d87ac7a2644c25e73ac810395fb8bc876901fe4e97c1077",
+    "corrected_local_rows": [
+      11,
+      17,
+      18
+    ],
+    "explanation": "Only energy_rank_changed flags changed. Overlaps, assignments, energies, and subspace diagnostics reused."
+  },
+  "scientific_checks": [
+    "Squared overlaps used for Hungarian/greedy scores.",
+    "Gram whitening precedes subspace SVD; individual matching only normalizes columns.",
+    "Complex Procrustes orientation W=V_svd U_svd^dagger verified.",
+    "Rectangular operator blocks use independent endpoint rotations.",
+    "Unequal ranks cannot pass via sigma_min alone.",
+    "No fixed energy labels are treated as physical descendants."
+  ],
+  "new_Gridium_eigensolves": 0,
+  "prior_completed_eigensolves_not_repeated": true
+}

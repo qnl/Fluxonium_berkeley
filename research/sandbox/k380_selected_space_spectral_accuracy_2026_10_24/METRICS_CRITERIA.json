@@ -1,0 +1,189 @@
+{
+  "cancellation": {
+    "denominator_floor_MHz": 1e-06,
+    "large_excitation_error_MHz": 1.0,
+    "rule": "a small transition increment cannot rescue large same-shell state excitation errors; any meaningful reversal or flagged cancellation is unresolved",
+    "severe_excitation_error_MHz": 5.0,
+    "transition_ratio_max": 0.25,
+    "trend_noise_MHz": 1e-06
+  },
+  "comparison_epsilon_MHz": 1e-06,
+  "criterion_status": "PROPOSED_FROZEN_NOT_EXECUTION_AUTHORIZED",
+  "extensions": [
+    "All eleven states have raw, centered and excitation errors; original six retained separately",
+    "All eleven state assignments must pass existing WB4 confidence gates",
+    "Selection-specific relative assessment applies inherited 0.8 ratio and 0.1 strict-unit no-harm slack",
+    "Selectivity thresholds inherited explicitly from sealed v2 as a new-study proposal only",
+    "Cancellation flags prevent a favorable overall relative verdict; no aggregate can conceal omitted components"
+  ],
+  "frequencies": {
+    "f01": [
+      0,
+      1
+    ],
+    "f03": [
+      0,
+      3
+    ],
+    "f07": [
+      0,
+      7
+    ],
+    "f08": [
+      0,
+      8
+    ],
+    "f21": [
+      1,
+      2
+    ],
+    "f38": [
+      3,
+      8
+    ],
+    "f72": [
+      2,
+      7
+    ],
+    "f78": [
+      7,
+      8
+    ],
+    "f81": [
+      1,
+      8
+    ]
+  },
+  "improvement_ratio_max": 0.8,
+  "legacy_targets": [
+    0,
+    1,
+    2,
+    3,
+    7,
+    8
+  ],
+  "no_harm_slack_strict_units": 0.1,
+  "practical": {
+    "f78_MHz": [
+      1.0,
+      2.0
+    ],
+    "operator_relative": [
+      0.05,
+      0.1
+    ],
+    "overlap_min": [
+      0.995,
+      0.99
+    ],
+    "score_relative": [
+      0.1,
+      0.2
+    ],
+    "standard_MHz": [
+      5.0,
+      10.0
+    ]
+  },
+  "schema": "wb5_metrics_criteria_v1",
+  "scope": "WB5:P340_Q360_380:selected_space_spectral_accuracy:v1",
+  "selectivity": "f78-f01",
+  "selectivity_practical_MHz": [
+    6.0,
+    12.0
+  ],
+  "selectivity_strict_MHz": [
+    1.5,
+    6.0
+  ],
+  "strict": {
+    "f78_MHz": [
+      0.5,
+      1.0
+    ],
+    "operator_relative": [
+      0.03,
+      0.05
+    ],
+    "overlap_min": [
+      0.999,
+      0.995
+    ],
+    "score_relative": [
+      0.05,
+      0.1
+    ],
+    "standard_MHz": [
+      1.0,
+      5.0
+    ]
+  },
+  "subspaces": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      0,
+      1,
+      7,
+      8
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      7,
+      8
+    ]
+  ],
+  "targets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "tracking": {
+    "assigned_min": 0.9,
+    "competitor_ratio_strict_max": 0.5,
+    "margin_strict_min": 0.25,
+    "nested_k340_to_k380_required": true,
+    "original_k340_to_nested_k340_required": true
+  },
+  "validation": {
+    "eta_warning_min": 0.1,
+    "hermiticity": 1e-12,
+    "historical_energy_GHz": 1e-10,
+    "historical_phi_abs": 1e-10,
+    "orthogonality_inf": 1e-08,
+    "p_norm_strict_min": 1e-08,
+    "phase_imag": 1e-12,
+    "phase_real_min": -1e-12,
+    "pole_gap_strict_GHz": 1e-10,
+    "q_probability_warning_min": 0.01,
+    "q_vector": 1e-08,
+    "rcond_strict_min": 1e-12,
+    "residual_GHz": 1e-09,
+    "shared_gap_strict_GHz": 0.01,
+    "tensor_H_action_GHz": 1e-09,
+    "tensor_phi_action": 1e-10
+  },
+  "zero_reference_floor": 1e-12
+}

@@ -1,0 +1,173 @@
+{
+  "parameter_point_selector_validation": {
+    "verdict": "BORDERLINE",
+    "failures": [],
+    "pass_requirements_missed": [
+      "union/carrier:f78: no-harm miss"
+    ],
+    "family_ratios": {
+      "S1": {
+        "logical_01": {
+          "vs_prefix": 0.09536944977846855,
+          "vs_best_control": 0.16920634370034027
+        },
+        "comparator_23": {
+          "vs_prefix": 0.045511294048913235,
+          "vs_best_control": 0.18407572665262845
+        },
+        "primary_78": {
+          "vs_prefix": 0.293677178251712,
+          "vs_best_control": 0.293677178251712
+        },
+        "cross_carriers": {
+          "vs_prefix": 0.15712822282899153,
+          "vs_best_control": 0.15712822282899153
+        },
+        "operators": {
+          "vs_prefix": 0.05291407823496945,
+          "vs_best_control": 0.15034846445075392
+        },
+        "pathways": {
+          "vs_prefix": 0.12911768284344838,
+          "vs_best_control": 0.12911768284344838
+        }
+      },
+      "S2": {
+        "logical_01": {
+          "vs_prefix": 0.006699344794800946,
+          "vs_best_control": 0.008631933648194404
+        },
+        "comparator_23": {
+          "vs_prefix": 0.005668830205566167,
+          "vs_best_control": 0.007377248299319678
+        },
+        "primary_78": {
+          "vs_prefix": 0.007524468134083266,
+          "vs_best_control": 0.009710600444471933
+        },
+        "cross_carriers": {
+          "vs_prefix": 0.006687445169154942,
+          "vs_best_control": 0.008588839968791239
+        },
+        "operators": {
+          "vs_prefix": 0.004780930719918155,
+          "vs_best_control": 0.007414837175755451
+        },
+        "pathways": {
+          "vs_prefix": 0.0053504570811197085,
+          "vs_best_control": 0.010063540144496508
+        }
+      },
+      "union": {
+        "logical_01": {
+          "vs_prefix": 0.007744902540103067,
+          "vs_best_control": 0.011325170255102142
+        },
+        "comparator_23": {
+          "vs_prefix": 0.0060025322863667754,
+          "vs_best_control": 0.008962371265768538
+        },
+        "primary_78": {
+          "vs_prefix": 0.00850496739694352,
+          "vs_best_control": 0.012482138696987824
+        },
+        "cross_carriers": {
+          "vs_prefix": 0.0069386820112277495,
+          "vs_best_control": 0.0101716243840694
+        },
+        "operators": {
+          "vs_prefix": 0.00525685531771852,
+          "vs_best_control": 0.008342119115608147
+        },
+        "pathways": {
+          "vs_prefix": 0.004805105045136374,
+          "vs_best_control": 0.00813244524754407
+        }
+      }
+    },
+    "physics_cancellation_flags": {
+      "S1": {
+        "10": {},
+        "15": {}
+      },
+      "S2": {
+        "10": {},
+        "15": {}
+      },
+      "union": {
+        "10": {},
+        "15": {}
+      }
+    }
+  },
+  "multi_target_transfer": {
+    "verdict": "PARTIAL",
+    "reason": "all groups improve prefix but a strong condition is missed"
+  },
+  "retained_basis_convergence": {
+    "verdict": "FAIL",
+    "failures": [
+      "block:internal_78:frobenius",
+      "block:internal_78:sv0",
+      "block:internal_78:sv1",
+      "carrier:f01: final increment did not shrink",
+      "carrier:f01: reversal/cancellation",
+      "carrier:f03: reversal/cancellation",
+      "carrier:f07",
+      "carrier:f07: final increment did not shrink",
+      "carrier:f08",
+      "carrier:f08: final increment did not shrink",
+      "carrier:f21: final increment did not shrink",
+      "carrier:f21: reversal/cancellation",
+      "carrier:f38",
+      "carrier:f38: final increment did not shrink",
+      "carrier:f38: reversal/cancellation",
+      "carrier:f72",
+      "carrier:f72: final increment did not shrink",
+      "carrier:f72: reversal/cancellation",
+      "carrier:f78: reversal/cancellation",
+      "carrier:f81",
+      "carrier:f81: final increment did not shrink",
+      "centered:0",
+      "centered:1",
+      "centered:2",
+      "centered:3",
+      "centered:7",
+      "centered:8",
+      "edge:g78",
+      "excitation:7",
+      "excitation:8"
+    ],
+    "strict_misses": [
+      "block:internal_78:frobenius",
+      "block:internal_78:sv0",
+      "block:internal_78:sv1",
+      "block:logical_to_23:sv0",
+      "carrier:f07",
+      "carrier:f08",
+      "carrier:f21",
+      "carrier:f38",
+      "carrier:f72",
+      "carrier:f78",
+      "carrier:f81",
+      "centered:0",
+      "centered:1",
+      "centered:2",
+      "centered:3",
+      "centered:7",
+      "centered:8",
+      "edge:g03",
+      "edge:g78",
+      "excitation:2",
+      "excitation:7",
+      "excitation:8",
+      "overlap:7",
+      "overlap:8",
+      "score:0781",
+      "subspace:0_1_2_3_7_8",
+      "subspace:0_1_7_8",
+      "subspace:7_8"
+    ]
+  },
+  "endpoint_semantics": "new-point k300 is finite, not ground truth"
+}

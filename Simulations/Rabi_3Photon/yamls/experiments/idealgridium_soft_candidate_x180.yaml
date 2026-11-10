@@ -1,0 +1,81 @@
+model:
+  E_L: 0.5
+  E_C: 0.5
+  E_s: 4
+  E_2J: 12
+  ng: 0
+  phi_ext: pi
+  nlev: 8
+  nlev_lc: 230
+  units: GHz
+
+target: X180
+evaluation_frame: bare_energy_interaction
+
+pulse:
+  duration: 40.0
+  shape: cos
+  amplitude: 0.5
+  phase: 0.0
+  detuning: 0.0
+  sigma: 0.25
+
+search:
+  seed: 541
+  global_samples: 64
+  local_samples_per_anchor: 16
+  amplitude_bounds: [0.2, 0.8]
+  relative_phase_bounds: [-3.141592653589793, 3.141592653589793]
+  duration_bounds: [20.0, 80.0]
+  detuning_bounds: [-0.001, 0.001]
+  local_half_widths:
+    amplitude: 0.1
+    relative_phase: 0.5
+    duration: 8.0
+    detuning: 0.0003
+  balanced_final_leakage_limit: 0.1
+  baseline_fidelity: 0.769619
+
+validated_candidate:
+  amplitude_05: 0.407797685
+  amplitude_54: 0.303075884
+  amplitude_41: 0.396654279
+  phase_54: 0.0786602295
+  phase_41: -2.93375339
+  duration: 21.4963121
+  detuning_05: 0.000851913046
+  detuning_54: 0.000996400363
+  detuning_41: 0.0003369403
+
+validation:
+  retained_levels: [8, 10, 12, 16]
+  lc_cutoffs: [230, 300, 460]
+  sample_rates_per_ns: [2, 4, 8]
+  robustness:
+    amplitude_fraction: 0.01
+    phase_radians: 0.02
+    detuning_ghz: 0.00005
+    duration_fraction: 0.01
+
+transitions:
+  outer_05: [0, 5]
+  middle_54: [5, 4]
+  outer_41: [4, 1]
+
+protocols:
+  simultaneous:
+    - {transition: outer_05, start: 0.0}
+    - {transition: middle_54, start: 0.0}
+    - {transition: outer_41, start: 0.0}
+
+  sequential_diagnostic:
+    - {transition: outer_05, start: 0.0}
+    - {transition: middle_54, start: 40.0}
+    - {transition: outer_41, start: 80.0}
+
+  staged:
+    - {transition: outer_05, start: 0.0}
+    - {transition: outer_41, start: 0.0}
+    - {transition: middle_54, start: 40.0}
+    - {transition: outer_05, start: 80.0}
+    - {transition: outer_41, start: 80.0}

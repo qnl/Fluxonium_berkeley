@@ -1,0 +1,460 @@
+{
+  "attribution_parent_k": 340,
+  "fingerprint": {
+    "charge_edge": 0.0019305204315484613,
+    "charge_edge_band_descending_rank": 80,
+    "charge_edge_minus": 0.0009652602157645832,
+    "charge_edge_plus": 0.0009652602157838782,
+    "charge_ipr": 0.24962715451954962,
+    "charge_marginal": [
+      0.0009652602157645832,
+      0.009488775260157857,
+      0.08635918499100882,
+      0.3232327362070055,
+      0.15990808665213693,
+      0.3232327362070125,
+      0.0863591849909862,
+      0.009488775260158004,
+      0.0009652602157838782
+    ],
+    "charge_mean": 3.93574062229618e-14,
+    "charge_normalized_pr": 0.44510827087286864,
+    "charge_pr": 4.0059744378558175,
+    "charge_second_moment": 1.5390252339296162,
+    "charge_std": 1.2405745579890055,
+    "cluster_end": 328,
+    "cluster_start": 328,
+    "energy_GHz": 45.99149769331093,
+    "gap_above_MHz": 25.231970323773112,
+    "gap_below_MHz": 168.942242224162,
+    "gap_residual_ratio_above": 5568726835.167351,
+    "gap_residual_ratio_below": 36437163745.45118,
+    "grid_phi_mean": -1.6137935561852e-14,
+    "grid_phi_std": 6.620633350329199,
+    "joint_ipr": 0.0003901192212103911,
+    "joint_normalized_pr": 0.056499349098637144,
+    "joint_pr": 2563.3189692560686,
+    "joint_pr_band_descending_rank": 78,
+    "minimum_neighbor_gap_MHz": 25.231970323773112,
+    "norm_squared": 0.999999999999985,
+    "numerically_ambiguous": false,
+    "own_shell_block_strength_GHz2": 3551.7041288399396,
+    "own_shell_denominator_max_GHz": 60.650756407376875,
+    "own_shell_denominator_min_GHz": 16.764827179332354,
+    "own_shell_prefix": 320,
+    "own_shell_strongest_block_norm_GHz": 50.49043349795711,
+    "own_shell_strongest_rank": 211,
+    "own_shell_vacuum_proxy_GHz": 3.158521887283156,
+    "p100_block_strength_GHz2": 1.9546300063601811,
+    "p100_denominator_max_GHz": 60.650756407376875,
+    "p100_denominator_min_GHz": 34.78820728533952,
+    "p100_strongest_block_norm_GHz": 0.6880419899956217,
+    "p100_strongest_rank": 74,
+    "p100_vacuum_proxy_GHz": 0.0008720751686254811,
+    "p11_block_strength_GHz2": 0.2644619985009922,
+    "p11_denominator_max_GHz": 60.650756407376875,
+    "p11_denominator_min_GHz": 52.12985826688908,
+    "p11_strongest_block_norm_GHz": 0.3958632023387258,
+    "p11_strongest_rank": 6,
+    "p11_vacuum_proxy_GHz": 8.68115509107237e-05,
+    "p300_block_strength_GHz2": 3538.1752827341843,
+    "p300_block_strength_GHz2_band_descending_rank": 1,
+    "p300_denominator_max_GHz": 60.650756407376875,
+    "p300_denominator_min_GHz": 17.871963890671633,
+    "p300_strongest_block_norm_GHz": 50.49043349795711,
+    "p300_strongest_rank": 211,
+    "p300_vacuum_proxy_GHz": 3.1442644058755285,
+    "p300_vacuum_proxy_GHz_band_descending_rank": 14,
+    "p40_block_strength_GHz2": 0.8147954898921537,
+    "p40_denominator_max_GHz": 60.650756407376875,
+    "p40_denominator_min_GHz": 43.38622115179378,
+    "p40_strongest_block_norm_GHz": 0.4652778471718347,
+    "p40_strongest_rank": 35,
+    "p40_vacuum_proxy_GHz": 0.0003088765713223453,
+    "rank": 328,
+    "role": "focal",
+    "saved_residual_GHz": 2.2268269692995793e-12,
+    "schur_absolute_weight_MHz": null,
+    "schur_fraction": null,
+    "schur_shell": "",
+    "spatial_continuous_ipr_per_rad2": 0.010954288843784047,
+    "spatial_joint_ipr": 0.0013771105975042843,
+    "spatial_joint_normalized_pr": 0.14405040450839451,
+    "spatial_joint_pr": 726.1580891268168,
+    "spatial_pr_area_rad2": 91.28844549022867,
+    "spatial_union_edge1": 6.177013506909008e-05,
+    "spatial_union_edge2": 0.00034786259518315395,
+    "theta2_edge1": 4.739692628505967e-09,
+    "theta2_edge1_minus": 2.3698463142759964e-09,
+    "theta2_edge1_plus": 2.36984631422997e-09,
+    "theta2_edge2": 3.65255434238724e-08,
+    "theta2_edge2_band_descending_rank": 79,
+    "theta2_edge2_minus": 1.8262771712122035e-08,
+    "theta2_edge2_plus": 1.8262771711750366e-08,
+    "theta2_ipr": 0.049145171024136174,
+    "theta2_marginal": [
+      2.3698463142759964e-09,
+      1.589292539784604e-08,
+      6.382815648894777e-08,
+      2.0151256628567862e-07,
+      5.28314982685454e-07,
+      1.1779259195242012e-06,
+      2.298031323500307e-06,
+      4.096577527005806e-06,
+      7.009680003702449e-06,
+      1.1817346790908265e-05,
+      1.9353101723916894e-05,
+      2.977935541472529e-05,
+      4.2022837724002626e-05,
+      5.4118536709804894e-05,
+      6.475028983898173e-05,
+      7.546320355679426e-05,
+      9.293052803145979e-05,
+      0.0001348137018782726,
+      0.00024759252336573404,
+      0.0005316688446347923,
+      0.0011474730259866258,
+      0.0023057224023359593,
+      0.004285926450865436,
+      0.0074199864736494625,
+      0.011884805993122362,
+      0.017441825139933795,
+      0.02349806627583425,
+      0.02944370002284208,
+      0.03494266903377584,
+      0.04013274671412643,
+      0.04559344402661696,
+      0.05182897887866484,
+      0.05863296318922717,
+      0.06498761514214964,
+      0.06953810092256264,
+      0.0711925438107535,
+      0.06953810092256422,
+      0.06498761514215345,
+      0.0586329631892337,
+      0.051828978878673,
+      0.04559344402662509,
+      0.040132746714133284,
+      0.03494266903378031,
+      0.02944370002284284,
+      0.023498066275831432,
+      0.017441825139929833,
+      0.011884805993119228,
+      0.007419986473648325,
+      0.004285926450866567,
+      0.0023057224023379356,
+      0.0011474730259877569,
+      0.0005316688446349248,
+      0.0002475925233656044,
+      0.0001348137018783812,
+      9.29305280319244e-05,
+      7.546320355741769e-05,
+      6.475028983940657e-05,
+      5.411853670984047e-05,
+      4.2022837723746775e-05,
+      2.9779355414389336e-05,
+      1.935310172363793e-05,
+      1.1817346790713037e-05,
+      7.009680003570777e-06,
+      4.096577526918684e-06,
+      2.298031323446942e-06,
+      1.177925919496125e-06,
+      5.283149826730472e-07,
+      2.0151256628117672e-07,
+      6.382815648757299e-08,
+      1.5892925397520395e-08,
+      2.36984631422997e-09
+    ],
+    "theta2_mean": 3.894732115077926e-14,
+    "theta2_normalized_pr": 0.28658984695233514,
+    "theta2_pr": 20.347879133615795,
+    "theta2_second_moment": 3.140577355790165,
+    "theta2_std": 1.7721674175399358,
+    "theta2_std_band_descending_rank": 80,
+    "theta2_theta3_covariance": -0.5519854448097049,
+    "theta3_edge1": 6.176540623662022e-05,
+    "theta3_edge1_minus": 3.088270311830374e-05,
+    "theta3_edge1_plus": 3.088270311831648e-05,
+    "theta3_edge2": 0.000347826426218153,
+    "theta3_edge2_band_descending_rank": 80,
+    "theta3_edge2_minus": 0.00017391321310904252,
+    "theta3_edge2_plus": 0.00017391321310911045,
+    "theta3_ipr": 0.018272262403272573,
+    "theta3_marginal": [
+      3.088270311830374e-05,
+      0.00014303050999073879,
+      0.00036922633492184374,
+      0.000761990306021641,
+      0.0013951257629675456,
+      0.002359133811926724,
+      0.003746860102194077,
+      0.005625813620843655,
+      0.008000506263359816,
+      0.010779265192005555,
+      0.013768241696356659,
+      0.016709229678700158,
+      0.019352386291615613,
+      0.021524400109809196,
+      0.02314699293699678,
+      0.024196700087455808,
+      0.024650450983485873,
+      0.024479961587838876,
+      0.02371335013609967,
+      0.022508949453043256,
+      0.021154355990962336,
+      0.019952501993921255,
+      0.019054151813168795,
+      0.018363378266989062,
+      0.017614294890241643,
+      0.016596182476710387,
+      0.015371414514561565,
+      0.014299914638797748,
+      0.013810476002635469,
+      0.014067634229832968,
+      0.014799110072153041,
+      0.015448202829984062,
+      0.01555815850385094,
+      0.015096482153752384,
+      0.014463545037173668,
+      0.01417539803304405,
+      0.014463545037172738,
+      0.015096482153751157,
+      0.015558158503850138,
+      0.015448202829984044,
+      0.0147991100721537,
+      0.014067634229834012,
+      0.013810476002636669,
+      0.014299914638798919,
+      0.015371414514562434,
+      0.016596182476710693,
+      0.017614294890241154,
+      0.018363378266987803,
+      0.01905415181316708,
+      0.019952501993919645,
+      0.0211543559909615,
+      0.022508949453043763,
+      0.02371335013610165,
+      0.024479961587841853,
+      0.024650450983488902,
+      0.024196700087457786,
+      0.023146992936997,
+      0.021524400109807648,
+      0.019352386291612917,
+      0.016709229678697257,
+      0.013768241696354277,
+      0.010779265192004056,
+      0.008000506263359158,
+      0.005625813620843593,
+      0.0037468601021943323,
+      0.0023591338119270623,
+      0.0013951257629678485,
+      0.000761990306021857,
+      0.00036922633492196967,
+      0.00014303050999079397,
+      3.088270311831648e-05
+    ],
+    "theta3_mean": -3.561159613724163e-14,
+    "theta3_normalized_pr": 0.7708135277069454,
+    "theta3_pr": 54.72776046719313,
+    "theta3_second_moment": 43.5996270653534,
+    "theta3_std": 6.603001367965435,
+    "theta3_std_band_descending_rank": 3
+  },
+  "fingerprint_parent_k": 380,
+  "historical_record": {
+    "absolute_weight_MHz": 3.2370276719409357,
+    "exact_schur_P_prefix": 320,
+    "fraction_of_shell": 0.794541915414388,
+    "identity_tracking": {
+      "best_competing_absolute_overlap": 3.1300394028995887e-12,
+      "best_new_rank": 328,
+      "method": "absolute Stage-1 inner product on the identical physical grid; no new assignment threshold",
+      "new_parent": 380,
+      "old_parent": 340,
+      "old_rank": 328,
+      "same_rank_absolute_overlap": 1.0000000000000002
+    },
+    "k380_stage1_energy_GHz": 45.99149769331093,
+    "neighbor_gap_above_GHz": 0.025231970323645214,
+    "neighbor_gap_below_GHz": 0.1689422422236504,
+    "pairs": [
+      {
+        "actual_full_shell_pair_energy_shift_MHz": 0.030597444700575238,
+        "pair_absolute_weight_MHz": 0.1562720460847075,
+        "rank_scalar_difference_j_minus_i_MHz": 0.03112073827947287,
+        "rank_scalar_mean_MHz": -0.07813602304235374,
+        "states": [
+          0,
+          1
+        ],
+        "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+      },
+      {
+        "actual_full_shell_pair_energy_shift_MHz": -0.03914709874663913,
+        "pair_absolute_weight_MHz": 0.6177705868807205,
+        "rank_scalar_difference_j_minus_i_MHz": 0.034154501869606,
+        "rank_scalar_mean_MHz": -0.30888529344036025,
+        "states": [
+          2,
+          3
+        ],
+        "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+      },
+      {
+        "actual_full_shell_pair_energy_shift_MHz": -0.23653710281479334,
+        "pair_absolute_weight_MHz": 2.462985038975508,
+        "rank_scalar_difference_j_minus_i_MHz": -0.2779236238478908,
+        "rank_scalar_mean_MHz": -1.231492519487754,
+        "states": [
+          7,
+          8
+        ],
+        "warning": "rank scalar differences are not separately exact rank-assigned transition shifts"
+      }
+    ],
+    "parent": 340,
+    "rank": 328,
+    "saved_isolated_rank_selector_response": [
+      {
+        "coupling_norm_GHz": 0.10123717159638877,
+        "maximum_eta": 0.0008411429357711389,
+        "minimum_denominator_GHz": 46.68687095774675,
+        "offdiagonal_magnitude_MHz": 5.037627440164201e-13,
+        "positive_response_matrix_imag_MHz": [
+          [
+            0.0,
+            -8.747084001781437e-14
+          ],
+          [
+            8.747084001781437e-14,
+            0.0
+          ]
+        ],
+        "positive_response_matrix_real_MHz": [
+          [
+            0.07471146183296523,
+            4.961106271846343e-13
+          ],
+          [
+            4.961106271846343e-13,
+            0.04908126809825822
+          ]
+        ],
+        "states": [
+          0,
+          1
+        ],
+        "trace_GHz": 0.00012379272993122344,
+        "trace_MHz": 0.12379272993122345
+      },
+      {
+        "coupling_norm_GHz": 0.18431811687886476,
+        "maximum_eta": 0.0015586579019649914,
+        "minimum_denominator_GHz": 43.152009332553476,
+        "offdiagonal_magnitude_MHz": 2.6690094115083463e-13,
+        "positive_response_matrix_imag_MHz": [
+          [
+            0.0,
+            -2.3454312675383637e-13
+          ],
+          [
+            2.3454312675383637e-13,
+            0.0
+          ]
+        ],
+        "positive_response_matrix_real_MHz": [
+          [
+            0.24877692741292762,
+            1.273798809849308e-13
+          ],
+          [
+            1.273798809849308e-13,
+            0.22441650944373936
+          ]
+        ],
+        "states": [
+          2,
+          3
+        ],
+        "trace_GHz": 0.000473193436856667,
+        "trace_MHz": 0.473193436856667
+      },
+      {
+        "coupling_norm_GHz": 0.3916130573864021,
+        "maximum_eta": 0.0026913519320391557,
+        "minimum_denominator_GHz": 40.50150902001394,
+        "offdiagonal_magnitude_MHz": 2.5319475404210455e-12,
+        "positive_response_matrix_imag_MHz": [
+          [
+            0.0,
+            2.0538813818117452e-12
+          ],
+          [
+            -2.0538813818117452e-12,
+            0.0
+          ]
+        ],
+        "positive_response_matrix_real_MHz": [
+          [
+            0.8094996353664705,
+            -1.4806517540904945e-12
+          ],
+          [
+            -1.4806517540904945e-12,
+            1.035032345270724
+          ]
+        ],
+        "states": [
+          7,
+          8
+        ],
+        "trace_GHz": 0.0018445319806371942,
+        "trace_MHz": 1.8445319806371945
+      }
+    ],
+    "selector_base": 300,
+    "shell": "new_S4",
+    "stage1_energy_GHz": 45.99149769331049,
+    "targets": {
+      "0": {
+        "Q_probability": 1.258858148726021e-06,
+        "coupling_norm_GHz": 0.08609982209175783,
+        "exact_self_energy_MHz": -0.09369639218209018,
+        "rank": 328
+      },
+      "1": {
+        "Q_probability": 7.409350615096298e-07,
+        "coupling_norm_GHz": 0.07487817264857262,
+        "exact_self_energy_MHz": -0.06257565390261731,
+        "rank": 328
+      },
+      "2": {
+        "Q_probability": 4.6449166088512455e-06,
+        "coupling_norm_GHz": 0.15533754113795872,
+        "exact_self_energy_MHz": -0.32596254437516325,
+        "rank": 328
+      },
+      "3": {
+        "Q_probability": 4.453506771202662e-06,
+        "coupling_norm_GHz": 0.1435926598710064,
+        "exact_self_energy_MHz": -0.29180804250555725,
+        "rank": 328
+      },
+      "7": {
+        "Q_probability": 1.4243323169376461e-05,
+        "coupling_norm_GHz": 0.2995752642613917,
+        "exact_self_energy_MHz": -1.0925307075638084,
+        "rank": 328
+      },
+      "8": {
+        "Q_probability": 1.739164773907328e-05,
+        "coupling_norm_GHz": 0.33862549747437354,
+        "exact_self_energy_MHz": -1.3704543314116993,
+        "rank": 328
+      }
+    }
+  },
+  "pooled": false,
+  "rank": 328,
+  "source": "epsj011_k380_diagnostic_review/DIAGNOSTICS.json"
+}

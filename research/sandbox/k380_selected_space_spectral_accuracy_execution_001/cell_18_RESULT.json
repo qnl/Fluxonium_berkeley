@@ -1,0 +1,1149 @@
+{
+  "aliases": [
+    {
+      "budget": 15,
+      "method": "physics_frozen"
+    }
+  ],
+  "archive": "cell_18.npz",
+  "core_result": {
+    "costs": {
+      "base_target_preparation_historical_seconds": null,
+      "candidate_screening_historical_seconds": null,
+      "construction_seconds": 0.8825971660007781,
+      "diagonalization_seconds": 10.445363458000429,
+      "gather_seconds": 0.0032200409987126477,
+      "publication_seconds": 0.0007736660008959007,
+      "reusable_input_load_seconds": 0.0,
+      "shared_cost_accounting": {
+        "aliases": [
+          {
+            "budget": 15,
+            "method": "physics_frozen"
+          }
+        ],
+        "marginal_timing_boundary": "Before cell RESULT JSON publication; study/supervisor end-to-end includes that publication",
+        "publication_seconds": "Eigenpair archive publication; JSON/metadata overhead remains in end-to-end elapsed",
+        "shared_ledger": "RUN_RESULT.json:cost_accounting"
+      },
+      "source_authentication_seconds": 0.0,
+      "speedup_claim": "NOT_ESTABLISHED",
+      "total_cell_seconds": 11.410587709000538,
+      "tracking_validation_metrics_seconds": 0.0753971249996539
+    },
+    "dimension": 2840,
+    "eigenpair_archive_sha256": "c3724ab8c7be12a11064d285e2276c1b67c135c1d77dbead52f9732eee0e0353",
+    "job_id": "cell_18",
+    "numerical": {
+      "grid_phi_abs": [
+        [
+          4.4405393011852884e-12,
+          0.4396146869509479,
+          1.0262420785786732e-12,
+          0.2045098805931315,
+          1.5202996095988412e-12,
+          0.20253188129386057,
+          4.201641372491532e-12,
+          1.9245617757825806,
+          2.5633877256213258e-11,
+          5.247486458195771e-12,
+          0.3035854768217855
+        ],
+        [
+          0.43961468695094874,
+          4.533527271457064e-12,
+          0.1972432666414141,
+          1.0835602703248215e-12,
+          0.15108699822334368,
+          1.4154123170567601e-12,
+          0.4847534887178912,
+          2.436671731306139e-11,
+          1.8153704142552785,
+          0.6031924737665756,
+          3.666576863022192e-12
+        ],
+        [
+          1.0262420785786734e-12,
+          0.19724326664141428,
+          6.541547684826381e-13,
+          0.21693000420237066,
+          4.757437162779061e-13,
+          0.15560687734080944,
+          1.6224648792850506e-12,
+          0.8291323090143925,
+          1.495527752404986e-11,
+          4.378614989066942e-13,
+          0.06583457620091579
+        ],
+        [
+          0.20450988059313105,
+          1.0835602703248198e-12,
+          0.21693000420236985,
+          9.335349875586145e-13,
+          0.13285021910254105,
+          7.142361491506996e-14,
+          0.3970480627558418,
+          1.2418385260971608e-11,
+          0.6763627673267155,
+          0.20435131487898633,
+          6.809295622926962e-13
+        ],
+        [
+          1.5202996095988424e-12,
+          0.1510869982233436,
+          4.75743716277908e-13,
+          0.13285021910254075,
+          7.087676119613925e-13,
+          0.34917463130237925,
+          2.5556099682915655e-13,
+          0.3973871607141622,
+          5.391012134616436e-12,
+          6.115817742225305e-13,
+          0.06133481828664527
+        ],
+        [
+          0.20253188129386085,
+          1.4154123170567607e-12,
+          0.15560687734080944,
+          7.142361491507117e-14,
+          0.34917463130237886,
+          1.1545521164124267e-12,
+          0.04471557226258344,
+          6.285338370212178e-12,
+          0.41290106314287583,
+          0.10399030076690076,
+          1.718986555465158e-13
+        ],
+        [
+          4.201641372491532e-12,
+          0.484753488717891,
+          1.6224648792850504e-12,
+          0.3970480627558421,
+          2.555609968291553e-13,
+          0.04471557226258353,
+          5.682363013238943e-14,
+          0.3224828160575106,
+          6.078484257724825e-12,
+          7.875838041496937e-13,
+          0.17510501201369766
+        ],
+        [
+          1.9245617757825806,
+          2.4366717313061376e-11,
+          0.8291323090143917,
+          1.2418385260971615e-11,
+          0.3973871607141619,
+          6.2853383702121855e-12,
+          0.3224828160575112,
+          3.983685097611175e-11,
+          1.2626426038167977,
+          0.33491914379665016,
+          6.431708901338902e-13
+        ],
+        [
+          2.5633877256213235e-11,
+          1.8153704142552771,
+          1.4955277524049844e-11,
+          0.6763627673267157,
+          5.391012134616431e-12,
+          0.4129010631428766,
+          6.078484257724832e-12,
+          1.2626426038167964,
+          3.975206197220496e-11,
+          4.8171015815566195e-12,
+          0.09831872468620972
+        ],
+        [
+          5.247486458195777e-12,
+          0.6031924737665751,
+          4.3786149890669394e-13,
+          0.20435131487898647,
+          6.115817742225308e-13,
+          0.10399030076690038,
+          7.875838041496928e-13,
+          0.33491914379664994,
+          4.8171015815566195e-12,
+          9.531314196199995e-13,
+          0.08533369540309342
+        ],
+        [
+          0.3035854768217859,
+          3.666576863022188e-12,
+          0.06583457620091636,
+          6.809295622926975e-13,
+          0.061334818286645255,
+          1.7189865554651804e-13,
+          0.17510501201369788,
+          6.431708901338898e-13,
+          0.09831872468620992,
+          0.08533369540309345,
+          4.4765211947336175e-14
+        ]
+      ],
+      "reference": "U_S2 finite parent; no infinite-basis claim",
+      "spectral": {
+        "absolute_centered_state_error_MHz": [
+          0.005176655955855965,
+          0.005183895265452195,
+          0.005095054624830327,
+          0.004927450853968326,
+          0.001425290850191759,
+          0.00014584507775210111,
+          0.0010191362877649953,
+          0.001345321707772614,
+          2.6125522593774785e-05,
+          0.010479797556457851,
+          0.0138649785897242
+        ],
+        "absolute_excitation_error_MHz": [
+          0.0,
+          7.239309596229759e-06,
+          8.160133102563805e-05,
+          0.00024920510188763956,
+          0.003751365105664206,
+          0.005030810878103864,
+          0.00415751966809097,
+          0.003831334248083351,
+          0.00515053043326219,
+          0.015656453512313817,
+          0.019041634545580166
+        ],
+        "absolute_raw_state_error_MHz": [
+          0.00021095611391075408,
+          0.00020371680431452432,
+          0.00029255744493639213,
+          0.00046016121579839364,
+          0.00396232121957496,
+          0.005241766992014618,
+          0.004368475782001724,
+          0.004042290361994105,
+          0.0053614865471729445,
+          0.01586740962622457,
+          0.01925259065949092
+        ],
+        "cancellation": {
+          "f01": {
+            "denominator_MHz": 7.239309596229759e-06,
+            "excitation_error_i_MHz": 0.0,
+            "excitation_error_j_MHz": -7.239309596229759e-06,
+            "flagged": false,
+            "ratio": 1.0,
+            "severe": false,
+            "signed_transition_error_MHz": -7.239309596229759e-06
+          },
+          "f03": {
+            "denominator_MHz": 0.00024920510188763956,
+            "excitation_error_i_MHz": 0.0,
+            "excitation_error_j_MHz": 0.00024920510188763956,
+            "flagged": false,
+            "ratio": 0.9999999991731413,
+            "severe": false,
+            "signed_transition_error_MHz": 0.00024920510168158216
+          },
+          "f07": {
+            "denominator_MHz": 0.003831334248083351,
+            "excitation_error_i_MHz": 0.0,
+            "excitation_error_j_MHz": 0.003831334248083351,
+            "flagged": false,
+            "ratio": 0.9999999998423627,
+            "severe": false,
+            "signed_transition_error_MHz": 0.00383133424747939
+          },
+          "f08": {
+            "denominator_MHz": 0.00515053043326219,
+            "excitation_error_i_MHz": 0.0,
+            "excitation_error_j_MHz": 0.00515053043326219,
+            "flagged": false,
+            "ratio": 1.0000000000731162,
+            "severe": false,
+            "signed_transition_error_MHz": 0.005150530433638778
+          },
+          "f21": {
+            "denominator_MHz": 8.88406406218678e-05,
+            "excitation_error_i_MHz": -7.239309596229759e-06,
+            "excitation_error_j_MHz": 8.160133102563805e-05,
+            "flagged": false,
+            "ratio": 1.0000000011996921,
+            "severe": false,
+            "signed_transition_error_MHz": 8.884064072844922e-05
+          },
+          "f38": {
+            "denominator_MHz": 0.00539973553514983,
+            "excitation_error_i_MHz": 0.00024920510188763956,
+            "excitation_error_j_MHz": 0.00515053043326219,
+            "flagged": false,
+            "ratio": 0.9076972935326731,
+            "severe": false,
+            "signed_transition_error_MHz": 0.004901325331047701
+          },
+          "f72": {
+            "denominator_MHz": 0.003912935579108989,
+            "excitation_error_i_MHz": 8.160133102563805e-05,
+            "excitation_error_j_MHz": 0.003831334248083351,
+            "flagged": false,
+            "ratio": 0.9582915029844317,
+            "severe": false,
+            "signed_transition_error_MHz": 0.003749732917185611
+          },
+          "f78": {
+            "denominator_MHz": 0.008981864681345542,
+            "excitation_error_i_MHz": 0.003831334248083351,
+            "excitation_error_j_MHz": 0.00515053043326219,
+            "flagged": false,
+            "ratio": 0.14687330882624866,
+            "severe": false,
+            "signed_transition_error_MHz": 0.0013191961851788392
+          },
+          "f81": {
+            "denominator_MHz": 0.00515776974285842,
+            "excitation_error_i_MHz": -7.239309596229759e-06,
+            "excitation_error_j_MHz": 0.00515053043326219,
+            "flagged": false,
+            "ratio": 0.9999999998829027,
+            "severe": false,
+            "signed_transition_error_MHz": 0.005157769742254459
+          }
+        },
+        "carriers": {
+          "f01": {
+            "absolute_error_MHz": 7.239309596229759e-06,
+            "candidate_MHz": 16.021848119200044,
+            "practical": "PASS",
+            "reference_MHz": 16.02185535850964,
+            "signed_error_MHz": -7.239309596229759e-06,
+            "strict": "PASS"
+          },
+          "f03": {
+            "absolute_error_MHz": 0.00024920510168158216,
+            "candidate_MHz": 3660.7581023753787,
+            "practical": "PASS",
+            "reference_MHz": 3660.757853170277,
+            "signed_error_MHz": 0.00024920510168158216,
+            "strict": "PASS"
+          },
+          "f07": {
+            "absolute_error_MHz": 0.00383133424747939,
+            "candidate_MHz": 6178.628617247671,
+            "practical": "PASS",
+            "reference_MHz": 6178.624785913424,
+            "signed_error_MHz": 0.00383133424747939,
+            "strict": "PASS"
+          },
+          "f08": {
+            "absolute_error_MHz": 0.005150530433638778,
+            "candidate_MHz": 6194.947888465519,
+            "practical": "PASS",
+            "reference_MHz": 6194.9427379350855,
+            "signed_error_MHz": 0.005150530433638778,
+            "strict": "PASS"
+          },
+          "f21": {
+            "absolute_error_MHz": 8.884064072844922e-05,
+            "candidate_MHz": 3407.652085105898,
+            "practical": "PASS",
+            "reference_MHz": 3407.6519962652574,
+            "signed_error_MHz": 8.884064072844922e-05,
+            "strict": "PASS"
+          },
+          "f38": {
+            "absolute_error_MHz": 0.004901325331047701,
+            "candidate_MHz": 2534.18978609014,
+            "practical": "PASS",
+            "reference_MHz": 2534.184884764809,
+            "signed_error_MHz": 0.004901325331047701,
+            "strict": "PASS"
+          },
+          "f72": {
+            "absolute_error_MHz": 0.003749732917185611,
+            "candidate_MHz": 2754.9546840225735,
+            "practical": "PASS",
+            "reference_MHz": 2754.9509342896563,
+            "signed_error_MHz": 0.003749732917185611,
+            "strict": "PASS"
+          },
+          "f78": {
+            "absolute_error_MHz": 0.0013191961851788392,
+            "candidate_MHz": 16.319271217847486,
+            "practical": "PASS",
+            "reference_MHz": 16.317952021662308,
+            "signed_error_MHz": 0.0013191961851788392,
+            "strict": "PASS"
+          },
+          "f81": {
+            "absolute_error_MHz": 0.005157769742254459,
+            "candidate_MHz": 6178.926040346319,
+            "practical": "PASS",
+            "reference_MHz": 6178.920882576576,
+            "signed_error_MHz": 0.005157769742254459,
+            "strict": "PASS"
+          }
+        },
+        "centered_state_error_MHz": [
+          -0.005176655955855965,
+          -0.005183895265452195,
+          -0.005095054624830327,
+          -0.004927450853968326,
+          -0.001425290850191759,
+          -0.00014584507775210111,
+          -0.0010191362877649953,
+          -0.001345321707772614,
+          -2.6125522593774785e-05,
+          0.010479797556457851,
+          0.0138649785897242
+        ],
+        "excitation_error_MHz": [
+          0.0,
+          -7.239309596229759e-06,
+          8.160133102563805e-05,
+          0.00024920510188763956,
+          0.003751365105664206,
+          0.005030810878103864,
+          0.00415751966809097,
+          0.003831334248083351,
+          0.00515053043326219,
+          0.015656453512313817,
+          0.019041634545580166
+        ],
+        "legacy_six_max_absolute_excitation_error_MHz": 0.00515053043326219,
+        "max_absolute_excitation_error_MHz": 0.019041634545580166,
+        "max_absolute_raw_state_error_MHz": 0.01925259065949092,
+        "raw_state_error_MHz": [
+          0.00021095611391075408,
+          0.00020371680431452432,
+          0.00029255744493639213,
+          0.00046016121579839364,
+          0.00396232121957496,
+          0.005241766992014618,
+          0.004368475782001724,
+          0.004042290361994105,
+          0.0053614865471729445,
+          0.01586740962622457,
+          0.01925259065949092
+        ],
+        "selectivity": {
+          "absolute_error_MHz": 0.001326435494775069,
+          "candidate_MHz": 0.29742309864744243,
+          "practical": "PASS",
+          "reference_MHz": 0.29609666315266736,
+          "signed_error_MHz": 0.001326435494775069,
+          "strict": "PASS"
+        }
+      },
+      "tracking": {
+        "P340_confidence": [
+          {
+            "assigned_candidate_state": 0,
+            "assigned_overlap": 0.9999982049718587,
+            "best_competing_overlap": 0.00017905390756188522,
+            "competitor_to_assigned_ratio": 0.00017905422896926504,
+            "overlap_margin": 0.9998191510642968,
+            "reference_state": 0,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 1,
+            "assigned_overlap": 0.9999980789115392,
+            "best_competing_overlap": 0.00017850996648661278,
+            "competitor_to_assigned_ratio": 0.00017851030942070834,
+            "overlap_margin": 0.9998195689450526,
+            "reference_state": 1,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 2,
+            "assigned_overlap": 0.9999981364380456,
+            "best_competing_overlap": 8.331769358575769e-05,
+            "competitor_to_assigned_ratio": 8.331784885373093e-05,
+            "overlap_margin": 0.9999148187444599,
+            "reference_state": 2,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 3,
+            "assigned_overlap": 0.9999978678043328,
+            "best_competing_overlap": 0.00017921721670331663,
+            "competitor_to_assigned_ratio": 0.00017921759883030434,
+            "overlap_margin": 0.9998186505876294,
+            "reference_state": 3,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 4,
+            "assigned_overlap": 0.9999856726103424,
+            "best_competing_overlap": 0.0012008771181526226,
+            "competitor_to_assigned_ratio": 0.0012008943238335378,
+            "overlap_margin": 0.9987847954921898,
+            "reference_state": 4,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 5,
+            "assigned_overlap": 0.999980821639707,
+            "best_competing_overlap": 0.0014378616346990632,
+            "competitor_to_assigned_ratio": 0.0014378892110564142,
+            "overlap_margin": 0.998542960005008,
+            "reference_state": 5,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 6,
+            "assigned_overlap": 0.9999736189404156,
+            "best_competing_overlap": 0.006021883757556908,
+            "competitor_to_assigned_ratio": 0.00602204262542223,
+            "overlap_margin": 0.9939517351828587,
+            "reference_state": 6,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 7,
+            "assigned_overlap": 0.9999471071678422,
+            "best_competing_overlap": 0.001378295174494473,
+            "competitor_to_assigned_ratio": 0.0013783680802859953,
+            "overlap_margin": 0.9985688119933477,
+            "reference_state": 7,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 8,
+            "assigned_overlap": 0.9999252970267869,
+            "best_competing_overlap": 0.005989413125896037,
+            "competitor_to_assigned_ratio": 0.005989860586290965,
+            "overlap_margin": 0.9939358839008908,
+            "reference_state": 8,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 9,
+            "assigned_overlap": 0.9999982182688467,
+            "best_competing_overlap": 0.0003164311246653534,
+            "competitor_to_assigned_ratio": 0.0003164316884615506,
+            "overlap_margin": 0.9996817871441813,
+            "reference_state": 9,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 10,
+            "assigned_overlap": 0.9999927229661483,
+            "best_competing_overlap": 0.0009572081994229649,
+            "competitor_to_assigned_ratio": 0.0009572151651101248,
+            "overlap_margin": 0.9990355147667254,
+            "reference_state": 10,
+            "state_specific_claim_safe": true
+          }
+        ],
+        "complex_subspaces": {
+          "0_1": {
+            "overlap_block_imag": [
+              [
+                -2.927239986592455e-18,
+                8.188537866531494e-14
+              ],
+              [
+                8.189100470264603e-14,
+                4.977395355753212e-16
+              ]
+            ],
+            "overlap_block_real": [
+              [
+                0.9999999984597844,
+                6.1813554540591e-14
+              ],
+              [
+                -6.187362693300472e-14,
+                0.9999999985302334
+              ]
+            ],
+            "principal_angles_degrees": [
+              0.0031064314485538523,
+              0.003180009315908481
+            ],
+            "roundoff_clipping": false,
+            "singular_values": [
+              0.9999999985302337,
+              0.9999999984597844
+            ]
+          },
+          "0_1_2_3_7_8": {
+            "overlap_block_imag": [
+              [
+                -2.927239986592455e-18,
+                8.188537866531494e-14,
+                -1.0272603826063341e-17,
+                8.083863461492226e-18,
+                -1.4506989374882926e-16,
+                8.941809186808428e-18
+              ],
+              [
+                8.189100470264603e-14,
+                4.977395355753212e-16,
+                2.295544428992372e-15,
+                2.8598202642097634e-08,
+                -1.1331545670756685e-08,
+                -1.2384153605592424e-16
+              ],
+              [
+                -1.1905259831896005e-17,
+                2.271065683360311e-15,
+                7.279348209144254e-17,
+                4.893508090903338e-14,
+                -1.7262470452142045e-16,
+                3.137155926745752e-16
+              ],
+              [
+                3.877199461746516e-17,
+                2.6847478086485626e-08,
+                4.978588094679276e-14,
+                4.939324401147683e-17,
+                6.308732578074579e-08,
+                -4.398812105524129e-15
+              ],
+              [
+                -1.4866564432969937e-16,
+                -1.0335841943434852e-08,
+                -1.235557550733458e-16,
+                5.947401985758942e-08,
+                -3.1637243062764654e-18,
+                -1.5683883186779726e-13
+              ],
+              [
+                6.421642646754549e-17,
+                -2.08312563025786e-16,
+                3.022450725028575e-16,
+                -4.391560523332175e-15,
+                -1.5691185176497396e-13,
+                -1.3180510285634717e-16
+              ]
+            ],
+            "overlap_block_real": [
+              [
+                0.9999999984597844,
+                6.1813554540591e-14,
+                1.9745613554514535e-08,
+                1.9380091480895497e-17,
+                -5.271093638849283e-16,
+                1.6341247177108207e-07
+              ],
+              [
+                -6.187362693300472e-14,
+                0.9999999985302334,
+                -7.525934200751954e-15,
+                1.1686176053591847e-08,
+                1.2830844224156197e-07,
+                -2.902172785573748e-15
+              ],
+              [
+                -1.8592460786857913e-08,
+                7.308666619632968e-15,
+                0.9999999978915876,
+                -5.229517227291222e-15,
+                -2.126916142234118e-15,
+                -1.112439990614149e-07
+              ],
+              [
+                -2.0893570769605178e-17,
+                -1.0970771899956667e-08,
+                4.988930411040879e-15,
+                0.9999999964898886,
+                -1.9504150010785272e-08,
+                -2.87394820563187e-16
+              ],
+              [
+                5.086393626045697e-16,
+                -1.170339724218765e-07,
+                2.201326785032727e-15,
+                1.8387056082027686e-08,
+                0.9999999665838051,
+                1.1807705368441681e-13
+              ],
+              [
+                -1.4886468515829275e-07,
+                2.8137989558453207e-15,
+                1.0596475837652455e-07,
+                2.6364817013299676e-16,
+                -1.1806789787543094e-13,
+                0.999999957403355
+              ]
+            ],
+            "principal_angles_degrees": [
+              0.001357759695113616,
+              0.0015647281305496367,
+              0.0035720542564690633,
+              0.0047950456100274335,
+              0.015054991628103531,
+              0.017000742126526656
+            ],
+            "roundoff_clipping": false,
+            "singular_values": [
+              0.9999999997192172,
+              0.9999999996270913,
+              0.9999999980566061,
+              0.9999999964980477,
+              0.9999999654788088,
+              0.99999995597894
+            ]
+          },
+          "0_1_7_8": {
+            "overlap_block_imag": [
+              [
+                -2.927239986592455e-18,
+                8.188537866531494e-14,
+                -1.4506989374882926e-16,
+                8.941809186808428e-18
+              ],
+              [
+                8.189100470264603e-14,
+                4.977395355753212e-16,
+                -1.1331545670756685e-08,
+                -1.2384153605592424e-16
+              ],
+              [
+                -1.4866564432969937e-16,
+                -1.0335841943434852e-08,
+                -3.1637243062764654e-18,
+                -1.5683883186779726e-13
+              ],
+              [
+                6.421642646754549e-17,
+                -2.08312563025786e-16,
+                -1.5691185176497396e-13,
+                -1.3180510285634717e-16
+              ]
+            ],
+            "overlap_block_real": [
+              [
+                0.9999999984597844,
+                6.1813554540591e-14,
+                -5.271093638849283e-16,
+                1.6341247177108207e-07
+              ],
+              [
+                -6.187362693300472e-14,
+                0.9999999985302334,
+                1.2830844224156197e-07,
+                -2.902172785573748e-15
+              ],
+              [
+                5.086393626045697e-16,
+                -1.170339724218765e-07,
+                0.9999999665838051,
+                1.1807705368441681e-13
+              ],
+              [
+                -1.4886468515829275e-07,
+                2.8137989558453207e-15,
+                -1.1806789787543094e-13,
+                0.999999957403355
+              ]
+            ],
+            "principal_angles_degrees": [
+              0.0013789020606385582,
+              0.0018062026933213955,
+              0.015026152127056682,
+              0.016967144843514977
+            ],
+            "roundoff_clipping": false,
+            "singular_values": [
+              0.9999999997104047,
+              0.9999999995031129,
+              0.9999999656109404,
+              0.999999956152759
+            ]
+          },
+          "2_3": {
+            "overlap_block_imag": [
+              [
+                7.279348209144254e-17,
+                4.893508090903338e-14
+              ],
+              [
+                4.978588094679276e-14,
+                4.939324401147683e-17
+              ]
+            ],
+            "overlap_block_real": [
+              [
+                0.9999999978915876,
+                -5.229517227291222e-15
+              ],
+              [
+                4.988930411040879e-15,
+                0.9999999964898886
+              ]
+            ],
+            "principal_angles_degrees": [
+              0.0037206208525252076,
+              0.004800628308431094
+            ],
+            "roundoff_clipping": false,
+            "singular_values": [
+              0.9999999978915876,
+              0.9999999964898886
+            ]
+          },
+          "7_8": {
+            "overlap_block_imag": [
+              [
+                -3.1637243062764654e-18,
+                -1.5683883186779726e-13
+              ],
+              [
+                -1.5691185176497396e-13,
+                -1.3180510285634717e-16
+              ]
+            ],
+            "overlap_block_real": [
+              [
+                0.9999999665838051,
+                1.1807705368441681e-13
+              ],
+              [
+                -1.1806789787543094e-13,
+                0.999999957403355
+              ]
+            ],
+            "principal_angles_degrees": [
+              0.01481208278561028,
+              0.01672342891201472
+            ],
+            "roundoff_clipping": false,
+            "singular_values": [
+              0.9999999665838049,
+              0.9999999574033551
+            ]
+          }
+        },
+        "confidence": [
+          {
+            "assigned_candidate_state": 0,
+            "assigned_overlap": 0.9999999984597849,
+            "best_competing_overlap": 2.0286148716408547e-07,
+            "competitor_to_assigned_ratio": 2.0286148747653579e-07,
+            "overlap_margin": 0.9999997955982978,
+            "reference_state": 0,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 1,
+            "assigned_overlap": 0.99999999853023,
+            "best_competing_overlap": 2.0832736304660789e-07,
+            "competitor_to_assigned_ratio": 2.083273633528012e-07,
+            "overlap_margin": 0.999999790202867,
+            "reference_state": 1,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 2,
+            "assigned_overlap": 0.9999999978915874,
+            "best_competing_overlap": 9.18230997348779e-07,
+            "competitor_to_assigned_ratio": 9.182309992847887e-07,
+            "overlap_margin": 0.9999990796605901,
+            "reference_state": 2,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 3,
+            "assigned_overlap": 0.9999999964898886,
+            "best_competing_overlap": 2.0807833465583035e-06,
+            "competitor_to_assigned_ratio": 2.080783353862085e-06,
+            "overlap_margin": 0.9999979157065421,
+            "reference_state": 3,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 4,
+            "assigned_overlap": 0.9999999677550817,
+            "best_competing_overlap": 1.9004751928425323e-06,
+            "competitor_to_assigned_ratio": 1.9004752541232017e-06,
+            "overlap_margin": 0.9999980672798888,
+            "reference_state": 4,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 5,
+            "assigned_overlap": 0.9999999571871104,
+            "best_competing_overlap": 2.097357545158103e-06,
+            "competitor_to_assigned_ratio": 2.0973576349520437e-06,
+            "overlap_margin": 0.9999978598295652,
+            "reference_state": 5,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 6,
+            "assigned_overlap": 0.9999999616074071,
+            "best_competing_overlap": 4.2707777908098515e-06,
+            "competitor_to_assigned_ratio": 4.270777954776091e-06,
+            "overlap_margin": 0.9999956908296163,
+            "reference_state": 6,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 7,
+            "assigned_overlap": 0.999999966583807,
+            "best_competing_overlap": 4.1155661697239925e-06,
+            "competitor_to_assigned_ratio": 4.1155663072505505e-06,
+            "overlap_margin": 0.9999958510176372,
+            "reference_state": 7,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 8,
+            "assigned_overlap": 0.999999957403354,
+            "best_competing_overlap": 9.112580435899353e-06,
+            "competitor_to_assigned_ratio": 9.112580824064732e-06,
+            "overlap_margin": 0.9999908448229181,
+            "reference_state": 8,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 9,
+            "assigned_overlap": 0.9999998632344158,
+            "best_competing_overlap": 9.215281374305717e-06,
+            "competitor_to_assigned_ratio": 9.21528263463923e-06,
+            "overlap_margin": 0.9999906479530415,
+            "reference_state": 9,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 10,
+            "assigned_overlap": 0.9999998226777994,
+            "best_competing_overlap": 4.195401887270344e-06,
+            "competitor_to_assigned_ratio": 4.195402631208371e-06,
+            "overlap_margin": 0.9999956272759122,
+            "reference_state": 10,
+            "state_specific_claim_safe": true
+          }
+        ],
+        "map": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "reverse": [
+          {
+            "assigned_candidate_state": 0,
+            "assigned_overlap": 0.9999999984597844,
+            "best_competing_overlap": 2.157033194748223e-07,
+            "competitor_to_assigned_ratio": 2.157033198070519e-07,
+            "overlap_margin": 0.999999782756465,
+            "reference_state": 0,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 1,
+            "assigned_overlap": 0.9999999985302334,
+            "best_competing_overlap": 2.2185327082292691e-07,
+            "competitor_to_assigned_ratio": 2.2185327114899945e-07,
+            "overlap_margin": 0.9999997766769625,
+            "reference_state": 1,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 2,
+            "assigned_overlap": 0.9999999978915876,
+            "best_competing_overlap": 9.266214214540031e-07,
+            "competitor_to_assigned_ratio": 9.266214234077033e-07,
+            "overlap_margin": 0.9999990712701661,
+            "reference_state": 2,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 3,
+            "assigned_overlap": 0.9999999964898886,
+            "best_competing_overlap": 2.0973575450228153e-06,
+            "competitor_to_assigned_ratio": 2.0973575523847742e-06,
+            "overlap_margin": 0.9999978991323436,
+            "reference_state": 3,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 4,
+            "assigned_overlap": 0.9999999677550823,
+            "best_competing_overlap": 1.9693636474794123e-06,
+            "competitor_to_assigned_ratio": 1.969363710981383e-06,
+            "overlap_margin": 0.9999979983914348,
+            "reference_state": 4,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 5,
+            "assigned_overlap": 0.999999957187109,
+            "best_competing_overlap": 2.0807833463775903e-06,
+            "competitor_to_assigned_ratio": 2.080783435461945e-06,
+            "overlap_margin": 0.9999978764037626,
+            "reference_state": 5,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 6,
+            "assigned_overlap": 0.999999961607407,
+            "best_competing_overlap": 4.288034959178409e-06,
+            "competitor_to_assigned_ratio": 4.288035123807196e-06,
+            "overlap_margin": 0.9999956735724478,
+            "reference_state": 6,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 7,
+            "assigned_overlap": 0.9999999665838051,
+            "best_competing_overlap": 4.195401887315278e-06,
+            "competitor_to_assigned_ratio": 4.19540202750965e-06,
+            "overlap_margin": 0.9999957711819177,
+            "reference_state": 7,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 8,
+            "assigned_overlap": 0.999999957403355,
+            "best_competing_overlap": 9.215281374280969e-06,
+            "competitor_to_assigned_ratio": 9.215281766821054e-06,
+            "overlap_margin": 0.9999907421219807,
+            "reference_state": 8,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 9,
+            "assigned_overlap": 0.9999998632344165,
+            "best_competing_overlap": 9.112580436289273e-06,
+            "competitor_to_assigned_ratio": 9.112581682576824e-06,
+            "overlap_margin": 0.9999907506539801,
+            "reference_state": 9,
+            "state_specific_claim_safe": true
+          },
+          {
+            "assigned_candidate_state": 10,
+            "assigned_overlap": 0.9999998226777981,
+            "best_competing_overlap": 4.115566169654491e-06,
+            "competitor_to_assigned_ratio": 4.115566899435876e-06,
+            "overlap_margin": 0.9999957071116284,
+            "reference_state": 10,
+            "state_specific_claim_safe": true
+          }
+        ]
+      },
+      "validation": {
+        "independent_action": {
+          "H_action_difference_GHz": [
+            3.174644539759073e-14,
+            3.256455476106927e-14,
+            3.549738377717761e-14,
+            3.412264463324575e-14,
+            3.626486972030491e-14,
+            3.68474770422074e-14,
+            3.1875230570491e-14,
+            5.996930187364491e-14,
+            5.90786681572626e-14,
+            4.616522222020034e-14,
+            3.8886095128238335e-14
+          ],
+          "Phi_action_difference": [
+            8.27057563352865e-15,
+            7.314411293811707e-15,
+            6.6559821158184055e-15,
+            7.916559182403514e-15,
+            7.230954869310792e-15,
+            7.99274704175515e-15,
+            8.446498578175651e-15,
+            1.1351984114584466e-14,
+            1.177440723729092e-14,
+            1.306836555377242e-14,
+            8.246430769457841e-15
+          ],
+          "Phi_projection_max_difference": 4.745797629655325e-15
+        },
+        "quality": {
+          "orthogonality_inf": 3.715421540480609e-15,
+          "residuals_GHz": [
+            5.4359358157519465e-14,
+            2.4128356637559203e-13,
+            1.7000337093138032e-13,
+            2.9244680208844137e-13,
+            1.4128701426465568e-13,
+            3.0116515621317213e-13,
+            2.5164326626155435e-13,
+            2.7884881248797654e-13,
+            1.6181661232955084e-13,
+            2.5487623667329207e-13,
+            2.618756400683976e-13
+          ]
+        }
+      }
+    },
+    "resources": {
+      "cell_worker_peak_ru_maxrss_bytes": 1501085696,
+      "output_bytes": 503552,
+      "process_peak_is_cumulative": true,
+      "rss_sampling_semantics": "Single allowed worker RSS at phase boundaries; independent supervisor group/cell samples in CELL_MONITOR_PEAKS.json",
+      "sampled_peak_group_RSS_bytes": 1248428032
+    },
+    "schema": "wb5_cell_result_v1",
+    "scope": "WB5:P340_Q360_380:selected_space_spectral_accuracy:v1",
+    "selected_ranks": [
+      360,
+      361,
+      362,
+      364,
+      365,
+      366,
+      369,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379
+    ],
+    "source_pins_sha256": "a46cc31834b37f1750f07ad7dfaa477dc10b048916453b23b65cd4db750434be",
+    "status": "COMPLETED"
+  },
+  "eigenpairs": 11,
+  "energies_GHz": [
+    7.218979573310579,
+    7.235001421429779,
+    10.642653506535677,
+    10.879737675685957,
+    11.189813656853413,
+    11.341944742715445,
+    13.175701596764583,
+    13.39760819055825,
+    13.413927461776098,
+    14.105022138985198,
+    14.360029498576763
+  ],
+  "job_id": "cell_18",
+  "kind": "research",
+  "reference_energies_GHz": [
+    7.218979362354465,
+    7.235001217712974,
+    10.642653213978232,
+    10.879737215524742,
+    11.189809694532194,
+    11.341939500948452,
+    13.1756972282888,
+    13.397604148267888,
+    13.41392210028955,
+    14.105006271575572,
+    14.360010245986103
+  ],
+  "registered_dimension": 2840,
+  "scope": "WB5:P340_Q360_380:selected_space_spectral_accuracy:v1",
+  "worst_case_errors": {
+    "max_absolute_carrier_error_MHz": 0.005157769742254459,
+    "max_absolute_excitation_error_MHz": 0.019041634545580166,
+    "max_absolute_raw_state_error_MHz": 0.01925259065949092,
+    "max_carrier_error_strict_units": 0.005157769742254459,
+    "selectivity_absolute_error_MHz": 0.001326435494775069,
+    "worst_carriers": [
+      "f81"
+    ]
+  }
+}

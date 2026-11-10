@@ -1,0 +1,7 @@
+method,quantity,error_MHz
+physics,state 7 raw energy,0.25462192466108
+physics,state 8 raw energy,0.475006076742446
+physics,f78 transition,0.220384152081365
+prefix,state 7 raw energy,54.4791765412462
+prefix,state 8 raw energy,54.338596416903
+prefix,f78 transition,-0.140580124343259

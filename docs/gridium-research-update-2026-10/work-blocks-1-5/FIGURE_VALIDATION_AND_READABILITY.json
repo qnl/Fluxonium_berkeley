@@ -1,0 +1,204 @@
+{
+  "automated_canvas_issues": 0,
+  "figure_count": 8,
+  "figures": [
+    {
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "PNG_pixels": [
+        4320,
+        3600
+      ],
+      "clipping_or_overlap": "NONE OBSERVED",
+      "embedded_TrueType_fonts": true,
+      "intended_width_mm": 182.88,
+      "manual_final_PDF_render_review": "PASS",
+      "minimum_visible_font_size_pt_at_least": 9,
+      "pdf": "figures/F01_retained_basis_tail.pdf",
+      "pdf_sha256": "4e07a027b8a60f977c01774ebdcc9d1dcd7ea8788c0e7994ccc52ba9bfe69155",
+      "png": "figures/F01_retained_basis_tail.png",
+      "png_sha256": "106a6d7b808e4d6aa1f9a0d87ea83551f34f02b5cdc15506ab47157d41ae126d",
+      "render_sha256": "bcbf0fe7bce21182886c5b095629ecdea40aef56e3415fad4e656ad2510c6924",
+      "stem": "F01_retained_basis_tail",
+      "vector_PDF_no_raster_images": true
+    },
+    {
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "PNG_pixels": [
+        4320,
+        2760
+      ],
+      "clipping_or_overlap": "NONE OBSERVED",
+      "embedded_TrueType_fonts": true,
+      "intended_width_mm": 182.88,
+      "manual_final_PDF_render_review": "PASS",
+      "minimum_visible_font_size_pt_at_least": 9,
+      "pdf": "figures/F02_rank_resolved_attribution.pdf",
+      "pdf_sha256": "db9c899998cd331f16363dc96bbe50f0e18a8c7a8e5a87956d6bdd24e19bfa36",
+      "png": "figures/F02_rank_resolved_attribution.png",
+      "png_sha256": "9e6a179ddbb0c6a08e63ec7980a57274abd64d1c55692ee52901e3f786e773fb",
+      "render_sha256": "de709c89bfbf603ac424c1c6ef16488153469d07203b3eeb3cd0cd390ee10de5",
+      "stem": "F02_rank_resolved_attribution",
+      "vector_PDF_no_raster_images": true
+    },
+    {
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "PNG_pixels": [
+        4320,
+        2520
+      ],
+      "clipping_or_overlap": "NONE OBSERVED",
+      "embedded_TrueType_fonts": true,
+      "intended_width_mm": 182.88,
+      "manual_final_PDF_render_review": "PASS",
+      "minimum_visible_font_size_pt_at_least": 9,
+      "pdf": "figures/F03_S1_S2_selector_capture.pdf",
+      "pdf_sha256": "1966102abca325d6c5b977ea358588a5763bac11c236806f0eb08228ecd61805",
+      "png": "figures/F03_S1_S2_selector_capture.png",
+      "png_sha256": "02a66fc14d5670d29369d7df0cf94e38e5ae2225b6c8a55ddcbf250241811ea4",
+      "render_sha256": "f9eaeb669e2386a73a480e9be22e7db186d0f58fdb9dd5a7ced5049a1607f00c",
+      "stem": "F03_S1_S2_selector_capture",
+      "vector_PDF_no_raster_images": true
+    },
+    {
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "PNG_pixels": [
+        4320,
+        2520
+      ],
+      "clipping_or_overlap": "NONE OBSERVED",
+      "embedded_TrueType_fonts": true,
+      "intended_width_mm": 182.88,
+      "manual_final_PDF_render_review": "PASS",
+      "minimum_visible_font_size_pt_at_least": 9,
+      "pdf": "figures/F04_WB5_spectral_accuracy.pdf",
+      "pdf_sha256": "458342f1e027e440431e53910c04fb7495964cf2151c6a47162419c4609d8921",
+      "png": "figures/F04_WB5_spectral_accuracy.png",
+      "png_sha256": "ab00590353c50e6bbbb6c1800c4c03267f2c480a388287bc872527d8344c3476",
+      "render_sha256": "b347b614550839f1d079f953852869e72f6509616d1a3c06efab3b3ac6cb6639",
+      "stem": "F04_WB5_spectral_accuracy",
+      "vector_PDF_no_raster_images": true
+    },
+    {
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "PNG_pixels": [
+        4320,
+        4320
+      ],
+      "clipping_or_overlap": "NONE OBSERVED",
+      "embedded_TrueType_fonts": true,
+      "intended_width_mm": 182.88,
+      "manual_final_PDF_render_review": "PASS",
+      "minimum_visible_font_size_pt_at_least": 9,
+      "pdf": "figures/F05_individual_errors_and_frozen_tradeoffs.pdf",
+      "pdf_sha256": "c449bbee3fe0cf0a05926dd6c8357c10db9fbdfd9cf4a6ecd72217936646a873",
+      "png": "figures/F05_individual_errors_and_frozen_tradeoffs.png",
+      "png_sha256": "ca950277906d499eb5178928d4c5290ed8c845167bf219766ec3f25c6955aaea",
+      "render_sha256": "c3cd530b27478f771549614cb732e74d4d0f376fb748162cd576596c90c46624",
+      "stem": "F05_individual_errors_and_frozen_tradeoffs",
+      "vector_PDF_no_raster_images": true
+    },
+    {
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "PNG_pixels": [
+        4320,
+        2700
+      ],
+      "clipping_or_overlap": "NONE OBSERVED",
+      "embedded_TrueType_fonts": true,
+      "intended_width_mm": 182.88,
+      "manual_final_PDF_render_review": "PASS",
+      "minimum_visible_font_size_pt_at_least": 9,
+      "pdf": "figures/F06_frequency_cancellation.pdf",
+      "pdf_sha256": "af05f617de00f66f69d1170fd53095510065d79040594d7d387f09c308648927",
+      "png": "figures/F06_frequency_cancellation.png",
+      "png_sha256": "78ffdbe42eb1a7d9134ceb07bbd788160748576052ea6163dd2964e5cbf76f61",
+      "render_sha256": "fe6fe38392af3c03d315360c278dfdd760d0d619ec435c58eb9d92762062fc21",
+      "stem": "F06_frequency_cancellation",
+      "vector_PDF_no_raster_images": true
+    },
+    {
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "PNG_pixels": [
+        4320,
+        2460
+      ],
+      "clipping_or_overlap": "NONE OBSERVED",
+      "embedded_TrueType_fonts": true,
+      "intended_width_mm": 182.88,
+      "manual_final_PDF_render_review": "PASS",
+      "minimum_visible_font_size_pt_at_least": 9,
+      "pdf": "figures/F07_retained_space_partition.pdf",
+      "pdf_sha256": "ca66a79cbea3c566c5daf0b1201b9a6325e694504c933250fbf0ffd92adaecbd",
+      "png": "figures/F07_retained_space_partition.png",
+      "png_sha256": "68d079613e03bd1b1b0477070dbd906f636b24e8c50ff1d9b84ae68982333293",
+      "render_sha256": "06dffa29979060daa2838a7339b9a0ded043790e3e536234b7dd20f839c2aa67",
+      "stem": "F07_retained_space_partition",
+      "vector_PDF_no_raster_images": true
+    },
+    {
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "PNG_pixels": [
+        4320,
+        2580
+      ],
+      "clipping_or_overlap": "NONE OBSERVED",
+      "embedded_TrueType_fonts": true,
+      "intended_width_mm": 182.88,
+      "manual_final_PDF_render_review": "PASS",
+      "minimum_visible_font_size_pt_at_least": 9,
+      "pdf": "figures/F08_coupling_and_state_fingerprints.pdf",
+      "pdf_sha256": "8ee6d7ba1172a91ecae713c680f19434cde34755a15335435060bc3653725643",
+      "png": "figures/F08_coupling_and_state_fingerprints.png",
+      "png_sha256": "ba70588dceac0d6406931ad1a7e080f8dd58cbbb4dc3b944a0006cc44db04488",
+      "render_sha256": "3e3a1ebe8ae7999cd85e902309e64e505c0eae70018cc97d4b31b095dcbe7d62",
+      "stem": "F08_coupling_and_state_fingerprints",
+      "vector_PDF_no_raster_images": true
+    }
+  ],
+  "fixed_during_QA": [
+    "Moved overlapping F02 legend outside plotting area",
+    "Moved F02 annotation away from dominant historical marker",
+    "Shortened long F05/F06/F08 panel titles and wrapped F08 xlabel",
+    "Replaced heatmap/colorbar raster layers with vector geometry"
+  ],
+  "formats": [
+    "vector PDF",
+    "600-dpi PNG"
+  ],
+  "interpretation_boundary": "Deterministic finite-parent results; no sampled uncertainty or convergence bound implied",
+  "manual_review": "All eight latest PDF renders inspected at 180 dpi; F02 re-inspected after its final annotation relocation.",
+  "new_eigensolves": 0,
+  "numeric_checks": [
+    "All 36 carrier increments agree with primary saved spectra",
+    "Every registered WB5 state/carrier retained; T/D/V aliases exactly equal",
+    "Budget-15 unfavorable F state list includes 4,5,7,8,9",
+    "Cancellation differences reconstruct from constituent excitation changes",
+    "Frozen MIXED_OR_NOT_IMPROVED verdict preserved"
+  ],
+  "status": "PASS",
+  "text_smaller_than_9pt": 0
+}

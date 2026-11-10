@@ -1,0 +1,163 @@
+{
+  "preregistered_date_pacific": "2026-10-07",
+  "status": "frozen-before-any-k260-result",
+  "analysis_scope": "same-parent retained Stage-1 spaces k=180,200,220,240,260 at fixed N71 in the fixed four-mode model",
+  "endpoint_semantics": "k260 is the comparison endpoint, not ground truth or an oracle",
+  "profile": {
+    "name": "n71-k260",
+    "final_directory_name": "four-mode-asymmetric-n71-k260",
+    "retained_index_mode": "prefix",
+    "retained_cases": [180, 200, 220, 240, 260],
+    "configuration": {
+      "physical_parameters": {
+        "EJ": 5.0,
+        "EC": 0.5,
+        "EL": 1.0,
+        "ELK": 1.0,
+        "EJS": 4.0,
+        "ECS": 8.0,
+        "eC": 5.5,
+        "eP": 10.0,
+        "eps_J": 0.1,
+        "eps_LK": 0.05,
+        "ng": 0.0,
+        "phi_ext": 0.0,
+        "theta_ext": 3.141592653589793
+      },
+      "spatial_cutoffs": {
+        "n1max": 4,
+        "N2": 71,
+        "L2": 11.0,
+        "N3": 71,
+        "L3": 14.0,
+        "N4": 8
+      },
+      "solver_settings": {
+        "k": 260,
+        "sigma": -24.0,
+        "which": "LM",
+        "tol": 1e-08,
+        "ncv": null,
+        "v0": null,
+        "permc_spec": "MMD_AT_PLUS_A"
+      }
+    },
+    "configuration_sha256": "990dad04b52deeef9d90908c6c19ce38e917d7f5b7fab32f0e39699c3c83c4bb"
+  },
+  "authenticated_inputs": {
+    "k220_checkpoint": "research/checkpoints/four-mode-asymmetric-n71-k220",
+    "k220_configuration_sha256": "69ee54299c70336f00b06c18250747c2e600b2f48fb9b9365f1651ce57997c39",
+    "k220_checkpoint_sha256": "d5401838bcbfdab391edfc835e2d6916730c6111c1592643a5634bf8898bac1c",
+    "k220_criteria_sha256": "fce9a04ae9729cd560c7685b8e54c7d45a03ea474147555bf7fdb428c9e31eb7",
+    "required_source_sha256": {
+      "Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py": "ebae73f9b04257502c293ea9a3fdd2cb7adc60701a5610f3b986f37424dc748c",
+      "Simulations/Rabi_3Photon/four_mode_retained_basis_audit.py": "e31e5ee28f3a460fc4adbf7ad69252d1b9d7b7a4268217b232600cdd82a8563a",
+      "Circuit_Objs/qchard_gridium_netlist.py": "85f6760ecf43ba2a44c638eadd0586393fb9e30dc8a28ac8f63f654dc23b6315"
+    }
+  },
+  "paths": {
+    "primary": [0, 7, 8, 1],
+    "robustness_comparator": [0, 7, 2, 1],
+    "secondary_comparator": [0, 3, 8, 1]
+  },
+  "mandatory_metrics": {
+    "carrier_frequencies": ["f07", "f08", "f78", "f81", "f72", "f21", "f03", "f38"],
+    "fine_carrier_frequencies": ["f78"],
+    "state_overlaps_vs_k260": [2, 3, 7, 8],
+    "grid_phi_edges": ["g07", "g78", "g81", "g72", "g21", "g03", "g38"],
+    "pathway_scores": ["0-7-8-1", "0-7-2-1", "0-3-8-1"],
+    "operator_blocks": [
+      "grid_phi block on states 0,1,7,8: Frobenius norm and all singular values",
+      "logical 0,1 to intermediate 7,8 block: Frobenius norm and all singular values",
+      "internal 7,8 block: Frobenius norm and all singular values"
+    ],
+    "subspace_overlap": "minimum singular value for tracked subspace 0,1,7,8",
+    "path_ordering": true,
+    "parent_solver_quality": true,
+    "complete_and_hash_authentication": true
+  },
+  "supporting_diagnostics": [
+    "all adjacent step changes 180->200->220->240->260",
+    "total changes 180->260 and 220->260",
+    "absolute successive-increment ratios",
+    "monotonicity and sign reversals",
+    "tracking competitor ratios and overlap margins",
+    "shell weights and boundary indicators when recovered from saved vectors",
+    "non-authoritative extrapolations, if shown, clearly separated from acceptance"
+  ],
+  "thresholds": {
+    "strict": {
+      "standard_carrier_delta_MHz": {"pass_max": 1.0, "borderline_max": 5.0},
+      "fine_carrier_delta_MHz": {"pass_max": 0.5, "borderline_max": 1.0, "applies_to": ["f78"]},
+      "state_or_subspace_overlap": {"pass_min": 0.999, "borderline_min": 0.995},
+      "edge_or_operator_block_relative_change": {"pass_max": 0.03, "borderline_max": 0.05},
+      "path_score_relative_change": {"pass_max": 0.05, "borderline_max": 0.10}
+    },
+    "practical": {
+      "standard_carrier_delta_MHz": {"pass_max": 5.0, "borderline_max": 10.0},
+      "fine_carrier_delta_MHz": {"pass_max": 1.0, "borderline_max": 2.0, "applies_to": ["f78"]},
+      "state_or_subspace_overlap": {"pass_min": 0.995, "borderline_min": 0.990},
+      "edge_or_operator_block_relative_change": {"pass_max": 0.05, "borderline_max": 0.10},
+      "path_score_relative_change": {"pass_max": 0.10, "borderline_max": 0.20}
+    }
+  },
+  "new_criterion_justification": {
+    "operator_blocks": "Basis-invariant operator-block norms and singular values close the known gap between high individual-state overlap and operator convergence. They inherit the existing edge-relative-change thresholds because they are magnitudes of the same grid_phi operator, not a relaxed new tolerance.",
+    "subspace_overlap": "The minimum subspace singular value inherits the existing state-overlap thresholds as the basis-invariant analogue of state tracking.",
+    "trend_gate": "Two new equal 20-rank increments are required because k220 comparators showed growing steps and sign reversals. This gate is independent of future k260 values and prevents one small final increment from erasing unresolved earlier behavior."
+  },
+  "tracking_ambiguity_gates": {
+    "minimum_assigned_overlap": 0.90,
+    "maximum_competitor_ratio": 0.50,
+    "minimum_overlap_margin": 0.25,
+    "effect": "Any crossed gate affecting a mandatory path defers state-specific classification and makes the overall result FAIL until a subspace-resolved replacement is supplied."
+  },
+  "path_ordering_rule": {
+    "PASS": "The primary remains global rank 1, every target path keeps its k260 full rank, and target order is unchanged for all five retained cases.",
+    "BORDERLINE": "The primary remains global rank 1 and the strongest target is unchanged, but a comparator changes full rank or the comparators exchange order.",
+    "FAIL": "The primary is not global rank 1 in any case, another target becomes strongest, or a required target cannot be ranked."
+  },
+  "parent_quality_limits": {
+    "maximum_eigenpair_residual": 1e-07,
+    "maximum_orthogonality_residual_inf": 1e-08,
+    "expected_profile": "n71-k260",
+    "expected_configuration_sha256": "990dad04b52deeef9d90908c6c19ce38e917d7f5b7fab32f0e39699c3c83c4bb"
+  },
+  "comparison_rules": {
+    "required_endpoint_comparisons": [
+      {"candidate": 220, "endpoint": 260, "purpose": "total post-k220 change"},
+      {"candidate": 240, "endpoint": 260, "purpose": "final 20-rank increment"}
+    ],
+    "classification": "Apply the frozen component thresholds independently to k220 and k240 against k260. Report every component and both strict and practical statuses; do not collapse away the k220 total change."
+  },
+  "plateau_decision_rule": {
+    "PASS_A_convincing_approach": [
+      "k220 vs k260 and k240 vs k260 both PASS every strict mandatory metric",
+      "parent quality, authentication, path ordering, state tracking and subspace gates PASS",
+      "for every carrier that was non-PASS in the k220 study, abs(240->260) <= abs(220->240)",
+      "the last two increments for each historically non-monotonic carrier have a consistent sign and shrink, or a preregistered basis-invariant subspace explanation resolves the reversal",
+      "operator-block mandatory metrics PASS strict thresholds for both k220 and k240 against k260"
+    ],
+    "BORDERLINE_B_still_converging": [
+      "no practical mandatory metric FAILS",
+      "k240 vs k260 is no worse than strict BORDERLINE",
+      "at least one strict mandatory metric for k220 or k240 is BORDERLINE or FAIL, or at least one required step fails to shrink",
+      "there is no tracking ambiguity, parent-quality failure, ordering failure or unexplained new sign reversal in the final two increments"
+    ],
+    "FAIL_C_nonmonotonic_or_unresolved": [
+      "any practical mandatory metric FAILS",
+      "any k240 vs k260 strict mandatory metric FAILS",
+      "a historically problematic carrier has a growing or sign-reversing 240->260 step without a basis-invariant explanation",
+      "path ordering, parent quality, checkpoint authentication or required tracking/subspace resolution FAILS"
+    ],
+    "precedence": "FAIL takes precedence over BORDERLINE, which takes precedence over PASS. Earlier non-monotonicity remains visible in the report even if the final step is small."
+  },
+  "scientific_guardrails": [
+    "k260 will be another endpoint, not ground truth",
+    "the study addresses retained Stage-1 convergence only at fixed N71 and in the fixed four-mode model",
+    "the study does not establish N2/N3 spatial, domain, n1max or N4 convergence",
+    "the study does not resolve omitted distributed array-mode or other parasitic physics",
+    "the study does not validate a physical microwave port",
+    "the study does not validate X90 or X180"
+  ]
+}

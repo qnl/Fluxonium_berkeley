@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "tests": {
+    "A_P": {
+      "energy_error_GHz": 0.0,
+      "grid_phi_magnitude_error": 1.7763568394002505e-15,
+      "eigenpair_residual_GHz": 2.884396382933142e-13,
+      "status": "PASS"
+    },
+    "H_full_Q1_k240": {
+      "energy_error_GHz": 0.0,
+      "grid_phi_magnitude_error": 2.4424906541753444e-15,
+      "eigenpair_residual_GHz": 2.475596726938238e-13,
+      "status": "PASS"
+    },
+    "L_full_k260": {
+      "energy_error_GHz": 0.0,
+      "grid_phi_magnitude_error": 2.886579864025407e-15,
+      "eigenpair_residual_GHz": 3.527651964697295e-13,
+      "status": "PASS"
+    }
+  },
+  "hermiticity_error": 3.8014451397544425e-13
+}

@@ -1,0 +1,15 @@
+{
+  "broad_456_file_audit_rerun": false,
+  "changed": [],
+  "eigenvectors_loaded": 0,
+  "git_status": " M EmilianoUPDATE.md\nM  Simulations/Cphase/main.ipynb\nM  Simulations/Cphase/workflow_funcs.py\n?? EmilianoUPDATE-unsaved-backup.md\n",
+  "implicit_Rplots_created_by_failed_export": "removed; final Git status restored; fail-closed guard added",
+  "new_eigensolves": 0,
+  "pdf_and_png_visual_QA": "PASS",
+  "preservation": "PASS",
+  "previous_fingerprint_rerun": false,
+  "protected_files_checked": 104,
+  "scientific_outputs_reproduced": 6,
+  "sealed_benchmark_executed": false,
+  "status": "PASS"
+}

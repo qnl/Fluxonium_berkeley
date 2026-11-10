@@ -1,0 +1,27 @@
+# Reserved for setting up simulation system parameters
+# Uses std fluxonium and soft gridium parameters
+
+qubitA:
+  'Transmon'
+qubitB:
+  'Gridium'
+driven_qubit:
+  'B'
+J_C:
+  0.03
+interaction:
+  'on'
+coupling_type:
+  'charge'
+computational_space:
+  ['00', '01', '10', '11']
+transitions_to_drive:
+  ['00', '03']
+detuned_transitions:
+  ['10', '13']
+comparitive_transitions:
+  ['01', '02']
+detuned_comparitive_transitions:
+  ['11', '12']
+coupled_resonant_transitions:
+  ['03', '05']

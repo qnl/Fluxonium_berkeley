@@ -1,0 +1,26 @@
+# Reserved for setting up simulation system parameters
+
+qubitA:
+  'Transmon' # Seems like this is not actually used
+qubitB:
+  'Gridium' # Seems like this is not actually used
+driven_qubit:
+  'B'
+J_C:
+  0.01
+interaction:
+  'on'
+coupling_type:
+  'charge'
+computational_space:
+  ['00', '01', '10', '11']
+transitions_to_drive:
+  ['00', '02'] # ['00', '03'] if doing charge coupling
+detuned_transitions:
+  ['10', '13']
+comparitive_transitions:
+  ['01', '02']
+detuned_comparitive_transitions:
+  ['11', '12']
+coupled_resonant_transitions:
+  ['03', '05']

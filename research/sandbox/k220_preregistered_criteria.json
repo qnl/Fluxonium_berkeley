@@ -1,0 +1,88 @@
+{
+  "preregistered_utc": "2026-09-29T00:00:00-07:00",
+  "status": "frozen-before-authenticated-k220-result",
+  "scope": "same-parent retained Stage-1 spaces k=180, k=200, and k=220 at fixed N=71 in the fixed four-mode model",
+  "paths": {
+    "primary": [0, 7, 8, 1],
+    "robustness_comparator": [0, 7, 2, 1],
+    "secondary_comparator": [0, 3, 8, 1]
+  },
+  "comparison_endpoint": 220,
+  "required_cases": [180, 200, 220],
+  "classification_rule": "Classify k180 and k200 independently against the same k220 parent endpoint. The three-point series status is the worst of those two classifications. The k220 endpoint is a reference, not truth.",
+  "thresholds": {
+    "strict": {
+      "standard_carrier_delta_MHz": {
+        "pass_max": 1.0,
+        "borderline_max": 5.0
+      },
+      "fine_carrier_delta_MHz": {
+        "pass_max": 0.5,
+        "borderline_max": 1.0,
+        "applies_to": [
+          [7, 8]
+        ]
+      },
+      "state_overlap": {
+        "pass_min": 0.999,
+        "borderline_min": 0.995
+      },
+      "edge_relative_change": {
+        "pass_max": 0.03,
+        "borderline_max": 0.05
+      },
+      "path_score_relative_change": {
+        "pass_max": 0.05,
+        "borderline_max": 0.10
+      }
+    },
+    "practical": {
+      "standard_carrier_delta_MHz": {
+        "pass_max": 5.0,
+        "borderline_max": 10.0
+      },
+      "fine_carrier_delta_MHz": {
+        "pass_max": 1.0,
+        "borderline_max": 2.0,
+        "applies_to": [
+          [7, 8]
+        ]
+      },
+      "state_overlap": {
+        "pass_min": 0.995,
+        "borderline_min": 0.990
+      },
+      "edge_relative_change": {
+        "pass_max": 0.05,
+        "borderline_max": 0.10
+      },
+      "path_score_relative_change": {
+        "pass_max": 0.10,
+        "borderline_max": 0.20
+      }
+    }
+  },
+  "path_ordering_rule": {
+    "PASS": "The primary path remains global rank 1, every target path keeps its full rank, and the target-path order is unchanged for k180, k200, and k220.",
+    "BORDERLINE": "The primary remains global rank 1 and the strongest target path is unchanged, but a comparator changes full rank or the two comparators exchange order.",
+    "FAIL": "The primary path is not global rank 1 in any case, another target becomes the strongest target, or a required target cannot be ranked."
+  },
+  "parent_quality_limits": {
+    "maximum_eigenpair_residual": 1e-07,
+    "maximum_orthogonality_residual_inf": 1e-08,
+    "expected_profile": "n71-k220",
+    "expected_configuration_sha256": "69ee54299c70336f00b06c18250747c2e600b2f48fb9b9365f1651ce57997c39"
+  },
+  "tracking_ambiguity_gates_when_available": {
+    "minimum_assigned_overlap": 0.90,
+    "maximum_competitor_ratio": 0.50,
+    "minimum_overlap_margin": 0.25,
+    "effect": "State-specific pathway conclusions are deferred and subspace diagnostics are required if any gate is crossed. These warning gates come from the authenticated runner and do not by themselves establish convergence."
+  },
+  "guardrails": [
+    "Agreement with k220 establishes only retained-basis stability at fixed N71 and in the fixed four-mode model.",
+    "Agreement with k220 does not establish spatial convergence.",
+    "Agreement with k220 does not establish robustness to omitted distributed array modes or other parasitics.",
+    "Agreement with k220 does not validate a gate."
+  ]
+}

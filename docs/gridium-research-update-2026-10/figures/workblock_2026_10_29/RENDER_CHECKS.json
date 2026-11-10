@@ -1,0 +1,61 @@
+{
+  "source_data_sha256": "2e433e95d5b218f1a5a7a1103481db35c28a59c3b9bfcaba2dd8054acee47d76",
+  "local_sources_verified": true,
+  "matplotlib_version": "3.10.6",
+  "png_dpi_requested": 320,
+  "outputs": [
+    {
+      "stem": "fig01_retained_basis_convergence",
+      "pixel_size": [
+        2880,
+        1760
+      ],
+      "dpi": [
+        319.9892,
+        319.9892
+      ],
+      "png_sha256": "6a0cab1ed9f38819302c7a6dcf07fa6d2ed31f080c8d1ed357ca1ee8eb8da700",
+      "svg_sha256": "4eabae08dd9f9dc05b6d043ff75e7adc36d14b03dbf5cabe657073f3f882aef4",
+      "text_within_canvas": true,
+      "diagram_text_within_boxes": true,
+      "svg_vector_text": true,
+      "shared_data_sha256": "2e433e95d5b218f1a5a7a1103481db35c28a59c3b9bfcaba2dd8054acee47d76"
+    },
+    {
+      "stem": "fig02_host_memory_admission",
+      "pixel_size": [
+        3200,
+        1760
+      ],
+      "dpi": [
+        319.9892,
+        319.9892
+      ],
+      "png_sha256": "13a1b6448403042b85d15f8c60b53ebf5b69ad131ff1a6d46b91b4e1af85748f",
+      "svg_sha256": "ec53399fe6fdfc6a3f0ac340e43810e3578531ea3f0088a03e37aa9a983c9839",
+      "text_within_canvas": true,
+      "diagram_text_within_boxes": true,
+      "svg_vector_text": true,
+      "shared_data_sha256": "2e433e95d5b218f1a5a7a1103481db35c28a59c3b9bfcaba2dd8054acee47d76"
+    },
+    {
+      "stem": "fig03_k420_execution_roadmap",
+      "pixel_size": [
+        3200,
+        2752
+      ],
+      "dpi": [
+        319.9892,
+        319.9892
+      ],
+      "png_sha256": "d5bcdd20cff12ffba667ee4958c6987095d72186ca1807e38be0fdfbb83b65ed",
+      "svg_sha256": "4feaf282c6863debed6e71a7ab7ca886cfa7f07ad470dbbf3ea7ca12ba65d28e",
+      "text_within_canvas": true,
+      "diagram_text_within_boxes": true,
+      "svg_vector_text": true,
+      "shared_data_sha256": "2e433e95d5b218f1a5a7a1103481db35c28a59c3b9bfcaba2dd8054acee47d76"
+    }
+  ],
+  "new_scientific_calculations": 0,
+  "visual_inspection": "Recorded separately in FIGURE_VALIDATION.md; automated bounds are not visual inspection."
+}

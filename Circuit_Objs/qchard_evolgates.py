@@ -1,0 +1,1333 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Time evolution during gate operations.
+@author: Konstantin Nesterov
+"""
+
+import sys
+
+sys.dont_write_bytecode = True
+
+import numpy as np
+import scipy.special
+import qutip as qt
+
+# TODO: For a two photon drive, I need something that basically looks like this H_drive_coeff_gate function but takes in twice the number of parameters and outputs just the sum of the two sin/cos functions. This seems, roughly speaking, actually simple to implement, though I still need to better understand the normalization/DRAG considerations here. Moreoever, with these many parameters, it almost certainly would be better served with a YAML file. Need to consider refactoring.
+def H_two_photon_drive_coeff_gate(t, args):
+    args = args['kwargs']
+    args_1 = args[0]
+    args_2 = args[1]
+    drive_1 = H_drive_coeff_gate(t, args_1)
+    drive_2 = H_drive_coeff_gate(t, args_2)
+    drive_total = drive_1 + drive_2
+    return drive_total
+
+# def H_two_photon_drive_coeff_gate(t, args):
+#     #Basically a dupe of H_drive_coeff_gate with two drives
+
+#     if 'T_start_1' in args:
+#         T_start_1 = args['T_start_1']
+#     else:
+#         T_start_1 = 0
+
+#     if 'shape_1' in args:
+#         shape_1 = args['shape_1']
+#     else:
+#         shape_1 = 'square'
+
+#     if 'sigma_1' in args:
+#         sigma_1 = args['sigma_1']
+#     else:
+#         sigma_1 = 0.25
+
+#     if 'theta_1' in args:
+#         theta_1 = args['theta_1']
+#     else:
+#         theta_1 = 2 * np.pi
+
+#     if 'phi_1' in args:
+#         phi_1 = args['phi_1']
+#     else:
+#         phi_1 = 0
+
+#     if 'DRAG_1' in args and args['DRAG_1']:
+#         alpha_1 = args['DRAG_coefficient_1']
+#     else:
+#         alpha_1 = 0
+#     if 'SYMM_1' in args and args['SYMM_1']:
+#         beta_1 = args['SYMM_coefficient_1']
+#     else:
+#         beta_1 = 0
+
+#     if 'T_start_2' in args:
+#         T_start_2 = args['T_start_2']
+#     else:
+#         T_start_2 = T_start_1
+
+#     if 'shape_2' in args:
+#         shape_2 = args['shape_2']
+#     else:
+#         shape_2 = shape_1
+
+#     if 'sigma_2' in args:
+#         sigma_2 = args['sigma_2']
+#     else:
+#         sigma_2 = sigma_1
+
+#     if 'theta_2' in args:
+#         theta_2 = args['theta_2']
+#     else:
+#         theta_2 = theta_1
+
+#     if 'phi_2' in args:
+#         phi_2 = args['phi_2']
+#     else:
+#         phi_2 = phi_1
+
+#     if 'DRAG_2' in args and args['DRAG_2']:
+#         alpha_2 = args['DRAG_coefficient_2']
+#     else:
+#         alpha_2 = alpha_1
+#     if 'SYMM_2' in args and args['SYMM_2']:
+#         beta_2 = args['SYMM_coefficient_2']
+#     else:
+#         beta_2 = beta_1
+
+#     nu_d_1 = args['omega_d_1']
+#     nu_d_2 = args['omega_d_2']
+
+#     two_pi_t1_1 = 2 * np.pi * t
+#     two_pi_t2_1 = 2 * np.pi * (t - T_start_1)
+#     two_pi_t1_2 = 2 * np.pi * t
+#     two_pi_t2_2 = 2 * np.pi * (t - T_start_2)
+#     T_gate_1 = args['T_gate_1']
+#     T_gate_2 = args['T_gate_2']
+
+#     if shape_1 == 'gaussflattop' and T_gate < 2 * args['T_rise']:
+#         shape = 'gauss'
+#         sigma = sigma * args['T_rise'] / T_gate
+
+#     # Here xi_x and xi_y are normalized assuming theta = 2 * pi.    
+#     if shape == 'square':
+#         xi_x = 2 * np.pi / T_gate
+#         xi_y = 0
+#     elif shape == 'gaussflattop':
+#         T_rise = args['T_rise']
+#         sigma = sigma * T_rise
+#         T_left = T_start + T_rise
+#         T_right = T_start + T_gate - T_rise
+#         # Without shift and normalization.
+#         if t < T_left:
+#             xi_x = np.exp(- 0.5 * ((t - T_left) / sigma) ** 2)
+#             xi_y = (alpha * (- (t - T_left) / sigma ** 2)
+#                     * np.exp(- 0.5 * ((t - T_left) / sigma) ** 2))
+#         elif t > T_right:
+#             xi_x = np.exp(- 0.5 * ((t - T_right) / sigma) ** 2)
+#             xi_y = (alpha * (- (t - T_right) / sigma ** 2)
+#                     * np.exp(- 0.5 * ((t - T_right) / sigma) ** 2))
+#         else:
+#             xi_x = 1
+#             xi_y = 0
+#         # Shift to ensure that we start and end at zero.
+#         xi_x -= np.exp(-0.5 * (T_rise / sigma) ** 2)
+#         # Normalization.
+#         if 'normalization_flat' in args and args['normalization_flat']:
+#             # Normalize as if it were a square pulse.
+#             coeff = 2 * np.pi / (T_gate * (1 - np.exp(-0.5 * (T_rise / sigma) ** 2)))
+#             xi_x *= coeff
+#             xi_y *= coeff
+#         else:
+#             # Normalize ``the usual way''.
+#             integral_value = (np.sqrt(2 * np.pi) * sigma
+#                               * scipy.special.erf(
+#                         T_rise / (np.sqrt(2) * sigma))
+#                               + T_gate - 2 * T_rise
+#                               - T_gate * np.exp(-0.5 * (T_rise / sigma) ** 2))
+#             xi_x *= 2 * np.pi / integral_value
+#             xi_y *= 2 * np.pi / integral_value
+
+#     elif shape == 'cos':
+#         xi_x = (2 * np.pi / T_gate) * (1 - np.cos(two_pi_t2 / T_gate))
+#         xi_x += beta * (2 * np.pi / T_gate) ** 3 * np.cos(two_pi_t2 / T_gate)
+#         xi_y = 4 * alpha * np.pi ** 2 / T_gate ** 2 * np.sin(two_pi_t2 / T_gate)
+#     elif shape == 'gauss':
+#         sigma = sigma * T_gate
+#         integral_value = (np.sqrt(2 * np.pi) * sigma
+#                           * scipy.special.erf(
+#                     T_gate / (2 * np.sqrt(2) * sigma))
+#                           - T_gate * np.exp(-0.5 * (0.5 * T_gate / sigma) ** 2))
+#         coeff = 2 * np.pi / integral_value
+#         T_mid = T_start + T_gate / 2
+#         xi_x = coeff * (np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2)
+#                         - np.exp(-0.5 * (0.5 * T_gate / sigma) ** 2))
+#         xi_x += (beta * coeff * (-1 / sigma ** 2 + ((t - T_mid) / sigma ** 2) ** 2)
+#                  * np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2))
+#         xi_y = (alpha * coeff * (- (t - T_mid) / sigma ** 2)
+#                 * np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2))
+#     elif shape == 'two_phot_sin':
+#         xi_x = np.sqrt(2) * (2 * np.pi / T_gate) * np.sin(two_pi_t2 / T_gate)
+#         xi_y = 0
+#     else:
+#         raise Exception('Urecognized pulse shape.')
+
+#     return (xi_x * np.cos(two_pi_t1 * nu_d + phi)
+#             + xi_y * np.sin(two_pi_t1 * nu_d + phi)) * theta / (2 * np.pi)
+
+
+def H_drive_coeff_gate(t, args):
+    r'''
+    The time-dependent coefficient of the microwave-drive term for the qutip
+    representation of time-dependent Hamiltonians.
+
+    Example: H = [H_nodrive, [H_drive, H_drive_coeff_gate]]
+
+    H_drive_coeff_gate = xi_x(t) cos(wt + phi) + xi_y(t) sin(wt + phi)
+    T_start < t < T_start + T_gate
+    Normalization: \int xi_x(t') dt'= \theta (Bloch-sphere rotation angle),
+               so H_drive ~ \sigma_x for a resonance drive in an ideal case
+
+    If DRAG == True: xi_y(t) = alpha * d xi_x / dt,
+        else: xi_y = 0
+    If SYMM == True: xi_x(t) -> xi_x(t) + beta * d^2 xi_x / dt^2
+
+    Default values:
+        T_start = 0
+        DRAG and SYMM = False
+        theta = 2 * pi  (full 2-pi rotation)
+        phi = 0  (no phase delay)
+        shape = square
+    '''
+    if 'T_start' in args:
+        T_start = args['T_start']
+    else:
+        T_start = 0
+
+    if 'shape' in args:
+        shape = args['shape']
+    else:
+        shape = 'square'
+
+    if 'sigma' in args:
+        sigma = args['sigma']
+    else:
+        sigma = 0.25
+
+    if 'theta' in args:
+        theta = args['theta']
+    else:
+        theta = 2 * np.pi
+
+    if 'phi' in args:
+        phi = args['phi']
+    else:
+        phi = 0
+
+    if 'DRAG' in args and args['DRAG']:
+        alpha = args['DRAG_coefficient']
+    else:
+        alpha = 0
+    if 'SYMM' in args and args['SYMM']:
+        beta = args['SYMM_coefficient']
+    else:
+        beta = 0
+
+    nu_d = args['omega_d']
+    two_pi_t1 = 2 * np.pi * t
+    two_pi_t2 = 2 * np.pi * (t - T_start)
+    T_gate = args['T_gate']
+
+    if shape == 'gaussflattop' and T_gate < 2 * args['T_rise']:
+        shape = 'gauss'
+        sigma = sigma * args['T_rise'] / T_gate
+
+    # Here xi_x and xi_y are normalized assuming theta = 2 * pi.    
+    if shape == 'square':
+        xi_x = 2 * np.pi / T_gate
+        xi_y = 0
+    elif shape == 'gaussflattop':
+        T_rise = args['T_rise']
+        sigma = sigma * T_rise
+        T_left = T_start + T_rise
+        T_right = T_start + T_gate - T_rise
+        # Without shift and normalization.
+        if t < T_left:
+            xi_x = np.exp(- 0.5 * ((t - T_left) / sigma) ** 2)
+            xi_y = (alpha * (- (t - T_left) / sigma ** 2)
+                    * np.exp(- 0.5 * ((t - T_left) / sigma) ** 2))
+        elif t > T_right:
+            xi_x = np.exp(- 0.5 * ((t - T_right) / sigma) ** 2)
+            xi_y = (alpha * (- (t - T_right) / sigma ** 2)
+                    * np.exp(- 0.5 * ((t - T_right) / sigma) ** 2))
+        else:
+            xi_x = 1
+            xi_y = 0
+        # Shift to ensure that we start and end at zero.
+        xi_x -= np.exp(-0.5 * (T_rise / sigma) ** 2)
+        # Normalization.
+        if 'normalization_flat' in args and args['normalization_flat']:
+            # Normalize as if it were a square pulse.
+            coeff = 2 * np.pi / (T_gate * (1 - np.exp(-0.5 * (T_rise / sigma) ** 2)))
+            xi_x *= coeff
+            xi_y *= coeff
+        else:
+            # Normalize ``the usual way''.
+            integral_value = (np.sqrt(2 * np.pi) * sigma
+                              * scipy.special.erf(
+                        T_rise / (np.sqrt(2) * sigma))
+                              + T_gate - 2 * T_rise
+                              - T_gate * np.exp(-0.5 * (T_rise / sigma) ** 2))
+            xi_x *= 2 * np.pi / integral_value
+            xi_y *= 2 * np.pi / integral_value
+
+    elif shape == 'cos':
+        xi_x = (2 * np.pi / T_gate) * (1 - np.cos(two_pi_t2 / T_gate))
+        xi_x += beta * (2 * np.pi / T_gate) ** 3 * np.cos(two_pi_t2 / T_gate)
+        xi_y = 4 * alpha * np.pi ** 2 / T_gate ** 2 * np.sin(two_pi_t2 / T_gate)
+    elif shape == 'gauss':
+        sigma = sigma * T_gate
+        integral_value = (np.sqrt(2 * np.pi) * sigma
+                          * scipy.special.erf(
+                    T_gate / (2 * np.sqrt(2) * sigma))
+                          - T_gate * np.exp(-0.5 * (0.5 * T_gate / sigma) ** 2))
+        coeff = 2 * np.pi / integral_value
+        T_mid = T_start + T_gate / 2
+        xi_x = coeff * (np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2)
+                        - np.exp(-0.5 * (0.5 * T_gate / sigma) ** 2))
+        xi_x += (beta * coeff * (-1 / sigma ** 2 + ((t - T_mid) / sigma ** 2) ** 2)
+                 * np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2))
+        xi_y = (alpha * coeff * (- (t - T_mid) / sigma ** 2)
+                * np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2))
+    elif shape == 'two_phot_sin':
+        xi_x = np.sqrt(2) * (2 * np.pi / T_gate) * np.sin(two_pi_t2 / T_gate)
+        xi_y = 0
+    else:
+        raise Exception('Urecognized pulse shape.')
+
+    return (xi_x * np.cos(two_pi_t1 * nu_d + phi)
+            + xi_y * np.sin(two_pi_t1 * nu_d + phi)) * theta / (2 * np.pi)
+
+
+class _IndependentDriveCoefficient:
+    """Bind one tone's arguments to the existing drive coefficient."""
+
+    def __init__(self, tone_args):
+        self.tone_args = dict(tone_args)
+        self.T_start = self.tone_args.get('T_start', 0)
+        self.T_stop = self.T_start + self.tone_args['T_gate']
+
+    def __call__(self, t, args=None):
+        # ``H_drive_coeff_gate`` assumes callers restrict the integration
+        # interval.  A multitone evolution has a common time grid, so each
+        # independently timed tone must be inactive outside its own interval.
+        if t < self.T_start or t > self.T_stop:
+            return 0.0
+        return H_drive_coeff_gate(t, self.tone_args)
+
+
+def _multitone_hamiltonian(H_nodrive, drive_terms):
+    """Build QuTiP list-form Hamiltonian terms for independent drives."""
+    H = [2 * np.pi * H_nodrive]
+    for index, drive_term in enumerate(drive_terms):
+        tone = dict(drive_term)
+        try:
+            H_drive = tone.pop('operator')
+            omega_d = tone['omega_d']
+            T_gate = tone['T_gate']
+        except KeyError as exc:
+            raise ValueError(
+                "Drive term {} is missing required key {!r}.".format(
+                    index, exc.args[0])) from exc
+
+        amplitude = tone.pop('amplitude', 1.0)
+        if T_gate <= 0:
+            raise ValueError(
+                'Drive term {} must have a positive T_gate.'.format(index))
+        if not np.isfinite(omega_d):
+            raise ValueError(
+                'Drive term {} must have a finite omega_d.'.format(index))
+
+        H_drive = amplitude * H_drive
+        if not H_drive.check_herm():
+            raise ValueError(
+                'Drive operator {} is not Hermitian after amplitude scaling.'
+                .format(index))
+
+        H.append([H_drive, _IndependentDriveCoefficient(tone)])
+    return H
+
+def H_drive_coeff_gate_nonorm(t, args):
+    r"""
+    The time-dependent coefficient of the microwave-drive term for the qutip
+    representation of time-dependent Hamiltonians.
+
+    Example: H = [H_nodrive, [H_drive, H_drive_coeff_gate]]
+
+    H_drive_coeff_gate = xi_x(t) cos(wt + phi) + xi_y(t) sin(wt + phi)
+    T_start < t < T_start + T_gate
+    Normalization: \int xi_x(t') dt'= \theta (Bloch-sphere rotation angle),
+               so H_drive ~ \sigma_x for a resonance drive in an ideal case
+
+    If DRAG == True: xi_y(t) = alpha * d xi_x / dt,
+        else: xi_y = 0
+    If SYMM == True: xi_x(t) -> xi_x(t) + beta * d^2 xi_x / dt^2
+
+    Default values:
+        T_start = 0
+        DRAG and SYMM = False
+        theta = 2 * pi  (full 2-pi rotation)
+        phi = 0  (no phase delay)
+        shape = square
+    """
+    if 'T_start' in args:
+        T_start = args['T_start']
+    else:
+        T_start = 0
+
+    if 'shape' in args:
+        shape = args['shape']
+    else:
+        shape = 'square'
+
+    if 'sigma' in args:
+        sigma = args['sigma']
+    else:
+        sigma = 0.25
+
+    if 'theta' in args:
+        theta = args['theta']
+    else:
+        theta = 2 * np.pi
+
+    if 'phi' in args:
+        phi = args['phi']
+    else:
+        phi = 0
+
+    if 'DRAG' in args and args['DRAG']:
+        alpha = args['DRAG_coefficient']
+    else:
+        alpha = 0
+    if 'SYMM' in args and args['SYMM']:
+        beta = args['SYMM_coefficient']
+    else:
+        beta = 0
+
+    nu_d = args['omega_d']
+    two_pi_t1 = 2 * np.pi * t
+    two_pi_t2 = 2 * np.pi * (t - T_start)
+    T_gate = args['T_gate']
+
+    if shape == 'gaussflattop' and T_gate < 2 * args['T_rise']:
+        shape = 'gauss'
+        sigma = sigma * args['T_rise'] / T_gate
+
+    if shape == 'square':
+        xi_x = 1
+        xi_y = 0
+    elif shape == 'gaussflattop':
+        T_rise = args['T_rise']
+        sigma = sigma * T_rise
+        T_left = T_start + T_rise
+        T_right = T_start + T_gate - T_rise
+        # Without shift and normalization.
+        if t < T_left:
+            xi_x = np.exp(- 0.5 * ((t - T_left) / sigma) ** 2)
+            xi_y = (alpha * (- (t - T_left) / sigma ** 2)
+                    * np.exp(- 0.5 * ((t - T_left) / sigma) ** 2))
+        elif t > T_right:
+            xi_x = np.exp(- 0.5 * ((t - T_right) / sigma) ** 2)
+            xi_y = (alpha * (- (t - T_right) / sigma ** 2)
+                    * np.exp(- 0.5 * ((t - T_right) / sigma) ** 2))
+        else:
+            xi_x = 1
+            xi_y = 0
+        # Shift to ensure that we start and end at zero.
+        xi_x -= np.exp(-0.5 * (T_rise / sigma) ** 2)
+
+    elif shape == 'cosflattop':
+        T_rise = args['T_rise']
+        T_left = T_start + T_rise
+        T_right = T_start + T_gate - T_rise
+        # Without shift and normalization.
+        if t < T_left:
+            xi_x = (1+np.cos(2 * np.pi * (t - T_left) / T_rise / 2))/2
+            xi_y = alpha * np.sin(2 * np.pi * (t - T_left) / T_rise / 2)
+        elif t > T_right:
+            xi_x = (1+np.cos(2 * np.pi * (t - T_right) / T_rise / 2))/2
+            xi_y = -alpha * np.sin(2 * np.pi * (t - T_right) / T_rise / 2)
+        else:
+            xi_x = 1
+            xi_y = 0
+        # Shift to ensure that we start and end at zero.
+        # xi_x -= np.exp(-0.5 * (T_rise / sigma) ** 2)
+
+    elif shape == 'cos':
+        xi_x = (1 - np.cos(two_pi_t2 / T_gate))
+        xi_x += beta * np.cos(two_pi_t2 / T_gate)
+        xi_y = alpha * np.sin(two_pi_t2 / T_gate)
+    elif shape == 'gauss':
+        sigma = sigma * T_gate
+        T_mid = T_start + T_gate / 2
+        coeff = 1.0
+        xi_x = coeff * (np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2)
+                        - np.exp(-0.5 * (0.5 * T_gate / sigma) ** 2))
+        xi_x += (beta * coeff * (-1 / sigma ** 2 + ((t - T_mid) / sigma ** 2) ** 2)
+                 * np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2))
+        xi_y = (alpha * coeff * (- (t - T_mid) / sigma ** 2)
+                * np.exp(- 0.5 * ((t - T_mid) / sigma) ** 2))
+    elif shape == 'two_phot_sin':
+        xi_x = np.sqrt(2) * np.sin(two_pi_t2 / T_gate)
+        xi_y = 0
+    else:
+        raise Exception('Urecognized pulse shape.')
+
+    return (xi_x * np.cos(two_pi_t1 * nu_d + phi)
+            + xi_y * np.sin(two_pi_t1 * nu_d + phi)) * theta / (2 * np.pi)
+
+def evolution_psi_microwave(
+        H_nodrive, H_drive, psi0, t_points=None, **kwargs):
+    """
+    Calculates the unitary evolution of a specific starting state for
+    a gate activated by a microwave drive.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        The Hamiltonian without the drive term.
+    H_drive : :class:`qutip.Qobj`
+        The time-independent part of the driving term.
+        Example: f * (a + a.dag()) or f * qubit.n()
+        Normalization: see `H_drive_coeff_gate` function.
+    psi0 : :class:`qutip.Qobj`
+        Initial state of the system (ket or density matrix).
+    t_points : *array* of float (optional)
+        Times at which the evolution operator is returned.
+        If None, it is generated from `kwargs['T_gate']`.
+    **kwargs:
+        Contains gate parameters such as pulse shape and gate time.
+    Returns
+    -------
+    *array* of :class:`qutip.Qobj`
+        The evolving state at time(s) defined in `t_points`.
+    """
+    if t_points is None:
+        T_gate = kwargs['T_gate']
+        t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
+
+    H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate]]
+    result = qt.mesolve(H, psi0, t_points, [], args=kwargs,
+                        options=qt.Options(nsteps=25000))
+
+    return result.states
+
+def evolution_psi_microwave_diss(
+        H_nodrive, H_drive, psi0, c_ops = [], t_points=None, **kwargs):
+    """
+    Calculates the unitary evolution of a specific starting state for
+    a gate activated by a microwave drive.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        The Hamiltonian without the drive term.
+    H_drive : :class:`qutip.Qobj`
+        The time-independent part of the driving term.
+        Example: f * (a + a.dag()) or f * qubit.n()
+        Normalization: see `H_drive_coeff_gate` function.
+    psi0 : :class:`qutip.Qobj`
+        Initial state of the system (ket or density matrix).
+    t_points : *array* of float (optional)
+        Times at which the evolution operator is returned.
+        If None, it is generated from `kwargs['T_gate']`.
+    **kwargs:
+        Contains gate parameters such as pulse shape and gate time.
+    Returns
+    -------
+    *array* of :class:`qutip.Qobj`
+        The evolving state at time(s) defined in `t_points`.
+    """
+    if t_points is None:
+        T_gate = kwargs['T_gate']
+        t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
+
+    H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate]]
+    result = qt.mesolve(H, psi0, t_points, c_ops, args=kwargs,
+                        options=qt.Options(nsteps=100000, atol=1e-12, rtol=1e-10))
+
+    return result.states
+
+def evolution_psi_microwave_nonorm_diss(
+        H_nodrive, H_drive, psi0, c_ops = [], t_points=None, **kwargs):
+    """
+    Calculates the unitary evolution of a specific starting state for
+    a gate activated by a microwave drive.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        The Hamiltonian without the drive term.
+    H_drive : :class:`qutip.Qobj`
+        The time-independent part of the driving term.
+        Example: f * (a + a.dag()) or f * qubit.n()
+        Normalization: see `H_drive_coeff_gate` function.
+    psi0 : :class:`qutip.Qobj`
+        Initial state of the system (ket or density matrix).
+    t_points : *array* of float (optional)
+        Times at which the evolution operator is returned.
+        If None, it is generated from `kwargs['T_gate']`.
+    **kwargs:
+        Contains gate parameters such as pulse shape and gate time.
+    Returns
+    -------
+    *array* of :class:`qutip.Qobj`
+        The evolving state at time(s) defined in `t_points`.
+    """
+    if t_points is None:
+        T_gate = kwargs['T_gate']
+        t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
+
+    H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate_nonorm]]
+    result = qt.mesolve(H, psi0, t_points, c_ops, parallel=True, num_cpus=10, args=kwargs,
+                        options=qt.Options(nsteps=100000, atol=1e-12, rtol=1e-10), normalize_output=False)
+
+
+    return result.states
+
+def evolution_operator_microwave(
+        H_nodrive:qt.Qobj, H_drive:qt.Qobj, t_points=None, **kwargs):
+    """
+    Calculates the unitary evolution operator for a gate activated by
+    a microwave drive.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        The Hamiltonian without the drive term.
+    H_drive : :class:`qutip.Qobj`
+        The time-independent part of the driving term.
+        Example: f * (a + a.dag()) or f * qubit.n()
+        Normalization: see `H_drive_coeff_gate` function.
+    t_points : *array* of float (optional)
+        Times at which the evolution operator is returned.
+        If None, it is generated from `kwargs['T_gate']`.
+    **kwargs:
+        Contains gate parameters such as pulse shape and gate time.
+    Returns
+    -------
+    U_t : *array* of :class:`qutip.Qobj`
+        The evolution operator at time(s) defined in `t_points`.
+    """
+    if t_points is None:
+        T_gate = kwargs['T_gate']
+        t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
+
+    if not H_nodrive.check_herm():
+        # raise Warning('Coupled system hamiltonian is not Hermitian!')
+        pass
+    if not H_drive.check_herm():
+        raise Exception('Drive term is not hermitian!')
+
+    H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate]]
+    U_t = qt.propagator(H, t_points, [], args=kwargs, options={'nsteps': 20000, 'progress_bar': 'tqdm', 'normalize_output': False}) # NOTE: If the simulation blows up at the end, increase the nsteps
+    
+    U_t = np.asarray(U_t)
+    return U_t
+
+
+def evolution_operator_multitone_microwave(
+        H_nodrive: qt.Qobj, drive_terms, t_points=None,
+        solver_options=None):
+    """Calculate a propagator for independent microwave-drive terms.
+
+    The time-dependent Hamiltonian is
+
+    ``2*pi*H_nodrive + sum(amplitude_k * operator_k * f_k(t))``,
+
+    where every ``f_k`` is evaluated by :func:`H_drive_coeff_gate` using
+    that tone's own arguments.  This deliberately keeps each operator and
+    coefficient in a separate QuTiP Hamiltonian term, avoiding cross terms.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        Hamiltonian without the drive terms, in the same frequency convention
+        as :func:`evolution_operator_microwave`.
+    drive_terms : iterable of mappings
+        One mapping per tone.  Required keys are ``operator``, ``omega_d``,
+        and ``T_gate``.  ``amplitude`` optionally scales the operator and
+        defaults to one.  Remaining keys are the existing
+        :func:`H_drive_coeff_gate` arguments, including ``phi``, ``shape``,
+        ``sigma``, ``T_rise``, ``T_start``, ``theta``, ``DRAG``, and ``SYMM``.
+    t_points : array of float, optional
+        Common times at which the propagator is returned.  If omitted, the
+        grid runs from zero through the latest tone end time using the existing
+        ``2 * int(T) + 1`` convention.
+    solver_options : mapping, optional
+        QuTiP solver-option overrides. The established defaults are unchanged
+        when this is omitted.
+
+    Returns
+    -------
+    numpy.ndarray
+        Evolution operators at the requested times.
+    """
+    drive_terms = list(drive_terms)
+    if not drive_terms:
+        raise ValueError('At least one drive term is required.')
+
+    if t_points is None:
+        try:
+            T_final = max(
+                tone.get('T_start', 0) + tone['T_gate']
+                for tone in drive_terms)
+        except KeyError as exc:
+            raise ValueError(
+                "A drive term is missing required key {!r}.".format(
+                    exc.args[0])) from exc
+        t_points = np.linspace(0, T_final, 2 * int(T_final) + 1)
+
+    H = _multitone_hamiltonian(H_nodrive, drive_terms)
+    options = {
+        'nsteps': 20000,
+        'progress_bar': 'tqdm',
+        'normalize_output': False,
+    }
+    if solver_options is not None:
+        options.update(solver_options)
+    U_t = qt.propagator(
+        H, t_points, [], args={}, options=options)
+    return np.asarray(U_t)
+
+def evolution_operator_2phot_microwave(
+        H_nodrive, H_drive, t_points=None, **kwargs):
+    """
+    Calculates the unitary evolution operator for a gate activated by
+    a microwave drive.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        The Hamiltonian without the drive term.
+    H_drive : :class:`qutip.Qobj`
+        The time-independent part of the driving term.
+        Example: f * (a + a.dag()) or f * qubit.n()
+        Normalization: see `H_drive_coeff_gate` function.
+    t_points : *array* of float (optional)
+        Times at which the evolution operator is returned.
+        If None, it is generated from `kwargs['T_gate']`.
+    **kwargs:
+        Contains gate parameters such as pulse shape and gate time.
+    Returns
+    -------
+    U_t : *array* of :class:`qutip.Qobj`
+        The evolution operator at time(s) defined in `t_points`.
+    """
+    
+    H = [2 * np.pi * H_nodrive, [H_drive, H_two_photon_drive_coeff_gate]]
+    U_t = qt.propagator(H, t_points, [], args=kwargs, options={'nsteps': 10000, 'progress_bar': 'tqdm', 'normalize_output': False}) # NOTE: If the simulation blows up at the end, increase the nsteps
+    U_t = np.asarray(U_t)
+    return U_t
+
+def evolution_operator_microwave_nonorm(
+        H_nodrive, H_drive, t_points=None, parallel=False, **kwargs):
+    """
+    Calculates the unitary evolution operator for a gate activated by
+    a microwave drive.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        The Hamiltonian without the drive term.
+    H_drive : :class:`qutip.Qobj`
+        The time-independent part of the driving term.
+        Example: f * (a + a.dag()) or f * qubit.n()
+        Normalization: see `H_drive_coeff_gate` function.
+    t_points : *array* of float (optional)
+        Times at which the evolution operator is returned.
+        If None, it is generated from `kwargs['T_gate']`.
+    parallel : True or False
+        Run the qutip propagator function in parallel mode
+    **kwargs:
+        Contains gate parameters such as pulse shape and gate time.
+    Returns
+    -------
+    U_t : *array* of :class:`qutip.Qobj`
+        The evolution operator at time(s) defined in `t_points`.
+    """
+    if t_points is None:
+        T_gate = kwargs['T_gate']
+        t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
+
+    H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate_nonorm]]
+    U_t = qt.propagator(H, t_points, [], args=kwargs, parallel=parallel)
+
+    return U_t
+
+def evolution_operator_microwave_diss(
+        H_nodrive, H_drive, t_points=None, c_ops = [], parallel=False, **kwargs):
+    """
+    Calculates the unitary evolution operator for a gate activated by
+    a microwave drive.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        The Hamiltonian without the drive term.
+    H_drive : :class:`qutip.Qobj`
+        The time-independent part of the driving term.
+        Example: f * (a + a.dag()) or f * qubit.n()
+        Normalization: see `H_drive_coeff_gate` function.
+    t_points : *array* of float (optional)
+        Times at which the evolution operator is returned.
+        If None, it is generated from `kwargs['T_gate']`.
+    parallel : True or False
+        Run the qutip propagator function in parallel mode
+    **kwargs:
+        Contains gate parameters such as pulse shape and gate time.
+    Returns
+    -------
+    U_t : *array* of :class:`qutip.Qobj`
+        The evolution operator at time(s) defined in `t_points`.
+    """
+    if t_points is None:
+        T_gate = kwargs['T_gate']
+        t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
+
+    H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate]]
+    U_t = qt.propagator(H, t_points, c_ops_list=c_ops, args=kwargs, parallel=parallel)
+
+    return U_t
+
+def evolution_subspace_microwave(
+        H_nodrive, H_drive, subspace_states, t_points=None, **kwargs):
+    """
+    (faster than `evolution_operator_microwave`)
+    Calculates the evolution operator valid only for states in
+    a specific subspace for a gate activated by a microwave drive.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        The Hamiltonian without the drive term.
+    H_drive : :class:`qutip.Qobj`
+        The time-independent part of the driving term.
+        Example: f * (a + a.dag()) or f * qubit.n()
+        Normalization: see `H_drive_coeff_gate` function.
+    supspace_states : *list* of :class:`qutip.Qobj`
+        Vectors defining the subspace. For example, four vectors
+        |00>, |01>, |10>, and |11> for a computational subspace of 
+        a two-qubit system.
+    t_points : *array* of float (optional)
+        Times at which the evolution operator is returned.
+        If None, it is generated from `kwargs['T_gate']`.
+    **kwargs:
+        Contains gate parameters such as pulse shape and gate time.
+    Returns
+    -------
+    U_t : *array* of :class:`qutip.Qobj`
+        The evolution operator at time(s) defined in `t_points`.
+    """
+    if t_points is None:
+        T_gate = kwargs['T_gate']
+        t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
+
+    psi_t = np.empty_like(subspace_states, dtype=object)
+    for ind, psi_0 in enumerate(subspace_states):
+        psi_t[ind] = evolution_psi_microwave(
+            H_nodrive, H_drive, psi_0, t_points, **kwargs)
+
+    U_t = np.empty_like(t_points, dtype=object)
+    for ind_t in range(len(t_points)):
+        U = 0
+        for ind, psi_0 in enumerate(subspace_states):
+            U += psi_t[ind][ind_t] * psi_0.dag()
+        U_t[ind_t] = U
+
+    return U_t
+
+
+def evolution_mcsolve_microwave(
+        H_nodrive, H_drive, psi0, c_ops, e_ops, num_cpus=0,
+        nsteps=2000, ntraj=1000, t_points=None, **kwargs):
+    """
+    Calculates the expectation values vs time for a dissipative system 
+    for the gate activated by a microwave drive.
+
+    Parameters
+    ----------
+    H_nodrive : :class:`qutip.Qobj`
+        The Hamiltonian without the drive term.
+    H_drive : :class:`qutip.Qobj`
+        The time-independent part of the driving term.
+        Example: f * (a + a.dag()) or f * qubit.n()
+        Normalization: see `H_drive_coeff_gate` function.
+    psi0 : :class:`qutip.Qobj`
+        Initial state of the system.
+    c_ops : *list* of :class:`qutip.Qobj`
+        The list of collaps operators for MC solver.
+    e_ops : *list* of :class:`qutip.Qobj`
+        The list of operators to calculate expectation values.
+    num_cpus, nsteps, ntraj : int
+        Parameters for MC solver
+    t_points : *array* of float (optional)
+        Times at which the evolution operator is returned.
+        If None, it is generated from `kwargs['T_gate']`.
+    **kwargs:
+        Contains gate parameters such as pulse shape and gate time.
+    Returns
+    -------
+    *array*
+        result.expect of mcsolve (time-dependent expectation values)
+        result.expect[0] for the expectation value of the first operator
+    """
+    if t_points is None:
+        T_gate = kwargs['T_gate']
+        t_points = np.linspace(0, T_gate, 2 * int(T_gate) + 1)
+
+    H = [2 * np.pi * H_nodrive, [H_drive, H_drive_coeff_gate]]
+
+    options = qt.Options(num_cpus=num_cpus, nsteps=nsteps)
+    result = qt.mcsolve(H, psi0, t_points, c_ops=c_ops,
+                        e_ops=e_ops, args=kwargs, ntraj=ntraj,
+                        options=options)
+    return result.expect
+
+
+def concurrence(psi, comp_space, comp_space_nonint):
+    """Calculates concurrence of a two-qubit state.
+
+    Parameters
+    ----------
+    psi : :class:`qutip.Qobj`
+        A two-qubit state.
+    comp_space : *list* of :class:`qutip.Qobj`
+        The list of four vectors composing the computational subspace
+        in the order [00, 01, 10, 11].
+    comp_space_nonint: *list* of :class:`qutip.Qobj`
+        The same, but for noninteracting states. Necessary to choose 
+        correct signs / phases of interacting states.
+
+    Returns
+    -------
+    float
+        Concurrence.
+    """
+    if len(comp_space) != 4:
+        raise Exception('Wrong length of comp_space')
+    if psi.type != 'ket':
+        raise Exception('At this point, `psi` must be a ket vector')
+    vec00 = comp_space[0] * np.exp(1j * np.angle(
+        comp_space_nonint[0].overlap(comp_space[0])))
+    vec01 = comp_space[1] * np.exp(1j * np.angle(
+        comp_space_nonint[1].overlap(comp_space[1])))
+    vec10 = comp_space[2] * np.exp(1j * np.angle(
+        comp_space_nonint[2].overlap(comp_space[2])))
+    vec11 = comp_space[3] * np.exp(1j * np.angle(
+        comp_space_nonint[3].overlap(comp_space[3])))
+
+    alpha00 = vec00.overlap(psi)
+    alpha01 = vec01.overlap(psi)
+    alpha10 = vec10.overlap(psi)
+    alpha11 = vec11.overlap(psi)
+
+    return 2 * np.abs(alpha00 * alpha11 - alpha01 * alpha10)
+
+
+def bell_fidelity(psi, state1, state2, best_phase=True):
+    """Fidelity to a Bell state.
+
+    Parameters
+    ----------
+    psi : :class:`qutip.Qobj`
+        A two-qubit state.
+    state1, state2 : :class:`qutip.Qobj`
+        Two states defining a Bell state (|state1> + e^{i phi}|state2>)/sqrt(2)
+    best_phase : True or False (optional)
+        If True, the Bell-state phase `phi` is chosen to maximize fidelity.
+        If False, phi = 0 (a specific Bell state is assumed)
+
+    Returns
+    -------
+    fidelity : float
+        Fidelity defined as |<psi | B >|^2.
+    phase : float (only if best_phase = True)
+        The phase of the Bell state.
+    """
+    alpha1 = state1.overlap(psi)
+    alpha2 = state2.overlap(psi)
+    if best_phase:
+        phi = np.angle(alpha2 / alpha1)
+        bell_state = (state1 + np.exp(1j * phi) * state2) / np.sqrt(2)
+        return np.abs(psi.overlap(bell_state)) ** 2, phi
+    else:
+        bell_state = (state1 + state2) / np.sqrt(2)
+        return np.abs(psi.overlap(bell_state)) ** 2
+
+
+def fidelity_twoq_general(U_ideal, U_real, comp_space=None):
+    """A general expression for fidelity of a two-qubit gate.
+
+    Parameters
+    ----------
+    U_ideal, U_real : :class:`qutip.Qobj`
+        The ideal and real evolution operators projected into
+        the computational space.
+    comp_space : *list* or *array* of :class:`qutip.Qobj` (optional)
+        The list of four vectors composing the computational subspace
+        in the order [00, 01, 10, 11]. Necessary when the gate operator
+        is not retricted to computational subspace.
+
+    Returns
+    -------
+    float
+        Fidelity.
+    """
+    if comp_space != None:
+        # Do a projection onto the computational space.
+        P = 0
+        for state in comp_space:
+            P += state * state.dag()
+        U_ideal = P * U_ideal * P
+        U_real = P * U_real * P
+    op1 = U_real.dag() * U_real
+    op2 = U_real * U_ideal.dag()
+    return (op1.tr() + (abs(op2.tr())) ** 2) / 20.0 # TODO: What is this divide by 20 (!?)
+
+def fidelity_singleq_general(U_ideal, U_real, comp_space=None):
+    """A general expression for fidelity of a single-qubit gate.
+
+    Parameters
+    ----------
+    U_ideal, U_real : :class:`qutip.Qobj`
+        The ideal and real evolution operators projected into
+        the computational space.
+    comp_space : *list* or *array* of :class:`qutip.Qobj` (optional)
+        The list of four vectors composing the computational subspace
+        in the order [00, 01, 10, 11]. Necessary when the gate operator
+        is not retricted to computational subspace.
+
+    Returns
+    -------
+    float
+        Fidelity.
+    """
+    if comp_space != None:
+        # Do a projection onto the computational space.
+        P = 0
+        for state in comp_space:
+            P += state * state.dag()
+        U_ideal = P * U_ideal * P
+        U_real = P * U_real * P
+    op1 = U_real.dag() * U_real
+    op2 = U_real * U_ideal.dag()
+    return (op1.tr() + (abs(op2.tr())) ** 2) / 6.0
+
+def prob_transition(U_t, initial_state, final_state):
+    """The probability to find the system in a certain state.
+
+    Calculates the transition probability between certain initial and
+    final states of the system.
+
+    Parameters
+    ----------
+    U_t : :class:`qutip.Qobj` or *array* of such
+        The evolution operator.
+    initial_state, final_state :  :class:`qutip.Qobj`
+        Ket vectors representing initial and final states.
+
+    Returns
+    -------
+    float or *array* of float
+        Transition probability.
+    """
+    if isinstance(U_t, qt.Qobj):
+        psi_t = U_t * initial_state
+    else:
+        psi_t = list(u_i * initial_state for u_i in U_t)
+    P_final = final_state * final_state.dag()
+    return qt.expect(P_final, psi_t)
+
+
+def prob_subspace(U_t, initial_state, subspace):
+    """The probability to find a system in a certain subspace.
+
+    Parameters
+    ----------
+    U_t : :class:`qutip.Qobj` or *array* of such
+        The evolution operator.
+    initial_state :  :class:`qutip.Qobj`
+        Ket vector representing initial state.
+    supspace : *list* of :class:`qutip.Qobj`
+        Vectors defining the subspace. For example, four vectors
+        |00>, |01>, |10>, and |11> for a computational subspace of 
+        a two-qubit system.
+
+    Returns
+    -------
+    float or *array* of float
+        The probability of finding the system in the subspace
+        given the definite starting initial state.
+    """
+    P_t = 0
+    for final_state in subspace:
+        P_t += prob_transition(U_t, initial_state, final_state)
+    return P_t
+
+
+def prob_subspace_average(U_t, subspace):
+    """The average probability of staying in the same subspace.
+
+    Example: the probability of remaining in the computational subspace
+    averaged over all initial computational states.
+
+    Parameters
+    ----------
+    U_t : :class:`qutip.Qobj` or *array* of such
+        The evolution operator.
+    supspace : *list* of :class:`qutip.Qobj`
+        Vectors defining the subspace. For example, four vectors
+        |00>, |01>, |10>, and |11> for a computational subspace of 
+        a two-qubit system.
+
+    Returns
+    -------
+    float or *array* of float
+        The probability of staying within the subspace
+        averaged over initial states.
+    """
+    P_t = 0
+    for initial_state in subspace:
+        P_t += prob_subspace(U_t, initial_state, subspace=subspace)
+    return P_t / len(subspace)
+
+##########################################################
+### Some useful functions from evolgates_old     #########
+##########################################################
+def gate_ideal_cz(
+        system, comp_space=['00', '01', '10', '11'], interaction='on'):
+    """The operator of the ideal control-z gate for two qubits.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    comp_space : *list* of int, tuple, or str
+        Four labels of the computational subspace of the two qubits with
+        the last label being for the '11' state.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+
+    Returns
+    -------
+    :class:`qutip.Qobj`
+        The gate operator.
+    """
+    U_ideal = 0
+    for state in comp_space[:3]:
+        U_ideal += system.projection(state, interaction=interaction)
+    U_ideal -= system.projection(comp_space[3], interaction=interaction)
+    return U_ideal
+
+
+def projection_subspace(
+        system, subspace=['00', '01', '10', '11'], interaction='on'):
+    """Operator of projection into a subspace defined by several states.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    subspace : *list* of int, tuple, or str
+        The labels of states spanning the subspace.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+
+    Returns
+    -------
+    :class:`qutip.Qobj`
+        The projection operator.
+    """
+    P = 0
+    for state in subspace:
+        P += system.projection(state, interaction=interaction)
+    return P
+
+
+def change_operator_single_qub_z(
+        system, U, comp_space=['00', '01', '10', '11'], interaction='on'):
+    """Adjusts phases in the operator via single-qubit z-rotations.
+
+    Tunes phases of the first three diagonal matrix elements in the
+    computational space to make those elements real and positive.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    U : :class:`qutip.Qobj`
+        Operator to modify.
+    comp_space : *list* of int, tuple, or str
+        Four labels of computational subspace of the two qubits with
+        the last label being for the '11' state.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+
+    Returns
+    -------
+    :class:`qutip.Qobj`
+        Modified operator.
+    """
+    phases = []
+    single_qubit_gate = 0
+    for state in comp_space:
+        vec = system.eigvec(state, interaction=interaction)
+        phase = np.angle(U.matrix_element(vec.dag(), vec))
+        if state != comp_space[3]:
+            phases.append(phase)
+            single_qubit_gate += np.exp(-1j * phase) * vec * vec.dag()
+        else:
+            single_qubit_gate += (np.exp(1j * (phases[0] - phases[1]
+                                               - phases[2])) * vec * vec.dag())
+    return single_qubit_gate*U
+
+
+def operator_single_qub_z(
+        system, U, comp_space=['00', '01', '10', '11'], interaction='on'):
+    phases = []
+    single_qubit_gate = 0
+    for state in comp_space:
+        vec = system.eigvec(state, interaction=interaction)
+        phase = np.angle(U.matrix_element(vec.dag(), vec))
+        if state != comp_space[3]:
+            phases.append(phase)
+            single_qubit_gate += np.exp(-1j * phase) * vec * vec.dag()
+        else:
+            single_qubit_gate += (np.exp(1j * (phases[0] - phases[1]
+                                               - phases[2])) * vec * vec.dag())
+    return single_qubit_gate
+
+
+def change_operator_proj_subspace(
+        system, U, subspace=['00', '01', '10', '11'], interaction='on'):
+    """Projects an operator into a subspace.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    U : :class:`qutip.Qobj` or *array* of such
+        Operator to project.
+    subspace : *list* of int, tuple, or str
+        The labels of states spanning the subspace.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+
+    Returns
+    -------
+    :class:`qutip.Qobj` or *array* of such
+        Modified operator.
+    """
+    P = projection_subspace(
+        system, subspace=subspace, interaction=interaction)
+    if isinstance(U, qt.Qobj):
+        return P * U * P
+    else:
+        return list(P * u * P for u in U)
+
+def fidelity_cz_gate_point(
+        system, U, comp_space=['00', '01', '10', '11'],
+        interaction='on', single_gates='z'):
+    """Fidelity of the control-z gate for a specific operator.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    U : :class:`qutip.Qobj`
+        The 'real' evolution operator previously calculated in
+        `evolution_operator()`.
+    comp_space : *list* of int, tuple, or str
+        Four labels of computational subspace of the two qubits with
+        the last label being for the '11' state.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+    single_gates : str, optional
+        Determines single-qubit gates to adjust two-qubit evolution
+        operator to compare it with the ideal operator.
+
+    Returns
+    -------
+    float
+        Gate fidelity.
+    """
+    U_ideal = gate_ideal_cz(
+        system, comp_space=comp_space, interaction=interaction)
+    U_real = change_operator_proj_subspace(
+        system, U, subspace=comp_space, interaction=interaction)
+    if single_gates == 'z':
+        U_real = change_operator_single_qub_z(
+            system, U_real, comp_space=comp_space,
+            interaction=interaction)
+    elif single_gates == 'no':
+        pass
+    else:
+        raise Exception('Unrecognized option for `single_gates`.')
+    return fidelity_twoq_general(U_ideal, U_real)
+
+
+def fidelity_cz_gate(system, U_t, comp_space=['00', '01', '10', '11'],
+                     interaction='on', single_gates='z'):
+    """Fidelity of the control-z gate.
+
+    Parameters
+    ----------
+    system : :class:`coupobj.CoupledObjects` or similar
+        An object of a quantum system.
+    U_t : :class:`qutip.Qobj` or *array* of such
+        The evolution operator previously calculated in
+        `evolution_operator()`.
+    comp_space : *list* of int, tuple, or str
+        Four labels of computational subspace of the two qubits with
+        the last label being for the '11' state.
+        Example: ['000', '010', '001', '011'] for the system
+        two qubits + resonator. The first index is the resonator.
+    interaction : 'on' or 'off', optional
+        Determines whether we work in the interacting or noninteracting
+        basis.
+    single_gates : str, optional
+        Determines single-qubit gates to adjust two-qubit evolution
+        operator to compare it with the ideal operator.
+
+    Returns
+    -------
+    float or *array* of float
+        Gate fidelity.
+    """
+    if isinstance(U_t, np.ndarray):
+        fidelity = np.empty_like(U_t)
+        for indU, U in enumerate(U_t):
+            fidelity[indU] = fidelity_cz_gate_point(
+                system, U, comp_space=comp_space,
+                interaction=interaction,
+                single_gates=single_gates)
+    else:
+        fidelity = fidelity_cz_gate_point(
+            system, U_t, comp_space=comp_space, interaction=interaction,
+            single_gates=single_gates)
+    return fidelity

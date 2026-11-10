@@ -1,0 +1,6 @@
+{
+  "status": "SUCCESS",
+  "external_wall_seconds": 275.22726362499816,
+  "scope": "guarded runner including selection and publication; excludes preflight",
+  "configuration_sha256": "8f02dbfc09f6a6c4e6bcd49d938c79d570b063103edf33beaad8b331e085ac5e"
+}

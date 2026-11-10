@@ -1,0 +1,492 @@
+[
+  {
+    "budget": 3,
+    "capture_fraction": 0.9868001260415566,
+    "dominant_included": true,
+    "method": "bare_T300",
+    "selected_ranks": [
+      362,
+      379,
+      375
+    ],
+    "top_k_recovered_count": 3
+  },
+  {
+    "budget": 6,
+    "capture_fraction": 0.9929754219756336,
+    "dominant_included": true,
+    "method": "bare_T300",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      368,
+      364
+    ],
+    "top_k_recovered_count": 5
+  },
+  {
+    "budget": 10,
+    "capture_fraction": 0.9971647055376495,
+    "dominant_included": true,
+    "method": "bare_T300",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      368,
+      364,
+      363,
+      377,
+      378,
+      361
+    ],
+    "top_k_recovered_count": 8
+  },
+  {
+    "budget": 15,
+    "capture_fraction": 0.9993118325259586,
+    "dominant_included": true,
+    "method": "bare_T300",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      368,
+      364,
+      363,
+      377,
+      378,
+      361,
+      373,
+      376,
+      360,
+      371,
+      372
+    ],
+    "top_k_recovered_count": 12
+  },
+  {
+    "budget": 3,
+    "capture_fraction": 0.9868001260415566,
+    "dominant_included": true,
+    "method": "denominator_Dplus",
+    "selected_ranks": [
+      362,
+      379,
+      375
+    ],
+    "top_k_recovered_count": 3
+  },
+  {
+    "budget": 6,
+    "capture_fraction": 0.9929754219756336,
+    "dominant_included": true,
+    "method": "denominator_Dplus",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      368,
+      364
+    ],
+    "top_k_recovered_count": 5
+  },
+  {
+    "budget": 10,
+    "capture_fraction": 0.9971647055376495,
+    "dominant_included": true,
+    "method": "denominator_Dplus",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      368,
+      364,
+      363,
+      377,
+      378,
+      361
+    ],
+    "top_k_recovered_count": 8
+  },
+  {
+    "budget": 15,
+    "capture_fraction": 0.9993118325259586,
+    "dominant_included": true,
+    "method": "denominator_Dplus",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      368,
+      364,
+      363,
+      377,
+      378,
+      361,
+      373,
+      360,
+      376,
+      371,
+      372
+    ],
+    "top_k_recovered_count": 12
+  },
+  {
+    "budget": 3,
+    "capture_fraction": 0.9868001260415566,
+    "dominant_included": true,
+    "method": "denominator_Vplus",
+    "selected_ranks": [
+      362,
+      379,
+      375
+    ],
+    "top_k_recovered_count": 3
+  },
+  {
+    "budget": 6,
+    "capture_fraction": 0.9929754219756336,
+    "dominant_included": true,
+    "method": "denominator_Vplus",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      364,
+      368
+    ],
+    "top_k_recovered_count": 5
+  },
+  {
+    "budget": 10,
+    "capture_fraction": 0.9971647055376495,
+    "dominant_included": true,
+    "method": "denominator_Vplus",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      364,
+      368,
+      363,
+      377,
+      378,
+      361
+    ],
+    "top_k_recovered_count": 8
+  },
+  {
+    "budget": 15,
+    "capture_fraction": 0.9993118325259586,
+    "dominant_included": true,
+    "method": "denominator_Vplus",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      364,
+      368,
+      363,
+      377,
+      378,
+      361,
+      360,
+      373,
+      376,
+      371,
+      372
+    ],
+    "top_k_recovered_count": 12
+  },
+  {
+    "budget": 3,
+    "capture_fraction": 0.8899691859254049,
+    "dominant_included": true,
+    "method": "energy_prefix",
+    "selected_ranks": [
+      360,
+      361,
+      362
+    ],
+    "top_k_recovered_count": 1
+  },
+  {
+    "budget": 6,
+    "capture_fraction": 0.8915756906194421,
+    "dominant_included": true,
+    "method": "energy_prefix",
+    "selected_ranks": [
+      360,
+      361,
+      362,
+      363,
+      364,
+      365
+    ],
+    "top_k_recovered_count": 3
+  },
+  {
+    "budget": 10,
+    "capture_fraction": 0.8921466174882875,
+    "dominant_included": true,
+    "method": "energy_prefix",
+    "selected_ranks": [
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369
+    ],
+    "top_k_recovered_count": 3
+  },
+  {
+    "budget": 15,
+    "capture_fraction": 0.8984465330299449,
+    "dominant_included": true,
+    "method": "energy_prefix",
+    "selected_ranks": [
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374
+    ],
+    "top_k_recovered_count": 10
+  },
+  {
+    "budget": 3,
+    "capture_fraction": 0.9868001260415566,
+    "dominant_included": true,
+    "method": "physics_frozen",
+    "selected_ranks": [
+      362,
+      379,
+      375
+    ],
+    "top_k_recovered_count": 3
+  },
+  {
+    "budget": 6,
+    "capture_fraction": 0.9928907220774048,
+    "dominant_included": true,
+    "method": "physics_frozen",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      378,
+      377
+    ],
+    "top_k_recovered_count": 4
+  },
+  {
+    "budget": 10,
+    "capture_fraction": 0.9981619384748512,
+    "dominant_included": true,
+    "method": "physics_frozen",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      378,
+      377,
+      364,
+      373,
+      361,
+      376
+    ],
+    "top_k_recovered_count": 9
+  },
+  {
+    "budget": 15,
+    "capture_fraction": 0.9991205750085942,
+    "dominant_included": true,
+    "method": "physics_frozen",
+    "selected_ranks": [
+      362,
+      379,
+      375,
+      374,
+      378,
+      377,
+      364,
+      373,
+      361,
+      376,
+      366,
+      360,
+      365,
+      372,
+      369
+    ],
+    "top_k_recovered_count": 13
+  },
+  {
+    "budget": 3,
+    "capture_fraction": 0.0755319305502877,
+    "dominant_included": false,
+    "method": "spread",
+    "selected_ranks": [
+      360,
+      379,
+      369
+    ],
+    "top_k_recovered_count": 1
+  },
+  {
+    "budget": 6,
+    "capture_fraction": 0.9684715798064196,
+    "dominant_included": true,
+    "method": "spread",
+    "selected_ranks": [
+      360,
+      379,
+      369,
+      374,
+      364,
+      362
+    ],
+    "top_k_recovered_count": 4
+  },
+  {
+    "budget": 10,
+    "capture_fraction": 0.9720275779433085,
+    "dominant_included": true,
+    "method": "spread",
+    "selected_ranks": [
+      360,
+      379,
+      369,
+      374,
+      364,
+      362,
+      366,
+      371,
+      376,
+      361
+    ],
+    "top_k_recovered_count": 6
+  },
+  {
+    "budget": 15,
+    "capture_fraction": 0.9726408602373137,
+    "dominant_included": true,
+    "method": "spread",
+    "selected_ranks": [
+      360,
+      379,
+      369,
+      374,
+      364,
+      362,
+      366,
+      371,
+      376,
+      361,
+      363,
+      365,
+      367,
+      368,
+      370
+    ],
+    "top_k_recovered_count": 11
+  },
+  {
+    "budget": 3,
+    "capture_fraction": 0.0755667116276525,
+    "dominant_included": false,
+    "method": "spread_reverse",
+    "selected_ranks": [
+      379,
+      360,
+      370
+    ],
+    "top_k_recovered_count": 1
+  },
+  {
+    "budget": 6,
+    "capture_fraction": 0.10120731224408698,
+    "dominant_included": false,
+    "method": "spread_reverse",
+    "selected_ranks": [
+      379,
+      360,
+      370,
+      365,
+      375,
+      377
+    ],
+    "top_k_recovered_count": 2
+  },
+  {
+    "budget": 10,
+    "capture_fraction": 0.1031357940472822,
+    "dominant_included": false,
+    "method": "spread_reverse",
+    "selected_ranks": [
+      379,
+      360,
+      370,
+      365,
+      375,
+      377,
+      373,
+      368,
+      363,
+      378
+    ],
+    "top_k_recovered_count": 5
+  },
+  {
+    "budget": 15,
+    "capture_fraction": 0.10865471476822855,
+    "dominant_included": false,
+    "method": "spread_reverse",
+    "selected_ranks": [
+      379,
+      360,
+      370,
+      365,
+      375,
+      377,
+      373,
+      368,
+      363,
+      378,
+      376,
+      374,
+      372,
+      371,
+      369
+    ],
+    "top_k_recovered_count": 10
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "status": "frozen-before-any-epsj011-stage1-or-dressed-result",
+  "frozen_date_pacific": "2026-10-08",
+  "configuration_sha256": "8ed1b0c72746a2594e9139d4cc782a86007a3b416394eeab71da071dc8364646",
+  "selector_sha256": "57dbc4c59a26b66ac4f384cb6c7b9accd33d0528561b88b747eb0bbfdcc053b2",
+  "note": "guarded_parameter_point.py and this manifest are excluded to avoid self-referential hashes; the guard hard-codes this manifest hash",
+  "files": {
+    "research/sandbox/parameter_point_validation/REPORT.md": "f82b354d0ab2d07e4478f0e735b5b3c0be11c9eb8f6b2c5d743f154ccd65a9e2",
+    "research/sandbox/parameter_point_validation/parameter_choice.md": "c4eb87e789994acec382b8b423e6a3d6fc8a2e9c067749cc8cc7afa6f0a00cba",
+    "research/sandbox/parameter_point_validation/selector_provenance.md": "f27a29350a39842caa8ad02a6c9ca1c8e45b4ce0485721d57fa98900ab4e8967",
+    "research/sandbox/parameter_point_validation/criteria.json": "8c3c44c69eb290c965beebc0b176c0166410c3d98602a05bd530673c9172ea18",
+    "research/sandbox/parameter_point_validation/validation_plan.md": "8f2f650f9094e096e3da6da31c4e52d88c0ac2821dc60ef80e2bd9eccf3b92f7",
+    "research/sandbox/parameter_point_validation/execution_plan.md": "b982eb45691b49b8217f2db65306e1683e80f3bf990e4059eb68a496dc0ea1d8",
+    "research/sandbox/parameter_point_validation/figure_backlog.md": "a7f016df6a65854239e72ecf91c2d0ec3b473493b9e44627739d6dcde14b83b1",
+    "research/sandbox/parameter_point_validation/profile.py": "88722da0f0738166ee91c62056a6c200bd5e8d5a3fd6545d33482c6271566a3e",
+    "research/sandbox/parameter_point_validation/frozen_selector.py": "6f35646b461af48651ff7081af25f82b8957a72c317c465ce763d6675bca81c6",
+    "research/sandbox/parameter_point_validation/selection_hook.py": "7d9ee01ec47747df599e6276e182c813cd0f07a679afa6adc3009d7cb6e34660",
+    "research/sandbox/parameter_point_validation/parameter_analysis.py": "736f275fc28f816f98169e0be1f9c7d04255206ed8416dfa39e5ef343b2fb08f",
+    "research/sandbox/parameter_point_validation/analyze_parameter_point.py": "e642b2a4140dbab89696e5229e2cd5eb9e16cc8bb3f674d75e1f3f7da4808caf",
+    "research/sandbox/parameter_point_validation/evaluate.py": "17c731318447af6f54e8c5501d71aa8f2aaeeb5ba4193182218e9f62326bdd66",
+    "research/sandbox/parameter_point_validation/authenticate.py": "537ab1f696b2a646fa6522af87b5909de3be71e0f895672cb26608a174f362b5",
+    "research/sandbox/parameter_point_validation/test_preregistration.py": "89a28fbc6eb6583b10df33373f1b9a836c61120fcf61349d40d7e6c0bc53cf89",
+    "research/sandbox/parameter_point_validation/test_results.json": "4901813910ea66d31520baec878b394099617eaf1e348b3f226a6580334c89f6",
+    "research/sandbox/parameter_point_validation/execute_after_review.sh": "c8cd923aa30bbb39c5d2567c735037eab53f9d05a771c53664d801171ef6937c"
+  }
+}

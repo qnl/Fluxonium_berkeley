@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "configuration_sha256": "8ed1b0c72746a2594e9139d4cc782a86007a3b416394eeab71da071dc8364646",
+  "checkpoint_sha256": "20a58be10ad8408ce479de259e1d2f3562cc46222e0eebc939d6d695803516bd",
+  "payload_hashes_verified": true,
+  "selection_sha256": "17ec7b93304099399f152cb34e819fa4aedc5133d23bc3c04c3b7b1f6292a931",
+  "selection_seal_sha256": "94808eb5c683000b7fbd53b041777178b85bdca8d9510e86b557606211c5f847",
+  "selection_frozen_before_validation": true,
+  "prefixes": [
+    180,
+    200,
+    220,
+    240,
+    260,
+    280,
+    300
+  ],
+  "max_eigenpair_residual": 3.0422635414738823e-12,
+  "orthogonality_residual_inf": 2.158492392619209e-11,
+  "historical_references_unchanged": true
+}

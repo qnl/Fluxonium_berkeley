@@ -1,0 +1,261 @@
+{
+  "archive_checks": [
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_01",
+      "maximum_phase_imaginary_part": 6.106226635438361e-16,
+      "minimum_assigned_overlap": 0.9999936617157494,
+      "orthogonality_inf": 5.939853223765392e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2744,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_02",
+      "maximum_phase_imaginary_part": 1.0547118733938987e-15,
+      "minimum_assigned_overlap": 0.9999315886228329,
+      "orthogonality_inf": 6.436074891487609e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2744,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_03",
+      "maximum_phase_imaginary_part": 6.661338147750939e-16,
+      "minimum_assigned_overlap": 0.9999315770765125,
+      "orthogonality_inf": 6.886305104797099e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2744,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_04",
+      "maximum_phase_imaginary_part": 4.163336342344337e-16,
+      "minimum_assigned_overlap": 0.9999975040219247,
+      "orthogonality_inf": 4.5027100690158015e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2744,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_05",
+      "maximum_phase_imaginary_part": 6.38378239159465e-16,
+      "minimum_assigned_overlap": 0.9999936984532978,
+      "orthogonality_inf": 5.943872109023838e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2768,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_06",
+      "maximum_phase_imaginary_part": 2.498001805406602e-16,
+      "minimum_assigned_overlap": 0.9999972500702652,
+      "orthogonality_inf": 5.249099425166531e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2768,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_07",
+      "maximum_phase_imaginary_part": 6.106226635438361e-16,
+      "minimum_assigned_overlap": 0.9999349063986916,
+      "orthogonality_inf": 9.900499643487921e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2768,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_08",
+      "maximum_phase_imaginary_part": 1.0547118733938987e-15,
+      "minimum_assigned_overlap": 0.9999988259837196,
+      "orthogonality_inf": 1.00799793636582e-14,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2768,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_09",
+      "maximum_phase_imaginary_part": 3.885780586188048e-16,
+      "minimum_assigned_overlap": 0.9999989383692482,
+      "orthogonality_inf": 5.873985161261795e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2768,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_10",
+      "maximum_phase_imaginary_part": 2.7755575615628914e-16,
+      "minimum_assigned_overlap": 0.999993737478859,
+      "orthogonality_inf": 7.136193896281695e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2800,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_11",
+      "maximum_phase_imaginary_part": 3.885780586188048e-16,
+      "minimum_assigned_overlap": 0.999997794639595,
+      "orthogonality_inf": 6.9096745955755175e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2800,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_12",
+      "maximum_phase_imaginary_part": 2.7755575615628914e-16,
+      "minimum_assigned_overlap": 0.9999351424715099,
+      "orthogonality_inf": 1.42474336222222e-14,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2800,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_13",
+      "maximum_phase_imaginary_part": 6.661338147750939e-16,
+      "minimum_assigned_overlap": 0.9999993073931559,
+      "orthogonality_inf": 4.187424031846821e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2800,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_14",
+      "maximum_phase_imaginary_part": 4.718447854656915e-16,
+      "minimum_assigned_overlap": 0.9999993737248646,
+      "orthogonality_inf": 8.803671524325325e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2800,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_15",
+      "maximum_phase_imaginary_part": 6.661338147750939e-16,
+      "minimum_assigned_overlap": 0.9999947189841518,
+      "orthogonality_inf": 4.5987899347688156e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2840,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_16",
+      "maximum_phase_imaginary_part": 4.996003610813204e-16,
+      "minimum_assigned_overlap": 0.9999979118235334,
+      "orthogonality_inf": 6.665885717746446e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2840,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_17",
+      "maximum_phase_imaginary_part": 6.661338147750939e-16,
+      "minimum_assigned_overlap": 0.9999997561060976,
+      "orthogonality_inf": 1.0014137620364057e-14,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2840,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_18",
+      "maximum_phase_imaginary_part": 4.163336342344337e-16,
+      "minimum_assigned_overlap": 0.9999998226777962,
+      "orthogonality_inf": 5.823584626218767e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2840,
+        11
+      ]
+    },
+    {
+      "all_recorded_spectral_metrics_reproduced": true,
+      "job_id": "cell_19",
+      "maximum_phase_imaginary_part": 3.0531133177191805e-16,
+      "minimum_assigned_overlap": 0.9999353320149598,
+      "orthogonality_inf": 6.33409122396275e-15,
+      "retained_ranks_verified": true,
+      "status": "PASS",
+      "vectors_shape": [
+        2840,
+        11
+      ]
+    }
+  ],
+  "cleanup": "VERIFIED",
+  "execution_receipt_sha256": "cf07ec6e3e68a7222ec8bf0431fcb09049889e574f13d2eee7d353e1cc8de693",
+  "manifest_entries_verified": 70,
+  "new_postprocessing_eigensolves": 0,
+  "output_directory": "research/sandbox/k380_selected_space_spectral_accuracy_execution_001",
+  "output_directory_bytes": 10227119,
+  "output_manifest_sha256": "637d2758e657df47cb002bc492e78dd76262ec032d2ca135b0595e0a8cdaf918",
+  "run_result_sha256": "2dd9d825197f40ec7c299b3511bc275bfdd48fd22a201d7b8f7569ea59339eec",
+  "status": "PASS",
+  "structured_schema": "PASS"
+}

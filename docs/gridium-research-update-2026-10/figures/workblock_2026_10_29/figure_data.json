@@ -1,0 +1,243 @@
+{
+  "schema": "gridium_oct29_figure_scalars_v1",
+  "created_for": "2026-10-29 documentation only",
+  "new_scientific_calculations": 0,
+  "source_hashes": {
+    "research/sandbox/epsj011_k380_preregistration/k380_metrics.json": "aa637be253bc1b6a9f4f89307b42056f108bab637f72832248dce39ddd0e314e",
+    "research/sandbox/epsj011_k380_preregistration/evaluation.json": "43903489aba94442dc868dae2eafa319de82f3cf3e3441db6144d6568c4a91aa",
+    "research/sandbox/epsj011_k380_preregistration/analysis_tools.py": "a36a707d6f35c9368cc82ab1bffb919ffa475a386d6a7145c263a248f5cf1f82",
+    "research/sandbox/epsj011_k380_preregistration/analyze_k380.py": "1f444cdf8134b02813bff201f664c810e267d821d10e0cd2a393fd7ded4509f9",
+    "research/checkpoints/four-mode-asymmetric-n71-epsj011-k380/checkpoint.json": "399d3806566f7479a66227ff128bd37b80710f5ec44cbee49b27697df46101a8",
+    "research/checkpoints/four-mode-asymmetric-n71-epsj011-k380/analysis.json": "49b447ea8df6c6889e7cf4b2d5c5f7eef7cc4696821ac1a3f2d7265dc361787b",
+    "docs/gridium-research-update-2026-10/work-blocks-1-5/SOURCE_PROVENANCE.json": "79eef3fcd2564178c448592904a8331565889f4eddf5ad854e2153796fdeb72c",
+    "research/sandbox/k420_host_feasibility_2026_10_29/HOST_FEASIBILITY.md": "7afc4cd0c87c307b60f59ccfc7e3303ba033a140c0aa4adffe1fa33691651906",
+    "research/sandbox/k420_quiet_host_feasibility_2026_10_29/HOST_DECISION.md": "432b82cd5548d8c8436064dc365bdf80bf9a41e77434066397a0f9f8656bd202",
+    "research/sandbox/k420_execution_architecture_decision_2026_10_29/ARCHITECTURE_DECISION.md": "10e23fb7ad46a8f1729b3b9b7c76a1b285042c6b477f3e11900f0b5722cf3ff9",
+    "research/sandbox/k420_protected_native_slice_2026_10_29/IMPLEMENTATION_REPORT.md": "45d1c029ac0b00dbc42875cdd18cef033bed38b0f7df88b0f7bb4bd9d5be95c0",
+    "research/sandbox/k420_native_integration_2026_10_27/RESOURCE_CONTROL_PROPOSAL.json": "4301635b4fcee242c4ace64d4a4c9560f1b624f50beccacfbc0b7725030a89dd",
+    "research/sandbox/k420_native_integration_2026_10_27/WORKLOAD.json": "9a6a47d0a2e09f31474cb8ea4ffd15f7823d6f9c1e2c431e471439ab81f6e90a"
+  },
+  "source_authentication_note": "Scientific metrics/evaluation match existing published provenance anchors; analysis matches checkpoint pin. October 29 reports are retained local observations with recorded hashes, not new telemetry. Hash linkage is not an independent timestamp.",
+  "figure1": {
+    "metric": "Maximum absolute change over nine registered dressed carrier frequencies between adjacent nested Stage-2 retained prefixes of one k380 Stage-1 parent",
+    "definition": "f_ij(k) = 1000 * abs(E_j(k) - E_i(k)) MHz with E in GHz; max over registered carriers of abs(f_ij(upper) - f_ij(lower))",
+    "saved_comparison_sign": "lower minus upper; absolute maximum is sign-independent",
+    "carrier_state_pairs": {
+      "f01": [
+        0,
+        1
+      ],
+      "f07": [
+        0,
+        7
+      ],
+      "f08": [
+        0,
+        8
+      ],
+      "f78": [
+        7,
+        8
+      ],
+      "f81": [
+        1,
+        8
+      ],
+      "f72": [
+        2,
+        7
+      ],
+      "f21": [
+        1,
+        2
+      ],
+      "f03": [
+        0,
+        3
+      ],
+      "f38": [
+        3,
+        8
+      ]
+    },
+    "configuration": {
+      "physical_parameters": {
+        "EJ": 5.0,
+        "EC": 0.5,
+        "EL": 1.0,
+        "ELK": 1.0,
+        "EJS": 4.0,
+        "ECS": 8.0,
+        "eC": 5.5,
+        "eP": 10.0,
+        "eps_J": 0.11,
+        "eps_LK": 0.05,
+        "ng": 0.0,
+        "phi_ext": 0.0,
+        "theta_ext": 3.141592653589793
+      },
+      "spatial_cutoffs": {
+        "n1max": 4,
+        "N2": 71,
+        "L2": 11.0,
+        "N3": 71,
+        "L3": 14.0,
+        "N4": 8
+      },
+      "solver_settings": {
+        "k": 380,
+        "sigma": -24.0,
+        "which": "LM",
+        "tol": 1e-08,
+        "ncv": null,
+        "v0": null,
+        "permc_spec": "MMD_AT_PLUS_A"
+      }
+    },
+    "configuration_sha256": "8f02dbfc09f6a6c4e6bcd49d938c79d570b063103edf33beaad8b331e085ac5e",
+    "parent_generated_utc": "2026-10-18T22:51:33.587343+00:00",
+    "profile": "n71-k380-epsj011-convergence",
+    "state_matching": "Saved overlap-based one-to-one assignment to the reordered finite k380 endpoint, using embedded retained vectors. No new assignment or solve is computed.",
+    "rows": [
+      {
+        "lower_k": 300,
+        "upper_k": 320,
+        "comparison": "k300_to_k320",
+        "source_pointer": "/comparisons/k300_to_k320/components",
+        "saved_lower_minus_upper_carrier_changes_MHz": {
+          "f01": 0.0008146309493639592,
+          "f07": 0.4341683206912421,
+          "f08": 0.7145717195062389,
+          "f78": 0.28040339881485465,
+          "f81": 0.7137570885561217,
+          "f72": 0.19382652593685634,
+          "f21": 0.2395271638047234,
+          "f03": 0.364913815120417,
+          "f38": 0.3496579043849124
+        },
+        "maximum_absolute_carrier_change_MHz": 0.7145717195062389,
+        "limiting_carrier": "f08",
+        "tracking_safe": true
+      },
+      {
+        "lower_k": 320,
+        "upper_k": 340,
+        "comparison": "k320_to_k340",
+        "source_pointer": "/comparisons/k320_to_k340/components",
+        "saved_lower_minus_upper_carrier_changes_MHz": {
+          "f01": -0.03059744485156557,
+          "f07": 1.0327013690612148,
+          "f08": 1.2692384719712209,
+          "f78": 0.2365371029107166,
+          "f81": 1.2998359168232128,
+          "f72": 0.7265027794842354,
+          "f21": 0.3367960344285166,
+          "f03": 0.34534568856724945,
+          "f38": 0.9238927834048809
+        },
+        "maximum_absolute_carrier_change_MHz": 1.2998359168232128,
+        "limiting_carrier": "f81",
+        "tracking_safe": true
+      },
+      {
+        "lower_k": 340,
+        "upper_k": 360,
+        "comparison": "k340_to_k360",
+        "source_pointer": "/comparisons/k340_to_k360/components",
+        "saved_lower_minus_upper_carrier_changes_MHz": {
+          "f01": 0.016793562586769895,
+          "f07": 4.529117817814949,
+          "f08": 5.594546068481577,
+          "f78": 1.0654282506656898,
+          "f81": 5.57775250589475,
+          "f72": 3.9391560976509936,
+          "f21": 0.5731681575775838,
+          "f03": 0.7380081206720206,
+          "f38": 4.856537947809102
+        },
+        "maximum_absolute_carrier_change_MHz": 5.594546068481577,
+        "limiting_carrier": "f08",
+        "tracking_safe": true
+      },
+      {
+        "lower_k": 360,
+        "upper_k": 380,
+        "comparison": "k360_to_k380",
+        "source_pointer": "/comparisons/k360_to_k380/components",
+        "saved_lower_minus_upper_carrier_changes_MHz": {
+          "f01": 0.016442510721859094,
+          "f07": 6.131698601047901,
+          "f08": 6.738197537884844,
+          "f78": 0.6064989368379514,
+          "f81": 6.721755027163454,
+          "f72": 6.1092284636911245,
+          "f21": 0.006027626634477201,
+          "f03": 0.07582485124612504,
+          "f38": 6.6623726866391735
+        },
+        "maximum_absolute_carrier_change_MHz": 6.738197537884844,
+        "limiting_carrier": "f08",
+        "tracking_safe": true
+      }
+    ],
+    "reference_is_ground_truth": false,
+    "frozen_retained_basis_verdict": "FAIL",
+    "caveat": "Prior finite-model results, not Stage-1 energy corrections, uncertainty estimates or October 29 solves; no k400/k420 values or extrapolation."
+  },
+  "figure2": {
+    "hardware": "Apple M3 Pro; 18 GiB unified memory",
+    "GiB_bytes": 1073741824,
+    "available_proxy_definition": "(free + inactive + speculative) * vm_page_size",
+    "minimum_available_proxy_bytes": 12884901888,
+    "minimum_free_physical_bytes": 1073741824,
+    "sessions": [
+      {
+        "label": "First",
+        "timestamp": "2026-10-29T10:02:19.110-07:00",
+        "page_bytes": 16384,
+        "free_pages": 3972,
+        "inactive_pages": 454674,
+        "speculative_pages": 22452,
+        "free_physical_bytes": 65077248,
+        "available_proxy_bytes": 7882309632
+      },
+      {
+        "label": "Quiet-session",
+        "timestamp": "2026-10-29T10:08:24.730-07:00",
+        "page_bytes": 16384,
+        "free_pages": 52532,
+        "inactive_pages": 411526,
+        "speculative_pages": 13192,
+        "free_physical_bytes": 860684288,
+        "available_proxy_bytes": 7819264000
+      }
+    ],
+    "caveat": "Two non-atomic observations fail both gates; not a universal hardware incapacity claim. Pressure, compression and other reclaimable quantities are not substitutes."
+  },
+  "figure3": {
+    "previous_evidence": "authenticated finite k380 evidence",
+    "environment_admission": "CURRENTLY BLOCKED",
+    "blocker1": "Both observed local memory admissions failed",
+    "blocker2": "Protected native execution/publication boundary unavailable under the required same-user adversarial-writer threat model",
+    "external_compute_access": "UNVERIFIED",
+    "stages": [
+      {
+        "stage": "A",
+        "workload": "One genuine k420 Stage-1 parent",
+        "status": "PLANNED / NOT EXECUTED"
+      },
+      {
+        "stage": "B",
+        "workload": "Exact ten frozen Stage-2 cases, Q/SHIFT and quality gates",
+        "status": "PLANNED / NOT EXECUTED"
+      },
+      {
+        "stage": "C",
+        "workload": "Convergence assessment k380 to k400 to k420",
+        "status": "PLANNED / NOT EXECUTED"
+      }
+    ],
+    "requires_separate_real_execution_authorization": true,
+    "output": "A tested PASS/BORDERLINE/FAIL verdict, not an assumed converged spectrum"
+  }
+}
