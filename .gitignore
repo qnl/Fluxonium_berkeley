@@ -23,6 +23,13 @@ Simulations/Rabi_3Photon/*
 !Simulations/Rabi_3Photon/four_mode_asymmetric_shell_audit.py
 !Simulations/Rabi_3Photon/run_four_mode_spatial71_reference.py
 !Simulations/Rabi_3Photon/README_spatial71_reference.md
+!Simulations/Rabi_3Photon/gridium_params.py
+!Simulations/Rabi_3Photon/active_cutoff_check.py
+!Simulations/Rabi_3Photon/active_pathway_ranking.py
+!Simulations/Rabi_3Photon/asymmetry_sweep_grid_phi01.py
+!Simulations/Rabi_3Photon/four_mode_parity_check.py
+!Simulations/Rabi_3Photon/four_mode_grid_wavefunctions.py
+!Simulations/Rabi_3Photon/four_mode_theta1_conditional.py
 
 # Local prompt/research infrastructure
 docs/

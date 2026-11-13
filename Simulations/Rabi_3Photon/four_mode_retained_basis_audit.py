@@ -29,6 +29,11 @@ from Circuit_Objs.qchard_gridium_netlist import (
 
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = ROOT / 'Figures' / 'Rabi_3Photon'
+#HISTORICAL PARAMETERS - intentionally NOT switched to gridium_params.
+#four_mode_asymmetric_shell_audit.py checks this dict against the saved
+#2026-09-26 N51 checkpoint metadata, and run_four_mode_spatial71_reference.py
+#imports helpers from this module.  Equal to gridium_params.LEGACY_PHYSICS.
+#New work should use gridium_params.ACTIVE_PHYSICS (paper regime d).
 BENCHMARK = dict(
     EJ=5.0, EC=0.5, EL=1.0, ELK=1.0, EJS=4.0, ECS=8.0,
     eC=5.5, eP=10.0, eps_J=0.10, eps_LK=0.05,

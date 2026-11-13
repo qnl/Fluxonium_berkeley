@@ -17,18 +17,17 @@ import qutip as qt
 
 from Circuit_Objs.qchard_gridium_netlist import Gridium4Mode
 from Simulations.Rabi_3Photon import workflow_funcs as workflow
+from Simulations.Rabi_3Photon import gridium_params as gp
 
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUTPUT = ROOT / 'Figures' / 'Rabi_3Photon'
-BENCHMARK = dict(
-    EJ=5.0, EC=0.5, EL=1.0, ELK=1.0, EJS=4.0, ECS=8.0,
-    eC=5.5, eP=10.0, eps_J=0.10, eps_LK=0.05,
-    ng=0.0, phi_ext=0.0, theta_ext=np.pi,
-)
-REFERENCE_CUTOFFS = dict(n1max=4, N2=31, L2=11.0, N3=31, L3=14.0,
-                         N4=4, nkeep=180)
-DIAGNOSTIC_CUTOFFS = dict(REFERENCE_CUTOFFS, nkeep=120)
+#Paper regime (d) with eps_K=2.5, eps_p=5.5, symmetric; see gridium_params.
+#Before 2026-11-06 this was regime (a), eC=5.5, eP=10, eps_J=0.10,
+#eps_LK=0.05 (gp.LEGACY_PHYSICS).
+BENCHMARK = dict(gp.ACTIVE_PHYSICS)
+REFERENCE_CUTOFFS = gp.cutoffs('default', nkeep=180)
+DIAGNOSTIC_CUTOFFS = gp.cutoffs('default')
 
 
 def _model(cutoffs, nlev=12):
